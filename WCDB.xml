@@ -116,5 +116,19 @@ Date 03/10/2014
 		  <RelatedOrganization OIdent="XXX"/>
 		</RelatedOrganizations>
     </Person>
- 
+	
+	<CrisisKind CKindIdent="XXX">
+		<Name>XXX</Name>
+		<Description>XXX</Description>
+    </CrisisKind>
+	
+	<OrganizationKind OKindIdent="XXX">
+		<Name>XXX</Name>
+		<Description>XXX</Description>
+    </OrganizationKind>
+	
+	<PersonKind PKindIdent="XXX">
+		<Name>XXX</Name>
+		<Description>XXX</Description>
+    </PersonKind>
 </WorldCrises>

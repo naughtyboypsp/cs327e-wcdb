@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<WorldCrises>
+<!-- First Version of WCDB.XML
+Author: Xiaoqin LI
+Date 03/10/2014
+-->
+	<Crisis CIdent = "XXX" >
+		<Name>XXX</Name>
+		<!-- may have more than one "Kind",I take Kind as IDREF, since all 
+		three categories have "Kind"-->
+		<Kind CKindIdent = "XXX" />
+		<Kind CKindIdent = "XXX" />
+		<!-- Although Robert and I though Location may be a good one to 
+		have IDREF, but it may have multiple layers(country/state/city...),
+		as a result, it might not be the best option -->
+		<Location>
+			<City>XXX</City>
+			<Country>XXX</Country>
+		</Location>
+		<DateAndTime>XXX</DateAndTime>
+		<HumanImpact>
+			<Number>XXX </Number>
+			<Type>XXX </Type>		
+		</HumanImpact>
+		<EconomicImpact>XXX</EconomicImpact>
+		<ResourcesNeeded>
+			<!-- may have different types and num, not sure for now -->
+		</ResourcesNeeded>
+		<WaysToHelp>
+			<!-- may have different options, not sure for now -->
+			<Option>XXX</Option>
+		</WaysToHelp>
+		<ExternalInfo>
+			<ImageURL>http://XXX</ImageURL>
+			<VideoURL>http://XXX</VideoURL>
+			<MapURL>http://XXX</MapURL>
+			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
+			<ExternalLinkURL>http://XXX</ExternalLinkURL>
+		</ExternalInfo>
+		<!-- What is Citations? URL?? or just a number??-->
+		<Citations>XXX</Citations>
+		<ReletedPerspns>
+			<!-- may have more than one -->
+			<RelatedPerson PIdent = "XXX"/>
+			<RelatedPerson PIdent = "XXX"/>
+		</ReletedPerspns>
+		<RelatedOrganizations>
+		<!-- may have more than one -->
+			<RelatedOrganization OIdent = "XXX"/>
+			<RelatedOrganization OIdent = "XXX"/>
+		</RelatedOrganizations>
+	</Crisis>
+	
+	<Organization OIdent= "XXX">
+		<Name>XXX</Name>
+		<Kind OKindIdent= "XXX"/>
+		<Kind OKindIdent = "XXX" />
+		<Location>
+			<City>XXX</City>
+			<Country>XXX<Country>
+		</Location>
+		<History>XXX</History>
+		<ContactInfo>
+			<Telephone>XXX</Telephone>
+			<Email>XXX@XXX</Email>
+			<Fax>XXX</Fax>
+			<Address>
+				<StreetAddress>XXX</StreetAddress>
+				<PostalCode>XXX</PostalCode>
+			</Address>
+		</ContactInfo>
+		<ExternalInfo>
+			<ImageURL>http://XXX</ImageURL>
+			<VideoURL>http://XXX</VideoURL>
+			<MapURL>http://XXX</MapURL>
+			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
+			<ExternalLinkURL>http://XXX</ExternalLinkURL>
+		</ExternalInfo>
+		<Citations></Citations>
+		<!-- may have more than one -->
+		<RelatedCrises>
+			<RelatedCrisis CIdent= "XXX"/>
+			<RelatedCrisis CIdent= "XXX"/>
+		</RelatedCrises>
+		<ReletedPerspns>
+			<!-- may have more than one -->
+			<RelatedPerson PIdent = "XXX"/>
+			<RelatedPerson PIdent = "XXX"/>
+		</ReletedPerspns>
+    </Organization>
+     
+	<Person PIdent="AB">
+		<Name>
+		  <FirstName>AXXX</FirstName>
+		  <LastName>BXXX</LastName>
+		</Name>
+		<Kind PKindIdent="XXX"/>
+		<Location>
+		  <City>XXX</City>
+		  <Country>XXX</Country>
+		</Location>
+		<ExternalInfo>
+			<ImageURL>http://XXX</ImageURL>
+			<VideoURL>http://XXX</VideoURL>
+			<MapURL>http://XXX</MapURL>
+			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
+			<ExternalLinkURL>http://XXX</ExternalLinkURL>
+		</ExternalInfo>
+		<Citations>XXX</Citations>
+		<RelatedCrises>
+		  <RelatedCrisis CIdent="XXX"/>
+		  <RelatedCrisis CIdent="XXX"/>
+		</RelatedCrises>
+		<RelatedOrganizations>
+		  <RelatedOrganization OIdent="XXX"/>
+		  <RelatedOrganization OIdent="XXX"/>
+		</RelatedOrganizations>
+    </Person>
+ 
+</WorldCrises>

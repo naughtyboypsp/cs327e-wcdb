@@ -39,11 +39,11 @@ Date 03/10/2014
 		</ExternalInfo>
 		<!-- What is Citations? URL?? or just a number??-->
 		<Citations>XXX</Citations>
-		<ReletedPerspns>
+		<ReletedPersons>
 			<!-- may have more than one -->
 			<RelatedPerson PIdent = "XXX"/>
 			<RelatedPerson PIdent = "XXX"/>
-		</ReletedPerspns>
+		</ReletedPersons>
 		<RelatedOrganizations>
 		<!-- may have more than one -->
 			<RelatedOrganization OIdent = "XXX"/>
@@ -82,11 +82,11 @@ Date 03/10/2014
 			<RelatedCrisis CIdent= "XXX"/>
 			<RelatedCrisis CIdent= "XXX"/>
 		</RelatedCrises>
-		<ReletedPerspns>
+		<ReletedPersons>
 			<!-- may have more than one -->
 			<RelatedPerson PIdent = "XXX"/>
 			<RelatedPerson PIdent = "XXX"/>
-		</ReletedPerspns>
+		</ReletedPersons>
     </Organization>
      
 	<Person PIdent="AB">

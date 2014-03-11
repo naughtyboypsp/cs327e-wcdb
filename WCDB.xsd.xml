@@ -35,7 +35,57 @@
 					</xsd:complexType>
 				</xsd:element>			
 			</xsd:sequence>		
-		</xsd:complexType>
-		
+		</xsd:complexType>		
+	<!-- Crisis,Organization,Person key and keyref-->
+    <xsd:key name="CrisisKey">
+      <xsd:selector xpath="Crisis" />
+      <xsd:field xpath="@CIdent" />
+    </xsd:key>
+    <xsd:keyref name="CrisisKeyRef" refer="CrisisKey">
+      <xsd:selector xpath="Person/RelatedCrises/RelatedCrisis | Organization/RelatedCrises/RelatedCrisis" />
+      <xsd:field xpath="@CIdent" />
+    </xsd:keyref> 
+    <xsd:key name="OrganizationKey">
+      <xsd:selector xpath="Organization" />
+      <xsd:field xpath="@OIdent" />
+    </xsd:key>
+    <xsd:keyref name="OrganizationKeyRef" refer="OrganizationKey">
+      <xsd:selector xpath="Crisis/RelatedOrganizations/RelatedOrganization | Person/RelatedOrganizations/RelatedOrganization" />
+      <xsd:field xpath="@OIdent" />
+    </xsd:keyref>
+    <xsd:key name="PersonKey">
+      <xsd:selector xpath="Person" />
+      <xsd:field xpath="@PIdent" />
+    </xsd:key>
+    <xsd:keyref name="PersonKeyRef" refer="PersonKey">
+      <xsd:selector xpath="Crisis/RelatedPersons/RelatedPerson | Organization/RelatedPersons/RelatedPerson" />
+      <xsd:field xpath="@PIdent" />
+    </xsd:keyref>
+	<!-- CrisisKind,OrganizationKind,PersionKind key and keyref -->
+    <xsd:key name="CrisisKindKey">
+      <xsd:selector xpath="CrisisKind" />
+      <xsd:field xpath="CKindIdent" />
+    </xsd:key>
+    <xsd:keyref name="CrisisKindKeyRef" refer="CrisisKindKey">
+      <xsd:selector xpath="Crisis/Kind" />
+      <xsd:field xpath="@CKindIdent" />
+    </xsd:keyref>
+    <xsd:key name="OrganizationKindKey">
+      <xsd:selector xpath="OrganizationKind" />
+      <xsd:field xpath="@OKindIdent" />
+    </xsd:key>
+    <xsd:keyref name="OrganizationKindKeyRef" refer="OrganizationKindKey">
+      <xsd:selector xpath="Organization/Kind" />
+      <xsd:field xpath="@OKindIdent" />
+    </xsd:keyref>
+    <xsd:key name="PersonKindKey">
+      <xsd:selector xpath="PersonKind" />
+      <xsd:field xpath="@PKindIdent" />
+    </xsd:key>
+    <xsd:keyref name="PersonKindKeyRef" refer="PersonKindKey">
+      <xsd:selector xpath="Person/Kind" />
+      <xsd:field xpath="@PKindIdent" />
+    </xsd:keyref>
+	
 	</xsd:element>
 </xsd:schema>

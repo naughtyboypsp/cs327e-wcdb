@@ -13,6 +13,8 @@ Date 03/10/2014
 		<!-- Although Robert and I though Location may be a good one to 
 		have IDREF, but it may have multiple layers(country/state/city...),
 		as a result, it might not be the best option -->
+		<!-- location may have other like county, province, they'are all fine as long as
+		in xsd their min occurence is zero -->
 		<Location>
 			<City>XXX</City>
 			<Country>XXX</Country>
@@ -36,9 +38,9 @@ Date 03/10/2014
 			<MapURL>http://XXX</MapURL>
 			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
 			<ExternalLinkURL>http://XXX</ExternalLinkURL>
+			<Citations>XXX</Citations>
 		</ExternalInfo>
-		<!-- What is Citations? URL?? or just a number??-->
-		<Citations>XXX</Citations>
+		<!-- What is Citations? URL?? or just a number??-->	
 		<ReletedPersons>
 			<!-- may have more than one -->
 			<RelatedPerson PIdent = "XXX"/>
@@ -53,7 +55,7 @@ Date 03/10/2014
 	
 	<Organization OIdent= "XXX">
 		<Name>XXX</Name>
-		<Kind OKindIdent= "XXX"/>
+		<Kind OKindIdent= "XXX" />
 		<Kind OKindIdent = "XXX" />
 		<Location>
 			<City>XXX</City>
@@ -62,8 +64,8 @@ Date 03/10/2014
 		<History>XXX</History>
 		<ContactInfo>
 			<Telephone>XXX</Telephone>
-			<Email>XXX@XXX</Email>
 			<Fax>XXX</Fax>
+			<Email>XXX@XXX</Email>	
 			<Address>
 				<StreetAddress>XXX</StreetAddress>
 				<PostalCode>XXX</PostalCode>
@@ -75,8 +77,8 @@ Date 03/10/2014
 			<MapURL>http://XXX</MapURL>
 			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
 			<ExternalLinkURL>http://XXX</ExternalLinkURL>
+			<Citations>XXX</Citations>
 		</ExternalInfo>
-		<Citations></Citations>
 		<!-- may have more than one -->
 		<RelatedCrises>
 			<RelatedCrisis CIdent= "XXX"/>
@@ -105,8 +107,8 @@ Date 03/10/2014
 			<MapURL>http://XXX</MapURL>
 			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
 			<ExternalLinkURL>http://XXX</ExternalLinkURL>
+			<Citations>XXX</Citations>
 		</ExternalInfo>
-		<Citations>XXX</Citations>
 		<RelatedCrises>
 		  <RelatedCrisis CIdent="XXX"/>
 		  <RelatedCrisis CIdent="XXX"/>

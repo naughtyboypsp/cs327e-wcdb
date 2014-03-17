@@ -4,6 +4,7 @@
 Author: Xiaoqin LI
 Date 03/10/2014
 -->
+	<!-- since Ident is gonna be a primary key, please name it as XXX001, XXX002...as unique values-->
 	<Crisis CIdent = "XXX" >
 		<Name>XXX</Name>
 		<!-- may have more than one "Kind",I take Kind as IDREF, since all 
@@ -17,30 +18,32 @@ Date 03/10/2014
 		in xsd their min occurence is zero -->
 		<Location>
 			<City>XXX</City>
+			<County>XXX</County>       <!-- could have zero and just delete this tag -->
+			<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
+			<State>XXX</State>   <!-- could have zero and just delete this tag -->
 			<Country>XXX</Country>
 		</Location>
-		<DateAndTime>XXX</DateAndTime>
+		<!-- Better be date type, not string-->
+		<DateAndTime>
+			<Date></Date>
+			<Time></Time>
+		</DateAndTime>
 		<HumanImpact>
 			<Number>XXX </Number>
 			<Type>XXX </Type>		
 		</HumanImpact>
 		<EconomicImpact>XXX</EconomicImpact>
-		<ResourcesNeeded>
-			<!-- may have different types and num, not sure for now -->
-		</ResourcesNeeded>
-		<WaysToHelp>
-			<!-- may have different options, not sure for now -->
-			<Option>XXX</Option>
-		</WaysToHelp>
+		<ResourcesNeeded>XXX</ResourcesNeeded> <!-- just string so far, any better idea on this?-->
+		<WaysToHelp>XXX</WaysToHelp>  <!-- just string so far, any better idea on this?-->
 		<ExternalInfo>
 			<ImageURL>http://XXX</ImageURL>
 			<VideoURL>http://XXX</VideoURL>
 			<MapURL>http://XXX</MapURL>
 			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
 			<ExternalLinkURL>http://XXX</ExternalLinkURL>
-			<Citations>XXX</Citations>
+			<Citations>XXX</Citations> <!-- Just String type-->	
 		</ExternalInfo>
-		<!-- What is Citations? URL?? or just a number??-->	
+		
 		<ReletedPersons>
 			<!-- may have more than one -->
 			<RelatedPerson PIdent = "XXX"/>
@@ -53,12 +56,16 @@ Date 03/10/2014
 		</RelatedOrganizations>
 	</Crisis>
 	
+	<!-- since this Ident is gonna be a primary key, better be unique-->
 	<Organization OIdent= "XXX">
 		<Name>XXX</Name>
 		<Kind OKindIdent= "XXX" />
 		<Kind OKindIdent = "XXX" />
 		<Location>
 			<City>XXX</City>
+			<County>XXX</County>       <!-- could have zero and just delete this tag -->
+			<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
+			<State>XXX</State>   <!-- could have zero and just delete this tag -->
 			<Country>XXX</Country>
 		</Location>
 		<History>XXX</History>
@@ -68,6 +75,10 @@ Date 03/10/2014
 			<Email>XXX@XXX</Email>	
 			<Address>
 				<StreetAddress>XXX</StreetAddress>
+				<City>XXX</City>
+				<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
+				<State>XXX</State>   <!-- could have zer0 and just delete this tag-->
+				<Country>XXX</Country>
 				<PostalCode>XXX</PostalCode>
 			</Address>
 		</ContactInfo>
@@ -91,15 +102,19 @@ Date 03/10/2014
 		</ReletedPersons>
     </Organization>
      
-	<Person PIdent="AB">
+	<Person PIdent="ABXXX">  <!-- this is gonna be a primary key so, better be unique -->
 		<Name>
 		  <FirstName>AXXX</FirstName>
+		  <MiddleName>XXX</MiddleName> <!-- could have zero and just delete this tag -->
 		  <LastName>BXXX</LastName>
 		</Name>
 		<Kind PKindIdent="XXX"/>
 		<Location>
-		  <City>XXX</City>
-		  <Country>XXX</Country>
+			<City>XXX</City>
+			<County>XXX</County>       <!-- could have zero and just delete this tag -->
+			<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
+			<State>XXX</State>   <!-- could have zero and just delete this tag -->
+			<Country>XXX</Country>
 		</Location>
 		<ExternalInfo>
 			<ImageURL>http://XXX</ImageURL>
@@ -118,7 +133,7 @@ Date 03/10/2014
 		  <RelatedOrganization OIdent="XXX"/>
 		</RelatedOrganizations>
     </Person>
-	
+	<!-- I suggest to put initial of <Name> as KindIdent -->
 	<CrisisKind CKindIdent="XXX">
 		<Name>XXX</Name>
 		<Description>XXX</Description>

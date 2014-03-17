@@ -4,9 +4,9 @@
 	<xsd:element name="WorldCrises">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="Crisis" type="CrisisType" minOccurs="0" maxOccurs="10" />
-				<xsd:element name="Organization" type="OrganizationType" minOccurs="0" maxOccurs="10" />
-				<xsd:element name="Person" type="PersonType" minOccurs="0" maxOccurs="10" />
+				<xsd:element name="Crisis" type="CrisisType" minOccurs="0" maxOccurs="unbounded" />
+				<xsd:element name="Organization" type="OrganizationType" minOccurs="0" maxOccurs="unbounded" />
+				<xsd:element name="Person" type="PersonType" minOccurs="0" maxOccurs="unbounded" />
 				<xsd:element name="CrisisKind" minOccurs="0" maxOccurs="unbounded">
 					<xsd:complexType>
 						<xsd:sequence>
@@ -94,23 +94,31 @@
 	<!-- CrisisType Type -->
 	<xsd:complexType name="CrisisType">
 		<xsd:sequence>
-		  <xsd:element name="Name" type="xsd:string" />
+		  <xsd:element name="Name" minOccurs="1" type="xsd:string" />
 		  <xsd:element name="Kind" minOccurs="1" maxOccurs="unbounded">
 			<xsd:complexType>
 			  <xsd:attribute name="CKindIdent" type="xsd:string" use="required" />
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="Location" >
+		  <xsd:element name="Location">
 			<xsd:complexType>
 				<xsd:sequence>
 					<xsd:element name="City" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="County" type="xsd:string" minOccurs="0"/>
+					<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="State" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
 				</xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="DateAndTime" type="xsd:string"/>
+		  <xsd:element name="DateAndTime" >
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="Date" type="xsd:date" />
+					<xsd:element name="Time" type="xsd:time" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:complexType>
+		  </xsd:element>
 		  <xsd:element name="HumanImpact" minOccurs="1" maxOccurs="unbounded">
 			<xsd:complexType>
 			  <xsd:sequence>			
@@ -123,7 +131,7 @@
 		  <xsd:element name="ResourceNeeded" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>  
 		  <xsd:element name="WaysToHelp" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
 		  <xsd:element name="ExternalResources" type="ExternalResourcesType" />
-		  <xsd:element name="RelatedPersons" minOccurs="1">
+		  <xsd:element name="RelatedPersons" >
 			<xsd:complexType>
 			  <xsd:sequence>
 				<xsd:element name="RelatedPerson" minOccurs="1" maxOccurs="unbounded">
@@ -134,7 +142,7 @@
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="RelatedOrganizations" minOccurs="1">
+		  <xsd:element name="RelatedOrganizations" >
 			<xsd:complexType>
 			  <xsd:sequence>
 				<xsd:element name="RelatedOrganization" minOccurs="1" maxOccurs="unbounded">
@@ -163,6 +171,7 @@
 				<xsd:sequence>
 					<xsd:element name="City" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="County" type="xsd:string" minOccurs="0"/>
+					<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="State" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
 				</xsd:sequence>
@@ -180,6 +189,7 @@
 						<xsd:sequence>
 						  <xsd:element name="StreetAddress" type="xsd:string" />
 						  <xsd:element name="City" type="xsd:string" />
+						  <xsd:element name="Province" type="xsd:string" minOccurs="0"/>
 						  <xsd:element name="State" type="xsd:string" minOccurs="0"/>
 						  <xsd:element name="PostalCode" type="xsd:string" />
 						  <xsd:element name="Country" type="xsd:string" />
@@ -190,7 +200,7 @@
 			</xsd:complexType>
 		  </xsd:element>
 		  <xsd:element name="ExternalResources" type="ExternalResourcesType" />
-		  <xsd:element name="RelatedCrises" minOccurs="1">
+		  <xsd:element name="RelatedCrises" >
 			<xsd:complexType>
 			  <xsd:sequence>
 				<xsd:element name="RelatedCrisis" minOccurs="1" maxOccurs="unbounded">
@@ -201,7 +211,7 @@
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="RelatedPersons" minOccurs="1">
+		  <xsd:element name="RelatedPersons" >
 			<xsd:complexType>
 			  <xsd:sequence>
 				<xsd:element name="RelatedPerson" minOccurs="1" maxOccurs="unbounded">
@@ -225,7 +235,6 @@
 				<xsd:element name="FirstName" type="xsd:string" />
 				<xsd:element name="MiddleName" type="xsd:string" minOccurs="0" />
 				<xsd:element name="LastName" type="xsd:string" />
-				<xsd:element name="Suffix" type="xsd:string" minOccurs="0" />
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
@@ -239,13 +248,14 @@
 				<xsd:sequence>
 					<xsd:element name="City" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="County" type="xsd:string" minOccurs="0"/>
+					<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="State" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
 				</xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
 		  <xsd:element name="ExternalResources" type="ExternalResources" />
-		  <xsd:element name="RelatedCrises" minOccurs="1">
+		  <xsd:element name="RelatedCrises" >
 			<xsd:complexType>
 			  <xsd:sequence>
 				<xsd:element name="RelatedCrisis" minOccurs="1" maxOccurs="unbounded">
@@ -256,7 +266,7 @@
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="RelatedOrganizations" minOccurs="1">
+		  <xsd:element name="RelatedOrganizations" >
 			<xsd:complexType>
 			  <xsd:sequence>
 				<xsd:element name="RelatedOrganization" minOccurs="1" maxOccurs="unbounded">

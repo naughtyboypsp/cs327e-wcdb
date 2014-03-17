@@ -279,7 +279,7 @@
 		  </xsd:element>
 		</xsd:sequence>
 		<xsd:attribute name="PIdent" type="xsd:string" use="required" />
-  </xsd:complexType>
+    </xsd:complexType>
 	
 	<!-- ExternalResources Type -->
     <xsd:complexType name="ExternalResourcesType">
@@ -303,7 +303,7 @@
 	<!-- ContactNumber Type -->	
 	<xsd:simpleType name="ContactNumberType">
 		<xsd:restriction base="xsd:string">	
-			<xsd:pattern value="[[0-9]+-]+[0-9]+"/>
+			<xsd:pattern value="(?:[0-9]+-)+[0-9]+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	

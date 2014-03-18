@@ -16,25 +16,29 @@ Date 03/10/2014
 			<Time>1:23:48 AM</Time>
 		</DateAndTime>
 		<HumanImpact>
-			Two workers died from the explosions on the day of the accident. 
-			Twenty eight more workers died by the end of July as a result of acute 
-			radiation poisoning. Another 106 workers received enough radiation to cause 
-			acute radiation sickness. About 115,000 people who lived within a 30 
-			kilometer radius of the site were evacuated within a month of the accident. 
-			220,000 more people were evacuated in subsequent years. Currently, there is 
-			no scientific evidence that the radiation from the accident greatly 
-			increased cases of leukemia or solid cancer, other than thyroid cancer, 
-			which can be easily treated. However, the cleanup workers who were exposed 
-			are still at risk for cancer in the long term. 	
+			<Death>30</Death>
+			<Injury>106</Injury>
+			<Relocation>335,000</Relocation>
+			<Notes>
+				Currently, there is no scientific evidence that the radiation from the accident greatly 
+				increased cases of leukemia or solid cancer, other than thyroid cancer, 
+				which can be easily treated. However, the cleanup workers who were exposed 
+				are still at risk for cancer in the long term.
+			</Notes> 	
 		</HumanImpact>
 		<EconomicImpact>
-			Local agriculture was hit hard, with 784,320 hectares put out of service. 
-			694,200 hectares of forest were halted from timber production. Precise 
-			financial expenditures have been immense and impossible to calculate. 
-			Costs include direct damage, recover and mitigation, resettlement, social 
-			protection and health care, environmental research, and many others. The 
-			country of Belarus has estimated a total cost of $235 billion. The accident 
-			still drains the budget of Belarus and Ukraine even to this day. 
+			<DirectImpact>N/A</DirectImpact>
+			<IndirectImpact>N/A</IndirectImpact>
+			<TotalImpact>N/A</TotalImpact>
+			<Notes>
+				Local agriculture was hit hard, with 784,320 hectares put out of service. 
+				694,200 hectares of forest were halted from timber production. Precise 
+				financial expenditures have been immense and impossible to calculate. 
+				Costs include direct damage, recover and mitigation, resettlement, social 
+				protection and health care, environmental research, and many others. The 
+				country of Belarus has estimated a total cost of $235 billion. The accident 
+				still drains the budgets of Belarus and Ukraine even to this day. 
+			</Notes>
 		</EconomicImpact>
 		<ResourcesNeeded>
 			<Resource rIdent = "RN_001" />

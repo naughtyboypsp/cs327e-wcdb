@@ -17,10 +17,10 @@ Date 03/10/2014
 		<!-- location may have other like county, province, they'are all fine as long as
 		in xsd their min occurence is zero -->
 		<Location>
-			<City>XXX</City>
-			<County>XXX</County>       <!-- could have zero and just delete this tag -->
-			<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
-			<State>XXX</State>   <!-- could have zero and just delete this tag -->
+			<City>XXX</City>            <!-- could just delete this tag if unknown-->
+			<County>XXX</County>        <!-- could just delete this tag if unknown-->
+			<Province>XXX</Province>   <!-- could just delete this tag if unknown-->
+			<State>XXX</State>    <!-- could just delete this tag if unknown-->
 			<Country>XXX</Country>
 		</Location>
 		<!-- Better be date type, not string-->
@@ -28,13 +28,23 @@ Date 03/10/2014
 			<Date></Date>
 			<Time></Time>
 		</DateAndTime>
-		<HumanImpact>
-			<Number>XXX </Number>
-			<Type>XXX </Type>		
+		<HumanImpact> <!-- all are numbers -->
+			<Death>XXX</Death>    <!-- could just delete this tag if unknown-->
+			<Injury>XXX</Injury>        <!-- could just delete this tag if unknown-->
+			<Relocation>XXX </Relocation>	  <!-- could just delete this tag if unknown-->
 		</HumanImpact>
-		<EconomicImpact>XXX</EconomicImpact>
-		<ResourcesNeeded>XXX</ResourcesNeeded> <!-- just string so far, any better idea on this?-->
-		<WaysToHelp>XXX</WaysToHelp>  <!-- just string so far, any better idea on this?-->
+		<EconomicImpact> <!-- all are string with a dollar sign :"$" in the end -->
+			<DirectImpact>XXX</DirectImpact>  <!-- could just delete this tag if unknown-->
+			<IndirectImpact>XXX</IndirectImpact> <!-- could just delete this tag if unknown-->
+			<TotalImpact>XXX</TotalImpact> <!-- could just delete this tag if unknown-->
+		</EconomicImpact>
+		<ResourcesNeeded>XXX</ResourcesNeeded> <!-- just string, list all you needed-->
+		<WaysToHelp> <!-- all are string -->>
+			<FinancialHelp>XXX<FinancialHelp>  <!--  string with a dollar sign :"$" in the end -->
+			<MedicalHelp>XXX</MedicalHelp> 
+			<SupplySourcesHelp>XXX</SupplySourcesHelp>  <!-- like food water, what ever-->
+			<OtherHelp>XXX</OtherHelp>
+		</WaysToHelp>  <!-- just string so far, any better idea on this?-->
 		<ExternalInfo>
 			<ImageURL>http://XXX</ImageURL>
 			<VideoURL>http://XXX</VideoURL>
@@ -42,8 +52,7 @@ Date 03/10/2014
 			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
 			<ExternalLinkURL>http://XXX</ExternalLinkURL>
 			<Citations>XXX</Citations> <!-- Just String type-->	
-		</ExternalInfo>
-		
+		</ExternalInfo>	
 		<ReletedPersons>
 			<!-- may have more than one -->
 			<RelatedPerson PIdent = "XXX"/>

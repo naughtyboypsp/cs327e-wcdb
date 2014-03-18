@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<WorldCrises>
+<!-- First Version of WCDB.XML
+Author: Xiaoqin LI
+Date 03/10/2014
+-->
+	<Crisis CIdent = "CRI_001" >
+		<Name>Chernobyl Accident</Name>
+		<Kind CKindIdent = "CK_001" />
+		<Location>
+			<City>Chernobyl</City>
+			<Country>Ukraine</Country>
+		</Location>
+		<DateAndTime>
+			<Date>April 26, 1986</Date>
+			<Time>1:23:48 AM</Time>
+		</DateAndTime>
+		<HumanImpact>
+			Two workers died from the explosions on the day of the accident. 
+			Twenty eight more workers died by the end of July as a result of acute 
+			radiation poisoning. Another 106 workers received enough radiation to cause 
+			acute radiation sickness. About 115,000 people who lived within a 30 
+			kilometer radius of the site were evacuated within a month of the accident. 
+			220,000 more people were evacuated in subsequent years. Currently, there is 
+			no scientific evidence that the radiation from the accident greatly 
+			increased cases of leukemia or solid cancer, other than thyroid cancer, 
+			which can be easily treated. However, the cleanup workers who were exposed 
+			are still at risk for cancer in the long term. 	
+		</HumanImpact>
+		<EconomicImpact>
+			Local agriculture was hit hard, with 784,320 hectares put out of service. 
+			694,200 hectares of forest were halted from timber production. Precise 
+			financial expenditures have been immense and impossible to calculate. 
+			Costs include direct damage, recover and mitigation, resettlement, social 
+			protection and health care, environmental research, and many others. The 
+			country of Belarus has estimated a total cost of $235 billion. The accident 
+			still drains the budget of Belarus and Ukraine even to this day. 
+		</EconomicImpact>
+		<ResourcesNeeded>
+			<Resource rIdent = "RN_001" />
+			<Resource rIdent = "RN_005" />
+		</ResourcesNeeded> 
+		<WaysToHelp>
+			<Way wIdent = "WH_001" />
+		</WaysToHelp>  
+		<ExternalInfo>
+			<ImageURL>http://www.rapik.com/photo/thumbnails.php?album=38</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=YfulqRdDbsg</VideoURL>
+			<MapURL>http://upload.wikimedia.org/wikipedia/commons/2/23/Chernobyl_radiation_map_1996.svg</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/pages/Chernobyl-Ukraine/110869988937000</SocialNetworkFeedURL>
+			<Citations>http://www.ccoc.net/the-chernobyl-disaster/the-story</Citations>
+			<Citations>http://www.world-nuclear.org/info/Safety-and-Security/Safety-of-Plants/Chernobyl-Accident/</Citations>
+			<Citations>http://www.nrc.gov/reading-rm/doc-collections/fact-sheets/chernobyl-bg.html</Citations>	
+			<Citations>http://www.forbes.com/2011/03/16/japan-disaster-nuclear-opinions-roubini-economics.html</Citations>	
+			<Citations>http://www.iaea.org/newscenter/focus/chernobyl/faqs.shtml</Citations>		
+			<ExternalLinkURL>http://chernobyl.undp.org/english/</ExternalLinkURL>
+			<ExternalLinkURL>http://englishrussia.com/2009/04/29/at-the-nuclear-power-plant/</ExternalLinkURL>
+		</ExternalInfo>
+		
+		<ReletedPersons>
+			<!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_001"/>
+		</ReletedPersons>
+		<RelatedOrganizations>
+		<!-- may have more than one -->
+			<RelatedOrganization OIdent = "ORG_001"/>
+		</RelatedOrganizations>
+	</Crisis>
+	
+	<!-- since this Ident is gonna be a primary key, better be unique-->
+	<Organization OIdent="ORG_001">
+		<Name>International Nuclear Safety Group (INSAG)</Name>
+		<Kind OKindIdent= "OK_001" />
+		<Location>
+			<StreetAddress>Vienna International Center</StreetAddress>
+			<StreetAddress>PO Box 100</StreetAddress>
+			<StreetAddress>1400</StreetAddress>
+			<City>Vienna</City>
+			<Country>Austria</Country>
+		<History>
+			The group was founded in 1985 by the International Atomic Energy Agency (IAEA) 
+			as an advisory committee in the area of nuclear safety. It consists of about 
+			17 safety experts who work in regulatory organizations, research and academic 
+			institutions, and the nuclear industry. Over the years, INSAG has produced 
+			23 reports with results of various studies, which have greatly advanced 
+			nuclear safety. One of its first investigations was the Chernobyl accident. 
+		</History>
+		<ContactInfo>
+			<Telephone>(+43-1) 2600-0</Telephone>
+			<Fax>(+43-1) 2600-7</Fax>
+			<Email>official.mail@iaea.org</Email>	
+		</ContactInfo>
+		<ExternalInfo>
+			<ImageURL> http://www.iaea.org/newscenter/images/bog_300x200.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=Ejuvh-wEl3A</VideoURL>
+			<MapURL>http://www.iaea.org/safeguards/Symposium/2010/The_Venue/VIC.htm</MapURL>
+			<SocialNetworkFeedURL>N/A</SocialNetworkFeedURL>
+			<Citations>http://www-ns.iaea.org/committees/insag.asp</Citations>
+			<Citations>http://www-ns.iaea.org/downloads/coordination/snr-reg-meeting-2008/1-%20INSAG%20Senior%20Regulators%20Meeting%209-15-08.ppt</Citations>
+			<ExternalLinkURL>http://www.iaea.org/</ExternalLinkURL>
+		</ExternalInfo>
+		<!-- may have more than one -->
+		<RelatedCrises>
+			<RelatedCrisis CIdent= "CRI_001"/>
+		</RelatedCrises>
+		<ReletedPersons>
+		<!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_001"/>
+		</ReletedPersons>
+	</Organization>
+     
+	<Person PIdent="PER_001">  <!-- this is gonna be a primary key so, better be unique -->
+		<Name>
+			<FirstName>Richard</FirstName>
+			<MiddleName>A.</MiddleName> <!-- could have zero and just delete this tag -->
+			<LastName>Meserve</LastName>
+		</Name>
+		<Kind PKindIdent="PK_001"/>
+		<Location>
+			<StreetAddress>Carnegie Institution for Science</StreetAddress>
+			<StreetAddress>1530 P Street Northwest</StreetAddress>
+			<City>Washington DC</City>
+			<State>Maryland</State>
+			<PostalCode>20005</PostalCode>
+			<Country>United States</Country>
+		</Location>
+		<ExternalInfo>
+			<ImageURL>http://www.aaas.org/sites/default/files/migrate/uploads/2008meserve.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=UjMqZ2CFW68</VideoURL>
+			<MapURL>https://www.google.com/maps/place/Carnegie+Institution+for+Science/@38.9095792,-77.0359687,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcc19325db48f5a93</MapURL>
+			<SocialNetworkFeedURL>N/A</SocialNetworkFeedURL>
+			<Citations>http://carnegiescience.edu/president_richard_meserve</Citations>
+			<ExternalLinkURL>http://www.nei.org/News-Media/Speeches/Richard-A-Meserve-Chairman-International-Safety-Gr</ExternalLinkURL>
+		</ExternalInfo>
+		<RelatedCrises>
+			<RelatedCrisis CIdent="CRI_001"/>
+		</RelatedCrises>
+		<RelatedOrganizations>
+			<RelatedOrganization OIdent="ORG_001"/>
+		</RelatedOrganizations>
+	</Person>
+
+	<Resources Name = "Money" rIdent = "RN_001" />
+	<Resources Name = "Medical Supplies" rIdent = "RN_002" />
+	<Resources Name = "Construction Materials" rIdent = "RN_003" />
+	<Resources Name = "Food/Water" rIdent = "RN_004" />
+	<Resources Name = "Shelter" rIdent = "RN_005" />
+
+	<WaysToHelp Name = "Donate Money" wIdent = "WH_001" />
+	<WaysToHelp Name = "Volunteer" wIdent = "WH_002" />
+
+	<CrisisKind Name = "Human Error" CKindIdent="CK_001" />
+	<CrisisKind Name = "Natural Disaster" CKindIdent="CK_002" />
+	<CrisisKind Name = "War / Conflict" CKindIdent="CK_003" />
+	<CrisisKind Name = "Act of Terrorism" CKindIdent="CK_004" />
+	<CrisisKind Name = "Assassination / Shooting" CKindIdent="CK_005" />
+	<CrisisKind Name = "Economic Crisis" CKindIdent="CK_006" />
+	<CrisisKind Name = "Civil / Social Crisis" CKindIdent="CK_007" />
+	<CrisisKind Name = "Pandemic / Illness" CKindIdent="CK_008" />
+	
+	<OrganizationKind Name = "Intergovernmental Agency" OKindIdent="OK_001" />
+	<OrganizationKind Name = "Government Agency" OKindIdent="OK_002" />
+	<OrganizationKind Name = "Military Force" OKindIdent="OK_003" />
+	<OrganizationKind Name = "Intergovernmental Public Health Agency" OKindIdent="OK_004" />
+	<OrganizationKind Name = "Nonprofit, Humanitarian Organization" OKindIdent="OK_005" />
+	<OrganizationKind Name = "Corporation" OKindIdent="OK_006" />
+
+	<PersonKind Name = "School President" PKindIdent="PK_001" />
+	<PersonKind Name = "Country President" PKindIdent="PK_002" />
+	<PersonKind Name = "Celebrity" PKindIdent="PK_003" />
+	<PersonKind Name = "Actor / Actress" PKindIdent="PK_004" />
+	<PersonKind Name = "Politician" PKindIdent="PK_005" />
+	<PersonKind Name = "CEO" PKindIdent="PK_006" />
+	<PersonKind Name = "Humanitarian" PKindIdent="PK_007" />
+	<PersonKind Name = "Dictator" PKindIdent="PK_001" />
+
+</WorldCrises>

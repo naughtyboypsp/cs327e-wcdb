@@ -119,17 +119,35 @@
 				</xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="HumanImpact" minOccurs="1" maxOccurs="unbounded">
+		  <xsd:element name="HumanImpact" >
 			<xsd:complexType>
 			  <xsd:sequence>			
-				<xsd:element name="Number" type="xsd:integer" />
-				<xsd:element name="Type" type="xsd:string" />
+				<xsd:element name="Death" type="xsd:integer" minOccurs="0"/>
+				<xsd:element name="Injury" type="xsd:integer" minOccurs="0"/>
+				<xsd:element name="Relocation" type="xsd:integer" minOccurs="0"/>
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="EconomicImpact" type="xsd:string" />
-		  <xsd:element name="ResourceNeeded" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>  
-		  <xsd:element name="WaysToHelp" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+		  <xsd:element name="EconomicImpact" >
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="DirectImpact" type="xsd:string" minOccurs="0" />
+					<xsd:element name="IndirectImpact" type="xsd:string" minOccurs="0" />
+					<xsd:element name="TotalImpact" type="xsd:string" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element name="ResourceNeeded" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>  
+		  <xsd:element name="WaysToHelp" >
+		    <xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="FinancialHelp" type="xsd:string" minOccurs="0" />
+					<xsd:element name="MedicalHelp" type="xsd:string" minOccurs="0" />
+					<xsd:element name="SupplySourcesHelp" type="xsd:string" minOccurs="0" />
+					<xsd:element name="OtherHelp" type="xsd:string" minOccurs="0" />
+				</xsd:sequence>
+		    </xsd:complexType>
+		  </xsd:element>
 		  <xsd:element name="ExternalResources" type="ExternalResourcesType" />
 		  <xsd:element name="RelatedPersons" >
 			<xsd:complexType>

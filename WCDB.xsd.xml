@@ -36,7 +36,7 @@
 				</xsd:element>			
 			</xsd:sequence>		
 		</xsd:complexType>
-		
+
 		<!-- Crisis,Organization,Person key and keyref-->
 		<xsd:key name="CrisisKey">
 		  <xsd:selector xpath="Crisis" />
@@ -62,7 +62,7 @@
 		  <xsd:selector xpath="Crisis/RelatedPersons/RelatedPerson | Organization/RelatedPersons/RelatedPerson" />
 		  <xsd:field xpath="@PIdent" />
 		</xsd:keyref>
-		
+
 		<!-- CrisisKind,OrganizationKind,PersionKind key and keyref -->
 		<xsd:key name="CrisisKindKey">
 		  <xsd:selector xpath="CrisisKind" />
@@ -88,9 +88,9 @@
 		  <xsd:selector xpath="Person/Kind" />
 		  <xsd:field xpath="@PKindIdent" />
 		</xsd:keyref>
-	
+
 	</xsd:element>
-	
+
 	<!-- CrisisType Type -->
 	<xsd:complexType name="CrisisType">
 		<xsd:sequence>
@@ -174,7 +174,7 @@
 		</xsd:sequence>
 		<xsd:attribute name="CIdent" type="xsd:string" use="required" />
     </xsd:complexType>
-	
+
 	<!-- Organization Type -->
 	<xsd:complexType name="OrganizationType">
 		<xsd:sequence>
@@ -243,7 +243,7 @@
 		</xsd:sequence>
 		<xsd:attribute name="OIdent" type="xsd:string" use="required" />
     </xsd:complexType>
-	
+
 	<!-- Person Type -->
 	<xsd:complexType name="PersonType">
 		<xsd:sequence>
@@ -298,7 +298,7 @@
 		</xsd:sequence>
 		<xsd:attribute name="PIdent" type="xsd:string" use="required" />
     </xsd:complexType>
-	
+
 	<!-- ExternalResources Type -->
     <xsd:complexType name="ExternalResourcesType">
 		<xsd:sequence>
@@ -310,21 +310,21 @@
 			<xsd:element name="Citation" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
 		</xsd:sequence>
     </xsd:complexType>
-	
+
 	<!-- URL type -->
 	<xsd:simpleType name="URLType">
 		<xsd:restriction base="xsd:string">
 			<xsd:pattern value="(http|https)://(.)*"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-	
+
 	<!-- ContactNumber Type -->	
 	<xsd:simpleType name="ContactNumberType">
 		<xsd:restriction base="xsd:string">	
 			<xsd:pattern value="(?:[0-9]+-)+[0-9]+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-	
+
 	<!-- Email Type -->
 	<xsd:simpleType name="EmailType">
 		<xsd:restriction base="xsd:string">

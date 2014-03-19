@@ -44,7 +44,7 @@
 		<!-- CrisisKind,OrganizationKind,PersionKind key and keyref -->
 		<xsd:key name="CrisisKindKey">
 		  <xsd:selector xpath="CrisisKind" />
-		  <xsd:field xpath="CKindIdent" />
+		  <xsd:field xpath="@CKindIdent" />
 		</xsd:key>
 		<xsd:keyref name="CrisisKindKeyRef" refer="CrisisKindKey">
 		  <xsd:selector xpath="Crisis/Kind" />

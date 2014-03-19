@@ -1,0 +1,243 @@
+<?xml version="1.0" ?>
+<WorldCrises>
+<!-- First Version of WCDB.XML
+Author: Robert Salinas
+Date 03/19/2014
+-->
+<Crisis CIdent = "CRI_004" > <!--Put anything from 001 to 010-->
+<Name>Hurricane Ike</Name>
+<Kind CKindIdent = "CK_002" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
+<Location> <!--Whatever you don't have, delete the tag-->
+<City>XXX</City>
+<County>XXX</County>
+<Province>XXX</Province>
+<State>XXX</State>
+<Country>Haiti, USA, Bahamas, Cuba, Dominican Republic<Country>
+
+</Location>
+<DateAndTime>
+<Date>2008-09-01</Date> <!--yyyy-mm-dd-->
+<Time>00:00:00</Time> <!--hh:mm:ss-->
+</DateAndTime>
+<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
+<Death>195</Death>
+<Injury>XXX</Injury>
+<Relocation>1000000</Relocation>	
+</HumanImpact>
+
+<EconomicImpact> <!--Same as human impact-->
+<DirectImpact>There was significant property damage and flooding throughout all the affected areas</DirectImpact>
+<IndirectImpact>Local businesses were completely destroyed</IndirectImpact>
+<TotalImpact>Over $37.5 billion in damages</TotalImpact>
+</EconomicImpact>
+<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
+<Resource rIdent = "RN_001"/>
+<Resource rIdent = "RN_002"/>
+<Resource rIdent = "RN_003"/>
+<Resource rIdent = "RN_004"/>
+<Resource rIdent = "RN_005"/>
+<Resource rIdent = "RN_006"/>
+
+</ResourcesNeeded>
+<WaysToHelp> <!--See resourcesneeded above-->
+<Way wIdent = "WH_001" />
+<Way wIdent = "WH_002" />
+</WaysToHelp>
+<ExternalInfo> <!--Each one can have as many as you want-->
+<ImageURL>http://upload.wikimedia.org/wikipedia/commons/0/0c/Hurricane_Ike-38265.jpg</ImageURL>
+<ImageURL>http://upload.wikimedia.org/wikipedia/commons/c/c1/Hurricane_Ike_off_the_Lesser_Antilles.jpg</ImageURL>
+<ImageURL>http://en.wikipedia.org/wiki/File:Destroyed_school_in_Port-Au-Prince.jpg</ImageURL>
+
+<VideoURL>https://www.youtube.com/watch?v=mJbfGUylkR0</VideoURL>
+<VideoURL>https://www.youtube.com/watch?v=VPjIfmZhU1g</VideoURL>
+<VideoURL>https://www.youtube.com/watch?v=JBfKJtbVZ74</VideoURL>
+<MapURL>https://maps.google.com/maps/ms?ie=UTF8&oe=UTF8&msa=0&msid=117338013494279539826.000456baadd78b956b542&dg=feature</MapURL>
+<SocialNetworkFeedURL>https://www.facebook.com/ikestories</SocialNetworkFeedURL> <!--Optional-->
+<SocialNetworkFeedURL>https://twitter.com/hurricaneike</SocialNetworkFeedURL> <!--Optional-->
+<Citations>http://news.bbc.co.uk/2/hi/americas/7613851.stm</Citations>
+<Citations>http://www.nhc.noaa.gov/pdf/TCR-AL092008_Ike_3May10.pdf</Citations>
+<Citations>http://usatoday30.usatoday.com/news/world/2008-09-07-haiti_N.htm</Citations> <!--Add however many you want-->
+
+<ExternalLinkURL>http://coastal.er.usgs.gov/hurricanes/ike/index.html</ExternalLinkURL> <!--Add however many you want-->
+<ExternalLinkURL>http://www.boston.com/bigpicture/2008/09/the_short_but_eventful_life_of.html</ExternalLinkURL> <!--Add however many you want-->
+<ExternalLinkURL>http://www.nhc.noaa.gov/archive/2008/IKE.shtml?</ExternalLinkURL> <!--Add however many you want-->
+
+</ExternalInfo>
+<ReletedPersons> <!-- may have more than one -->
+<RelatedPerson PIdent = "PER_004"/>
+</ReletedPersons>
+<RelatedOrganizations> <!-- may have more than one -->
+<RelatedOrganization OIdent = "ORG_004"/>
+</RelatedOrganizations>
+</Crisis>
+
+<Organization OIdent="ORG_004"> <!--Put anything from 001 to 010-->
+<Name>Haitian Government</Name>
+<Kind OKindIdent= "OK_002" />
+<Location>
+<StreetAddress>International Headquarters 1 St James's Square</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+<City>Port Au Prince</City>
+<County>XXX</County> <!--Optional, delete if not applicable-->
+<Province>XXX</Province> <!--Optional, delete if not applicable-->
+<State>XXX</State> <!--Optional, delete if not applicable-->
+<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+<Country>Haiti</Country> <!--at least one-->
+</Location>
+<History>The constitution was modeled after those of the United States and of France. It was approved in March 1987, but it was completely suspended from June 1988 to March 1989 and was only fully reinstated in October 1994.</History>
+<ContactInfo> <!--Whatever you don't find can be deleted-->
+<Telephone>202-332-4090</Telephone> <!--numbers and hyphens-->
+<Fax>202-745-7215</Fax> <!--numbers and hyphens-->
+<Email>amb.washington@diplomatie.ht</Email>	
+</ContactInfo>
+<ExternalInfo>
+<ImageURL>http://upload.wikimedia.org/wikipedia/commons/8/87/Palacio_presidencial_de_Haiti.jpg</ImageURL>
+
+<VideoURL>https://www.youtube.com/watch?v=nIFeLtzBEeQ</VideoURL>
+
+
+<MapURL>https://www.google.com/maps/place/National+Palace/@18.5428643,-72.339,18z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61abb72356187e11</MapURL>
+
+<SocialNetworkFeedURL>https://twitter.com/CFIHT</SocialNetworkFeedURL> <!--Optional-->
+
+<Citations>http://pdba.georgetown.edu/constitutions/haiti/haiti1987.html</Citations> <!--Add however many you want-->
+
+<ExternalLinkURL>https://www.princeton.edu/~achaney/tmve/wiki100k/docs/Politics_of_Haiti.html</ExternalLinkURL> <!--Add however many you want-->
+
+
+</ExternalInfo>
+<RelatedCrises> <!-- may have more than one -->
+<RelatedCrisis CIdent= "CRI_004"/>
+<RelatedCrisis CIdent= "CRI_006"/>
+</RelatedCrises>
+<ReletedPersons> <!-- may have more than one -->
+<RelatedPerson PIdent = "PER_004"/>
+</ReletedPersons>
+</Organization>
+     
+<Person PIdent="PER_004"> <!--Put anything from 001 to 010-->
+<Name>
+<FirstName>Michèle</FirstName>
+<MiddleName>Pierre</MiddleName> <!-- could have zero and just delete this tag -->
+<LastName>Louis</LastName>
+</Name>
+<Kind PKindIdent="PK_002"/>
+<Location>
+<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+<City>Jérémie</City>
+<County></County> <!--Optional, delete if not applicable-->
+<State></State> <!--Optional, delete if not applicable-->
+<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+<Province>XXX</Province> <!--Optional, delete if not applicable-->
+<Country>Haiti</Country>
+</Location>
+<ExternalInfo>
+<ImageURL>http://upload.wikimedia.org/wikipedia/commons/5/53/Mich%C3%A8le_Pierre-Louis-2009_%282%29.jpg</ImageURL>
+
+
+
+<VideoURL>https://www.youtube.com/watch?v=klL3h_Axfe8</VideoURL>
+<VideoURL>https://www.youtube.com/watch?v=Eds5ZQoJ60g</VideoURL>
+
+
+<MapURL></MapURL>
+<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
+
+<Citations>http://english.people.com.cn/90001/90777/90852/6453569.html</Citations> <!--Add however many you want-->
+<Citations>http://www.google.com/hostednews/afp/article/ALeqM5iWbpczz9GEwzBlnN9BaRtZituP-A</Citations> <!--Add however many you want-->
+
+<ExternalLinkURL>http://www.ipsnews.net/2009/07/qa-the-elites-are-like-a-huge-elephant-sitting-on-haiti/</ExternalLinkURL> <!--Add however many you want-->
+
+</ExternalInfo>
+<RelatedCrises> <!-- may have more than one -->
+<RelatedCrisis CIdent="CRI_004"/>
+</RelatedCrises>
+<RelatedOrganizations> <!-- may have more than one -->
+<RelatedOrganization OIdent="ORG_004"/>
+</RelatedOrganizations>
+</Person>
+
+<Resources rIdent = "RN_001" />
+<Name>Money</Name>
+<Resources rIdent = "RN_002" />
+<Name>Medical Supplies</Name>
+<Resources rIdent = "RN_003" />
+<Name>Construction Materials</Name>
+<Resources rIdent = "RN_004" />
+<Name>Food/Water</Name>
+<Resources rIdent = "RN_005" />
+<Name>Shelter</Name>
+<Resources rIdent = "RN_006" />
+<Name>Search and Rescue Vehicles</Name>
+
+<WaysToHelp wIdent = "WH_001" />
+<Name>Donate Money</Name>
+<WaysToHelp wIdent = "WH_002" />
+<Name>Volunteer</Name>
+
+<CrisisKind CKindIdent="CK_001" />
+<Name>Human Error</Name>
+<Description>An accident caused by improper operation of equipment or miscalculations</Description>
+<CrisisKind CKindIdent="CK_002" />
+<Name>Natural Disaster</Name>
+<Description>Severe damages caused by forces of nature, including hurricanes, tornadoes and earthquakes</Description>
+<CrisisKind CKindIdent="CK_003" />
+<Name>War / Conflict</Name>
+<Description>A crisis which involves two or more countries fighting against each other</Description>
+<CrisisKind CKindIdent="CK_004" />
+<Name>Act of Terrorism</Name>
+<Description>Using violence against civilians in order to achieve political, religious or ideological goals</Description>
+<CrisisKind CKindIdent="CK_005" />
+<Name>Assassination / Shooting</Name>
+<Description>Murder of one person or multiple people</Description>
+<CrisisKind CKindIdent="CK_006" />
+<Name>Economic Crisis</Name>
+<Description>A dip in the economy characterized by high unemployment, low prices, and/or low levels of trade and investment</Description>
+<CrisisKind CKindIdent="CK_007" />
+<Name>Civil / Social Crisis</Name>
+<Description>Conflicts that usually involve protests by one or multiple groups of people</Description>
+<CrisisKind CKindIdent="CK_008" />
+<Name>Pandemic / Illness</Name>
+<Description>Widespread, detrimental health effects</Description>
+
+<OrganizationKind OKindIdent="OK_001" />
+<Name>Intergovernmental Agency</Name>
+<Description>An organization set up across multiple nations</Description>
+<OrganizationKind OKindIdent="OK_002" />
+<Name>Government Agency</Name>
+<Description>An organization that is set up by and associated to a specific country</Description>
+<OrganizationKind OKindIdent="OK_003" />
+<Name>Military Force</Name>
+<Description>The defense system of a country, including the navy, the army, the airforce and the marines</Description>
+<OrganizationKind OKindIdent="OK_004" />
+<Name>Intergovernmental Public Health Agency</Name>
+<Description>An organization that seeks to promote the health and well being of those in need</Description>
+<OrganizationKind OKindIdent="OK_005" />
+<Name>Nonprofit, Humanitarian Organization</Name>
+<Description>An organization that provides necessities and goods to those who need them, especially after a disaster</Description>
+<OrganizationKind OKindIdent="OK_006" />
+<Name>Corporation</Name>
+<Description>A company that conducts a business of some sort</Description>
+
+<PersonKind PKindIdent="PK_001" />
+<Name>Institution President</Name>
+<Description>The head of a public institution such as a university</Description>
+<PersonKind PKindIdent="PK_002" />
+<Name>Country President</Name>
+<Description>The leader of a country</Description>
+<PersonKind PKindIdent="PK_003" />
+<Name>Celebrity</Name>
+<Description>A generic catch-all for actors / actresses, singers, sports players, entertainers, etc</Description>
+<PersonKind PKindIdent="PK_004" />
+<Name>Politician</Name>
+<Description>A person that deals directly with government issues</Description>
+<PersonKind PKindIdent="PK_005" />
+<Name>CEO</Name>
+<Description>The leader of a corporation or a company</Description>
+<PersonKind PKindIdent="PK_006" />
+<Name>Humanitarian / Philantropist</Name>
+<Description>One who is devoted to the promotion of human welfare through giving and volunteering</Description>
+<PersonKind PKindIdent="PK_007" />
+<Name>Dictator</Name>
+<Description>The absolute leader of a dictatorial government</Description>
+
+</WorldCrises>

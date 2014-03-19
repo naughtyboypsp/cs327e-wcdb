@@ -89,23 +89,13 @@
 	<!-- CrisisType Type -->
 	<xsd:complexType name="CrisisType">
 	    <xsd:sequence>
-		<xsd:element name="Name" minOccurs="1" maxOccurs="1" type="xsd:string" />
+		<xsd:element name="Name" type="xsd:string" />
 		<xsd:element name="Kind" minOccurs="1" maxOccurs="unbounded">
 			<xsd:complexType>
 			  <xsd:attribute name="CKindIdent" type="xsd:string" use="required" />
 			</xsd:complexType>
 		</xsd:element>
-		<xsd:element name="Location">
-			<xsd:complexType>
-				<xsd:sequence>
-					<xsd:element name="City" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="County" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="State" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
-				</xsd:sequence>
-			</xsd:complexType>
-		</xsd:element>
+		<xsd:element name="Location" type="LocationType" />
 		<xsd:element name="DateAndTime" >
 			<xsd:complexType>
 				<xsd:sequence>
@@ -236,9 +226,9 @@
 		  <xsd:element name="Name">
 			<xsd:complexType>
 			  <xsd:sequence>
-				<xsd:element name="FirstName" type="xsd:string" minOccurs="1"/>
+				<xsd:element name="FirstName" type="xsd:string" />
 				<xsd:element name="MiddleName" type="xsd:string" minOccurs="0" />
-				<xsd:element name="LastName" type="xsd:string" minOccurs="1"/>
+				<xsd:element name="LastName" type="xsd:string" />
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
@@ -291,12 +281,12 @@
 	<!--Location Type-->
 	<xsd:complexType name="LocationType">
 		<xsd:sequence>
-			<xsd:element name="StreetAddress" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-			<xsd:element name="City" type="xsd:string" minOccurs="0"/>
-			<xsd:element name="County" type="xsd:string" minOccurs="0"/>
-			<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
-			<xsd:element name="State" type="xsd:string" minOccurs="0"/>
-			<xsd:element name="PostalCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="StreetAddress" type="xsd:string" minOccurs="0" />
+			<xsd:element name="City" type="xsd:string" minOccurs="0" />
+			<xsd:element name="County" type="xsd:string" minOccurs="0" />
+			<xsd:element name="Province" type="xsd:string" minOccurs="0" />
+			<xsd:element name="State" type="xsd:string" minOccurs="0" />
+			<xsd:element name="PostalCode" type="xsd:string" minOccurs="0" />
 			<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
 		</xsd:sequence>
 	</xsd:complexType>
@@ -341,7 +331,7 @@
 			<xsd:element name="Name" type="xsd:string" />
 			<xsd:element name="Description" type="xsd:string" />
 		</xsd:sequence>
-		<xsd:attribute name="OKindIdent" type="xsd:string" use="required" />
+		<xsd:attribute name="PKindIdent" type="xsd:string" use="required" />
 	</xsd:complexType>
 
 	<!-- URL type -->

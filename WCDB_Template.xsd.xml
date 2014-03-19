@@ -73,7 +73,7 @@
 		  <xsd:field xpath="@rIdent" />
 		</xsd:key>
 		<xsd:keyref name="ResourcesKeyRef" refer="ResourcesKey">
-		  <xsd:selector xpath="Crisis/ResourcesNeeded/Resource" />
+		  <xsd:selector xpath="Crisis/ResourcesNeeded/Resources" />
 		  <xsd:field xpath="@rIdent" />
 		</xsd:keyref>
 		<xsd:key name="WaysToHelpKey">
@@ -125,7 +125,7 @@
 		<xsd:element name="ResourcesNeeded" >  
 			<xsd:complexType>
 			    <xsd:sequence>
-				<xsd:element name="Resource" maxOccurs="unbounded">
+				<xsd:element name="Resources" maxOccurs="unbounded">
 				    <xsd:complexType>
 					<xsd:attribute name="rIdent" type="xsd:string" 
 						use="required" />

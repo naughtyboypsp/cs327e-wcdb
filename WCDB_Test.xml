@@ -12,33 +12,16 @@ Date 03/10/2014
 			<Country>Ukraine</Country>
 		</Location>
 		<DateAndTime>
-			<Date>April 26, 1986</Date>
-			<Time>1:23:48 AM</Time>
+			<Date>1986-04-26</Date>
+			<Time>01:23:48</Time>
 		</DateAndTime>
 		<HumanImpact>
 			<Death>30</Death>
 			<Injury>106</Injury>
-			<Relocation>335,000</Relocation>
-			<Notes>
-				Currently, there is no scientific evidence that the radiation from the accident greatly 
-				increased cases of leukemia or solid cancer, other than thyroid cancer, 
-				which can be easily treated. However, the cleanup workers who were exposed 
-				are still at risk for cancer in the long term.
-			</Notes> 	
+			<Relocation>335,000</Relocation>	
 		</HumanImpact>
 		<EconomicImpact>
-			<DirectImpact>N/A</DirectImpact>
-			<IndirectImpact>N/A</IndirectImpact>
 			<TotalImpact>$235 Billion</TotalImpact>
-			<Notes>
-				Local agriculture was hit hard, with 784,320 hectares put out of service. 
-				694,200 hectares of forest were halted from timber production. Precise 
-				financial expenditures have been immense and impossible to calculate. 
-				Costs include direct damage, recover and mitigation, resettlement, social 
-				protection and health care, environmental research, and many others. The 
-				country of Belarus has estimated a total cost of $235 billion. The accident 
-				still drains the budgets of Belarus and Ukraine even to this day. 
-			</Notes>
 		</EconomicImpact>
 		<ResourcesNeeded>
 			<Resource rIdent = "RN_001" />
@@ -76,9 +59,7 @@ Date 03/10/2014
 		<Name>International Nuclear Safety Group (INSAG)</Name>
 		<Kind OKindIdent= "OK_001" />
 		<Location>
-			<StreetAddress>Vienna International Center</StreetAddress>
-			<StreetAddress>PO Box 100</StreetAddress>
-			<StreetAddress>1400</StreetAddress>
+			<StreetAddress>Vienna International Center, PO Box 100, 1400</StreetAddress>
 			<City>Vienna</City>
 			<Country>Austria</Country>
 		</Location>
@@ -91,8 +72,8 @@ Date 03/10/2014
 			nuclear safety. One of its first investigations was the Chernobyl accident. 
 		</History>
 		<ContactInfo>
-			<Telephone>(+43-1) 2600-0</Telephone>
-			<Fax>(+43-1) 2600-7</Fax>
+			<Telephone>43-1-2600-0</Telephone>
+			<Fax>43-1-2600-7</Fax>
 			<Email>official.mail@iaea.org</Email>	
 		</ContactInfo>
 		<ExternalInfo>
@@ -122,8 +103,7 @@ Date 03/10/2014
 		</Name>
 		<Kind PKindIdent="PK_001"/>
 		<Location>
-			<StreetAddress>Carnegie Institution for Science</StreetAddress>
-			<StreetAddress>1530 P Street Northwest</StreetAddress>
+			<StreetAddress>Carnegie Institution for Science, 1530 P Street Northwest</StreetAddress>
 			<City>Washington DC</City>
 			<State>Maryland</State>
 			<PostalCode>20005</PostalCode>

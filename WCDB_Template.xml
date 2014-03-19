@@ -15,20 +15,18 @@ Date 03/10/2014
 			<Country>XXX</Country>
 		</Location>
 		<DateAndTime>
-			<Date>XXX</Date>
-			<Time>XXX</Time>
+			<Date>XXX</Date> <!--yyyy-mm-dd-->
+			<Time>XXX</Time> <!--hh:mm:ss-->
 		</DateAndTime>
 		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
 			<Death>XXX</Death>
 			<Injury>XXX</Injury>
-			<Relocation>XXX</Relocation>
-			<Notes>XXX</Notes> 	
+			<Relocation>XXX</Relocation>	
 		</HumanImpact>
 		<EconomicImpact> <!--Same as human impact-->
 			<DirectImpact>XXX</DirectImpact>
 			<IndirectImpact>XXX</IndirectImpact>
 			<TotalImpact>XXX</TotalImpact>
-			<Notes>XXX</Notes>
 		</EconomicImpact>
 		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
 			<Resource rIdent = "RN_XXX" />
@@ -36,7 +34,7 @@ Date 03/10/2014
 		<WaysToHelp> <!--See resourcesneeded above-->
 			<Way wIdent = "WH_XXX" />
 		</WaysToHelp>  
-		<ExternalInfo> <!--Each one can have as man as you want-->
+		<ExternalInfo> <!--Each one can have as many as you want-->
 			<ImageURL>XXXX</ImageURL>
 			<VideoURL>XXX</VideoURL>
 			<MapURL>XXX</MapURL>
@@ -56,7 +54,7 @@ Date 03/10/2014
 		<Name>XXX</Name>
 		<Kind OKindIdent= "OK_XXX" />
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Can have up to 3 lines of street address, for PO box, name of building, etc-->
+			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>XXX</City>
 			<County>XXX</County> <!--Optional, delete if not applicable-->
 			<Province>XXX</Province> <!--Optional, delete if not applicable-->
@@ -66,8 +64,8 @@ Date 03/10/2014
 		</Location>
 		<History>XXX</History>
 		<ContactInfo> <!--Whatever you don't find can be deleted-->
-			<Telephone>XXX</Telephone>
-			<Fax>XXX</Fax>
+			<Telephone>XXX</Telephone> <!--numbers and hyphens-->
+			<Fax>XXX</Fax> <!--numbers and hyphens-->
 			<Email>XXX</Email>	
 		</ContactInfo>
 		<ExternalInfo>
@@ -94,7 +92,7 @@ Date 03/10/2014
 		</Name>
 		<Kind PKindIdent="PK_XXX"/>
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Can have up to 3 lines of street address, for PO box, name of building, etc-->
+			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>XXX</City>
 			<County>XXX</County> <!--Optional, delete if not applicable-->
 			<State>XXX</State> <!--Optional, delete if not applicable-->

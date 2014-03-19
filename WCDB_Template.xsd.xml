@@ -120,7 +120,6 @@
 				<xsd:element name="Death" type="xsd:integer" minOccurs="0"/>
 				<xsd:element name="Injury" type="xsd:integer" minOccurs="0"/>
 				<xsd:element name="Relocation" type="xsd:integer" minOccurs="0"/>
-				<xsd:element name="Notes" type="xsd:string" minOccurs="0"/>
 			  </xsd:sequence>
 			</xsd:complexType>
 		</xsd:element>
@@ -130,7 +129,6 @@
 					<xsd:element name="DirectImpact" type="xsd:string" minOccurs="0" />
 					<xsd:element name="IndirectImpact" type="xsd:string" minOccurs="0" />
 					<xsd:element name="TotalImpact" type="xsd:string" minOccurs="0" />
-					<xsd:element name="Notes" type="xsd:string" minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:complexType>
 		</xsd:element>
@@ -158,18 +156,7 @@
 			    </xsd:sequence>
 			</xsd:complexType>
 		</xsd:element>
-		<xsd:element name="ExternalInfo">
-			<xsd:complexType>
-			    <xsd:sequence>
-				<xsd:element name="ImageURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="VideoURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="MapURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="SocialNetworkFeedURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />    
-		    		<xsd:element name="Citation" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="ExternalLinkURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-			    </xsd:sequence>
-			</xsd:complexType>
-		</xsd:element>
+		<xsd:element name="ExternalInfo" type="ExternalInfoType"/>
 		<xsd:element name="RelatedPersons" >
 			<xsd:complexType>
 			  <xsd:sequence>
@@ -205,19 +192,7 @@
 			  <xsd:attribute name="OKindIdent" type="xsd:string" use="required" />
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="Location" >
-			<xsd:complexType>
-				<xsd:sequence>
-					<xsd:element name="StreetAddress" type="xsd:string" minOccurs="0" maxOccurs="3"/>
-					<xsd:element name="City" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="County" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="State" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="PostalCode" type="xsd:integer" minOccurs="0"/>
-					<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
-				</xsd:sequence>
-			</xsd:complexType>
-		  </xsd:element>
+		  <xsd:element name="Location" type="LocationType" />
 		  <xsd:element name="History" type="xsd:string" />
 		  <xsd:element name="ContactInfo">
 			<xsd:complexType>
@@ -228,18 +203,7 @@
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="ExternalInfo">
-			<xsd:complexType>
-			    <xsd:sequence>
-				<xsd:element name="ImageURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="VideoURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="MapURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="SocialNetworkFeedURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />    
-		    		<xsd:element name="Citation" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="ExternalLinkURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-			    </xsd:sequence>
-			</xsd:complexType>
-		  </xsd:element>
+		  <xsd:element name="ExternalInfo" type="ExternalInfoType"/>
 		  <xsd:element name="RelatedCrises" >
 			<xsd:complexType>
 			  <xsd:sequence>
@@ -283,31 +247,8 @@
 			  <xsd:attribute name="PKindIdent" type="xsd:string" use="required" />
 			</xsd:complexType>
 		  </xsd:element>
-		  <xsd:element name="Location" >
-			<xsd:complexType>
-				<xsd:sequence>
-					<xsd:element name="StreetAddress" type="xsd:string" minOccurs="0" maxOccurs="3"/>
-					<xsd:element name="City" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="County" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="State" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="PostalCode" type="xsd:integer" minOccurs="0"/>
-					<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
-				</xsd:sequence>
-			</xsd:complexType>
-		  </xsd:element>
-		  <xsd:element name="ExternalInfo">
-			<xsd:complexType>
-			    <xsd:sequence>
-				<xsd:element name="ImageURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="VideoURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="MapURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="SocialNetworkFeedURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />    
-		    		<xsd:element name="Citation" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
-		    		<xsd:element name="ExternalLinkURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
-			    </xsd:sequence>
-			</xsd:complexType>
-		  </xsd:element>
+		  <xsd:element name="Location" type="LocationType" />
+		  <xsd:element name="ExternalInfo" type="ExternalInfoType"/>
 		  <xsd:element name="RelatedCrises" >
 			<xsd:complexType>
 			  <xsd:sequence>
@@ -332,6 +273,32 @@
 		  </xsd:element>
 		</xsd:sequence>
 		<xsd:attribute name="PIdent" type="xsd:string" use="required" />
+	</xsd:complexType>
+	
+
+	<!-- ExternalInfo Type -->
+	<xsd:complexType name="ExternalInfoType">
+		<xsd:sequence>
+			<xsd:element name="ImageURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
+	    		<xsd:element name="VideoURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
+	    		<xsd:element name="MapURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
+	    		<xsd:element name="SocialNetworkFeedURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />    
+	    		<xsd:element name="Citation" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+	    		<xsd:element name="ExternalLinkURL" type="URLType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<!--Location Type-->
+	<xsd:complexType name="LocationType">
+		<xsd:sequence>
+			<xsd:element name="StreetAddress" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="City" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="County" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="State" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="PostalCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
+		</xsd:sequence>
 	</xsd:complexType>
 	
 	<!-- ResourcesType -->
@@ -387,7 +354,7 @@
 	<!-- ContactNumber Type -->	
 	<xsd:simpleType name="ContactNumberType">
 		<xsd:restriction base="xsd:string">	
-			<xsd:pattern value="(?:[0-9]+-)+[0-9]+"/>
+			<xsd:pattern value="(?:[0-9]+-)*[0-9]+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	

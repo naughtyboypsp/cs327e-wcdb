@@ -95,17 +95,7 @@
 			  <xsd:attribute name="CKindIdent" type="xsd:string" use="required" />
 			</xsd:complexType>
 		</xsd:element>
-		<xsd:element name="Location">
-			<xsd:complexType>
-				<xsd:sequence>
-					<xsd:element name="City" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="County" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="Province" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="State" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="Country" type="xsd:string" minOccurs="1"/>
-				</xsd:sequence>
-			</xsd:complexType>
-		</xsd:element>
+		<xsd:element name="Location" type="LocationType" />
 		<xsd:element name="DateAndTime" >
 			<xsd:complexType>
 				<xsd:sequence>

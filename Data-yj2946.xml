@@ -8,8 +8,7 @@ Date 03/10/2014
 		<Name>Cuban Missile Crisis</Name>
 		<Kind CKindIdent = "CK_003" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
 		<Location> <!--Whatever you don't have, delete the tag-->
-			<Country>United States</Country>
-            <Country>Cuba</Country>
+			<Country>United States, Cuba</Country>
 		</Location>
 		<DateAndTime>
 			<Date>1962-14-10</Date> <!--yyyy-mm-dd-->
@@ -23,10 +22,10 @@ Date 03/10/2014
 			<IndirectImpact>Relation worsen with USSR and Cuba</IndirectImpact>
 		</EconomicImpact>
 		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
-			<Resource rIdent = "RN_555" />
+			<Resource rIdent = "RN_007" />
 		</ResourcesNeeded> 
 		<WaysToHelp> <!--See resourcesneeded above-->
-			<Way wIdent = "WH_555" />
+			<Way wIdent = "WH_003" />
 		</WaysToHelp>  
 		<ExternalInfo> <!--Each one can have as many as you want-->
 			<ImageURL>http://govbooktalk.files.wordpress.com/2012/10/cuba-blockade-headlines.jpg</ImageURL>
@@ -47,11 +46,10 @@ Date 03/10/2014
 		<Name>Cold War</Name>
 		<Kind CKindIdent = "CK_003" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
 		<Location> <!--Whatever you don't have, delete the tag-->
-			<Country>United States</Country>
-            <Country>Russia</Country>
+			<Country>United States, Russia</Country>
 		</Location>
 		<DateAndTime>
-			<Date>1947</Date> <!--yyyy-mm-dd-->
+			<Date>1947-01-01</Date> <!--yyyy-mm-dd-->
 		</DateAndTime>
 		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
 			<Death>12</Death>
@@ -155,7 +153,7 @@ Date 03/10/2014
 			<RelatedCrisis CIdent="CRI_009"/>
 		</RelatedCrises>
 		<RelatedOrganizations> <!-- may have more than one -->
-			<RelatedOrganization OIdent="ORG_010"/>
+			<RelatedOrganization OIdent="ORG_009"/>
 		</RelatedOrganizations>
 	</Person>
     

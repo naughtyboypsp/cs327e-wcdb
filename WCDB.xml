@@ -160,7 +160,7 @@ Date 03/18/2014
 			<County></County>
 			<Province></Province>
 			<State></State>
-			<Country>Haiti, USA, Bahamas, Cuba, Dominican Republic<Country>
+			<Country>Haiti, USA, Bahamas, Cuba, Dominican Republic</Country>
 		</Location>
 		<DateAndTime>
 			<Date>2008-09-01</Date> 
@@ -176,12 +176,12 @@ Date 03/18/2014
 			<TotalImpact>Over $37.5 billion in damages</TotalImpact>
 		</EconomicImpact>
 		<ResourcesNeeded> 
-			<Resource rIdent = "RN_001"/>
-			<Resource rIdent = "RN_002"/>
-			<Resource rIdent = "RN_003"/>
-			<Resource rIdent = "RN_004"/>
-			<Resource rIdent = "RN_005"/>
-			<Resource rIdent = "RN_006"/>
+			<Resources rIdent = "RN_001"/>
+			<Resources rIdent = "RN_002"/>
+			<Resources rIdent = "RN_003"/>
+			<Resources rIdent = "RN_004"/>
+			<Resources rIdent = "RN_005"/>
+			<Resources rIdent = "RN_006"/>
 		</ResourcesNeeded>
 		<WaysToHelp> 
 			<Way wIdent = "WH_001" />
@@ -194,7 +194,7 @@ Date 03/18/2014
 			<VideoURL>https://www.youtube.com/watch?v=mJbfGUylkR0</VideoURL>
 			<VideoURL>https://www.youtube.com/watch?v=VPjIfmZhU1g</VideoURL>
 			<VideoURL>https://www.youtube.com/watch?v=JBfKJtbVZ74</VideoURL>
-			<MapURL>https://maps.google.com/maps/ms?ie=UTF8&oe=UTF8&msa=0&msid=117338013494279539826.000456baadd78b956b542&dg=feature</MapURL>
+			<MapURL>https://maps.google.com/maps/ms?ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=117338013494279539826.000456baadd78b956b542&amp;dg=feature</MapURL>
 			<SocialNetworkFeedURL>https://www.facebook.com/ikestories</SocialNetworkFeedURL> <!--Optional-->
 			<SocialNetworkFeedURL>https://twitter.com/hurricaneike</SocialNetworkFeedURL> <!--Optional-->
 			<Citation>http://news.bbc.co.uk/2/hi/americas/7613851.stm</Citation>
@@ -204,21 +204,21 @@ Date 03/18/2014
 			<ExternalLinkURL>http://www.boston.com/bigpicture/2008/09/the_short_but_eventful_life_of.html</ExternalLinkURL> <!--Add however many you want-->
 			<ExternalLinkURL>http://www.nhc.noaa.gov/archive/2008/IKE.shtml?</ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons> <!-- may have more than one -->
 			<RelatedPerson PIdent = "PER_004"/>
-		</ReletedPersons>
+		</RelatedPersons>
 		<RelatedOrganizations> <!-- may have more than one -->
 			<RelatedOrganization OIdent = "ORG_004"/>
 		</RelatedOrganizations>
 	</Crisis>
 	
-		<Crisis CIdent = "CRI_005" > <!--Put anything from 001 to 010-->
+	<Crisis CIdent = "CRI_005" > <!--Put anything from 001 to 010-->
 		<Name>9-11</Name>
 		<Kind CKindIdent = "CK_004" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
 		<Location> <!--Whatever you don't have, delete the tag-->
 			<City>New York City</City>
 			<County></County>
-			<Province>XXX</Province>
+			<Province></Province>
 			<State>New York</State>
 			<Country>United States</Country>
 		</Location>
@@ -235,10 +235,10 @@ Date 03/18/2014
 			<TotalImpact></TotalImpact>
 		</EconomicImpact>
 		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
-			<Resource rIdent = "RN_001" />
-			<Resource rIdent = "RN_002" />
-			<Resource rIdent = "RN_003" />
-			<Resource rIdent = "RN_004" />
+			<Resources rIdent = "RN_001" />
+			<Resources rIdent = "RN_002" />
+			<Resources rIdent = "RN_003" />
+			<Resources rIdent = "RN_004" />
 		</ResourcesNeeded> 
 		<WaysToHelp> <!--See resourcesneeded above-->
 			<Way wIdent = "WH_001" />
@@ -250,19 +250,19 @@ Date 03/18/2014
 			<VideoURL>https://www.youtube.com/watch?v=GmedslmeiUc</VideoURL>
 			<MapURL>https://www.google.com/maps/place/9%2F11+Ground+Zero+Tour/@40.7098355,-74.0124321,16z/data=!4m6!1m3!3m2!1s0x89c25a1900381b53:0x4d0f11283f2c61ca!2s9%2F11+Memorial!3m1!1s0x0:0xb7344d2be25276f9 </MapURL>
 			<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://www.nysm.nysed.gov/wtc/index.html</Citations> <!--Add however many you want-->
+			<Citation>http://www.nysm.nysed.gov/wtc/index.html</Citation> <!--Add however many you want-->
 			<ExternalLinkURL>http://en.wikipedia.org/wiki/U.S._government_response_to_the_September_11_attacks </ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons> <!-- may have more than one -->
 			<RelatedPerson PIdent = "PER_005"/>
-		</ReletedPersons>
+		</RelatedPersons>
 		<RelatedOrganizations> <!-- may have more than one -->
 			<RelatedOrganization OIdent = "ORG_005"/>
 		</RelatedOrganizations>
 	</Crisis>
 	
 	<Crisis CIdent = "CRI_006" > 
-		<Name>9-11</Name>
+		<Name>Haiti Earthquake</Name>
 		<Kind CKindIdent = "CK_002" /> 
 		<Location> 
 			<City>Léogâne</City>
@@ -320,7 +320,7 @@ Date 03/18/2014
 		<Location>
 			<City>Galveston</City>
 			<County>Galveston County</County>
-			<Province>XXX</Province>
+			<Province></Province>
 			<State>Texas</State>
 			<Country>United States</Country>
 		</Location>
@@ -331,19 +331,20 @@ Date 03/18/2014
 		<HumanImpact>
 			<Death>8000</Death>
 			<Injury>5000</Injury>
-			<Relocation>XXX</Relocation>
+			<Relocation>0</Relocation>
 		</HumanImpact>
 		<EconomicImpact>
-			<DirectImpact>XXX</DirectImpact>
-			<IndirectImpact>XXX</IndirectImpact>
+			<DirectImpact></DirectImpact>
+			<IndirectImpact></IndirectImpact>
 			<TotalImpact>$30,000,000</TotalImpact>
 		</EconomicImpact>
 		<ResourcesNeeded>
-			<Resource rIdent = "RN_001"/>
-			<Resource rIdent = "RN_002"/>
-			<Resource rIdent = "RN_003"/>
-			<Resource rIdent = "RN_004"/>
-			<Resource rIdent = "RN_005"/>
+			<Resources rIdent = "RN_001"/>
+			<Resources rIdent = "RN_002"/>
+			<Resources rIdent = "RN_003"/>
+			<Resources rIdent = "RN_004"/>
+			<Resources rIdent = "RN_005"/>
+		</ResourcesNeeded>
 		<WaysToHelp>
 			<Way wIdent = "WH_001" />
 		</WaysToHelp>  
@@ -352,9 +353,9 @@ Date 03/18/2014
 			<VideoURL>http://www.youtube.com/watch?v=ZX88xLJVfpI</VideoURL>
 			<MapURL>https://www.google.com/maps/@29.2653098,-94.868356,12z</MapURL>
 			<SocialNetworkFeedURL>https://www.facebook.com/pages/1900-Galveston-hurricane/135675969796060</SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://www.history.noaa.gov/stories_tales/cline2.html</Citations> <!--Add however many you want-->
-			<Citations>http://www.gthcenter.org/exhibits/storms/1900/victims/stormfaq.htm</Citations>
-			<Citations>http://www.texasalmanac.com/topics/history/galvestons-response-hurricane-1900</Citations>
+			<Citation>http://www.history.noaa.gov/stories_tales/cline2.html</Citation> <!--Add however many you want-->
+			<Citation>http://www.gthcenter.org/exhibits/storms/1900/victims/stormfaq.htm</Citation>
+			<Citation>http://www.texasalmanac.com/topics/history/galvestons-response-hurricane-1900</Citation>
 			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedPersons> <!-- may have more than one -->
@@ -371,7 +372,7 @@ Date 03/18/2014
 		<Location> <!--Whatever you don't have, delete the tag-->
 			<City>Lakehurst</City>
 			<County>Ocean</County>
-			<Province>XXX</Province>
+			<Province></Province>
 			<State>New Jersey</State>
 			<Country>United States</Country>
 		</Location>
@@ -380,18 +381,16 @@ Date 03/18/2014
 			<Time>19:25:00</Time> <!--hh:mm:ss-->
 		</DateAndTime>
 		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
-			<Death>36</Death>
-			<Injury>XXX</Injury>
-			<Relocation>XXX</Relocation>	
+			<Death>36</Death>	
 		</HumanImpact>
 		<EconomicImpact> <!--Same as human impact-->
-			<DirectImpact>XXX</DirectImpact>
-			<IndirectImpact>XXX</IndirectImpact>
-			<TotalImpact>XXX</TotalImpact>
+			<DirectImpact></DirectImpact>
+			<IndirectImpact></IndirectImpact>
+			<TotalImpact></TotalImpact>
 		</EconomicImpact>
 		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
-			<Resource rIdent = "RN_001" />
-			<Resource rIdent = "RN_002" />
+			<Resources rIdent = "RN_001" />
+			<Resources rIdent = "RN_002" />
 		</ResourcesNeeded> 
 		<WaysToHelp> <!--See resourcesneeded above-->
 			<Way wIdent = "WH_001" />
@@ -401,14 +400,90 @@ Date 03/18/2014
 			<VideoURL>http://www.youtube.com/watch?v=CgWHbpMVQ1U</VideoURL>
 			<MapURL>https://www.google.com/maps/place/Lakehurst,+NJ/@40.0128584,-74.3151804,15z/data=!3m1!4b1!4m2!3m1!1s0x89c170d0e0581fb1:0x8296081bf8d04b09</MapURL>
 			<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://www.airships.net/hindenburg/disaster</Citations> <!--Add however many you want-->
+			<Citation>http://www.airships.net/hindenburg/disaster</Citation> <!--Add however many you want-->
 			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons> <!-- may have more than one -->
 			<RelatedPerson PIdent = "PER_008"/>
-		</ReletedPersons>
+		</RelatedPersons>
 		<RelatedOrganizations> <!-- may have more than one -->
 			<RelatedOrganization OIdent = "ORG_008"/>
+		</RelatedOrganizations>
+	</Crisis>
+	
+		<Crisis CIdent = "CRI_009" > <!--Put anything from 001 to 010-->
+		<Name>Cuban Missile Crisis</Name>
+		<Kind CKindIdent = "CK_003" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
+		<Location> <!--Whatever you don't have, delete the tag-->
+			<Country>United States, Cuba</Country>
+		</Location>
+		<DateAndTime>
+			<Date>1962-10-14</Date> <!--yyyy-mm-dd-->
+		</DateAndTime>
+		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
+			<Death>1</Death>
+			<Injury>0</Injury>
+		</HumanImpact>
+		<EconomicImpact> <!--Same as human impact-->
+			<DirectImpact>Military blockade on cuba</DirectImpact>
+			<IndirectImpact>Relation worsen with USSR and Cuba</IndirectImpact>
+		</EconomicImpact>
+		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
+			<Resources rIdent = "RN_007" />
+		</ResourcesNeeded> 
+		<WaysToHelp> <!--See resourcesneeded above-->
+			<Way wIdent = "WH_003" />
+		</WaysToHelp>  
+		<ExternalInfo> <!--Each one can have as many as you want-->
+			<ImageURL>http://govbooktalk.files.wordpress.com/2012/10/cuba-blockade-headlines.jpg</ImageURL>
+			<VideoURL>http://www.history.com/topics/cold-war/cuban-missile-crisis/videos/cuban-missile-crisis</VideoURL>
+			<MapURL>http://users.humboldt.edu/ogayle/Hist%20111%20Images/CubanMissileCrisis.gif</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/pages/Cuban-Missile-Crisis/105496976151334?ref=br_tf</SocialNetworkFeedURL> <!--Optional-->
+			<ExternalLinkURL>http://www.jfklibrary.org/JFK/JFK-in-Historyd]/Cuban-Missile-Crisis.aspx</ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_009"/>
+		</RelatedPersons>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent = "ORG_009"/>
+		</RelatedOrganizations>
+	</Crisis>
+    
+    <Crisis CIdent = "CRI_010" > <!--Put anything from 001 to 010-->
+		<Name>Cold War</Name>
+		<Kind CKindIdent = "CK_003" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
+		<Location> <!--Whatever you don't have, delete the tag-->
+			<Country>United States, Russia</Country>
+		</Location>
+		<DateAndTime>
+			<Date>1947-01-01</Date> <!--yyyy-mm-dd-->
+		</DateAndTime>
+		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
+			<Death>12</Death>
+			<Injury>44</Injury>
+		</HumanImpact>
+		<EconomicImpact> <!--Same as human impact-->
+			<DirectImpact>Huge fiscal mortgage, but open trade policy with China</DirectImpact>
+		</EconomicImpact>
+		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
+			<Resources rIdent = "RN_001" />
+            <Resources rIdent = "RN_007" />
+		</ResourcesNeeded>
+		<WaysToHelp> <!--See resourcesneeded above-->
+			<Way wIdent = "WH_001" />
+		</WaysToHelp>
+		<ExternalInfo> <!--Each one can have as many as you want-->
+			<ImageURL>http://theodorosii.files.wordpress.com/2013/11/1368224853201.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=y9HjvHZfCUI</VideoURL>
+			<MapURL>http://ocw.nd.edu/physics/nuclear-warfare/images-1/Cold-War-Map.jpg/image</MapURL>
+			<ExternalLinkURL>http://en.wikipedia.org/wiki/United_States_military_casualties_of_war</ExternalLinkURL> <!--Add however many you want-->
+            <ExternalLinkURL>http://en.wikipedia.org/wiki/Cold_war</ExternalLinkURL>
+		</ExternalInfo>
+		<RelatedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_009"/>
+		</RelatedPersons>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent = "ORG_010"/>
 		</RelatedOrganizations>
 	</Crisis>
 	
@@ -531,10 +606,10 @@ Date 03/18/2014
 		<Location>
 			<StreetAddress>International Headquarters 1 St James's Square</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>Port Au Prince</City>
-			<County>XXX</County> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
-			<State>XXX</State> <!--Optional, delete if not applicable-->
-			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+			<County></County> <!--Optional, delete if not applicable-->
+			<Province></Province> <!--Optional, delete if not applicable-->
+			<State></State> <!--Optional, delete if not applicable-->
+			<PostalCode></PostalCode> <!--Optional, delete if not applicable-->
 			<Country>Haiti</Country> <!--at least one-->
 		</Location>
 		<History>The constitution was modeled after those of the United States and of France. It was approved in March 1987, but it was completely suspended from June 1988 to March 1989 and was only fully reinstated in October 1994.</History>
@@ -555,44 +630,41 @@ Date 03/18/2014
 			<RelatedCrisis CIdent= "CRI_004"/>
 			<RelatedCrisis CIdent= "CRI_006"/>
 		</RelatedCrises>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons> <!-- may have more than one -->
 			<RelatedPerson PIdent = "PER_004"/>
-		</ReletedPersons>
+		</RelatedPersons>
 	</Organization>
 	
 	<Organization OIdent="ORG_005"> <!--Put anything from 001 to 010-->
 		<Name>Al-Qaeda</Name>
 		<Kind OKindIdent= "OK_002" />
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City></City>
 			<County></County> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<Province></Province> <!--Optional, delete if not applicable-->
 			<State></State> <!--Optional, delete if not applicable-->
-			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+			<PostalCode></PostalCode> <!--Optional, delete if not applicable-->
 			<Country>Pakistan</Country> <!--at least one-->
 		</Location>
 		<History>Al-Qaeda is a global militant Islamist and takfiri organization founded by Osama bin Laden in Peshawar, Pakistan, around August 1988. . Al-Qaeda first bomb attack was at the Gold Mihor hotel in Aden and it killed two people.  Al-Qaeda is also know for sectarian attacks include the Yazidi community bombings, the Sadr City bombings, the Ashoura Massacre and the April 2007 Baghdad bombings and is at large even with the death of Osama Bin Landen on May 2nd 2011. 
 		    </History>
 		<ContactInfo> <!--Whatever you don't find can be deleted-->
-			<Telephone>XXX</Telephone> <!--numbers and hyphens-->
-			<Fax>XXX</Fax> <!--numbers and hyphens-->
-			<Email>XXX</Email>	
 		</ContactInfo>
 		<ExternalInfo>
 			<ImageURL>http://guardianlv.com/wp-content/uploads/2014/01/al-qaeda.jpgmap URLs: https://www.google.com/maps/place/Defense+Intelligence+Agency/@38.8970604,-77.0671163,12z/data=!4m5!1m2!2m1!1sdefense+intelligence+agency!3m1!1s0x89b7b786d62308d3:0xc706846b7ab9289c</ImageURL>
 			<VideoURL>https://www.youtube.com/watch?v=Lagdeg1Bz5E</VideoURL>
 			<MapURL></MapURL>
 			<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://en.wikipedia.org/wiki/Al-Qaeda</Citations> <!--Add however many you want-->
+			<Citation>http://en.wikipedia.org/wiki/Al-Qaeda</Citation> <!--Add however many you want-->
 			<ExternalLinkURL>http://www.onislam.net/english/news/global/453845-decade-after-911-al-qaeda-in-shambles.html</ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
 			<RelatedCrisis CIdent= "CRI_005"/>
 		</RelatedCrises>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons> <!-- may have more than one -->
 			<RelatedPerson PIdent = "PER_005"/>
-		</ReletedPersons>
+		</RelatedPersons>
 	</Organization>	
 	
 	<Organization OIdent="ORG_006"> 
@@ -611,11 +683,9 @@ Date 03/18/2014
 		    </History>
 		<ContactInfo> 
 			<Telephone>212-686-5522</Telephone> 
-			<Fax></Fax> 
-			<Email></Email>	
 		</ContactInfo>
 		<ExternalInfo>
-			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_UNICEF.svgImageURL>
+			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_UNICEF.svg</ImageURL>
 			<VideoURL>https://www.youtube.com/watch?v=Lagdeg1Bz5E</VideoURL>
 			<MapURL>https://www.google.com/maps/place/UNICEF+Headquarters/@40.7500872,-73.9723107,18z/data=!3m1!4b1!4m2!3m1!1s0x0:0x24738d7ac66a710b</MapURL>
 			<SocialNetworkFeedURL>https://twitter.com/unicef </SocialNetworkFeedURL> 
@@ -626,19 +696,19 @@ Date 03/18/2014
 		<RelatedCrises> 
 			<RelatedCrisis CIdent= "CRI_006"/>
 		</RelatedCrises>
-		<ReletedPersons> 
+		<RelatedPersons> 
 			<RelatedPerson PIdent = "PER_006"/>
-		</ReletedPersons>
+		</RelatedPersons>
 	</Organization>
 	
 	<Organization OIdent="ORG_007"> <!--Put anything from 001 to 010-->
 		<Name>Johnson and Johnson</Name>
 		<Kind OKindIdent= "OK_006" />
 		<Location>
-			<StreetAddress>Johnson & Johnson One Johnson & Johnson Plaza</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress>Johnson and Johnson One Johnson and Johnson Plaza</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>New Brunswick</City>
 			<County>Middlesex</County> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<Province></Province> <!--Optional, delete if not applicable-->
 			<State>New Jersey</State> <!--Optional, delete if not applicable-->
 			<PostalCode>08933</PostalCode> <!--Optional, delete if not applicable-->
 			<Country>United States</Country> <!--at least one-->
@@ -646,63 +716,111 @@ Date 03/18/2014
 		<History>Founded in 1886 by brothers Robert Wood Johnson, James Wood Johnson, and Edward Mead Johnson in New Brunswick, New Jersey as a pharmaceuticals company. Donated money and pharmaceuticals to Galveston Hurricane victims in 1900.</History>
 		<ContactInfo> <!--Whatever you don't find can be deleted-->
 			<Telephone>732-524-0400</Telephone> <!--numbers and hyphens-->
-			<Fax>XXX</Fax> <!--numbers and hyphens-->
-			<Email>XXX</Email>	
 		</ContactInfo>
 		<ExternalInfo>
 			<ImageURL>http://www.dividend.com/blog/wp-content/uploads/storypics/johnson-and-johnson.jpg</ImageURL>
 			<VideoURL>http://www.youtube.com/watch?v=r4-5OrdtXpI</VideoURL>
 			<MapURL>https://www.google.com/maps/place/Johnson+And+Johnson+Plaza/@40.498906,-74.4422134,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c65269ad84ab:0xb9f38b5404abf833</MapURL>
 			<SocialNetworkFeedURL>https://www.facebook.com/jnj</SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://www.jnj.com/</Citations> <!--Add however many you want-->
-			<Citations>https://www.ccc-consumercarecenter.com/universal-contact-us/us-jnj-ucu/www.jnj.com</Citations>
+			<Citation>http://www.jnj.com/</Citation> <!--Add however many you want-->
+			<Citation>https://www.ccc-consumercarecenter.com/universal-contact-us/us-jnj-ucu/www.jnj.com</Citation>
 			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
 			<RelatedCrisis CIdent= "CRI_007"/>
 		</RelatedCrises>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons> <!-- may have more than one -->
 			<RelatedPerson PIdent = "PER_007"/>
-		</ReletedPersons>
+		</RelatedPersons>
 	</Organization>
 	
 	<Organization OIdent="ORG_008"> <!--Put anything from 001 to 010-->
 		<Name>Luftschiffbau Zeppelin</Name>
 		<Kind OKindIdent= "OK_006" />
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>Friedrichshafen</City>
-			<County>XXX</County> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
-			<State>XXX</State> <!--Optional, delete if not applicable-->
-			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+			<County></County> <!--Optional, delete if not applicable-->
+			<Province></Province> <!--Optional, delete if not applicable-->
+			<State></State> <!--Optional, delete if not applicable-->
+			<PostalCode></PostalCode> <!--Optional, delete if not applicable-->
 			<Country>Germany</Country> <!--at least one-->
 		</Location>
 		<History>Count Ferdinand von Zeppelin gathered his staff to begin the production of giant "flying boats" making the town of Friedrichshafen a D26major aviation center. In World War I, Germany was restricted from building airships and instead it wasn't until 1926 that the Count could continue his work to make air travel popular. The airships were made quite luxurious and were popular until the crash of the Hindenburg in 1937 and World War II which resulted in the destruction of Friedrichshafen. Luftschiffbau Zeppelin began to focus on other means of production such as containers for industry after 1950 and has recently begun the production of airships again. </History>
 		<ContactInfo> <!--Whatever you don't find can be deleted-->
 			<Telephone>49-0-7541-202-06</Telephone> <!--numbers and hyphens-->
 			<Fax>49-0-7541-202-665</Fax> <!--numbers and hyphens-->
-			<Email>XXX</Email>	
 		</ContactInfo>
 		<ExternalInfo>
 			<ImageURL>http://www.zeppelin-lz.com/fileadmin/images/druck/LUFTSCHIFFBAU_ZEPPELIN.png</ImageURL>
 			<VideoURL>http://www.youtube.com/watch?v=f2voBK-A-Ho</VideoURL>
 			<MapURL>https://www.google.com/maps/place/Friedrichshafen/@47.6878367,9.4711816,12z/data=!3m1!4b1!4m2!3m1!1s0x479b005e3a13cdd3:0x41f6bb7a5df8420</MapURL>
 			<SocialNetworkFeedURL>https://www.facebook.com/pages/Zeppelin-NT/143240342357373?rf=1483979888495948</SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://www.zeppelin-lz.com/ueberuns.html</Citations> <!--Add however many you want-->
-			<Citations>http://www.zeppelin-lz.com/test.html</Citations>
-			<Citations>http://www.zeppelin-lz.com/historie.html</Citations>
-			<Citations>http://www.zeppelin-lz.com/impressum.html</Citations>
+			<Citation>http://www.zeppelin-lz.com/ueberuns.html</Citation> <!--Add however many you want-->
+			<Citation>http://www.zeppelin-lz.com/test.html</Citation>
+			<Citation>http://www.zeppelin-lz.com/historie.html</Citation>
+			<Citation>http://www.zeppelin-lz.com/impressum.html</Citation>
 			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
 			<RelatedCrisis CIdent= "CRI_008"/>
 		</RelatedCrises>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons> <!-- may have more than one -->
 			<RelatedPerson PIdent = "PER_008"/>
-		</ReletedPersons>
+		</RelatedPersons>
 	</Organization>
 	
+	<Organization OIdent="ORG_009"> <!--Put anything from 001 to 010-->
+		<Name>Defense Intellegence Agency</Name>
+		<Kind OKindIdent= "OK_002" />
+		<Location>
+			<Country>United States</Country> <!--at least one-->
+		</Location>
+		<History>DIA was established by Robert S. McNamara in February 1961 to improve organization and coordination of military departments. The agency's mission was the continuous task of collecting, processing, evaluating, analyzing, integrating, producing, and disseminating military intelligence for the department of defense.</History>
+		<ContactInfo> <!--Whatever you don't find can be deleted-->
+			<Email>DIA-PAO@dodiis.mil</Email>
+		</ContactInfo>
+		<ExternalInfo>
+			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/9/9d</ImageURL>
+			<VideoURL></VideoURL>
+			<MapURL>https://www.google.com/maps/place/Defense+Intelligence+Agency/@38.8970604,-77.0671163,12z/data=!4m5!1m2!2m1!1sdefense+intelligence+agency!3m1!1s0x89b7b786d62308d3:0xc706846b7ab9289c</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/DIA</SocialNetworkFeedURL> <!--Optional-->
+			<ExternalLinkURL>http://www.dia.mil/About.aspx</ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent= "CRI_009"/>
+		</RelatedCrises>
+		<RelatedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_009"/>
+		</RelatedPersons>
+	</Organization>
+    
+    <Organization OIdent="ORG_010"> <!--Put anything from 001 to 010-->
+		<Name>United Nations</Name>
+		<Kind OKindIdent= "OK_001" />
+		<Location>
+			<State>Washington</State> <!--Optional, delete if not applicable-->
+			<Country>United States</Country> <!--at least one-->
+		</Location>
+		<History>Franklin D. Roosevelt first coined the term United Nations to describe the Allied countries. The term was first officially used on 1 January 1945, when 26 governments signed the Atlantic Charter. The UN's primary mandate was peacekeeping.</History>
+		<ContactInfo> <!--Whatever you don't find can be deleted-->
+			<Email>inquiries2@un.org</Email>
+		</ContactInfo>
+		<ExternalInfo>
+			<ImageURL>http://static.spplus.com/pictures/United-Nations-logo.jpg</ImageURL>
+			<VideoURL></VideoURL>
+			<MapURL>https://www.google.com/maps/place/United+Nations/@40.7541621,-73.967639,15z/data=!4m5!1m2!2m1!1sunited+nations!3m1!1s0x89c2591ce0874d11:0xc5fae28bdd3df635</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/unitednations</SocialNetworkFeedURL> <!--Optional-->
+			<ExternalLinkURL>http://www.un.org/en/</ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent= "CRI_010"/>
+		</RelatedCrises>
+		<RelatedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_010"/>
+		</RelatedPersons>
+	</Organization>
+     
 	<Person PIdent="PER_001">  
 		<Name>
 			<FirstName>Richard</FirstName>
@@ -809,12 +927,12 @@ Date 03/18/2014
 		</Name>
 		<Kind PKindIdent="PK_002"/>
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>Jérémie</City>
 			<County></County>
-			<Province>XXX</Province>		<!--Optional, delete if not applicable-->
+			<Province></Province>		<!--Optional, delete if not applicable-->
 			<State></State> <!--Optional, delete if not applicable-->
-			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+			<PostalCode></PostalCode> <!--Optional, delete if not applicable-->
 			<Country>Haiti</Country>
 		</Location>
 		<ExternalInfo>
@@ -823,8 +941,8 @@ Date 03/18/2014
 			<VideoURL>https://www.youtube.com/watch?v=Eds5ZQoJ60g</VideoURL>
 			<MapURL></MapURL>
 			<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://english.people.com.cn/90001/90777/90852/6453569.html</Citations> <!--Add however many you want-->
-			<Citations>http://www.google.com/hostednews/afp/article/ALeqM5iWbpczz9GEwzBlnN9BaRtZituP-A</Citations> <!--Add however many you want-->
+			<Citation>http://english.people.com.cn/90001/90777/90852/6453569.html</Citation> <!--Add however many you want-->
+			<Citation>http://www.google.com/hostednews/afp/article/ALeqM5iWbpczz9GEwzBlnN9BaRtZituP-A</Citation> <!--Add however many you want-->
 			<ExternalLinkURL>http://www.ipsnews.net/2009/07/qa-the-elites-are-like-a-huge-elephant-sitting-on-haiti/</ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
@@ -838,25 +956,24 @@ Date 03/18/2014
 	<Person PIdent="PER_005">  <!--Put anything from 001 to 010-->
 		<Name>
 			<FirstName>Osama</FirstName>
-			<MiddleName>XXX</MiddleName> <!-- could have zero and just delete this tag -->
 			<LastName>bin Laden</LastName>
 		</Name>
 		<Kind PKindIdent="PK_007"/>
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>Abbottābad</City>
-			<County>XXX</County> <!--Optional, delete if not applicable-->
-			<State>XXX</State> <!--Optional, delete if not applicable-->
-			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<County></County> <!--Optional, delete if not applicable-->
+			<Province></Province> 
+			<State></State> <!--Optional, delete if not applicable-->
+			<PostalCode></PostalCode> <!--Optional, delete if not applicable-->
 			<Country>Pakistan</Country>
 		</Location>
 		<ExternalInfo>
 			<ImageURL>http://en.wikipedia.org/wiki/File:Osama_bin_Laden_portrait.jpg, http://upload.wikimedia.org/wikipedia/commons/c/cd/Osama_bin_Laden_making_a_video_at_his_compound_in_Pakistan-2.jpg</ImageURL>
 			<VideoURL>http://www.youtube.com/watch?v=AgAL09DrdwQ</VideoURL>
-			<MapURL>XXX</MapURL>
+			<MapURL></MapURL>
 			<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://en.wikipedia.org/wiki/Osama_bin_Laden <Citations> <!--Add however many you want-->
+			<Citation>http://en.wikipedia.org/wiki/Osama_bin_Laden</Citation> <!--Add however many you want-->
 			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
@@ -907,21 +1024,21 @@ Date 03/18/2014
 		</Name>
 		<Kind PKindIdent="PK_005"/>
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>New Brunswick</City>
 			<County>Middlesex</County> <!--Optional, delete if not applicable-->
+			<Province></Province> 			
 			<State>New Jersey</State> <!--Optional, delete if not applicable-->
 			<PostalCode>08933</PostalCode> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
 			<Country>United States</Country>
 		</Location>
 		<ExternalInfo>
 			<ImageURL>http://www.kilmerhouse.com/wp-content/uploads/2007/01/rwjohnsonia.jpg</ImageURL>
-			<VideoURL>XXX</VideoURL>
+			<VideoURL></VideoURL>
 			<MapURL>https://www.google.com/maps/place/Johnson+And+Johnson+Plaza/@40.498906,-74.4422134,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c65269ad84ab:0xb9f38b5404abf833</MapURL>
 			<SocialNetworkFeedURL>https://www.facebook.com/pages/Robert-Wood-Johnson-I/138121969542479 </SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://www.jnj.com/about-jnj/company-history</Citations> <!--Add however many you want-->
-			<Citations>http://www.jnj.com/about-jnj/company-history/founders</Citations
+			<Citation>http://www.jnj.com/about-jnj/company-history</Citation> <!--Add however many you want-->
+			<Citation>http://www.jnj.com/about-jnj/company-history/founders</Citation>
 			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
@@ -940,20 +1057,20 @@ Date 03/18/2014
 		</Name>
 		<Kind PKindIdent="PK_005"/>
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
 			<City>Ludwigshafen am Rhein</City>
-			<County>XXX</County> <!--Optional, delete if not applicable-->
-			<State>XXX</State> <!--Optional, delete if not applicable-->
-			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<County></County> <!--Optional, delete if not applicable-->
+			<Province></Province> 
+			<State></State> <!--Optional, delete if not applicable-->
+			<PostalCode></PostalCode> <!--Optional, delete if not applicable-->
 			<Country>Germany</Country>
 		</Location>
 		<ExternalInfo>
 			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/e/ee/Ernst_August_Lehmann_.jpg</ImageURL>
-			<VideoURL>XXX</VideoURL>
+			<VideoURL></VideoURL>
 			<MapURL>https://www.google.com/maps/place/Ludwigshafen/@49.4874026,8.3875752,12z/data=!3m1!4b1!4m2!3m1!1s0x4797cc6973da8163:0x398edc7a57771cc2</MapURL>
 			<SocialNetworkFeedURL>https://www.facebook.com/pages/Ernst-A-Lehmann/243305002363401?rf=155894694556243</SocialNetworkFeedURL> <!--Optional-->
-			<Citations>http://www.airships.net/captain-ernst-lehmann</Citations> <!--Add however many you want-->
+			<Citation>http://www.airships.net/captain-ernst-lehmann</Citation> <!--Add however many you want-->
 			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
@@ -961,6 +1078,59 @@ Date 03/18/2014
 		</RelatedCrises>
 		<RelatedOrganizations> <!-- may have more than one -->
 			<RelatedOrganization OIdent="ORG_008"/>
+		</RelatedOrganizations>
+	</Person>
+	
+		<Person PIdent="PER_009">  <!--Put anything from 001 to 010-->
+		<Name>
+			<FirstName>Fidel</FirstName>
+			<LastName>Castro</LastName>
+		</Name>
+		<Kind PKindIdent="PK_007"/>
+		<Location>
+			<City>Biran</City>
+			<Country>Cuba</Country>
+		</Location>
+		<ExternalInfo>
+			<ImageURL>http://jeweell.com/data_images/out/70/1158213-fidel-castro.jpg</ImageURL>
+            <ImageURL>http://a.abcnews.go.com/images/US/gty_fidel_castro_3_dm_130423_wg.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=qQ24jmIHIUk</VideoURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/f.c.fan.page</SocialNetworkFeedURL> <!--Optional-->
+			<ExternalLinkURL>http://www.britannica.com/EBchecked/topic/98822/Fidel-Castro</ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent="CRI_009"/>
+		</RelatedCrises>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent="ORG_009"/>
+		</RelatedOrganizations>
+	</Person>
+    
+    <Person PIdent="PER_010">  <!--Put anything from 001 to 010-->
+		<Name>
+			<FirstName>Barack</FirstName>
+			<MiddleName>Hussein</MiddleName> <!-- could have zero and just delete this tag -->
+			<LastName>Obama</LastName>
+		</Name>
+		<Kind PKindIdent="PK_002"/>
+		<Location>
+			<City>Honolulu</City>
+			<State>Hawaii</State> <!--Optional, delete if not applicable-->
+			<Country>United States</Country>
+		</Location>
+		<ExternalInfo>
+			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/0/01/Poster-sized_portrait_of_Barack_Obama_OrigRes.jpg</ImageURL>
+            <ImageURL>http://bitbbq.com/wp-content/uploads/2014/03/President_Obama_342.jpg</ImageURL>
+			<VideoURL>http://www.biography.com/people/barack-obama-12782369</VideoURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/barackobama</SocialNetworkFeedURL> <!--Optional-->
+			<Citation>http://www.biography.com/people/barack-obama-12782369</Citation>
+			<ExternalLinkURL>http://en.wikipedia.org/wiki/Barack_Obama</ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent="CRI_003"/>
+		</RelatedCrises>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent="ORG_010"/>
 		</RelatedOrganizations>
 	</Person>
 	
@@ -982,6 +1152,9 @@ Date 03/18/2014
 	<Resources rIdent = "RN_006" >
 		<Name>Search and Rescue Vehicles</Name>
 	</Resources>
+    <Resources rIdent = "RN_007" >
+		<Name>Military Supplies</Name>
+	</Resources>
 	
 	<WaysToHelp wIdent = "WH_001" >
 		<Name>Donate Money</Name>
@@ -989,7 +1162,10 @@ Date 03/18/2014
 	<WaysToHelp wIdent = "WH_002" >
 		<Name>Volunteer</Name>
 	</WaysToHelp>
-
+    <WaysToHelp wIdent = "WH_003" >
+		<Name>Public Relation</Name>
+	</WaysToHelp>
+	
 	<CrisisKind CKindIdent="CK_001" >
 		<Name>Human Error</Name>
 		<Description>An accident caused by improper operation of equipment or miscalculations</Description>

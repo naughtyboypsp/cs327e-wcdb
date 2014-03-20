@@ -28,7 +28,7 @@ def wcdb_read (r) :
     creates an element tree from string
     """
     
-    imported_str_data = r.read()
+    imported_str_data = "<WorldCrises>" + "".join(r.read()) + "</WorldCrises>"
     assert(type(imported_str_data) is str)
     data_tree = ET.fromstring(imported_str_data)
     assert(type(data_tree) is ET.Element)
@@ -44,6 +44,7 @@ def wcdb_write (w, data_tree):
     exports the string data 
     """
     data_exported_string = ET.tostring(data_tree,encoding = "unicode", method = "xml")
+    data_exported_string = data_exported_string[13:-14]
     assert(type(data_exported_string) is str)
     w.write(data_exported_string)
 

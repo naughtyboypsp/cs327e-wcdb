@@ -1,0 +1,236 @@
+<World Crises>
+	<Crisis CIdent = "CRI_009">
+		<Name>1900 Galveston Hurricane</Name>
+		<Kind CKindIdent = "CK_007"/>
+		<Location>
+			<City>Galveston</City>
+			<County>Galveston County</County>
+			<Province>XXX</Province>
+			<State>Texas</State>
+			<Country>United States</Country>
+		</Location>
+		<DateAndTime>
+			<Date>1900-09-08</Date>
+			<Time>08:45:00</Time>
+		</DateAndTime>
+		<HumanImpact>
+			<Death>8000</Death>
+			<Injury>5000</Injury>
+			<Relocation>XXX</Relocation>
+		</HumanImpact>
+		<EconomicImpact>
+			<DirectImpact>XXX</DirectImpact>
+			<IndirectImpact>XXX</IndirectImpact>
+			<TotalImpact>$30,000,000</TotalImpact>
+		</EconomicImpact>
+		<ResourcesNeeded>
+			<Resource rIdent = "RN_001"/>
+			<Resource rIdent = "RN_002"/>
+			<Resource rIdent = "RN_003"/>
+			<Resource rIdent = "RN_004"/>
+			<Resource rIdent = "RN_005"/>
+		<WaysToHelp>
+			<Way wIdent = "WH_001" />
+		</WaysToHelp>  
+		<ExternalInfo> <!--Each one can have as many as you want-->
+			<ImageURL>http://graphics8.nytimes.com/images/2008/09/12/timestopics/topics_galveston1900_395.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=ZX88xLJVfpI</VideoURL>
+			<MapURL>https://www.google.com/maps/@29.2653098,-94.868356,12z</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/pages/1900-Galveston-hurricane/135675969796060</SocialNetworkFeedURL> <!--Optional-->
+			<Citations>http://www.history.noaa.gov/stories_tales/cline2.html</Citations> <!--Add however many you want-->
+			<Citations>http://www.gthcenter.org/exhibits/storms/1900/victims/stormfaq.htm</Citations>
+			<Citations>http://www.texasalmanac.com/topics/history/galvestons-response-hurricane-1900</Citations>
+			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_007"/>
+		</RelatedPersons>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent = "ORG_007"/>
+		</RelatedOrganizations>
+	</Crisis>
+
+	<Organization OIdent="ORG_007"> <!--Put anything from 001 to 010-->
+		<Name>Johnson and Johnson</Name>
+		<Kind OKindIdent= "OK_006" />
+		<Location>
+			<StreetAddress>Johnson & Johnson One Johnson & Johnson Plaza</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<City>New Brunswick</City>
+			<County>Middlesex</County> <!--Optional, delete if not applicable-->
+			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<State>New Jersey</State> <!--Optional, delete if not applicable-->
+			<PostalCode>08933</PostalCode> <!--Optional, delete if not applicable-->
+			<Country>United States</Country> <!--at least one-->
+		</Location>
+		<History>Founded in 1886 by brothers Robert Wood Johnson, James Wood Johnson, and Edward Mead Johnson in New Brunswick, New Jersey as a pharmaceuticals company. Donated money and pharmaceuticals to Galveston Hurricane victims in 1900.</History>
+		<ContactInfo> <!--Whatever you don't find can be deleted-->
+			<Telephone>732-524-0400</Telephone> <!--numbers and hyphens-->
+			<Fax>XXX</Fax> <!--numbers and hyphens-->
+			<Email>XXX</Email>	
+		</ContactInfo>
+		<ExternalInfo>
+			<ImageURL>http://www.dividend.com/blog/wp-content/uploads/storypics/johnson-and-johnson.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=r4-5OrdtXpI</VideoURL>
+			<MapURL>https://www.google.com/maps/place/Johnson+And+Johnson+Plaza/@40.498906,-74.4422134,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c65269ad84ab:0xb9f38b5404abf833</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/jnj</SocialNetworkFeedURL> <!--Optional-->
+			<Citations>http://www.jnj.com/</Citations> <!--Add however many you want-->
+			<Citations>https://www.ccc-consumercarecenter.com/universal-contact-us/us-jnj-ucu/www.jnj.com</Citations>
+			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent= "CRI_007"/>
+		</RelatedCrises>
+		<ReletedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_007"/>
+		</ReletedPersons>
+	</Organization>
+    
+	<Person PIdent="PER_007">  <!--Put anything from 001 to 010-->
+		<Name>
+			<FirstName>Robert</FirstName>
+			<MiddleName>Wood</MiddleName> <!-- could have zero and just delete this tag -->
+			<LastName>Johnson</LastName>
+		</Name>
+		<Kind PKindIdent="PK_005"/>
+		<Location>
+			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<City>New Brunswick</City>
+			<County>Middlesex</County> <!--Optional, delete if not applicable-->
+			<State>New Jersey</State> <!--Optional, delete if not applicable-->
+			<PostalCode>08933</PostalCode> <!--Optional, delete if not applicable-->
+			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<Country>United States</Country>
+		</Location>
+		<ExternalInfo>
+			<ImageURL>http://www.kilmerhouse.com/wp-content/uploads/2007/01/rwjohnsonia.jpg</ImageURL>
+			<VideoURL>XXX</VideoURL>
+			<MapURL>https://www.google.com/maps/place/Johnson+And+Johnson+Plaza/@40.498906,-74.4422134,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c65269ad84ab:0xb9f38b5404abf833</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/pages/Robert-Wood-Johnson-I/138121969542479 </SocialNetworkFeedURL> <!--Optional-->
+			<Citations>http://www.jnj.com/about-jnj/company-history</Citations> <!--Add however many you want-->
+			<Citations>http://www.jnj.com/about-jnj/company-history/founders</Citations
+			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent="CRI_007"/>
+		</RelatedCrises>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent="ORG_007"/>
+		</RelatedOrganizations>
+	</Person>
+
+	<Crisis CIdent = "CRI_008" > <!--Put anything from 001 to 010-->
+		<Name>Hindenburg Crash</Name>
+		<Kind CKindIdent = "CK_001" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
+		<Location> <!--Whatever you don't have, delete the tag-->
+			<City>Lakehurst</City>
+			<County>Ocean</County>
+			<Province>XXX</Province>
+			<State>New Jersey</State>
+			<Country>United States</Country>
+		</Location>
+		<DateAndTime>
+			<Date>1937-05-06</Date> <!--yyyy-mm-dd-->
+			<Time>19:25:00</Time> <!--hh:mm:ss-->
+		</DateAndTime>
+		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
+			<Death>36</Death>
+			<Injury>XXX</Injury>
+			<Relocation>XXX</Relocation>	
+		</HumanImpact>
+		<EconomicImpact> <!--Same as human impact-->
+			<DirectImpact>XXX</DirectImpact>
+			<IndirectImpact>XXX</IndirectImpact>
+			<TotalImpact>XXX</TotalImpact>
+		</EconomicImpact>
+		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
+			<Resource rIdent = "RN_001" />
+			<Resource rIdent = "RN_002" />
+		</ResourcesNeeded> 
+		<WaysToHelp> <!--See resourcesneeded above-->
+			<Way wIdent = "WH_001" />
+		</WaysToHelp>  
+		<ExternalInfo> <!--Each one can have as many as you want-->
+			<ImageURL>http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2013/11/Hindenburg-disaster.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=CgWHbpMVQ1U</VideoURL>
+			<MapURL>https://www.google.com/maps/place/Lakehurst,+NJ/@40.0128584,-74.3151804,15z/data=!3m1!4b1!4m2!3m1!1s0x89c170d0e0581fb1:0x8296081bf8d04b09</MapURL>
+			<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
+			<Citations>http://www.airships.net/hindenburg/disaster</Citations> <!--Add however many you want-->
+			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<ReletedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_008"/>
+		</ReletedPersons>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent = "ORG_008"/>
+		</RelatedOrganizations>
+	</Crisis>
+
+	<Organization OIdent="ORG_008"> <!--Put anything from 001 to 010-->
+		<Name>Luftschiffbau Zeppelin</Name>
+		<Kind OKindIdent= "OK_006" />
+		<Location>
+			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<City>Friedrichshafen</City>
+			<County>XXX</County> <!--Optional, delete if not applicable-->
+			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<State>XXX</State> <!--Optional, delete if not applicable-->
+			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+			<Country>Germany</Country> <!--at least one-->
+		</Location>
+		<History>Count Ferdinand von Zeppelin gathered his staff to begin the production of giant "flying boats" making the town of Friedrichshafen a D26major aviation center. In World War I, Germany was restricted from building airships and instead it wasn't until 1926 that the Count could continue his work to make air travel popular. The airships were made quite luxurious and were popular until the crash of the Hindenburg in 1937 and World War II which resulted in the destruction of Friedrichshafen. Luftschiffbau Zeppelin began to focus on other means of production such as containers for industry after 1950 and has recently begun the production of airships again. </History>
+		<ContactInfo> <!--Whatever you don't find can be deleted-->
+			<Telephone>49-0-7541-202-06</Telephone> <!--numbers and hyphens-->
+			<Fax>49-0-7541-202-665</Fax> <!--numbers and hyphens-->
+			<Email>XXX</Email>	
+		</ContactInfo>
+		<ExternalInfo>
+			<ImageURL>http://www.zeppelin-lz.com/fileadmin/images/druck/LUFTSCHIFFBAU_ZEPPELIN.png</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=f2voBK-A-Ho</VideoURL>
+			<MapURL>https://www.google.com/maps/place/Friedrichshafen/@47.6878367,9.4711816,12z/data=!3m1!4b1!4m2!3m1!1s0x479b005e3a13cdd3:0x41f6bb7a5df8420</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/pages/Zeppelin-NT/143240342357373?rf=1483979888495948</SocialNetworkFeedURL> <!--Optional-->
+			<Citations>http://www.zeppelin-lz.com/ueberuns.html</Citations> <!--Add however many you want-->
+			<Citations>http://www.zeppelin-lz.com/test.html</Citations>
+			<Citations>http://www.zeppelin-lz.com/historie.html</Citations>
+			<Citations>http://www.zeppelin-lz.com/impressum.html</Citations>
+			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent= "CRI_008"/>
+		</RelatedCrises>
+		<ReletedPersons> <!-- may have more than one -->
+			<RelatedPerson PIdent = "PER_008"/>
+		</ReletedPersons>
+	</Organization>
+     
+	<Person PIdent="PER_008">  <!--Put anything from 001 to 010-->
+		<Name>
+			<FirstName>Ernst</FirstName>
+			<MiddleName>August</MiddleName> <!-- could have zero and just delete this tag -->
+			<LastName>Lehmann</LastName>
+		</Name>
+		<Kind PKindIdent="PK_005"/>
+		<Location>
+			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<City>Ludwigshafen am Rhein</City>
+			<County>XXX</County> <!--Optional, delete if not applicable-->
+			<State>XXX</State> <!--Optional, delete if not applicable-->
+			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
+			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<Country>Germany</Country>
+		</Location>
+		<ExternalInfo>
+			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/e/ee/Ernst_August_Lehmann_.jpg</ImageURL>
+			<VideoURL>XXX</VideoURL>
+			<MapURL>https://www.google.com/maps/place/Ludwigshafen/@49.4874026,8.3875752,12z/data=!3m1!4b1!4m2!3m1!1s0x4797cc6973da8163:0x398edc7a57771cc2</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/pages/Ernst-A-Lehmann/243305002363401?rf=155894694556243</SocialNetworkFeedURL> <!--Optional-->
+			<Citations>http://www.airships.net/captain-ernst-lehmann</Citations> <!--Add however many you want-->
+			<ExternalLinkURL></ExternalLinkURL> <!--Add however many you want-->
+		</ExternalInfo>
+		<RelatedCrises> <!-- may have more than one -->
+			<RelatedCrisis CIdent="CRI_008"/>
+		</RelatedCrises>
+		<RelatedOrganizations> <!-- may have more than one -->
+			<RelatedOrganization OIdent="ORG_008"/>
+		</RelatedOrganizations>
+	</Person>
+</World Crises

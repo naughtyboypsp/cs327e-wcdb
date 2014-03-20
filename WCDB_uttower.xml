@@ -6,7 +6,7 @@ Date 03/10/2014
 -->
 	<Crisis CIdent = "CRI_002" > <!--Put anything from 001 to 010-->
 		<Name>UT Tower Shooting</Name>
-		<Kind CKindIdent = "CK_005" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
+		<Kind CKindIdent = "CK_005" /> 
 		<Location> 
 			<City>Austin</City>
 			<State>Texas</State>
@@ -103,7 +103,6 @@ Date 03/10/2014
 			<Citation>http://www.tshaonline.org/handbook/online/articles/fwh42</Citation>
 			<Citation>http://www.biography.com/people/charles-whitman-11495598</Citation>
 			<ExternalLinkURL>http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=5921</ExternalLinkURL> <!--Add however many you want-->
-			<ExternalLinkURL>
 		</ExternalInfo>
 		<RelatedCrises> <!-- may have more than one -->
 			<RelatedCrisis CIdent="CRI_002"/>

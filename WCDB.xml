@@ -1,160 +1,231 @@
 <?xml version="1.0" ?>
 <WorldCrises>
-<!-- First Version of WCDB.XML
-Author: Xiaoqin LI
-Date 03/10/2014
+<!-- Final Version of WCDB.XML
+Author: Xiaoqin Li, Josh Shen, Robert Salinas, Shawn Kulkarni, Al Jin, Kevin Boening
+Date 03/18/2014
 -->
-	<!-- since Ident is gonna be a primary key, please name it as XXX001, XXX002...as unique values-->
-	<Crisis CIdent = "XXX" >
-		<Name>XXX</Name>
-		<!-- may have more than one "Kind",I take Kind as IDREF, since all 
-		three categories have "Kind"-->
-		<Kind CKindIdent = "XXX" />
-		<Kind CKindIdent = "XXX" />
-		<!-- Although Robert and I though Location may be a good one to 
-		have IDREF, but it may have multiple layers(country/state/city...),
-		as a result, it might not be the best option -->
-		<!-- location may have other like county, province, they'are all fine as long as
-		in xsd their min occurence is zero -->
+	<Crisis CIdent = "CRI_001" >
+		<Name>Chernobyl Accident</Name>
+		<Kind CKindIdent = "CK_001" />
 		<Location>
-			<City>XXX</City>            <!-- could just delete this tag if unknown-->
-			<County>XXX</County>        <!-- could just delete this tag if unknown-->
-			<Province>XXX</Province>   <!-- could just delete this tag if unknown-->
-			<State>XXX</State>    <!-- could just delete this tag if unknown-->
-			<Country>XXX</Country>
+			<City>Chernobyl</City>
+			<Country>Ukraine</Country>
 		</Location>
-		<!-- Better be date type, not string-->
 		<DateAndTime>
-			<Date></Date>
-			<Time></Time>
+			<Date>1986-04-26</Date>
+			<Time>01:23:48</Time>
 		</DateAndTime>
-		<HumanImpact> <!-- all are numbers -->
-			<Death>XXX</Death>    <!-- could just delete this tag if unknown-->
-			<Injury>XXX</Injury>        <!-- could just delete this tag if unknown-->
-			<Relocation>XXX </Relocation>	  <!-- could just delete this tag if unknown-->
+		<HumanImpact>
+			<Death>30</Death>
+			<Injury>106</Injury>
+			<Relocation>335000</Relocation>	
 		</HumanImpact>
-		<EconomicImpact> <!-- all are string with a dollar sign :"$" in the end -->
-			<DirectImpact>XXX</DirectImpact>  <!-- could just delete this tag if unknown-->
-			<IndirectImpact>XXX</IndirectImpact> <!-- could just delete this tag if unknown-->
-			<TotalImpact>XXX</TotalImpact> <!-- could just delete this tag if unknown-->
+		<EconomicImpact>
+			<TotalImpact>$235 Billion</TotalImpact>
 		</EconomicImpact>
-		<ResourcesNeeded>XXX</ResourcesNeeded> <!-- just string, list all you needed-->
-		<WaysToHelp> <!-- all are string -->>
-			<FinancialHelp>XXX<FinancialHelp>  <!--  string with a dollar sign :"$" in the end -->
-			<MedicalHelp>XXX</MedicalHelp> 
-			<SupplySourcesHelp>XXX</SupplySourcesHelp>  <!-- like food water, what ever-->
-			<OtherHelp>XXX</OtherHelp>
-		</WaysToHelp>  <!-- just string so far, any better idea on this?-->
+		<ResourcesNeeded>
+			<Resources rIdent = "RN_001" />
+			<Resources rIdent = "RN_005" />
+		</ResourcesNeeded> 
+		<WaysToHelp>
+			<Way wIdent = "WH_001" />
+		</WaysToHelp>  
 		<ExternalInfo>
-			<ImageURL>http://XXX</ImageURL>
-			<VideoURL>http://XXX</VideoURL>
-			<MapURL>http://XXX</MapURL>
-			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
-			<ExternalLinkURL>http://XXX</ExternalLinkURL>
-			<Citations>XXX</Citations> <!-- Just String type-->	
-		</ExternalInfo>	
-		<ReletedPersons>
-			<!-- may have more than one -->
-			<RelatedPerson PIdent = "XXX"/>
-			<RelatedPerson PIdent = "XXX"/>
-		</ReletedPersons>
+			<ImageURL>http://www.rapik.com/photo/thumbnails.php?album=38</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=YfulqRdDbsg</VideoURL>
+			<MapURL>http://upload.wikimedia.org/wikipedia/commons/2/23/Chernobyl_radiation_map_1996.svg</MapURL>
+			<SocialNetworkFeedURL>https://www.facebook.com/pages/Chernobyl-Ukraine/110869988937000</SocialNetworkFeedURL>
+			<Citation>http://www.ccoc.net/the-chernobyl-disaster/the-story</Citation>
+			<Citation>http://www.world-nuclear.org/info/Safety-and-Security/Safety-of-Plants/Chernobyl-Accident/</Citation>
+			<Citation>http://www.nrc.gov/reading-rm/doc-collections/fact-sheets/chernobyl-bg.html</Citation>	
+			<Citation>http://www.forbes.com/2011/03/16/japan-disaster-nuclear-opinions-roubini-economics.html</Citation>	
+			<Citation>http://www.iaea.org/newscenter/focus/chernobyl/faqs.shtml</Citation>		
+			<ExternalLinkURL>http://chernobyl.undp.org/english/</ExternalLinkURL>
+			<ExternalLinkURL>http://englishrussia.com/2009/04/29/at-the-nuclear-power-plant/</ExternalLinkURL>
+		</ExternalInfo>
+		
+		<RelatedPersons>
+			<RelatedPerson PIdent = "PER_001"/>
+		</RelatedPersons>
 		<RelatedOrganizations>
-		<!-- may have more than one -->
-			<RelatedOrganization OIdent = "XXX"/>
-			<RelatedOrganization OIdent = "XXX"/>
+			<RelatedOrganization OIdent = "ORG_001"/>
 		</RelatedOrganizations>
 	</Crisis>
 	
-	<!-- since this Ident is gonna be a primary key, better be unique-->
-	<Organization OIdent= "XXX">
-		<Name>XXX</Name>
-		<Kind OKindIdent= "XXX" />
-		<Kind OKindIdent = "XXX" />
+	<Organization OIdent="ORG_001">
+		<Name>International Nuclear Safety Group (INSAG)</Name>
+		<Kind OKindIdent= "OK_001" />
 		<Location>
-			<City>XXX</City>
-			<County>XXX</County>       <!-- could have zero and just delete this tag -->
-			<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
-			<State>XXX</State>   <!-- could have zero and just delete this tag -->
-			<Country>XXX</Country>
+			<StreetAddress>Vienna International Center, PO Box 100, 1400</StreetAddress>
+			<City>Vienna</City>
+			<Country>Austria</Country>
 		</Location>
-		<History>XXX</History>
+		<History>
+			The group was founded in 1985 by the International Atomic Energy Agency (IAEA) 
+			as an advisory committee in the area of nuclear safety. It consists of about 
+			17 safety experts who work in regulatory organizations, research and academic 
+			institutions, and the nuclear industry. Over the years, INSAG has produced 
+			23 reports with results of various studies, which have greatly advanced 
+			nuclear safety. One of its first investigations was the Chernobyl accident. 
+		</History>
 		<ContactInfo>
-			<Telephone>XXX</Telephone>
-			<Fax>XXX</Fax>
-			<Email>XXX@XXX</Email>	
-			<Address>
-				<StreetAddress>XXX</StreetAddress>
-				<City>XXX</City>
-				<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
-				<State>XXX</State>   <!-- could have zer0 and just delete this tag-->
-				<Country>XXX</Country>
-				<PostalCode>XXX</PostalCode>
-			</Address>
+			<Telephone>43-1-2600-0</Telephone>
+			<Fax>43-1-2600-7</Fax>
+			<Email>official.mail@iaea.org</Email>	
 		</ContactInfo>
 		<ExternalInfo>
-			<ImageURL>http://XXX</ImageURL>
-			<VideoURL>http://XXX</VideoURL>
-			<MapURL>http://XXX</MapURL>
-			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
-			<ExternalLinkURL>http://XXX</ExternalLinkURL>
-			<Citations>XXX</Citations>
+			<ImageURL>http://www.iaea.org/newscenter/images/bog_300x200.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=Ejuvh-wEl3A</VideoURL>
+			<MapURL>http://www.iaea.org/safeguards/Symposium/2010/The_Venue/VIC.htm</MapURL>
+			<SocialNetworkFeedURL></SocialNetworkFeedURL>
+			<Citation>http://www-ns.iaea.org/committees/insag.asp</Citation>
+			<Citation>http://www-ns.iaea.org/downloads/coordination/snr-reg-meeting-2008/1-%20INSAG%20Senior%20Regulators%20Meeting%209-15-08.ppt</Citation>
+			<ExternalLinkURL>http://www.iaea.org/</ExternalLinkURL>
 		</ExternalInfo>
-		<!-- may have more than one -->
 		<RelatedCrises>
-			<RelatedCrisis CIdent= "XXX"/>
-			<RelatedCrisis CIdent= "XXX"/>
+			<RelatedCrisis CIdent= "CRI_001"/>
 		</RelatedCrises>
-		<ReletedPersons>
-			<!-- may have more than one -->
-			<RelatedPerson PIdent = "XXX"/>
-			<RelatedPerson PIdent = "XXX"/>
-		</ReletedPersons>
-    </Organization>
+		<RelatedPersons>
+			<RelatedPerson PIdent = "PER_001"/>
+		</RelatedPersons>
+	</Organization>
      
-	<Person PIdent="ABXXX">  <!-- this is gonna be a primary key so, better be unique -->
+	<Person PIdent="PER_001">  
 		<Name>
-		  <FirstName>AXXX</FirstName>
-		  <MiddleName>XXX</MiddleName> <!-- could have zero and just delete this tag -->
-		  <LastName>BXXX</LastName>
+			<FirstName>Richard</FirstName>
+			<MiddleName>A.</MiddleName> 
+			<LastName>Meserve</LastName>
 		</Name>
-		<Kind PKindIdent="XXX"/>
+		<Kind PKindIdent="PK_001"/>
 		<Location>
-			<City>XXX</City>
-			<County>XXX</County>       <!-- could have zero and just delete this tag -->
-			<Province>XXX</Province>  <!-- could have zero and just delete this tag -->
-			<State>XXX</State>   <!-- could have zero and just delete this tag -->
-			<Country>XXX</Country>
+			<StreetAddress>Carnegie Institution for Science, 1530 P Street Northwest</StreetAddress>
+			<City>Washington DC</City>
+			<State>Maryland</State>
+			<PostalCode>20005</PostalCode>
+			<Country>United States</Country>
 		</Location>
 		<ExternalInfo>
-			<ImageURL>http://XXX</ImageURL>
-			<VideoURL>http://XXX</VideoURL>
-			<MapURL>http://XXX</MapURL>
-			<SocialNetworkFeedURL>http://XXX</SocialNetworkFeedURL>
-			<ExternalLinkURL>http://XXX</ExternalLinkURL>
-			<Citations>XXX</Citations>
+			<ImageURL>http://www.aaas.org/sites/default/files/migrate/uploads/2008meserve.jpg</ImageURL>
+			<VideoURL>http://www.youtube.com/watch?v=UjMqZ2CFW68</VideoURL>
+			<MapURL>https://www.google.com/maps/place/Carnegie+Institution+for+Science/@38.9095792,-77.0359687,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcc19325db48f5a93</MapURL>
+			<SocialNetworkFeedURL></SocialNetworkFeedURL>
+			<Citation>http://carnegiescience.edu/president_richard_meserve</Citation>
+			<ExternalLinkURL>http://www.nei.org/News-Media/Speeches/Richard-A-Meserve-Chairman-International-Safety-Gr</ExternalLinkURL>
 		</ExternalInfo>
 		<RelatedCrises>
-		  <RelatedCrisis CIdent="XXX"/>
-		  <RelatedCrisis CIdent="XXX"/>
+			<RelatedCrisis CIdent="CRI_001"/>
 		</RelatedCrises>
 		<RelatedOrganizations>
-		  <RelatedOrganization OIdent="XXX"/>
-		  <RelatedOrganization OIdent="XXX"/>
+			<RelatedOrganization OIdent="ORG_001"/>
 		</RelatedOrganizations>
-    </Person>
-	<!-- I suggest to put initial of <Name> as KindIdent -->
-	<CrisisKind CKindIdent="XXX">
-		<Name>XXX</Name>
-		<Description>XXX</Description>
-    </CrisisKind>
+	</Person>
+
+	<Resources rIdent = "RN_001" >
+		<Name>Money</Name>
+	</Resources>
+	<Resources rIdent = "RN_002" >
+		<Name>Medical Supplies</Name>
+	</Resources>
+	<Resources rIdent = "RN_003" >
+		<Name>Construction Materials</Name>
+	</Resources>
+	<Resources rIdent = "RN_004" >
+		<Name>Food/Water</Name>
+	</Resources>
+	<Resources rIdent = "RN_005" >
+		<Name>Shelter</Name>
+	</Resources>
+	<WaysToHelp wIdent = "WH_001" >
+		<Name>Donate Money</Name>
+	</WaysToHelp>
+	<WaysToHelp wIdent = "WH_002" >
+		<Name>Volunteer</Name>
+	</WaysToHelp>
+
+	<CrisisKind CKindIdent="CK_001" >
+		<Name>Human Error</Name>
+		<Description>An accident caused by improper operation of equipment or miscalculations</Description>
+	</CrisisKind>
+	<CrisisKind CKindIdent="CK_002" >
+		<Name>Natural Disaster</Name>
+		<Description>Severe damages caused by forces of nature, including hurricanes, tornadoes and earthquakes</Description>
+	</CrisisKind>
+	<CrisisKind CKindIdent="CK_003" >
+		<Name>War / Conflict</Name>
+		<Description>A crisis which involves two or more countries fighting against each other</Description>
+	</CrisisKind>
+	<CrisisKind CKindIdent="CK_004" >
+		<Name>Act of Terrorism</Name>
+		<Description>Using violence against civilians in order to achieve political, religious or ideological goals</Description>
+	</CrisisKind>
+	<CrisisKind CKindIdent="CK_005" >
+		<Name>Assassination / Shooting</Name>
+		<Description>Murder of one person or multiple people</Description>
+	</CrisisKind>
+	<CrisisKind CKindIdent="CK_006" >
+		<Name>Economic Crisis</Name>
+		<Description>A dip in the economy characterized by high unemployment, low prices, and/or low levels of trade and investment</Description>
+	</CrisisKind>
+	<CrisisKind CKindIdent="CK_007" >
+		<Name>Civil / Social Crisis</Name>
+		<Description>Conflicts that usually involve protests by one or multiple groups of people</Description>
+	</CrisisKind>
+	<CrisisKind CKindIdent="CK_008" >
+		<Name>Pandemic / Illness</Name>
+		<Description>Widespread, detrimental health effects</Description>
+	</CrisisKind>
+
+	<OrganizationKind OKindIdent="OK_001" >
+		<Name>Intergovernmental Agency</Name>
+		<Description>An organization set up across multiple nations</Description>
+	</OrganizationKind>
+	<OrganizationKind OKindIdent="OK_002" >
+		<Name>Government Agency</Name>
+		<Description>An organization that is set up by and associated to a specific country</Description>
+	</OrganizationKind>
+	<OrganizationKind OKindIdent="OK_003" >
+		<Name>Military Force</Name>
+		<Description>The defense system of a country, including the navy, the army, the airforce and the marines</Description>
+	</OrganizationKind>
+	<OrganizationKind OKindIdent="OK_004" >
+		<Name>Intergovernmental Public Health Agency</Name>
+		<Description>An organization that seeks to promote the health and well being of those in need</Description>
+	</OrganizationKind>
+	<OrganizationKind OKindIdent="OK_005" >
+		<Name>Nonprofit, Humanitarian Organization</Name>
+		<Description>An organization that provides necessities and goods to those who need them, especially after a disaster</Description>
+	</OrganizationKind>
+	<OrganizationKind OKindIdent="OK_006" >
+		<Name>Corporation</Name>
+		<Description>A company that conducts a business of some sort</Description>
+	</OrganizationKind>
 	
-	<OrganizationKind OKindIdent="XXX">
-		<Name>XXX</Name>
-		<Description>XXX</Description>
-    </OrganizationKind>
-	
-	<PersonKind PKindIdent="XXX">
-		<Name>XXX</Name>
-		<Description>XXX</Description>
-    </PersonKind>
+	<PersonKind PKindIdent="PK_001" >
+		<Name>Institution President</Name>
+		<Description>The head of a public institution such as a university</Description>
+	</PersonKind>
+	<PersonKind PKindIdent="PK_002" >
+		<Name>Country President</Name>
+		<Description>The leader of a country</Description>
+	</PersonKind>
+	<PersonKind PKindIdent="PK_003" >
+		<Name>Celebrity</Name>
+		<Description>A generic catch-all for actors / actresses, singers, sports players, entertainers, etc</Description>
+	</PersonKind>
+	<PersonKind PKindIdent="PK_004" >
+		<Name>Politician</Name>
+		<Description>A person that deals directly with government issues</Description>
+	</PersonKind>
+	<PersonKind PKindIdent="PK_005" >
+		<Name>CEO</Name>
+		<Description>The leader of a corporation or a company</Description>
+	</PersonKind>
+	<PersonKind PKindIdent="PK_006" >
+		<Name>Humanitarian / Philantropist</Name>
+		<Description>One who is devoted to the promotion of human welfare through giving and volunteering</Description>
+	</PersonKind>
+	<PersonKind PKindIdent="PK_007" >
+		<Name>Dictator</Name>
+		<Description>The absolute leader of a dictatorial government</Description>
+	</PersonKind>
 </WorldCrises>

@@ -187,9 +187,9 @@
 		  <xsd:element name="ContactInfo">
 			<xsd:complexType>
 			  <xsd:sequence>
-				<xsd:element name="Telephone" type="ContactNumberType" />
-				<xsd:element name="Fax" type="ContactNumberType" />
-				<xsd:element name="Email" type="EmailType" />
+				<xsd:element name="Telephone" type="ContactNumberType" minOccurs="0"/>
+				<xsd:element name="Fax" type="ContactNumberType" minOccurs="0"/>
+				<xsd:element name="Email" type="EmailType" minOccurs="0"/>
 			  </xsd:sequence>
 			</xsd:complexType>
 		  </xsd:element>

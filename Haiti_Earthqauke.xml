@@ -4,128 +4,124 @@
 Author: Xiaoqin LI
 Date 03/10/2014
 -->
-	<Crisis CIdent = "CRI_006" > <!--Put anything from 001 to 010-->
+	<Crisis CIdent = "CRI_006" > 
 		<Name>9-11</Name>
-		<Kind CKindIdent = "CK_002" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
-		<Location> <!--Whatever you don't have, delete the tag-->
-			<City>:Léogâne</City>
+		<Kind CKindIdent = "CK_002" /> 
+		<Location> 
+			<City>Léogâne</City>
 			<County></County>
-			<Province>XXX</Province>
+			<Province></Province>
 			<State></State>
 			<Country>Haiti</Country>
 		</Location>
 		<DateAndTime>
-			<Date>2010-01-12</Date> <!--yyyy-mm-dd-->
-			<Time>04:53:00</Time> <!--hh:mm:ss-->
+			<Date>2010-01-12</Date>
+			<Time>04:53:00</Time> 
 		</DateAndTime>
-		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
-			<Death>222,500</Death>
-			<Injury>XXX</Injury>
-			<Relocation>1,500,000</Relocation>	
+		<HumanImpact> 
+			<Death>222500</Death>
+			<Injury>0</Injury>
+			<Relocation>1500000</Relocation>	
 		</HumanImpact>
-		<EconomicImpact> <!--Same as human impact-->
+		<EconomicImpact> 
 			<DirectImpact>$7.8 billion</DirectImpact>
 			<IndirectImpact>3.9 billion for new WTC</IndirectImpact>
-			<TotalImpact>XXX</TotalImpact>
+			<TotalImpact></TotalImpact>
 		</EconomicImpact>
-		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
-			<Resource rIdent = "RN_001" />
-			<Resource rIdent = "RN_002" />
-			<Resource rIdent = "RN_003" />
-			<Resource rIdent = "RN_004" />
+		<ResourcesNeeded> 
+			<Resources rIdent = "RN_001" />
+			<Resources rIdent = "RN_002" />
+			<Resources rIdent = "RN_003" />
+			<Resources rIdent = "RN_004" />
 		</ResourcesNeeded> 
-		<WaysToHelp> <!--See resourcesneeded above-->
+		<WaysToHelp> 
 			<Way wIdent = "WH_001" />
 		</WaysToHelp>  
-		<ExternalInfo> <!--Each one can have as many as you want-->
+		<ExternalInfo> 
 			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/e/e5/North_face_south_tower_after_plane_strike_9-11.jpg</ImageURL>
 			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/a/ab/French_Urban_Search_and_Rescue.jpg</ImageURL>
 			<ImageURL>http://theodorosii.files.wordpress.com/2013/11/1368224853201.jpg</ImageURL>
-			<VideoURL> https://www.youtube.com/watch?v=8IySBl2aq-A</VideoURL>
+			<VideoURL>https://www.youtube.com/watch?v=8IySBl2aq-A</VideoURL>
 			<MapURL>https://www.google.com/maps/place/L%C3%A9og%C3%A2ne/@18.5103159,-72.626946,15z/data=!3m1!4b1!4m2!3m1!1s0x8eb9cdcd5558ae65:0xf020c6e583ae7ab9 </MapURL>
-			<SocialNetworkFeedURL>https://twitter.com/CBSNews/lists/haiti-earthquake</SocialNetworkFeedURL> <!--Optional-->
-			<Citations>XXX</Citations> <!--Add however many you want-->
-			<ExternalLinkURL> http://en.wikipedia.org/wiki/2010_Haiti_earthquake </ExternalLinkURL> <!--Add however many you want-->
-			<ExternalLinkURL> http://www.oxfam.org/en/haitiquake </ExternalLinkURL> <!--Add however many you want-->
-			<ExternalLinkURL> http://content.time.com/time/specials/packages/0,28757,1953379,00.html?iid=redirect-haiti </ExternalLinkURL>
-			<ExternalLinkURL> http://www.who.int/hac/crises/hti/en/</ExternalLinkURL> <!--Add however many you want-->
-			
+			<SocialNetworkFeedURL>https://twitter.com/CBSNews/lists/haiti-earthquake</SocialNetworkFeedURL> 
+			<Citation>http://www.oxfam.org/en/haitiquake</Citation> 
+			<ExternalLinkURL>http://en.wikipedia.org/wiki/2010_Haiti_earthquake</ExternalLinkURL>
+			<ExternalLinkURL>http://content.time.com/time/specials/packages/0,28757,1953379,00.html?iid=redirect-haiti</ExternalLinkURL>
+			<ExternalLinkURL>http://www.who.int/hac/crises/hti/en/</ExternalLinkURL>
 		</ExternalInfo>
-		<ReletedPersons> <!-- may have more than one -->
+		<RelatedPersons>
 			<RelatedPerson PIdent = "PER_010"/>
-		</ReletedPersons>
-		<RelatedOrganizations> <!-- may have more than one -->
+		</RelatedPersons>
+		<RelatedOrganizations>
 			<RelatedOrganization OIdent = "ORG_004"/>
 		</RelatedOrganizations>
 	</Crisis>
 	
-	<Organization OIdent="ORG_006"> <!--Put anything from 001 to 010-->
+	<Organization OIdent="ORG_006"> 
 		<Name>UNICEF</Name>
 		<Kind OKindIdent= "OK_002" />
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> 
 			<City> New York City</City>
-			<County></County> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
-			<State> New York</State> <!--Optional, delete if not applicable-->
-			<PostalCode>10038</PostalCode> <!--Optional, delete if not applicable-->
-			<Country>United States</Country> <!--at least one-->
+			<County></County> 
+			<Province></Province> 
+			<State> New York</State> 
+			<PostalCode>10038</PostalCode> 
+			<Country>United States</Country>
 		</Location>
 		<History>UNICEF was created by the United Nations General Assembly on December 11, 1946, to provide emergency food and healthcare to children in countries that had been devastated by World War II. UNICEF was created by the United Nations General Assembly on December 11, 1946, to provide emergency food and healthcare to children in countries that had been devastated by World War II. 
 		    </History>
-		<ContactInfo> <!--Whatever you don't find can be deleted-->
-			<Telephone>212-686-5522</Telephone> <!--numbers and hyphens-->
-			<Fax>XXX</Fax> <!--numbers and hyphens-->
-			<Email>XXX</Email>	
+		<ContactInfo> 
+			<Telephone>212-686-5522</Telephone> 
+			<Fax></Fax> 
+			<Email></Email>	
 		</ContactInfo>
 		<ExternalInfo>
 			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_UNICEF.svgImageURL>
 			<VideoURL>https://www.youtube.com/watch?v=Lagdeg1Bz5E</VideoURL>
 			<MapURL>https://www.google.com/maps/place/UNICEF+Headquarters/@40.7500872,-73.9723107,18z/data=!3m1!4b1!4m2!3m1!1s0x0:0x24738d7ac66a710b</MapURL>
 			<SocialNetworkFeedURL>https://twitter.com/unicef </SocialNetworkFeedURL> 
-			<SocialNetworkFeedURL>https://www.facebook.com/unicef</SocialNetworkFeedURL> <!--Optional-->
-		    <!--Add however many you want-->
-			<ExternalLinkURL><http://en.wikipedia.org/wiki/UNICEF/ExternalLinkURL> <!--Add however many you want-->
+			<SocialNetworkFeedURL>https://www.facebook.com/unicef</SocialNetworkFeedURL> 
+			<Citation>http://www.unicefusa.org/</Citation>
+			<ExternalLinkURL>http://en.wikipedia.org/wiki/UNICEF/</ExternalLinkURL> 
 		</ExternalInfo>
-		<ExternalLinkURL>http://en.wikipedia.org/wiki/UNICEF
-		</ExternalInfo>
-		<RelatedCrises> <!-- may have more than one -->
+		<RelatedCrises> 
 			<RelatedCrisis CIdent= "CRI_004"/>
 		</RelatedCrises>
-		<ReletedPersons> <!-- may have more than one -->
+		<ReletedPersons> 
 			<RelatedPerson PIdent = "PER_010"/>
 		</ReletedPersons>
 	</Organization>
      
-	<Person PIdent="PER_006">  <!--Put anything from 001 to 010-->
+	<Person PIdent="PER_006">  
 		<Name>
 			<FirstName>Anthony</FirstName>
-			<MiddleName>XXX</MiddleName> <!-- could have zero and just delete this tag -->
+			<MiddleName></MiddleName> 
 			<LastName>Lake</LastName>
 		</Name>
 		<Kind PKindIdent="PK_007"/>
 		<Location>
-			<StreetAddress>XXX</StreetAddress> <!--Put name, apt#, PO box, etc. all on one line-->
+			<StreetAddress></StreetAddress> 
 			<City>New York City</City>
-			<County>XXX</County> <!--Optional, delete if not applicable-->
-			<State>XXX</State> <!--Optional, delete if not applicable-->
-			<PostalCode>XXX</PostalCode> <!--Optional, delete if not applicable-->
-			<Province>XXX</Province> <!--Optional, delete if not applicable-->
+			<County></County> 
+			<Province></Province>
+			<State></State> 
+			<PostalCode></PostalCode> 
 			<Country>United States</Country>
 		</Location>
 		<ExternalInfo>
 			<ImageURL>http://en.wikipedia.org/wiki/Anthony_Lake </ImageURL>
 			<VideoURL>http://www.youtube.com/watch?v=x2N556fNuLc</VideoURL>
-			<MapURL>XXX</MapURL>
-			<SocialNetworkFeedURL></SocialNetworkFeedURL> <!--Optional-->
-			<Citations> XXXXX </Citations> <!--Add however many you want-->
-			<ExternalLinkURL>http://en.wikipedia.org/wiki/Anthony_Lake</ExternalLinkURL> <!--Add however many you want-->
+			<MapURL></MapURL>
+			<SocialNetworkFeedURL></SocialNetworkFeedURL> 
+			<Citation>http://en.wikipedia.org/wiki/Anthony_Lake</Citation>
+			<ExternalLinkURL>http://www.un.org/News/Press/docs/2010/sga1226.doc.htm</ExternalLinkURL>
 		</ExternalInfo>
-		<RelatedCrises> <!-- may have more than one -->
-			<RelatedCrisis CIdent="CRI_009/>
+		<RelatedCrises> 
+			<RelatedCrisis CIdent="CRI_006"/>
 		</RelatedCrises>
-		<RelatedOrganizations> <!-- may have more than one -->
-			<RelatedOrganization OIdent="ORG_010"/>
+		<RelatedOrganizations> 
+			<RelatedOrganization OIdent="ORG_006"/>
 		</RelatedOrganizations>
 	</Person>
 

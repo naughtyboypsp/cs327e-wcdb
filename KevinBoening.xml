@@ -1,7 +1,7 @@
 <World Crises>
-	<Crisis CIdent = "CRI_009">
+	<Crisis CIdent = "CRI_007">
 		<Name>1900 Galveston Hurricane</Name>
-		<Kind CKindIdent = "CK_007"/>
+		<Kind CKindIdent = "CK_002"/>
 		<Location>
 			<City>Galveston</City>
 			<County>Galveston County</County>

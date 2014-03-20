@@ -44,6 +44,7 @@ def wcdb_write (w, data_tree):
     exports the string data 
     """
     data_exported_string = ET.tostring(data_tree,encoding = "unicode", method = "xml")
+    assert(type(data_exported_string) is str)
     w.write(data_exported_string)
 
 # ----------

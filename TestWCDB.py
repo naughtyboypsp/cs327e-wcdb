@@ -32,25 +32,25 @@ class TestWCDB(unittest.TestCase):
   def test_wcdb_read_tag(self):
     r = io.StringIO("<apple><bear><clear /><dog /></bear></apple>")
     root = wcdb_read(r)
-    self.assertTrue(root.tag == "apple")
-    self.assertTrue(root[0].tag == "bear")
-    self.assertTrue(root[0][0].tag == "clear")
-    self.assertTrue(root[0][1].tag == "dog")
+    self.assertTrue(root.tag == "WorldCrises")
+    self.assertTrue(root[0].tag == "apple")
+    self.assertTrue(root[0][0].tag == "bear")
+    self.assertTrue(root[0][0][0].tag == "clear")
 
   def test_wcdb_read_text(self):
     r = io.StringIO("<apple>hey hey<b /><c> </c></apple>")
     root = wcdb_read(r)
-    self.assertTrue(root.text == "hey hey")
-    self.assertTrue(root[0].text is None)
-    self.assertTrue(root[1].text == " ")
+    self.assertTrue(root[0].text == "hey hey")
+    self.assertTrue(root[0][0].text is None)
+    self.assertTrue(root[0][1].text == " ")
     self.assertTrue(root.attrib == {})
 
   def test_wcdb_read_attrib(self):
     r = io.StringIO("<Book ISBN='ISBN-0-13-713526-2' Price='100'><Title ID = 'CS327'>Database</Title></Book>")
     root = wcdb_read(r)
-    self.assertTrue(root.attrib == {'ISBN': 'ISBN-0-13-713526-2', 'Price': '100'})
-    self.assertTrue(root[0].attrib == {'ID': 'CS327'})
-    self.assertTrue(root[0].text == "Database")
+    self.assertTrue(root[0].attrib == {'ISBN': 'ISBN-0-13-713526-2', 'Price': '100'})
+    self.assertTrue(root[0][0].attrib == {'ID': 'CS327'})
+    self.assertTrue(root[0][0].text == "Database")
 
   # ----------------------------------------------------
   # wcdb_write function test 3 in total
@@ -59,24 +59,27 @@ class TestWCDB(unittest.TestCase):
 
   def test_wcdb_write_single_ele(self):
       w = io.StringIO()
-      a = ET.Element('apple')
+      a = ET.Element('WorldCrises')
+      b = ET.SubElement(a,'apple')
       wcdb_write(w, a)
       self.assertTrue(w.getvalue() == "<apple />")
       
   def test_wcdb_write_attrib_text(self):
       w = io.StringIO()
-      a = ET.Element('apple')
-      a.text = "hey hey"
-      a.attrib = {'aa':'bb','price':'3'}
+      a = ET.Element('WorldCrises')
+      b = ET.SubElement(a,'apple')
+      b.text = "hey hey"
+      b.attrib = {'aa':'bb','price':'3'}
       wcdb_write(w, a)
       self.assertTrue(w.getvalue() == "<apple aa=\"bb\" price=\"3\">hey hey</apple>")
 
   def test_wcdb_write_nested_ele(self):
       w = io.StringIO()
-      a = ET.Element('apple')
-      b = ET.SubElement(a, 'bear')
-      c = ET.SubElement(a, 'clear')
-      d = ET.SubElement(b, 'dog')
+      a = ET.Element('WorldCrises')
+      b = ET.SubElement(a, 'apple')
+      c = ET.SubElement(b, 'bear')
+      d = ET.SubElement(c, 'dog')
+      e = ET.SubElement(b, 'clear')
       wcdb_write(w, a)
       self.assertTrue(w.getvalue() == "<apple><bear><dog /></bear><clear /></apple>")
 

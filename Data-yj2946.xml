@@ -1,274 +1,524 @@
-<?xml version="1.0" ?>
-<WorldCrises>
-<!-- First Version of WCDB.XML
-Author: Xiaoqin LI
-Date 03/10/2014
--->
-	<Crisis CIdent = "CRI_009" > <!--Put anything from 001 to 010-->
-		<Name>Cuban Missile Crisis</Name>
-		<Kind CKindIdent = "CK_003" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
-		<Location> <!--Whatever you don't have, delete the tag-->
-			<Country>United States, Cuba</Country>
-		</Location>
-		<DateAndTime>
-			<Date>1962-14-10</Date> <!--yyyy-mm-dd-->
-		</DateAndTime>
-		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
-			<Death>1</Death>
-			<Injury>0</Injury>
-		</HumanImpact>
-		<EconomicImpact> <!--Same as human impact-->
-			<DirectImpact>Military blockade on cuba</DirectImpact>
-			<IndirectImpact>Relation worsen with USSR and Cuba</IndirectImpact>
-		</EconomicImpact>
-		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
-			<Resource rIdent = "RN_007" />
-		</ResourcesNeeded> 
-		<WaysToHelp> <!--See resourcesneeded above-->
-			<Way wIdent = "WH_003" />
-		</WaysToHelp>  
-		<ExternalInfo> <!--Each one can have as many as you want-->
-			<ImageURL>http://govbooktalk.files.wordpress.com/2012/10/cuba-blockade-headlines.jpg</ImageURL>
-			<VideoURL>http://www.history.com/topics/cold-war/cuban-missile-crisis/videos/cuban-missile-crisis</VideoURL>
-			<MapURL>http://users.humboldt.edu/ogayle/Hist%20111%20Images/CubanMissileCrisis.gif</MapURL>
-			<SocialNetworkFeedURL>https://www.facebook.com/pages/Cuban-Missile-Crisis/105496976151334?ref=br_tf</SocialNetworkFeedURL> <!--Optional-->
-			<ExternalLinkURL>http://www.jfklibrary.org/JFK/JFK-in-Historyd]/Cuban-Missile-Crisis.aspx</ExternalLinkURL> <!--Add however many you want-->
-		</ExternalInfo>
-		<ReletedPersons> <!-- may have more than one -->
-			<RelatedPerson PIdent = "PER_009"/>
-		</ReletedPersons>
-		<RelatedOrganizations> <!-- may have more than one -->
-			<RelatedOrganization OIdent = "ORG_009"/>
-		</RelatedOrganizations>
-	</Crisis>
-    
-    <Crisis CIdent = "CRI_010" > <!--Put anything from 001 to 010-->
-		<Name>Cold War</Name>
-		<Kind CKindIdent = "CK_003" /> <!--The list of kinds are at the bottom. If you have a better kind, add it according to the format-->
-		<Location> <!--Whatever you don't have, delete the tag-->
-			<Country>United States, Russia</Country>
-		</Location>
-		<DateAndTime>
-			<Date>1947-01-01</Date> <!--yyyy-mm-dd-->
-		</DateAndTime>
-		<HumanImpact> <!--All the following categories are optional; if you don't have anything just delete the tag-->
-			<Death>12</Death>
-			<Injury>44</Injury>
-		</HumanImpact>
-		<EconomicImpact> <!--Same as human impact-->
-			<DirectImpact>Huge fiscal mortgage, but open trade policy with China</DirectImpact>
-		</EconomicImpact>
-		<ResourcesNeeded> <!--add as many as you think is fitting. If one is not at the bottom, add it according to the format-->
-			<Resource rIdent = "RN_001" />
-            <Resource rIdent = "RN_555" />
-		</ResourcesNeeded>
-		<WaysToHelp> <!--See resourcesneeded above-->
-			<Way wIdent = "WH_001" />
-		</WaysToHelp>
-		<ExternalInfo> <!--Each one can have as many as you want-->
-			<ImageURL>http://theodorosii.files.wordpress.com/2013/11/1368224853201.jpg</ImageURL>
-			<VideoURL>http://www.youtube.com/watch?v=y9HjvHZfCUI</VideoURL>
-			<MapURL>http://ocw.nd.edu/physics/nuclear-warfare/images-1/Cold-War-Map.jpg/image</MapURL>
-			<ExternalLinkURL>http://en.wikipedia.org/wiki/United_States_military_casualties_of_war</ExternalLinkURL> <!--Add however many you want-->
-            <ExternalLinkURL>http://en.wikipedia.org/wiki/Cold_war</ExternalLinkURL>
-		</ExternalInfo>
-		<ReletedPersons> <!-- may have more than one -->
-			<RelatedPerson PIdent = "PER_009"/>
-		</ReletedPersons>
-		<RelatedOrganizations> <!-- may have more than one -->
-			<RelatedOrganization OIdent = "ORG_010"/>
-		</RelatedOrganizations>
-	</Crisis>
+<root>
+    <crises>
+        <crisis>
+            <crisisId>CRI_009</crisisId>
+            <name>Cuban Missile Crisis</name>
+            <kind>War / Conflict</kind>
+            <streetAddress>NULL</streetAddress>
+            <city>NUll</city>
+            <stateOrProvince>NULL</stateOrProvince>
+            <country>Cuba</country>
+            <dateAndTime>1962-10-14T00:00:00</dateAndTime>
+            <fatalities>1</fatalities>
+            <injuries>0</injuries>
+            <populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+            <environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+            <regulatoryChanges>Embargo against Cuba</regulatoryChanges>
+        </crisis>
+        <crisis>
+            <crisisId>CRI_010</crisisId>
+            <name>Cold War</name>
+            <kind>War / Conflict</kind>
+            <streetAddress>NULL</streetAddress>
+            <city>NULL</city>
+            <stateOrProvince>NULL</stateOrProvince>
+            <country>USA</country>
+            <dateAndTime>1947-01-01T11:48:00</dateAndTime>
+            <fatalities>12</fatalities>
+            <injuries>44</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+            <environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>US as the sole superpower post World War II</politicalChanges>
+			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>8000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+            <regulatoryChanges>Open trade policy with China</regulatoryChanges>
+        </crisis>
+    </crises>
 	
-	<Organization OIdent="ORG_009"> <!--Put anything from 001 to 010-->
-		<Name>Defense Intellegence Agency</Name>
-		<Kind OKindIdent= "OK_002" />
-		<Location>
-			<Country>United States</Country> <!--at least one-->
-		</Location>
-		<History>DIA was established by Robert S. McNamara in February 1961 to improve organization and coordination of military departments. The agency's mission was the continuous task of collecting, processing, evaluating, analyzing, integrating, producing, and disseminating military intelligence for the department of defense.</History>
-		<ContactInfo> <!--Whatever you don't find can be deleted-->
-			<Email>DIA-PAO@dodiis.mil</Email>
-		</ContactInfo>
-		<ExternalInfo>
-			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/9/9d</ImageURL>
-            <ImageURL>US_Defense_Intelligence_Agency_(DIA)_seal.png</ImageURL>
-			<VideoURL>XXX</VideoURL>
-			<MapURL>https://www.google.com/maps/place/Defense+Intelligence+Agency/@38.8970604,-77.0671163,12z/data=!4m5!1m2!2m1!1sdefense+intelligence+agency!3m1!1s0x89b7b786d62308d3:0xc706846b7ab9289c</MapURL>
-			<SocialNetworkFeedURL>https://www.facebook.com/DIA</SocialNetworkFeedURL> <!--Optional-->
-			<ExternalLinkURL>http://www.dia.mil/About.aspx</ExternalLinkURL> <!--Add however many you want-->
-		</ExternalInfo>
-		<RelatedCrises> <!-- may have more than one -->
-			<RelatedCrisis CIdent= "CRI_009"/>
-		</RelatedCrises>
-		<ReletedPersons> <!-- may have more than one -->
-			<RelatedPerson PIdent = "PER_009"/>
-		</ReletedPersons>
-	</Organization>
-    
-    <Organization OIdent="ORG_010"> <!--Put anything from 001 to 010-->
-		<Name>United Nations</Name>
-		<Kind OKindIdent= "OK_001" />
-		<Location>
-			<State>Washington</State> <!--Optional, delete if not applicable-->
-			<Country>United States</Country> <!--at least one-->
-		</Location>
-		<History>Franklin D. Roosevelt first coined the term United Nations to describe the Allied countries. The term was first officially used on 1 January 1945, when 26 governments signed the Atlantic Charter. The UN's primary mandate was peacekeeping.</History>
-		<ContactInfo> <!--Whatever you don't find can be deleted-->
-			<Email>inquiries2@un.org</Email>
-		</ContactInfo>
-		<ExternalInfo>
-			<ImageURL>http://static.spplus.com/pictures/United-Nations-logo.jpg</ImageURL>
-			<VideoURL>XXX</VideoURL>
-			<MapURL>https://www.google.com/maps/place/United+Nations/@40.7541621,-73.967639,15z/data=!4m5!1m2!2m1!1sunited+nations!3m1!1s0x89c2591ce0874d11:0xc5fae28bdd3df635</MapURL>
-			<SocialNetworkFeedURL>https://www.facebook.com/unitednations</SocialNetworkFeedURL> <!--Optional-->
-			<ExternalLinkURL>http://www.un.org/en/</ExternalLinkURL> <!--Add however many you want-->
-		</ExternalInfo>
-		<RelatedCrises> <!-- may have more than one -->
-			<RelatedCrisis CIdent= "CRI_010"/>
-		</RelatedCrises>
-		<ReletedPersons> <!-- may have more than one -->
-			<RelatedPerson PIdent = "PER_010"/>
-		</ReletedPersons>
-	</Organization>
-     
-	<Person PIdent="PER_009">  <!--Put anything from 001 to 010-->
-		<Name>
-			<FirstName>Fidel</FirstName>
-			<LastName>Castro</LastName>
-		</Name>
-		<Kind PKindIdent="PK_007"/>
-		<Location>
-			<City>Biran</City>
-			<Country>Cuba</Country>
-		</Location>
-		<ExternalInfo>
-			<ImageURL>http://jeweell.com/data_images/out/70/1158213-fidel-castro.jpg</ImageURL>
-            <ImageURL>http://a.abcnews.go.com/images/US/gty_fidel_castro_3_dm_130423_wg.jpg</ImageURL>
-			<VideoURL>http://www.youtube.com/watch?v=qQ24jmIHIUk</VideoURL>
-			<SocialNetworkFeedURL>https://www.facebook.com/f.c.fan.page</SocialNetworkFeedURL> <!--Optional-->
-			<ExternalLinkURL>http://www.britannica.com/EBchecked/topic/98822/Fidel-Castro</ExternalLinkURL> <!--Add however many you want-->
-		</ExternalInfo>
-		<RelatedCrises> <!-- may have more than one -->
-			<RelatedCrisis CIdent="CRI_009"/>
-		</RelatedCrises>
-		<RelatedOrganizations> <!-- may have more than one -->
-			<RelatedOrganization OIdent="ORG_009"/>
-		</RelatedOrganizations>
-	</Person>
-    
-    <Person PIdent="PER_010">  <!--Put anything from 001 to 010-->
-		<Name>
-			<FirstName>Barack</FirstName>
-			<MiddleName>Hussein</MiddleName> <!-- could have zero and just delete this tag -->
-			<LastName>Obama</LastName>
-		</Name>
-		<Kind PKindIdent="PK_002"/>
-		<Location>
-			<City>Honolulu</City>
-			<State>Hawaii</State> <!--Optional, delete if not applicable-->
-			<Country>United States</Country>
-		</Location>
-		<ExternalInfo>
-			<ImageURL>http://upload.wikimedia.org/wikipedia/commons/0/01/Poster-sized_portrait_of_Barack_Obama_OrigRes.jpg</ImageURL>
-            <ImageURL>http://bitbbq.com/wp-content/uploads/2014/03/President_Obama_342.jpg</ImageURL>
-			<VideoURL>http://www.biography.com/people/barack-obama-12782369</VideoURL>
-			<SocialNetworkFeedURL>https://www.facebook.com/barackobama</SocialNetworkFeedURL> <!--Optional-->
-			<ExternalLinkURL>istration/president-obama/</ExternalLinkURL> <!--Add however many you want-->
-		</ExternalInfo>
-		<RelatedCrises> <!-- may have more than one -->
-			<RelatedCrisis CIdent="CRI_010"/>
-		</RelatedCrises>
-		<RelatedOrganizations> <!-- may have more than one -->
-			<RelatedOrganization OIdent="ORG_010"/>
-		</RelatedOrganizations>
-	</Person>
-
-	<Resources rIdent = "RN_001" />
-		<Name>Money</Name>
-	<Resources rIdent = "RN_002" />
-		<Name>Medical Supplies</Name>
-	<Resources rIdent = "RN_003" />
-		<Name>Construction Materials</Name>
-	<Resources rIdent = "RN_004" />
-		<Name>Food/Water</Name>
-	<Resources rIdent = "RN_005" />
-		<Name>Shelter</Name>
-    <Resources rIdent = "RN_555" />
-		<Name>Military Supplies</Name>
-
-	<WaysToHelp wIdent = "WH_001" />
-		<Name>Donate Money</Name>
-	<WaysToHelp wIdent = "WH_002" />
-		<Name>Volunteer</Name>
-    <WaysToHelp wIdent = "WH_555" />
-		<Name>Public Relation</Name>
-    
-
-	<CrisisKind CKindIdent="CK_001" />
-		<Name>Human Error</Name>
-		<Description>An accident caused by improper operation of equipment or miscalculations</Description>
-	<CrisisKind CKindIdent="CK_002" />
-		<Name>Natural Disaster</Name>
-		<Description>Severe damages caused by forces of nature, including hurricanes, tornadoes and earthquakes</Description>
-	<CrisisKind CKindIdent="CK_003" />
-		<Name>War / Conflict</Name>
-		<Description>A crisis which involves two or more countries fighting against each other</Description>
-	<CrisisKind CKindIdent="CK_004" />
-		<Name>Act of Terrorism</Name>
-		<Description>Using violence against civilians in order to achieve political, religious or ideological goals</Description>
-	<CrisisKind CKindIdent="CK_005" />
-		<Name>Assassination / Shooting</Name>
-		<Description>Murder of one person or multiple people</Description>
-	<CrisisKind CKindIdent="CK_006" />
-		<Name>Economic Crisis</Name>
-		<Description>A dip in the economy characterized by high unemployment, low prices, and/or low levels of trade and investment</Description>
-	<CrisisKind CKindIdent="CK_007" />
-		<Name>Civil / Social Crisis</Name>
-		<Description>Conflicts that usually involve protests by one or multiple groups of people</Description>
-	<CrisisKind CKindIdent="CK_008" />
-		<Name>Pandemic / Illness</Name>
-		<Description>Widespread, detrimental health effects</Description>
+    <orgs>
+        <org>
+            <orgId>ORG_009</orgId>
+            <name>Defense Intellegence Agency</name>
+            <kind>Government Agency</kind>
+            <streetAddress>200 Mac Dill Blvd</streetAddress>
+            <city>Washington</city>
+            <stateOrProvince>District of Columbia</stateOrProvince>
+            <postalCode>NULL</postalCode>
+            <country>USA</country>
+            <foundingMission>DIA is first in all-source defense intellengece to prevent strategic surprise and deliver a decision advantage to warfighters, defense planners, and policymakers.</foundingMission>
+            <dateFounded>1961-10-01</dateFounded>
+            <majorEvents>Failed to adequately act against one of the organizers of 9/11</majorEvents>
+        </org>
+        <org>
+            <orgId>ORG_010</orgId>
+            <name>United Nations</name>
+            <kind>Intergovernmental Agency</kind>
+            <streetAddress>UN Headquarters First Avenue at 46th Street</streetAddress>
+            <city>New York</city>
+            <stateOrProvince>New York</stateOrProvince>
+            <postalCode>10017</postalCode>
+            <country>USA</country>
+            <foundingMission>To save succeeding generations from the scourge of war and to reaffirm faith in fundamental human rights.</foundingMission>
+            <dateFounded>1945-06-26</dateFounded>
+            <majorEvents>Approving the creation of the state of Israel.</majorEvents>
+		</org>
+    </orgs>
 	
-	<OrganizationKind OKindIdent="OK_001" />
-		<Name>Intergovernmental Agency</Name>
-		<Description>An organization set up across multiple nations</Description>
-	<OrganizationKind OKindIdent="OK_002" />
-		<Name>Government Agency</Name>
-		<Description>An organization that is set up by and associated to a specific country</Description>
-	<OrganizationKind OKindIdent="OK_003" />
-		<Name>Military Force</Name>
-		<Description>The defense system of a country, including the navy, the army, the airforce and the marines</Description>
-	<OrganizationKind OKindIdent="OK_004" />
-		<Name>Intergovernmental Public Health Agency</Name>
-		<Description>An organization that seeks to promote the health and well being of those in need</Description>
-	<OrganizationKind OKindIdent="OK_005" />
-		<Name>Nonprofit, Humanitarian Organization</Name>
-		<Description>An organization that provides necessities and goods to those who need them, especially after a disaster</Description>
-	<OrganizationKind OKindIdent="OK_006" />
-		<Name>Corporation</Name>
-		<Description>A company that conducts a business of some sort</Description>
-
-	<PersonKind PKindIdent="PK_001" />
-		<Name>Institution President</Name>
-		<Description>The head of a public institution such as a university</Description>
-	<PersonKind PKindIdent="PK_002" />
-		<Name>Country President</Name>
-		<Description>The leader of a country</Description>
-	<PersonKind PKindIdent="PK_003" />
-		<Name>Celebrity</Name>
-		<Description>A generic catch-all for actors / actresses, singers, sports players, entertainers, etc</Description>
-	<PersonKind PKindIdent="PK_004" />
-		<Name>Politician</Name>
-		<Description>A person that deals directly with government issues</Description>
-	<PersonKind PKindIdent="PK_005" />
-		<Name>CEO</Name>
-		<Description>The leader of a corporation or a company</Description>
-	<PersonKind PKindIdent="PK_006" />
-		<Name>Humanitarian / Philantropist</Name>
-		<Description>One who is devoted to the promotion of human welfare through giving and volunteering</Description>
-	<PersonKind PKindIdent="PK_007" />
-		<Name>Dictator</Name>
-		<Description>The absolute leader of a dictatorial government</Description>
-
-</WorldCrises>
+    <people>
+        <person>
+            <personId>PER_009</personId>
+            <name>Fidel Castro</name>
+            <kind>President</kind>
+            <streetAddress>NULL</streetAddress>
+            <city>Biran</city>
+            <stateOrProvince>NULL</stateOrProvince>
+            <postalCode>NULL</postalCode>
+            <country>Cuba</country>
+        </person>
+        <person>
+            <personId>PER_010</personId>
+            <name>Barack Obama</name>
+            <kind>President</kind>
+            <streetAddress>1600 Pennsylvania Avenue NW</streetAddress>
+            <city>Washington</city>
+            <stateOrProvince>District of Columbia</stateOrProvince>
+            <postalCode>20500</postalCode>
+            <country>USA</country>
+        </person>
+    </people>
+	
+    
+    <resources>
+        <resourcePair>
+            <resourceId>RES_000</resourceId>
+            <resource>Food</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_001</resourceId>
+            <resource>LaborUnion</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_002</resourceId>
+            <resource>Police</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_003</resourceId>
+            <resource>Repair</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_004</resourceId>
+            <resource>National Guards</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_005</resourceId>
+            <resource>Machinery</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_006</resourceId>
+            <resource>Servicemen</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_007</resourceId>
+            <resource>Water</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_008</resourceId>
+            <resource>Medical Supplies</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_009</resourceId>
+            <resource>Money</resource>
+        </resourcePair>
+        <resourcePair>
+            <resourceId>RES_010</resourceId>
+            <resource>Building Materials</resource>
+        </resourcePair>
+    </resources>
+	
+    <crisisResources>
+        <crisisResourcePair>
+            <crisisId>CRI_009</crisisId>
+            <resourceId>RES_004</resourceId>
+		</crisisResourcePair>
+        <crisisResourcePair>
+            <crisisId>CRI_009</crisisId>
+            <resourceId>RES_006</resourceId>
+		</crisisResourcePair>
+        <crisisResourcePair>
+            <crisisId>CRI_010</crisisId>
+            <resourceId>RES_004</resourceId>
+        </crisisResourcePair>
+        <crisisResourcePair>
+            <crisisId>CRI_010</crisisId>
+            <resourceId>RES_006</resourceId>
+        </crisisResourcePair>
+        <crisisResourcePair>
+            <crisisId>CRI_010</crisisId>
+            <resourceId>RES_009</resourceId>
+        </crisisResourcePair>
+    </crisisResources>
+	
+    <waysToHelp>
+        <wayToHelpPair>
+            <helpId>HEL_000</helpId>
+            <wayToHelp>Bring food</wayToHelp>
+        </wayToHelpPair>
+        <wayToHelpPair>
+            <helpId>HEL_001</helpId>
+            <wayToHelp>Bring supplies</wayToHelp>
+        </wayToHelpPair>
+        <wayToHelpPair>
+            <helpId>HEL_002</helpId>
+            <wayToHelp>Call National Guards</wayToHelp>
+        </wayToHelpPair>
+        <wayToHelpPair>
+            <helpId>HEL_003</helpId>
+            <wayToHelp>Give donations</wayToHelp>
+        </wayToHelpPair>
+        <wayToHelpPair>
+            <helpId>HEL_004</helpId>
+            <wayToHelp>Bring police</wayToHelp>
+        </wayToHelpPair>
+        <wayToHelpPair>
+            <helpId>HEL_005</helpId>
+            <wayToHelp>Raise awareness</wayToHelp>
+        </wayToHelpPair>
+    </waysToHelp>
+	
+    <crisisWaysToHelp>
+        <crisisWayToHelpPair>
+            <crisisId>CRI_009</crisisId>
+            <helpId>HEL_002</helpId>
+        </crisisWayToHelpPair>
+        <crisisWayToHelpPair>
+            <crisisId>CRI_009</crisisId>
+            <helpId>HEL_005</helpId>
+        </crisisWayToHelpPair>
+        <crisisWayToHelpPair>
+            <crisisId>CRI_010</crisisId>
+            <helpId>HEL_001</helpId>
+        </crisisWayToHelpPair>
+        <crisisWayToHelpPair>
+            <crisisId>CRI_010</crisisId>
+            <helpId>HEL_003</helpId>
+        </crisisWayToHelpPair>
+        <crisisWayToHelpPair>
+            <crisisId>CRI_010</crisisId>
+            <helpId>HEL_005</helpId>
+        </crisisWayToHelpPair>
+    </crisisWaysToHelp>
+	
+	
+    <contactInfos>
+        <contactInfo>
+            <contactInfoId>CON_009</contactInfoId>
+            <phoneNumber>202-231-5554</phoneNumber>
+            <emailAddress>DIA-PAO@dodiis.mil</emailAddress>
+            <facebookUrlId>URL_700</facebookUrlId>
+            <twitterUrlId>URL_001</twitterUrlId>
+            <websiteUrlId>URL_701</websiteUrlId>
+        </contactInfo>
+        <contactInfo>
+            <contactInfoId>CON_010</contactInfoId>
+            <phoneNumber>NULL</phoneNumber>
+            <emailAddress>inquiries2@un.org</emailAddress>
+            <facebookUrlId>URL_704</facebookUrlId>
+            <twitterUrlId>URL_001</twitterUrlId>
+            <websiteUrlId>URL_705</websiteUrlId>
+        </contactInfo>
+    </contactInfos>
+	
+    <orgContactInfos>
+        <orgContactInfoPair>
+            <orgId>ORG_009</orgId>
+            <contactInfoId>CON_009</contactInfoId>
+        </orgContactInfoPair>
+        <orgContactInfoPair>
+            <orgId>ORG_010</orgId>
+            <contactInfoId>CON_010</contactInfoId>
+        </orgContactInfoPair>
+    </orgContactInfos>
+	
+    <citations>
+        <citationPair>
+            <citationId>CIT_700</citationId>
+            <citation>http://www.jfklibrary.org/JFK/JFK-in-Historyd]/Cuban-Missile-Crisis.aspx</citation>
+        </citationPair>
+        <citationPair>
+            <citationId>CIT_701</citationId>
+            <citation>http://en.wikipedia.org/wiki/United_States_military_casualties_of_war</citation>
+        </citationPair>
+        <citationPair>
+            <citationId>CIT_702</citationId>
+            <citation>http://www.dia.mil/About.aspx</citation>
+        </citationPair>
+        <citationPair>
+            <citationId>CIT_703</citationId>
+            <citation>http://www.un.org/en/</citation>
+        </citationPair>
+        <citationPair>
+            <citationId>CIT_704</citationId>
+            <citation>http://www.britannica.com/EBchecked/topic/98822/Fidel-Castro</citation>
+        </citationPair>
+        <citationPair>
+            <citationId>CIT_705</citationId>
+            <citation>http://en.wikipedia.org/wiki/Barack_Obama</citation>
+        </citationPair>
+    </citations>
+	
+    <crisisCitations>
+        <crisisCitationPair>
+            <citationId>CIT_700</citationId>
+            <crisisId>CRI_009</crisisId>
+        </crisisCitationPair>
+        <crisisCitationPair>
+            <citationId>CIT_701</citationId>
+            <crisisId>CRI_010</crisisId>
+        </crisisCitationPair>
+    </crisisCitations>
+	
+    <orgCitations>
+        <orgCitationPair>
+            <orgId>ORG_009</orgId>
+            <citationId>CIT_702</citationId>
+        </orgCitationPair>
+        <orgCitationPair>
+			<orgId>ORG_010</orgId>
+            <citationId>CIT_703</citationId>
+        </orgCitationPair>
+    </orgCitations>
+	
+    <personCitations>
+		<personCitationPair>
+			<personId>PER_009</personId>
+			<citationId>CIT_704</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_010</personId>
+			<citationId>CIT_705</citationId>
+		</personCitationPair>
+    </personCitations>
+	
+    <urls>
+        <url>
+            <urlId>URL_001</urlId>
+            <type>SocialNetwork</type>
+            <urlAddress>NULL</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_700</urlId>
+            <type>SocialNetwork</type>
+            <urlAddress>https://www.facebook.com/DIA</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_701</urlId>
+            <type>Website</type>
+            <urlAddress>http://www.dia.mil/Home.aspx</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_702</urlId>
+            <type>Map</type>
+            <urlAddress>https://www.google.com/maps/place/Defense+Intelligence+Agency/@38.8970604,-77.0671163,12z/data=!4m5!1m2!2m1!1sdefense+intelligence+agency!3m1!1s0x89b7b786d62308d3:0xc706846b7ab9289c</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_703</urlId>
+            <type>Image</type>
+            <urlAddress>http://upload.wikimedia.org/wikipedia/commons/9/9d</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_704</urlId>
+            <type>SocialNetwork</type>
+            <urlAddress>https://www.facebook.com/unitednations</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_705</urlId>
+            <type>Website</type>
+            <urlAddress>http://www.un.org/en/</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_706</urlId>
+            <type>Map</type>
+            <urlAddress>https://www.google.com/maps/place/United+Nations/@40.7541621,-73.967639,15z/data=!4m5!1m2!2m1!1sunited+nations!3m1!1s0x89c2591ce0874d11:0xc5fae28bdd3df635</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_707</urlId>
+            <type>Image</type>
+            <urlAddress>http://static.spplus.com/pictures/United-Nations-logo.jpg</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_708</urlId>
+            <type>Image</type>
+            <urlAddress>http://govbooktalk.files.wordpress.com/2012/10/cuba-blockade-headlines.jpg</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_709</urlId>
+            <type>Video</type>
+            <urlAddress>http://www.history.com/topics/cold-war/cuban-missile-crisis/videos/cuban-missile-crisis</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_710</urlId>
+            <type>Map</type>
+            <urlAddress>http://users.humboldt.edu/ogayle/Hist%20111%20Images/CubanMissileCrisis.gif</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_711</urlId>
+            <type>Image</type>
+            <urlAddress>http://theodorosii.files.wordpress.com/2013/11/1368224853201.jpg</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_712</urlId>
+            <type>Video</type>
+            <urlAddress>http://www.youtube.com/watch?v=y9HjvHZfCUI</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_713</urlId>
+            <type>Map</type>
+            <urlAddress>http://ocw.nd.edu/physics/nuclear-warfare/images-1/Cold-War-Map.jpg/image</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_714</urlId>
+            <type>Image</type>
+            <urlAddress>http://jeweell.com/data_images/out/70/1158213-fidel-castro.jpg</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_715</urlId>
+            <type>Image</type>
+            <urlAddress>http://a.abcnews.go.com/images/US/gty_fidel_castro_3_dm_130423_wg.jpg</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_716</urlId>
+            <type>Video</type>
+            <urlAddress>http://www.youtube.com/watch?v=qQ24jmIHIUk</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_717</urlId>
+            <type>Image</type>
+            <urlAddress>http://upload.wikimedia.org/wikipedia/commons/0/01/Poster-sized_portrait_of_Barack_Obama_OrigRes.jpg</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_718</urlId>
+            <type>Image</type>
+            <urlAddress>http://bitbbq.com/wp-content/uploads/2014/03/President_Obama_342.jpg</urlAddress>
+        </url>
+        <url>
+            <urlId>URL_719</urlId>
+            <type>Video</type>
+            <urlAddress>http://www.biography.com/people/barack-obama-12782369</urlAddress>
+        </url>
+    </urls>
+    
+    <crisisUrls>
+        <crisisUrlPair>
+            <crisisId>CRI_009</crisisId>
+            <urlId>URL_708</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_009</crisisId>
+            <urlId>URL_709</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_009</crisisId>
+            <urlId>URL_710</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_010</crisisId>
+            <urlId>URL_711</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_010</crisisId>
+            <urlId>URL_712</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_010</crisisId>
+            <urlId>URL_713</urlId>
+        </crisisUrlPair>
+    </crisisUrls>
+	
+    <orgUrls>
+        <orgUrlPair>
+            <orgId>ORG_009</orgId>
+            <urlId>URL_702</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_009</orgId>
+            <urlId>URL_703</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_010</orgId>
+            <urlId>URL_706</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_010</orgId>
+            <urlId>URL_707</urlId>
+        </orgUrlPair>
+    </orgUrls>
+	
+    <personUrls>
+        <personUrlPair>
+            <personId>PER_009</personId>
+            <urlId>URL_714</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_009</personId>
+            <urlId>URL_715</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_009</personId>
+            <urlId>URL_716</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_010</personId>
+            <urlId>URL_717</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_010</personId>
+            <urlId>URL_718</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_010</personId>
+            <urlId>URL_719</urlId>
+        </personUrlPair>
+    </personUrls>
+	
+    <crisisOrgs>
+        <crisisOrgPair>
+            <crisisId>CRI_009</crisisId>
+            <orgId>ORG_009</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_010</crisisId>
+            <orgId>ORG_010</orgId>
+        </crisisOrgPair>
+    </crisisOrgs>
+	
+    <crisisPeople>
+        <crisisPersonPair>
+            <crisisId>CRI_009</crisisId>
+            <personId>PER_009</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_010</crisisId>
+            <personId>PER_010</personId>
+        </crisisPersonPair>
+    </crisisPeople>
+	
+    <orgPeople>
+        <orgPersonPair>
+            <orgId>ORG_009</orgId>
+            <personId>PER_009</personId>
+        </orgPersonPair>
+        <orgPersonPair>
+            <orgId>ORG_010</orgId>
+            <personId>PER_010</personId>
+        </orgPersonPair>
+    </orgPeople>
+</root>

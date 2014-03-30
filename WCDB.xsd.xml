@@ -208,8 +208,8 @@
                         <xs:element name="politicalChanges" type="xs:string"/>
                         <xs:element name="culturalChanges" type="xs:string"/>
                         <xs:element name="jobsLost" type="xs:int" minOccurs="1" maxOccurs="1" />
-                        <xs:element name="damageInUSD" type="xs:int" minOccurs="1" maxOccurs="1" />
-                        <xs:element name="reparationCost" type="xs:int" minOccurs="1" maxOccurs="1" />
+                        <xs:element name="damageInUSD" type="xs:long" minOccurs="1" maxOccurs="1" />
+                        <xs:element name="reparationCost" type="xs:long" minOccurs="1" maxOccurs="1" />
                         <xs:element name="regulatoryChanges" type="xs:string" minOccurs="1" maxOccurs="1" />
                     </xs:sequence>
                 </xs:complexType>
@@ -232,6 +232,7 @@
                                     <xs:enumeration value="Intergovernmental Agency"/>
                                     <xs:enumeration value="Intergovernmental Public Health Agency"/>
                                     <xs:enumeration value="Nonprofit / Humanitarian Organization"/>
+									<xs:enumeration value="Corporation"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
@@ -268,6 +269,7 @@
                                     <xs:enumeration value="CEO"/>
                                     <xs:enumeration value="Humanitarian"/>
                                     <xs:enumeration value="Perpetrator"/>
+									<xs:enumeration value="Regular Worker"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>

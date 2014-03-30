@@ -223,17 +223,17 @@
             <contactInfoId>CON_009</contactInfoId>
             <phoneNumber>202-231-5554</phoneNumber>
             <emailAddress>DIA-PAO@dodiis.mil</emailAddress>
-            <facebookUrlId>URL_700</facebookUrlId>
+            <facebookUrlId>URL_106</facebookUrlId>
             <twitterUrlId>URL_001</twitterUrlId>
-            <websiteUrlId>URL_701</websiteUrlId>
+            <websiteUrlId>URL_107</websiteUrlId>
         </contactInfo>
         <contactInfo>
             <contactInfoId>CON_010</contactInfoId>
             <phoneNumber>NULL</phoneNumber>
             <emailAddress>inquiries2@un.org</emailAddress>
-            <facebookUrlId>URL_704</facebookUrlId>
+            <facebookUrlId>URL_110</facebookUrlId>
             <twitterUrlId>URL_001</twitterUrlId>
-            <websiteUrlId>URL_705</websiteUrlId>
+            <websiteUrlId>URL_111</websiteUrlId>
         </contactInfo>
     </contactInfos>
 	
@@ -250,38 +250,38 @@
 	
     <citations>
         <citationPair>
-            <citationId>CIT_700</citationId>
+            <citationId>CIT_046</citationId>
             <citation>http://www.jfklibrary.org/JFK/JFK-in-Historyd]/Cuban-Missile-Crisis.aspx</citation>
         </citationPair>
         <citationPair>
-            <citationId>CIT_701</citationId>
+            <citationId>CIT_047</citationId>
             <citation>http://en.wikipedia.org/wiki/United_States_military_casualties_of_war</citation>
         </citationPair>
         <citationPair>
-            <citationId>CIT_702</citationId>
+            <citationId>CIT_048</citationId>
             <citation>http://www.dia.mil/About.aspx</citation>
         </citationPair>
         <citationPair>
-            <citationId>CIT_703</citationId>
+            <citationId>CIT_049</citationId>
             <citation>http://www.un.org/en/</citation>
         </citationPair>
         <citationPair>
-            <citationId>CIT_704</citationId>
+            <citationId>CIT_050</citationId>
             <citation>http://www.britannica.com/EBchecked/topic/98822/Fidel-Castro</citation>
         </citationPair>
         <citationPair>
-            <citationId>CIT_705</citationId>
+            <citationId>CIT_051</citationId>
             <citation>http://en.wikipedia.org/wiki/Barack_Obama</citation>
         </citationPair>
     </citations>
 	
     <crisisCitations>
         <crisisCitationPair>
-            <citationId>CIT_700</citationId>
+            <citationId>CIT_046</citationId>
             <crisisId>CRI_009</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
-            <citationId>CIT_701</citationId>
+            <citationId>CIT_047</citationId>
             <crisisId>CRI_010</crisisId>
         </crisisCitationPair>
     </crisisCitations>
@@ -289,22 +289,22 @@
     <orgCitations>
         <orgCitationPair>
             <orgId>ORG_009</orgId>
-            <citationId>CIT_702</citationId>
+            <citationId>CIT_048</citationId>
         </orgCitationPair>
         <orgCitationPair>
 			<orgId>ORG_010</orgId>
-            <citationId>CIT_703</citationId>
+            <citationId>CIT_049</citationId>
         </orgCitationPair>
     </orgCitations>
 	
     <personCitations>
 		<personCitationPair>
 			<personId>PER_009</personId>
-			<citationId>CIT_704</citationId>
+			<citationId>CIT_050</citationId>
 		</personCitationPair>
 		<personCitationPair>
 			<personId>PER_010</personId>
-			<citationId>CIT_705</citationId>
+			<citationId>CIT_051</citationId>
 		</personCitationPair>
     </personCitations>
 	
@@ -315,102 +315,102 @@
             <urlAddress>NULL</urlAddress>
         </url>
         <url>
-            <urlId>URL_700</urlId>
+            <urlId>URL_106</urlId>
             <type>SocialNetwork</type>
             <urlAddress>https://www.facebook.com/DIA</urlAddress>
         </url>
         <url>
-            <urlId>URL_701</urlId>
+            <urlId>URL_107</urlId>
             <type>Website</type>
             <urlAddress>http://www.dia.mil/Home.aspx</urlAddress>
         </url>
         <url>
-            <urlId>URL_702</urlId>
+            <urlId>URL_108</urlId>
             <type>Map</type>
             <urlAddress>https://www.google.com/maps/place/Defense+Intelligence+Agency/@38.8970604,-77.0671163,12z/data=!4m5!1m2!2m1!1sdefense+intelligence+agency!3m1!1s0x89b7b786d62308d3:0xc706846b7ab9289c</urlAddress>
         </url>
         <url>
-            <urlId>URL_703</urlId>
+            <urlId>URL_109</urlId>
             <type>Image</type>
             <urlAddress>http://upload.wikimedia.org/wikipedia/commons/9/9d</urlAddress>
         </url>
         <url>
-            <urlId>URL_704</urlId>
+            <urlId>URL_110</urlId>
             <type>SocialNetwork</type>
             <urlAddress>https://www.facebook.com/unitednations</urlAddress>
         </url>
         <url>
-            <urlId>URL_705</urlId>
+            <urlId>URL_111</urlId>
             <type>Website</type>
             <urlAddress>http://www.un.org/en/</urlAddress>
         </url>
         <url>
-            <urlId>URL_706</urlId>
+            <urlId>URL_112</urlId>
             <type>Map</type>
             <urlAddress>https://www.google.com/maps/place/United+Nations/@40.7541621,-73.967639,15z/data=!4m5!1m2!2m1!1sunited+nations!3m1!1s0x89c2591ce0874d11:0xc5fae28bdd3df635</urlAddress>
         </url>
         <url>
-            <urlId>URL_707</urlId>
+            <urlId>URL_113</urlId>
             <type>Image</type>
             <urlAddress>http://static.spplus.com/pictures/United-Nations-logo.jpg</urlAddress>
         </url>
         <url>
-            <urlId>URL_708</urlId>
+            <urlId>URL_114</urlId>
             <type>Image</type>
             <urlAddress>http://govbooktalk.files.wordpress.com/2012/10/cuba-blockade-headlines.jpg</urlAddress>
         </url>
         <url>
-            <urlId>URL_709</urlId>
+            <urlId>URL_115</urlId>
             <type>Video</type>
             <urlAddress>http://www.history.com/topics/cold-war/cuban-missile-crisis/videos/cuban-missile-crisis</urlAddress>
         </url>
         <url>
-            <urlId>URL_710</urlId>
+            <urlId>URL_116</urlId>
             <type>Map</type>
             <urlAddress>http://users.humboldt.edu/ogayle/Hist%20111%20Images/CubanMissileCrisis.gif</urlAddress>
         </url>
         <url>
-            <urlId>URL_711</urlId>
+            <urlId>URL_117</urlId>
             <type>Image</type>
             <urlAddress>http://theodorosii.files.wordpress.com/2013/11/1368224853201.jpg</urlAddress>
         </url>
         <url>
-            <urlId>URL_712</urlId>
+            <urlId>URL_118</urlId>
             <type>Video</type>
             <urlAddress>http://www.youtube.com/watch?v=y9HjvHZfCUI</urlAddress>
         </url>
         <url>
-            <urlId>URL_713</urlId>
+            <urlId>URL_119</urlId>
             <type>Map</type>
             <urlAddress>http://ocw.nd.edu/physics/nuclear-warfare/images-1/Cold-War-Map.jpg/image</urlAddress>
         </url>
         <url>
-            <urlId>URL_714</urlId>
+            <urlId>URL_120</urlId>
             <type>Image</type>
             <urlAddress>http://jeweell.com/data_images/out/70/1158213-fidel-castro.jpg</urlAddress>
         </url>
         <url>
-            <urlId>URL_715</urlId>
+            <urlId>URL_121</urlId>
             <type>Image</type>
             <urlAddress>http://a.abcnews.go.com/images/US/gty_fidel_castro_3_dm_130423_wg.jpg</urlAddress>
         </url>
         <url>
-            <urlId>URL_716</urlId>
+            <urlId>URL_122</urlId>
             <type>Video</type>
             <urlAddress>http://www.youtube.com/watch?v=qQ24jmIHIUk</urlAddress>
         </url>
         <url>
-            <urlId>URL_717</urlId>
+            <urlId>URL_123</urlId>
             <type>Image</type>
             <urlAddress>http://upload.wikimedia.org/wikipedia/commons/0/01/Poster-sized_portrait_of_Barack_Obama_OrigRes.jpg</urlAddress>
         </url>
         <url>
-            <urlId>URL_718</urlId>
+            <urlId>URL_124</urlId>
             <type>Image</type>
             <urlAddress>http://bitbbq.com/wp-content/uploads/2014/03/President_Obama_342.jpg</urlAddress>
         </url>
         <url>
-            <urlId>URL_719</urlId>
+            <urlId>URL_125</urlId>
             <type>Video</type>
             <urlAddress>http://www.biography.com/people/barack-obama-12782369</urlAddress>
         </url>
@@ -419,73 +419,73 @@
     <crisisUrls>
         <crisisUrlPair>
             <crisisId>CRI_009</crisisId>
-            <urlId>URL_708</urlId>
+            <urlId>URL_114</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
             <crisisId>CRI_009</crisisId>
-            <urlId>URL_709</urlId>
+            <urlId>URL_115</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
             <crisisId>CRI_009</crisisId>
-            <urlId>URL_710</urlId>
+            <urlId>URL_116</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
             <crisisId>CRI_010</crisisId>
-            <urlId>URL_711</urlId>
+            <urlId>URL_117</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
             <crisisId>CRI_010</crisisId>
-            <urlId>URL_712</urlId>
+            <urlId>URL_118</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
             <crisisId>CRI_010</crisisId>
-            <urlId>URL_713</urlId>
+            <urlId>URL_119</urlId>
         </crisisUrlPair>
     </crisisUrls>
 	
     <orgUrls>
         <orgUrlPair>
             <orgId>ORG_009</orgId>
-            <urlId>URL_702</urlId>
+            <urlId>URL_108</urlId>
         </orgUrlPair>
         <orgUrlPair>
             <orgId>ORG_009</orgId>
-            <urlId>URL_703</urlId>
+            <urlId>URL_109</urlId>
         </orgUrlPair>
         <orgUrlPair>
             <orgId>ORG_010</orgId>
-            <urlId>URL_706</urlId>
+            <urlId>URL_112</urlId>
         </orgUrlPair>
         <orgUrlPair>
             <orgId>ORG_010</orgId>
-            <urlId>URL_707</urlId>
+            <urlId>URL_113</urlId>
         </orgUrlPair>
     </orgUrls>
 	
     <personUrls>
         <personUrlPair>
             <personId>PER_009</personId>
-            <urlId>URL_714</urlId>
+            <urlId>URL_120</urlId>
         </personUrlPair>
         <personUrlPair>
             <personId>PER_009</personId>
-            <urlId>URL_715</urlId>
+            <urlId>URL_121</urlId>
         </personUrlPair>
         <personUrlPair>
             <personId>PER_009</personId>
-            <urlId>URL_716</urlId>
+            <urlId>URL_122</urlId>
         </personUrlPair>
         <personUrlPair>
             <personId>PER_010</personId>
-            <urlId>URL_717</urlId>
+            <urlId>URL_123</urlId>
         </personUrlPair>
         <personUrlPair>
             <personId>PER_010</personId>
-            <urlId>URL_718</urlId>
+            <urlId>URL_124</urlId>
         </personUrlPair>
         <personUrlPair>
             <personId>PER_010</personId>
-            <urlId>URL_719</urlId>
+            <urlId>URL_125</urlId>
         </personUrlPair>
     </personUrls>
 	

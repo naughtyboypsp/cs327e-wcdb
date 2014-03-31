@@ -107,7 +107,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE Crises (
-            crisisId bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+            crisisId text COLLATE utf8_unicode_ci NOT NULL,
             name text COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress text COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -347,12 +347,12 @@ def createDB(login):
 # ----------
 # data import
 # ----------
-
-def import_crises (login, tree):
+def wcdb_import(login, tree):
     """
     Iterating through crisis tags in crises tag and import into DB: table Crises 
     """
-
+    # based on the discussion with Robert in class, we think it is better to put all input stuff in one function.
+    #-----------------import crises table-------------------------------------------
     inserts_list = []
     counter = 0
     root_list = tree.findall("./crises/crisis")
@@ -379,6 +379,8 @@ def import_crises (login, tree):
              dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
              dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
              dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
+    #-------------this "s" is too long, right? you guys can help me think about other data structure other than dictionary> Dictionary is not ordered but we need to
+        # insert each element in order so we can't iterate a dictionary, if you guys have better idea let me know.
         s = 'insert into Crises Values' + str(s) + ';'
         s =s.replace('None', 'Null')
         print('aa')
@@ -388,11 +390,6 @@ def import_crises (login, tree):
             
     
 
-    
-    
-def wcdb_import(login, tree):
-    import_crises(login, tree)
-    
     return
     
 def wcdb_solve(r,w):

@@ -1,7 +1,7 @@
 <root>
     <crises>
         <crisis>
-            <crisisId>001</crisisId>
+            <crisisId>CRI_001</crisisId>
             <name>Chernobyl Accident</name>
             <kind>Human Error Disaster</kind>
             <streetAddress>NULL</streetAddress>
@@ -22,7 +22,7 @@
             <regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
         </crisis>
         <crisis>
-			<crisisId>002</crisisId>
+			<crisisId>CRI_002</crisisId>
             <name>UT Tower Shooting</name>
             <kind>Assassination / Shooting</kind>
             <streetAddress>110 Inner Campus Drive</streetAddress>
@@ -43,7 +43,7 @@
             <regulatoryChanges>Tower deck is closed due to safety regulations</regulatoryChanges>
         </crisis>
 		<crisis>
-            <crisisId>003</crisisId>
+            <crisisId>CRI_003</crisisId>
             <name>BP Oil Spill</name>
             <kind>Human Error Disaster</kind>
             <streetAddress>NULL</streetAddress>
@@ -64,7 +64,7 @@
             <regulatoryChanges>Stricter regulatory control on oil companies to prevent future accidents. It also increased BP's financial responsibility for affected companies</regulatoryChanges>
         </crisis>
 		<crisis>
-        <crisisId>004</crisisId>
+        <crisisId>CRI_004</crisisId>
             <name>Hurricane Ike</name>
             <kind>Natural Disaster</kind>
             <streetAddress>NULL</streetAddress>
@@ -85,7 +85,7 @@
             <regulatoryChanges>NULL</regulatoryChanges>
         </crisis>
 		<crisis>
-            <crisisId>005</crisisId>
+            <crisisId>CRI_005</crisisId>
             <name>9-11</name>
             <kind>Act of Terrorism</kind>
             <streetAddress>NULL</streetAddress>
@@ -106,7 +106,7 @@
             <regulatoryChanges>Increased security measures put into place</regulatoryChanges>
         </crisis>
         <crisis>
-			<crisisId>006</crisisId>
+			<crisisId>CRI_006</crisisId>
             <name>Haiti Earthquake</name>
             <kind>Natural Disaster</kind>
             <streetAddress>NULL</streetAddress>
@@ -127,7 +127,7 @@
             <regulatoryChanges>Food and water is sent still to Haiti for earthquake victims</regulatoryChanges>
         </crisis>
 		<crisis>
-			<crisisId>007</crisisId>
+			<crisisId>CRI_007</crisisId>
 			<name>1900 Galveston Hurricane</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -148,7 +148,7 @@
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>008</crisisId>
+			<crisisId>CRI_008</crisisId>
 			<name>Hindenburg Crash</name>
 			<kind>Human Error Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -169,7 +169,7 @@
 			<regulatoryChanges>0</regulatoryChanges>
 		</crisis>
 		<crisis>
-            <crisisId>009</crisisId>
+            <crisisId>CRI_009</crisisId>
             <name>Cuban Missile Crisis</name>
             <kind>War / Conflict</kind>
             <streetAddress>NULL</streetAddress>
@@ -190,7 +190,7 @@
             <regulatoryChanges>Embargo against Cuba</regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>010</crisisId>
+            <crisisId>CRI_010</crisisId>
             <name>Cold War</name>
             <kind>War / Conflict</kind>
             <streetAddress>NULL</streetAddress>

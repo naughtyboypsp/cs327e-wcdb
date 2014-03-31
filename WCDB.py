@@ -109,7 +109,7 @@ def createDB(login):
             CREATE TABLE Crises (
             crisisId bigint(20) unsigned NOT NULL AUTO_INCREMENT,
             name text COLLATE utf8_unicode_ci NOT NULL,
-            kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Distaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
+            kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress text COLLATE utf8_unicode_ci DEFAULT NULL,
             city text COLLATE utf8_unicode_ci DEFAULT NULL,
             stateOrProvince text COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -124,8 +124,8 @@ def createDB(login):
             politicalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             culturalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             jobsLost int unsigned DEFAULT NULL,
-            damageInUsd int unsigned DEFAULT NULL,
-            reparationCost int(11) unsigned DEFAULT NULL,
+            damageInUSD bigint(20) unsigned DEFAULT NULL,
+            reparationCost bigint(20) unsigned DEFAULT NULL,
             regulatoryChanges varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
             PRIMARY KEY (crisisId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -343,6 +343,57 @@ def createDB(login):
             PRIMARY KEY (orgId, personId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
+
+# ----------
+# data import
+# ----------
+
+def import_crises (login, tree):
+    """
+    Iterating through crisis tags in crises tag and import into DB: table Crises 
+    """
+
+    inserts_list = []
+    counter = 0
+    root_list = tree.findall("./crises/crisis")
+    #Iterates over Children of crises
+    for parent in root_list:
+        insert_entry = {}
+        #Iterates over Children
+        for child in parent:
+            if child.getchildren() == []:
+                insert_entry[child.tag] = child.text
+        inserts_list.append(insert_entry)
+        counter += 1       
+    #QueryInserting Loop
+    for i in range(0,counter):
+        #Queryinseting - Crisis Table
+        dict_entry = inserts_list[i]       
+##        # stupid dict is not ordered, otherwise we won't write such a long line!
+##        for entry in dict_entry:
+##        !!!!!comment: (1)int value can't be 'null' in xml, just leave it as empty. (2)If you have a huge number more than 10 digits, you need to modify type from
+##        int to bigint 20. (3) I= if define ID as bigint(20), it has to been digits only, CRI001 is not digit only!!!!
+        s = (dict_entry.get('crisisId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
+             dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
+             dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
+             dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
+             dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
+        s = 'insert into Crises Values' + str(s) + ';'
+        s =s.replace('None', 'Null')
+        print('aa')
+        t = wcdb_query(login,s)
+##            
+
+            
+    
+
+    
+    
+def wcdb_import(login, tree):
+    import_crises(login, tree)
+    
+    return
     
 def wcdb_solve(r,w):
     """
@@ -355,8 +406,8 @@ def wcdb_solve(r,w):
     login_var = wcdb_login(*a)
     tree = wcdb_read (r)
     createDB(login_var)
+    wcdb_import(login_var, tree)
 
-    
 def main():
     r = open('compiled.xml', 'r')
     w = open('RunWCDB.out.xml', 'w')

@@ -107,7 +107,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE Crises (
-            crisisId text COLLATE utf8_unicode_ci NOT NULL,
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             name text COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress text COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -383,7 +383,7 @@ def wcdb_import(login, tree):
         # insert each element in order so we can't iterate a dictionary, if you guys have better idea let me know.
         s = 'insert into Crises Values' + str(s) + ';'
         s =s.replace('None', 'Null')
-        print('aa')
+        print('data inserted')
         t = wcdb_query(login,s)
 ##            
 

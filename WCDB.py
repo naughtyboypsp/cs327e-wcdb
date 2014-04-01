@@ -3,7 +3,7 @@
 # ---------------------------
 # projects/WCDB(phase2)/WCDB2.py
 # Author Xiaoqin LI
-# last updated date: 03/30/2014
+# last updated date: 04/01/2014
 
 # -------
 # imports
@@ -107,13 +107,12 @@ def createDB(login):
             login,
             """
             CREATE TABLE Crises (
-            crisisId bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             city varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             stateOrProvince varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-            postalCode varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
             country varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             dateAndTime datetime NOT NULL,
             fatalities int unsigned DEFAULT NULL,
@@ -362,9 +361,7 @@ def wcdb_import(login, tree):
         #Iterates over Children
         for child in parent:
             if child.getchildren() == []:
-                if child.tag == 'crisisId':
-                    insert_entry[child.tag] = child.text[4:]
-                else: insert_entry[child.tag] = child.text             
+                insert_entry[child.tag] = child.text             
         inserts_list.append(insert_entry)
         counter += 1       
     #QueryInserting Loop
@@ -376,7 +373,7 @@ def wcdb_import(login, tree):
 ##        !!!!!comment: (1)int value can't be 'null' in xml, just leave it as empty. (2)If you have a huge number more than 10 digits, you need to modify type from
 ##        int to bigint 20. (3) I= if define ID as bigint(20), it has to been digits only, CRI001 is not digit only!!!!
         s = (dict_entry.get('crisisId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
+             dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
              dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
              dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
              dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
@@ -386,26 +383,89 @@ def wcdb_import(login, tree):
         s = 'insert into Crises Values' + str(s) + ';'
         s =s.replace('None', 'Null')       
         t = wcdb_query(login,s)
-        print('data inserted')
-##            
-
-            
-    
 
     return
+
+# -------------
+# data export
+# -------------
+def tree_builder(tag, content = ''):
+	"""builds 1 xml tree """
+	builder = ET.TreeBuilder()
+	
+	builder.start(tag, {})
+	builder.data(content)
+	builder.end(tag)
+	
+	return builder.close()
     
+def wcdb_export(login):
+    """Generates ElementTree from DB
+    root: <root></root>
+    crises_tree: <crises></crises>
+    """
+    root = tree_builder('root')
+    
+    # -------------
+    # Crisis Export
+    # -------------
+    # you can get this from show columns but 
+    crises_tree = ET.Element('crises') ##  or  crises_tree = tree_builder('crises'), either way seems to work.
+    root.append(crises_tree)   
+    
+    crises = wcdb_query(
+        login, 
+	""" select *
+	from Crises;
+	""")
+    crises_tag_tuple = wcdb_query(
+        login, 
+	""" show columns
+	from Crises;
+	""")
+##    print(crises_tag_tuple[0])
+##    print(crises_tag_tuple[0][0]) # uncomment it you will see how we get back those tag names
+##    print(crises_tag_tuple[1][0])
+    for i in range(len(crises)):
+        crisis_tree = ET.Element('crisis')
+        root[0].append(crisis_tree)
+        assert (type(crises[i]) is tuple)
+        tag_counter = 0
+        for entry in crises[i]:
+            if entry == None:
+                entry = 'NULL'
+            root[0][i].append(tree_builder(crises_tag_tuple[tag_counter][0],entry))
+            tag_counter += 1
+    return root
+
+# ------------
+# wcdb2_write
+# ------------
+def wcdb_write (w, data_tree):
+    """
+    converts an element string to a string data
+    exports the string data 
+    """
+    data_exported_string = ET.tostring(data_tree, method = "xml")
+    assert(type(data_exported_string) is str)
+    w.write(data_exported_string)
+
 def wcdb_solve(r,w):
     """
     r is a reader
     w is a writer
     login: Logs into DB, tree: Generates Element Tree,
     createDB(login): Creates Tables in DB,
+    wcdb_import: import data from xml to databases
+    wcdb_export: export data from databases to xml
     """
     
     login_var = wcdb_login(*a)
     tree = wcdb_read (r)
     createDB(login_var)
     wcdb_import(login_var, tree)
+    export_data = wcdb_export(login_var)
+    wcdb_write (w, export_data)
 
 def main():
     r = open('compiled.xml', 'r')

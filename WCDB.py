@@ -11,6 +11,7 @@
 
 import sys
 import _mysql
+import xml.dom.minidom as minidom
 #import lxml.etree as ET  # a few posts online said it works better, but I have not installed this module so far.
 import xml.etree.ElementTree as ET
 
@@ -446,9 +447,11 @@ def wcdb_write (w, data_tree):
     converts an element string to a string data
     exports the string data 
     """
-    data_exported_string = ET.tostring(data_tree, method = "xml")
-    assert(type(data_exported_string) is str)
-    w.write(data_exported_string)
+    rough_exported_string = ET.tostring(data_tree, 'utf-8', method = "xml")
+    assert(type(rough_exported_string) is str)
+    reparsed = minidom.parseString(rough_exported_string)
+    pretty_exported_string = reparsed.toprettyxml(indent="\t")
+    w.write(pretty_exported_string)
 
 def wcdb_solve(r,w):
     """

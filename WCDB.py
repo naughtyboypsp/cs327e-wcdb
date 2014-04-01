@@ -107,26 +107,26 @@ def createDB(login):
             login,
             """
             CREATE TABLE Crises (
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            name text COLLATE utf8_unicode_ci NOT NULL,
+            crisisId bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+            name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
-            streetAddress text COLLATE utf8_unicode_ci DEFAULT NULL,
-            city text COLLATE utf8_unicode_ci DEFAULT NULL,
-            stateOrProvince text COLLATE utf8_unicode_ci DEFAULT NULL,
-            postalCode text COLLATE utf8_unicode_ci DEFAULT NULL,
-            country text COLLATE utf8_unicode_ci DEFAULT NULL,
+            streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            city varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            stateOrProvince varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            postalCode varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+            country varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             dateAndTime datetime NOT NULL,
             fatalities int unsigned DEFAULT NULL,
             injuries int unsigned DEFAULT NULL,
             populationIll int unsigned DEFAULT NULL,
             populationDisplaced int unsigned DEFAULT NULL,
-            environmentalImpact varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+            environmentalImpact text COLLATE utf8_unicode_ci DEFAULT NULL,
             politicalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             culturalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             jobsLost int unsigned DEFAULT NULL,
             damageInUSD bigint(20) unsigned DEFAULT NULL,
             reparationCost bigint(20) unsigned DEFAULT NULL,
-            regulatoryChanges varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+            regulatoryChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             PRIMARY KEY (crisisId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
@@ -137,13 +137,13 @@ def createDB(login):
             """
             CREATE TABLE Orgs (
             orgsId bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-            name text COLLATE utf8_unicode_ci NOT NULL,
+            name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Corporation','Government Agency','Military Force','Intergovernmental Agency','Intergovernmental Public Health Agency', 'Nonprofit / Humanitarian Organization') COLLATE utf8_unicode_ci NOT NULL,
-            streetAddress text COLLATE utf8_unicode_ci DEFAULT NULL,
-            city text COLLATE utf8_unicode_ci DEFAULT NULL,
-            stateOrProvince text COLLATE utf8_unicode_ci DEFAULT NULL,
-            postalCode text COLLATE utf8_unicode_ci DEFAULT NULL,
-            country text COLLATE utf8_unicode_ci DEFAULT NULL,
+            streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            city varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            stateOrProvince varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            postalCode varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+            country varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             foundingMission text COLLATE utf8_unicode_ci DEFAULT NULL,
             datefounded datetime NOT NULL,
             majorEvents text COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -156,13 +156,13 @@ def createDB(login):
             """
             CREATE TABLE People (
             peopleId bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-            name text COLLATE utf8_unicode_ci NOT NULL,
+            name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('President','Celebrity','Actor/Actress','Musician','Politician', 'CEO','Humanitarian','Perpetrator','Regular Worker') COLLATE utf8_unicode_ci NOT NULL,
-            streetAddress text COLLATE utf8_unicode_ci DEFAULT NULL,
-            city text COLLATE utf8_unicode_ci DEFAULT NULL,
-            stateOrProvince text COLLATE utf8_unicode_ci DEFAULT NULL,
-            postalCode text COLLATE utf8_unicode_ci DEFAULT NULL,
-            country text COLLATE utf8_unicode_ci DEFAULT NULL,
+            streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            city varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            stateOrProvince varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            postalCode varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+            country varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             
 
             PRIMARY KEY (peopleId)
@@ -214,8 +214,8 @@ def createDB(login):
             """
             CREATE TABLE ContactInfos (
             contactInfoId bigint(20) unsigned NOT NULL,
-            phoneNumber text COLLATE utf8_unicode_ci DEFAULT NULL,
-            emailAddress text COLLATE utf8_unicode_ci DEFAULT NULL,
+            phoneNumber varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+            emailAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             facebookUrlId bigint(20) unsigned DEFAULT NULL,
             twitterUrlId bigint(20) unsigned DEFAULT NULL,
             websiteUrlId  bigint(20) unsigned DEFAULT NULL,
@@ -278,7 +278,7 @@ def createDB(login):
             """
             CREATE TABLE Urls (
             urlId bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-            type text COLLATE utf8_unicode_ci NOT NULL,
+            type enum('Image','Video','Map','SocialNetwork','Website','ExternalLink') COLLATE utf8_unicode_ci NOT NULL,
             urlAddress text COLLATE utf8_unicode_ci NOT NULL,
             PRIMARY KEY (urlId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -362,7 +362,9 @@ def wcdb_import(login, tree):
         #Iterates over Children
         for child in parent:
             if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
+                if child.tag == 'crisisId':
+                    insert_entry[child.tag] = child.text[4:]
+                else: insert_entry[child.tag] = child.text             
         inserts_list.append(insert_entry)
         counter += 1       
     #QueryInserting Loop
@@ -382,9 +384,9 @@ def wcdb_import(login, tree):
     #-------------this "s" is too long, right? you guys can help me think about other data structure other than dictionary> Dictionary is not ordered but we need to
         # insert each element in order so we can't iterate a dictionary, if you guys have better idea let me know.
         s = 'insert into Crises Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        print('data inserted')
+        s =s.replace('None', 'Null')       
         t = wcdb_query(login,s)
+        print('data inserted')
 ##            
 
             

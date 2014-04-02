@@ -50,22 +50,8 @@ def wcdb_query (login, s):
 	    return None
     assert (str(type(r)) == "<type '_mysql.result'>")
     t = r.fetch_row(maxrows = 0)
+    assert (type(t) is tuple)
     return t
-
-# ----------
-# wcdb_read
-# ---------- 
-
-def wcdb_read (r):
-	"""
-	reads an input
-	creates an element tree from string
-	"""
-	imported_str_data = r.read()
-	assert(type(imported_str_data) is str)
-	data_tree = ET.fromstring(imported_str_data)
-	assert(type(data_tree) is ET.Element)
-	return data_tree
 
 # ----------
 # create DB
@@ -226,7 +212,7 @@ def createDB(login):
     t = wcdb_query(
             login,
             """
-            CREATE TABLE orgContactInfos (
+            CREATE TABLE OrgContactInfos (
             orgsId bigint(20) unsigned NOT NULL,
             contactInfoId bigint(20) unsigned NOT NULL,
             PRIMARY KEY (orgsId, ContactInfoId)
@@ -347,7 +333,7 @@ def createDB(login):
 # ----------
 # data import
 # ----------
-def wcdb_import(login, tree):
+def crises_import(login,tree):
     """
     Iterating through crisis tags in crises tag and import into DB: table Crises 
     """
@@ -382,8 +368,10 @@ def wcdb_import(login, tree):
         s = 'insert into Crises Values' + str(s) + ';'
         s =s.replace('None', 'Null')       
         t = wcdb_query(login,s)
-
-    return
+        
+def wcdb_import(login, tree):
+    crises_import(login, tree)
+    return None
 
 # -------------
 # data export
@@ -437,8 +425,23 @@ def wcdb_export(login):
             tag_counter += 1
     return root
 
+# ----------
+# wcdb_read
+# ---------- 
+
+def wcdb_read (r):
+	"""
+	reads an input
+	creates an element tree from string
+	"""
+	imported_str_data = r.read()
+	assert(type(imported_str_data) is str)
+	data_tree = ET.fromstring(imported_str_data)
+	assert(type(data_tree) is ET.Element)
+	return data_tree
+    
 # ------------
-# wcdb2_write
+# wcdb_write
 # ------------
 def wcdb_write (w, data_tree):
     """
@@ -451,6 +454,9 @@ def wcdb_write (w, data_tree):
     pretty_exported_string = reparsed.toprettyxml(indent="\t")
     w.write(pretty_exported_string)
 
+# ------------
+# wcdb_solve
+# ------------
 def wcdb_solve(r,w):
     """
     r is a reader
@@ -459,8 +465,7 @@ def wcdb_solve(r,w):
     createDB(login): Creates Tables in DB,
     wcdb_import: import data from xml to databases
     wcdb_export: export data from databases to xml
-    """
-    
+    """   
     login_var = wcdb_login(*a)
     tree = wcdb_read (r)
     createDB(login_var)

@@ -15,7 +15,6 @@ python/python2 TestWCDB.py > TestWCDB.out
 
 import StringIO
 import MySQLdb
-from cStringIO import StringIO
 import unittest
 import sys
 import _mysql

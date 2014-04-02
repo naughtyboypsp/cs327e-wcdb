@@ -12,8 +12,8 @@
 import sys
 import _mysql
 import xml.dom.minidom as minidom
-#import lxml.etree as ET  # a few posts online said it works better, but I have not installed this module so far.
 import xml.etree.ElementTree as ET
+from _mysql_exceptions import OperationalError
 
 # --------
 # DB Login
@@ -22,16 +22,18 @@ import xml.etree.ElementTree as ET
    #[host, un, pw, database]
 ##a = ["z","lxq0906","XXXXXXXXX","cs327e_lxq0906"] # my account on CS computer
 
-a = ["localhost","root","121314","cs327e-wcdb"]
+a = ("localhost","root","121314","cs327e-wcdb")
 
 def wcdb_login ( host, un, pw, database ) :
     """takes credentials and logs into DB"""
-    login = _mysql.connect(
-			host = host,
-			user = un,
-			passwd = pw,
-			db = database)
-    assert (str(type(login)) == "<type '_mysql.connection'>")
+    try:
+        login = _mysql.connect(
+                            host = host,
+                            user = un,
+                            passwd = pw,
+                            db = database)
+    except OperationalError:
+        login = None
     return login
 
 # --------
@@ -48,7 +50,6 @@ def wcdb_query (login, s):
 	    return None
     assert (str(type(r)) == "<type '_mysql.result'>")
     t = r.fetch_row(maxrows = 0)
-    assert (type(t) is tuple)
     return t
 
 # ----------
@@ -130,7 +131,6 @@ def createDB(login):
             PRIMARY KEY (crisisId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
-    # he defines crisisID as string in schema, now it becomes a bigint, I got lost, anyway, just following at this time being
     
     t = wcdb_query(
             login,
@@ -371,8 +371,6 @@ def wcdb_import(login, tree):
         dict_entry = inserts_list[i]       
 ##        # stupid dict is not ordered, otherwise we won't write such a long line!
 ##        for entry in dict_entry:
-##        !!!!!comment: (1)int value can't be 'null' in xml, just leave it as empty. (2)If you have a huge number more than 10 digits, you need to modify type from
-##        int to bigint 20. (3) I= if define ID as bigint(20), it has to been digits only, CRI001 is not digit only!!!!
         s = (dict_entry.get('crisisId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
              dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
              dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\

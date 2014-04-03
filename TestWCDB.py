@@ -253,7 +253,43 @@ class TestWCDB(unittest.TestCase):
       r2 = StringIO(w1.getvalue())
       wcdb_solve(r2, w2)
       self.assertTrue(w1.getvalue() == w2.getvalue())
-     
+  
+  def test_wcdb_export1(self):
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+	  login = wcdb_login(*a)
+
+      r = StringIO("""<root>
+    <crises>
+        <crisis>
+            <crisisId>CRI_001</crisisId>
+            <name>Chernobyl Accident</name>
+            <kind>Human Error Disaster</kind>
+            <streetAddress>NULL</streetAddress>
+            <city>Chernobyl</city>
+            <stateOrProvince>NULL</stateOrProvince>
+            <country>Ukraine</country>
+            <dateAndTime>1986-04-26T01:23:48</dateAndTime>
+            <fatalities>290000</fatalities>
+            <injuries>270000</injuries>
+			<populationIll>270000</populationIll>
+			<populationDisplaced>335000</populationDisplaced>
+            <environmentalImpact>Up to 60 sq. mi. of farmland is likely to remain contaminated for decades</environmentalImpact>
+			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>600</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>235000000000</reparationCost>
+            <regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
+        </crisis></crises></root>""")
+		
+	  
+      wcdb_import(login, r)
+	  a = ET.fromstring(r)
+	  
+	  root = wcdb_export(login)
+	
+	  self.assertTrue(tostring(a.getvalue()) == tostring(root.getvalue())
+   
 print("TestWCDB.py")
 print("Done.")
 unittest.main()

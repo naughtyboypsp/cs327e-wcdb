@@ -1364,7 +1364,7 @@ def wcdb_solve(r,w):
     wcdb_write (w, export_data)
 
 def main():
-    r = open('compiled.xml', 'r')
+    r = open('WCDB.xml', 'r')
     w = open('RunWCDB.out.xml', 'w')
     wcdb_solve(r,w)
 

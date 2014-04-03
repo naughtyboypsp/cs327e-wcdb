@@ -93,7 +93,7 @@ class TestWCDB(unittest.TestCase):
     a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
     login_var = wcdb_login(*a)
     createDB(login_var)
-    db = MySQLdb.connect(host='localhost', user='root', passwd='121314', db='cs327e-wcdb') # this should be changed before submittion 
+    db = MySQLdb.connect(*a) # this should be changed before submittion 
     curs = db.cursor()
     self.assertTrue(curs.execute('SELECT * from Crises') == 0)
     self.assertTrue(type(curs.fetchall()) is tuple)
@@ -102,7 +102,7 @@ class TestWCDB(unittest.TestCase):
     a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
     login_var = wcdb_login(*a)
     createDB(login_var)
-    db = MySQLdb.connect(host='localhost', user='root', passwd='121314', db='cs327e-wcdb') # this should be changed before submittion 
+    db = MySQLdb.connect(*a) # this should be changed before submittion 
     curs = db.cursor()
     self.assertTrue(curs.execute('SELECT * from People') == 0)
     self.assertTrue(type(curs.fetchall()) is tuple)
@@ -111,7 +111,7 @@ class TestWCDB(unittest.TestCase):
     a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
     login_var = wcdb_login(*a)
     createDB(login_var)
-    db = MySQLdb.connect(host='localhost', user='root', passwd='121314', db='cs327e-wcdb') # this should be changed before submittion 
+    db = MySQLdb.connect(*a) # this should be changed before submittion 
     curs = db.cursor()
     self.assertTrue(curs.execute('SELECT * from Orgs') == 0)
     self.assertTrue(type(curs.fetchall()) is tuple)

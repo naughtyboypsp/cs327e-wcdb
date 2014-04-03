@@ -832,12 +832,12 @@ def wcdb_export(login):
     orgs = wcdb_query(
         login, 
         """ select *
-        from orgs;
+        from Orgs;
         """)
     orgs_tag_tuple = wcdb_query(
         login, 
         """ show columns
-        from orgs;
+        from Orgs;
         """)
     for i in range(len(orgs)):
         orgs_tree = ET.Element('org')
@@ -857,12 +857,12 @@ def wcdb_export(login):
     people = wcdb_query(
         login, 
     """ select *
-    from people;
+    from People;
     """)
     people_tag_tuple = wcdb_query(
         login, 
     """ show columns
-    from people;
+    from People;
     """)
     for i in range(len(people)):
         people_tree = ET.Element('person')
@@ -882,12 +882,12 @@ def wcdb_export(login):
     resources = wcdb_query(
         login, 
     """ select *
-    from resources;
+    from Resources;
     """)
     resources_tag_tuple = wcdb_query(
         login, 
     """ show columns
-    from resources;
+    from Resources;
     """)
     for i in range(len(resources)):
         resources_tree = ET.Element('resourcePair')
@@ -907,12 +907,12 @@ def wcdb_export(login):
     crisisResources = wcdb_query(
         login, 
     """ select *
-    from crisisResources;
+    from CrisisResources;
     """)
     crisisResources_tag_tuple = wcdb_query(
         login, 
     """ show columns
-    from crisisResources;
+    from CrisisResources;
     """)
     for i in range(len(crisisResources)):
         crisisResources_tree = ET.Element('crisisResourcePair')
@@ -932,12 +932,12 @@ def wcdb_export(login):
     waysToHelp = wcdb_query(
         login, 
     """ select *
-    from waysToHelp;
+    from WaysToHelp;
     """)
     waysToHelp_tag_tuple = wcdb_query(
         login, 
     """ show columns
-    from waysToHelp;
+    from WaysToHelp;
     """)
     for i in range(len(waysToHelp)):
         waysToHelp_tree = ET.Element('wayToHelpPair')
@@ -957,12 +957,12 @@ def wcdb_export(login):
     crisisWaysToHelp = wcdb_query(
         login, 
     """ select *
-    from crisisWaysToHelp;
+    from CrisisWaysToHelp;
     """)
     crisisWaysToHelp_tag_tuple = wcdb_query(
         login, 
     """ show columns
-    from crisisWaysToHelp;
+    from CrisisWaysToHelp;
     """)
     for i in range(len(crisisWaysToHelp)):
         crisisWaysToHelp_tree = ET.Element('crisisWayToHelpPair')
@@ -982,12 +982,12 @@ def wcdb_export(login):
     contactInfos = wcdb_query(
         login, 
     """ select *
-    from contactInfos;
+    from ContactInfos;
     """)
     contactInfos_tag_tuple = wcdb_query(
         login, 
     """ show columns
-    from contactInfos;
+    from ContactInfos;
     """)
     for i in range(len(contactInfos)):
         contactInfos_tree = ET.Element('contactInfos')
@@ -1007,12 +1007,12 @@ def wcdb_export(login):
     orgContactInfos = wcdb_query(
         login, 
     """ select *
-    from orgContactInfos;
+    from OrgContactInfos;
     """)
     orgContactInfos_tag_tuple = wcdb_query(
         login, 
     """ show columns
-    from orgContactInfos;
+    from OrgContactInfos;
     """)
     for i in range(len(orgContactInfos)):
         orgContactInfos_tree = ET.Element('orgContactInfoPair')
@@ -1032,12 +1032,12 @@ def wcdb_export(login):
     citations = wcdb_query(
         login, 
 	""" select *
-	from citations;
+	from Citations;
 	""")
     citations_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from citations;
+	from Citations;
 	""")
     for i in range(len(citations)):
         citationPair_tree = ET.Element('citationPair')
@@ -1057,12 +1057,12 @@ def wcdb_export(login):
     crisisCitations = wcdb_query(
         login, 
 	""" select *
-	from crisisCitations;
+	from CrisisCitations;
 	""")
     crisisCitations_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from crisisCitations;
+	from CrisisCitations;
 	""")
     for i in range(len(crisisCitations)):
         crisisCitationPair_tree = ET.Element('crisisCitationPair')
@@ -1082,12 +1082,12 @@ def wcdb_export(login):
     orgCitations = wcdb_query(
         login, 
 	""" select *
-	from orgCitations;
+	from OrgCitations;
 	""")
     orgCitations_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from orgCitations;
+	from OrgCitations;
 	""")
     for i in range(len(orgCitations)):
         orgCitationPair_tree = ET.Element('orgCitationPair')
@@ -1107,12 +1107,12 @@ def wcdb_export(login):
     personCitations = wcdb_query(
         login, 
 	""" select *
-	from personCitations;
+	from PersonCitations;
 	""")
     personCitations_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from personCitations;
+	from PersonCitations;
 	""")
     for i in range(len(personCitations)):
         personCitationPair_tree = ET.Element('personCitationPair')
@@ -1132,12 +1132,12 @@ def wcdb_export(login):
     urls = wcdb_query(
         login, 
 	""" select *
-	from urls;
+	from Urls;
 	""")
     urls_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from urls;
+	from Urls;
 	""")
     for i in range(len(urls)):
         url_tree = ET.Element('url')
@@ -1157,12 +1157,12 @@ def wcdb_export(login):
     crisisUrls = wcdb_query(
         login, 
 	""" select *
-	from crisisUrls;
+	from CrisisUrls;
 	""")
     crisisUrls_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from crisisUrls;
+	from CrisisUrls;
 	""")
     for i in range(len(crisisUrls)):
         crisisUrlPair_tree = ET.Element('crisisUrlPair')
@@ -1182,12 +1182,12 @@ def wcdb_export(login):
     orgUrls = wcdb_query(
         login, 
 	""" select *
-	from orgUrls;
+	from OrgUrls;
 	""")
     orgUrls_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from orgUrls;
+	from OrgUrls;
 	""")
     for i in range(len(orgUrls)):
         orgUrlPair_tree = ET.Element('orgUrlPair')
@@ -1207,12 +1207,12 @@ def wcdb_export(login):
     personUrls = wcdb_query(
         login, 
 	""" select *
-	from personUrls;
+	from PersonUrls;
 	""")
     personUrls_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from personUrls;
+	from PersonUrls;
 	""")
     for i in range(len(personUrls)):
         personUrlPair_tree = ET.Element('personUrlPair')
@@ -1232,12 +1232,12 @@ def wcdb_export(login):
     crisisOrgs = wcdb_query(
         login, 
 	""" select *
-	from crisisOrgs;
+	from CrisisOrgs;
 	""")
     crisisOrgs_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from crisisOrgs;
+	from CrisisOrgs;
 	""")
     for i in range(len(crisisOrgs)):
         crisisOrgPair_tree = ET.Element('crisisOrgPair')
@@ -1257,12 +1257,12 @@ def wcdb_export(login):
     crisisPeople = wcdb_query(
         login, 
 	""" select *
-	from crisisPeople;
+	from CrisisPeople;
 	""")
     crisisPeople_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from crisisPeople;
+	from CrisisPeople;
 	""")
     for i in range(len(crisisPeople)):
         crisisPersonPair_tree = ET.Element('crisisPersonPair')
@@ -1282,12 +1282,12 @@ def wcdb_export(login):
     orgPeople = wcdb_query(
         login, 
 	""" select *
-	from orgPeople;
+	from OrgPeople;
 	""")
     orgPeople_tag_tuple = wcdb_query(
         login, 
 	""" show columns
-	from orgPeople;
+	from OrgPeople;
 	""")
     for i in range(len(orgPeople)):
         orgPersonPair_tree = ET.Element('orgPersonPair')

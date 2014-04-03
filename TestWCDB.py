@@ -13,7 +13,7 @@ python/python2 TestWCDB.py > TestWCDB.out
 # imports
 # -------
 
-import StringIO
+from StringIO import StringIO
 import MySQLdb
 import unittest
 import sys
@@ -37,7 +37,7 @@ class TestWCDB(unittest.TestCase):
   # 3 ["z","joshen","pb6bKYnCDs","cs327e_joshen"]
   # -----------------------------------------------
   def test_wcdb_login1 (self):
-    a = ("localhost","root","121314","cs327e-wcdb")
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
     login = wcdb_login(*a)
     self.assertTrue(str(type(login)) == "<type '_mysql.connection'>")
 
@@ -60,22 +60,25 @@ class TestWCDB(unittest.TestCase):
   # query function 3 in total
   #---------------------------
   def test_wcdb_query1(self):
-    a = ("localhost","root","121314","cs327e-wcdb") # this should be changed before submittion
-    s = "drop table if exists crises"
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion
+    s = "drop table if exists Crises"
     login = wcdb_login(*a)
     t = wcdb_query(login,s)
     self.assertTrue(t == None)
 
   def test_wcdb_query2(self):
-    a = ("localhost","root","121314","cs327e-wcdb") # this should be changed before submittion
-    s = """CREATE TABLE Crises (
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion
+    s = "drop table if exists Crises"
+	login = wcdb_login(*a)
+    t = wcdb_query(login,s)
+	s = """CREATE TABLE Crises (
     crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL)"""
     login = wcdb_login(*a)
     t = wcdb_query(login,s)
     self.assertTrue(t == None)
 
   def test_wcdb_query3(self):
-    a = ("localhost","root","121314","cs327e-wcdb") # this should be changed before submittion
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion
     s = """ select *
 	from Crises;
 	"""
@@ -87,7 +90,7 @@ class TestWCDB(unittest.TestCase):
   # creatDB function 3 in total
   #----------------------------
   def test_createDB1(self):
-    a = ("localhost","root","121314","cs327e-wcdb") # this should be changed before submittion 
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
     login_var = wcdb_login(*a)
     createDB(login_var)
     db = MySQLdb.connect(host='localhost', user='root', passwd='121314', db='cs327e-wcdb') # this should be changed before submittion 
@@ -96,7 +99,7 @@ class TestWCDB(unittest.TestCase):
     self.assertTrue(type(curs.fetchall()) is tuple)
 
   def test_createDB2(self):
-    a = ("localhost","root","121314","cs327e-wcdb") # this should be changed before submittion 
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
     login_var = wcdb_login(*a)
     createDB(login_var)
     db = MySQLdb.connect(host='localhost', user='root', passwd='121314', db='cs327e-wcdb') # this should be changed before submittion 
@@ -105,7 +108,7 @@ class TestWCDB(unittest.TestCase):
     self.assertTrue(type(curs.fetchall()) is tuple)
 
   def test_createDB3(self):
-    a = ("localhost","root","121314","cs327e-wcdb") # this should be changed before submittion 
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
     login_var = wcdb_login(*a)
     createDB(login_var)
     db = MySQLdb.connect(host='localhost', user='root', passwd='121314', db='cs327e-wcdb') # this should be changed before submittion 

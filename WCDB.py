@@ -21,9 +21,9 @@ from _mysql_exceptions import OperationalError
 # --------
 
       #[host, un, pw, database]
-##a = ["z","lxq0906","XXXXXXXXX","cs327e_lxq0906"] # my account on CS computer
+##a = ["z","joshen","pb6bKYnCDs","cs327e_joshen"] # my account on CS computer
 
-a = ("localhost","root","121314","cs327e-wcdb")
+#a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
 
 def wcdb_login ( host, un, pw, database ) :
     """takes credentials and logs into DB"""
@@ -66,26 +66,26 @@ def createDB(login):
     t = wcdb_query(login, "drop table if exists Student;")
     assert(t is None)
     
-    wcdb_query(login, "drop table if exists crises;")
-    wcdb_query(login, "drop table if exists orgs;")
-    wcdb_query(login, "drop table if exists people")
-    wcdb_query(login, "drop table if exists resources;")
-    wcdb_query(login, "drop table if exists crisisResources;")
-    wcdb_query(login, "drop table if exists waysToHelp;")
-    wcdb_query(login, "drop table if exists crisisWaysToHelp;")
-    wcdb_query(login, "drop table if exists contactInfos;")
-    wcdb_query(login, "drop table if exists orgContactInfos;")
-    wcdb_query(login, "drop table if exists citations;")
-    wcdb_query(login, "drop table if exists crisisCitations;")
-    wcdb_query(login, "drop table if exists orgCitations;")
-    wcdb_query(login, "drop table if exists personCitations;")
-    wcdb_query(login, "drop table if exists urls;")
-    wcdb_query(login, "drop table if exists crisisUrls;")
-    wcdb_query(login, "drop table if exists orgUrls;")
-    wcdb_query(login, "drop table if exists personUrls;")
-    wcdb_query(login, "drop table if exists crisisOrgs;")
-    wcdb_query(login, "drop table if exists crisisPeople;")
-    wcdb_query(login, "drop table if exists orgPeople;")
+    wcdb_query(login, "drop table if exists Crises;")
+    wcdb_query(login, "drop table if exists Orgs;")
+    wcdb_query(login, "drop table if exists People")
+    wcdb_query(login, "drop table if exists Resources;")
+    wcdb_query(login, "drop table if exists CrisisResources;")
+    wcdb_query(login, "drop table if exists WaysToHelp;")
+    wcdb_query(login, "drop table if exists CrisisWaysToHelp;")
+    wcdb_query(login, "drop table if exists ContactInfos;")
+    wcdb_query(login, "drop table if exists OrgContactInfos;")
+    wcdb_query(login, "drop table if exists Citations;")
+    wcdb_query(login, "drop table if exists CrisisCitations;")
+    wcdb_query(login, "drop table if exists OrgCitations;")
+    wcdb_query(login, "drop table if exists PersonCitations;")
+    wcdb_query(login, "drop table if exists Urls;")
+    wcdb_query(login, "drop table if exists CrisisUrls;")
+    wcdb_query(login, "drop table if exists OrgUrls;")
+    wcdb_query(login, "drop table if exists PersonUrls;")
+    wcdb_query(login, "drop table if exists CrisisOrgs;")
+    wcdb_query(login, "drop table if exists CrisisPeople;")
+    wcdb_query(login, "drop table if exists OrgPeople;")
 
     ##--------------Create Needed Databases---------------##
     t = wcdb_query(
@@ -1344,6 +1344,7 @@ def wcdb_solve(r,w):
     wcdb_import: import data from xml to databases
     wcdb_export: export data from databases to xml
     """   
+	a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
     login_var = wcdb_login(*a)
     tree = wcdb_read (r)
     createDB(login_var)

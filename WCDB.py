@@ -165,8 +165,7 @@ def createDB(login):
             """
             CREATE TABLE CrisisResources (
             crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            resourceId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (crisisId,resourceID)
+            resourceId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
 
@@ -185,8 +184,7 @@ def createDB(login):
             """
             CREATE TABLE CrisisWaysToHelp (
             crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            helpId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (crisisId, helpId)
+            helpId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
     
@@ -209,8 +207,7 @@ def createDB(login):
             """
             CREATE TABLE OrgContactInfos (
             orgsId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            contactInfoId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (orgsId, ContactInfoId)
+            contactInfoId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -229,8 +226,7 @@ def createDB(login):
             """
             CREATE TABLE CrisisCitations (
             citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (citationId, crisisId)
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
 
@@ -239,8 +235,7 @@ def createDB(login):
             """
             CREATE TABLE OrgCitations (
             orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (orgId, citationId)
+            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
     
@@ -249,8 +244,7 @@ def createDB(login):
             """
             CREATE TABLE PersonCitations (
             personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (personId, citationId)
+            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -270,8 +264,7 @@ def createDB(login):
             """
             CREATE TABLE CrisisUrls (
             crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (crisisId, urlId)
+            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -280,8 +273,7 @@ def createDB(login):
             """
             CREATE TABLE OrgUrls (
             orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (orgId, urlId)
+            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -290,8 +282,7 @@ def createDB(login):
             """
             CREATE TABLE PersonUrls (
             personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (personId, urlId)
+            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -300,8 +291,7 @@ def createDB(login):
             """
             CREATE TABLE CrisisOrgs (
             crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (crisisId, orgId)
+            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
 
@@ -310,8 +300,7 @@ def createDB(login):
             """
             CREATE TABLE CrisisPeople (
             crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (crisisId, personId)
+            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -320,8 +309,7 @@ def createDB(login):
             """
             CREATE TABLE OrgPeople (
             orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            PRIMARY KEY (orgId, personId)
+            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
 

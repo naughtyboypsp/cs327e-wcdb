@@ -69,6 +69,7 @@ class TestWCDB(unittest.TestCase):
   def test_wcdb_query2(self):
     a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion
     s = "drop table if exists Crises"
+	
 	login = wcdb_login(*a)
     t = wcdb_query(login,s)
 	s = """CREATE TABLE Crises (

@@ -1,10 +1,10 @@
 # -----------------------------------------------------------------------
-# project 3/WCDB(phase1)/RunWCDB.py
+# project 3/WCDB(phase2)/RunWCDB.py
 # Author: Xiaoqin LI
 # Description:
   #At least 10 acceptance tests (separated by one blank line)
   #with at least 500 lines total, in the files RunWCDB.in and RunWCDB.out
-# Date: 03/09/2014
+# Date: 04/03/2014
 # -----------------------------------------------------------------------
 
 """

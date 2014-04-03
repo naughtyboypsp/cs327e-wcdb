@@ -1363,10 +1363,3 @@ def wcdb_solve(r,w):
     export_data = wcdb_export(login_var)
     wcdb_write (w, export_data)
 
-def main():
-    r = open('WCDB.xml', 'r')
-    w = open('RunWCDB.out.xml', 'w')
-    wcdb_solve(r,w)
-
-        
-main()

@@ -1312,7 +1312,7 @@ def wcdb_read (r):
     reads an input
     creates an element tree from string
     """
-    imported_str_data = r.read()
+    imported_str_data = str(r.read())
     assert(type(imported_str_data) is str)
     data_tree = ET.fromstring(imported_str_data)
     assert(type(data_tree) is ET.Element)

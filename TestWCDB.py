@@ -402,7 +402,7 @@ class TestWCDB(unittest.TestCase):
       wcdb_import(login_var, a)
 	  
       root = wcdb_export(login_var)
-      self.assertTrue(len(root[0][0]) == 10)
+      self.assertTrue(len(root[0][0]) == 11)
       
   def test_wcdb_export3(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")

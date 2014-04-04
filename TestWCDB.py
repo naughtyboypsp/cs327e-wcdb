@@ -402,7 +402,6 @@ class TestWCDB(unittest.TestCase):
       wcdb_import(login_var, a)
 	  
       root = wcdb_export(login_var)
-      print len(root[0][0])
       self.assertTrue(len(root[1][0]) == 11)
       
   def test_wcdb_export3(self):
@@ -425,7 +424,6 @@ class TestWCDB(unittest.TestCase):
       wcdb_import(login_var, a)
 	  
       root = wcdb_export(login_var)
-      print len(root[0][0])
       self.assertTrue(len(root[2][0]) == 8)
 
 

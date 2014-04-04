@@ -33,7 +33,7 @@
             <fatalities>16</fatalities>
             <injuries>31</injuries>
 			<populationIll>31</populationIll>
-			<populationDisplaced></populationDisplaced>
+			<populationDisplaced>NULL</populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -94,9 +94,9 @@
             <country>United States</country>
             <dateAndTime>2001-09-11T08:46:30</dateAndTime>
             <fatalities>2996</fatalities>
-            <injuries></injuries>
-			<populationIll></populationIll>
-			<populationDisplaced></populationDisplaced>
+            <injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
             <environmentalImpact>Buildings destroyed and harmful effects from the smoke in the air </environmentalImpact>
 			<politicalChanges>Creation of the Department of Homeland Security and Patriot Act</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -115,8 +115,8 @@
             <country>United States</country>
             <dateAndTime>2010-01-12T04:53:00</dateAndTime>
             <fatalities>222500</fatalities>
-            <injuries></injuries>
-			<populationIll></populationIll>
+            <injuries>0</injuries>
+			<populationIll>0</populationIll>
 			<populationDisplaced>1500000</populationDisplaced>
             <environmentalImpact>Many buidlings destroyed and area not safe</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
@@ -180,7 +180,7 @@
             <fatalities>1</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
-			<populationDisplaced></populationDisplaced>
+			<populationDisplaced>NULL</populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -201,8 +201,8 @@
             <fatalities>12</fatalities>
             <injuries>44</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced></populationDisplaced>
-            <environmentalImpact></environmentalImpact>
+			<populationDisplaced>NULL</populationDisplaced>
+            <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>US as the sole superpower post World War II</politicalChanges>
 			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
 			<jobsLost>0</jobsLost>
@@ -210,7 +210,8 @@
 			<reparationCost>0</reparationCost>
             <regulatoryChanges>Open trade policy with China</regulatoryChanges>
         </crisis>
-    </crises>	
+    </crises>
+
     <orgs>
         <org>
             <orgId>ORG_001</orgId>
@@ -344,6 +345,7 @@
             <majorEvents>Approving the creation of the state of Israel.</majorEvents>
 		</org>
     </orgs>
+
     <people>
         <person>
             <personId>PER_001</personId>
@@ -377,10 +379,10 @@
         </person>
         <person>
             <personId>PER_004</personId>
-            <name>Michele Pierre Louis</name>
+            <name>Michèle Pierre Louis</name>
             <kind>President</kind>
             <streetAddress>NULL</streetAddress>
-            <city>Jeremie</city>
+            <city>Jérémie</city>
             <stateOrProvince>NULL</stateOrProvince>
             <postalCode>NULL</postalCode>
             <country>Haiti</country>
@@ -445,7 +447,9 @@
             <postalCode>20500</postalCode>
             <country>USA</country>
         </person>
-    </people>	
+    </people>
+
+
     <resources>
         <resourcePair>
             <resourceId>RES_000</resourceId>
@@ -492,6 +496,7 @@
             <resource>Building Materials</resource>
         </resourcePair>
     </resources>
+
     <crisisResources>
         <crisisResourcePair>
             <crisisId>CRI_001</crisisId>
@@ -654,6 +659,7 @@
             <resourceId>RES_009</resourceId>
         </crisisResourcePair>
     </crisisResources>
+
     <waysToHelp>
         <wayToHelpPair>
             <helpId>HEL_000</helpId>
@@ -680,6 +686,7 @@
             <wayToHelp>Raise awareness</wayToHelp>
         </wayToHelpPair>
     </waysToHelp>
+
     <crisisWaysToHelp>
         <crisisWayToHelpPair>
             <crisisId>CRI_001</crisisId>
@@ -766,6 +773,8 @@
             <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
     </crisisWaysToHelp>
+
+
     <contactInfos>
         <contactInfo>
             <contactInfoId>CON_001</contactInfoId>
@@ -800,6 +809,22 @@
             <websiteUrlId>URL_036</websiteUrlId>
         </contactInfo>
 		<contactInfo>
+            <contactInfoId>CON_005</contactInfoId>
+            <phoneNumber>NULL</phoneNumber>
+            <emailAddress>NULL</emailAddress>
+            <facebookUrlId>URL_001</facebookUrlId>
+            <twitterUrlId>URL_001</twitterUrlId>
+            <websiteUrlId>URL_001</websiteUrlId>
+        </contactInfo>
+        <contactInfo>
+            <contactInfoId>CON_006</contactInfoId>
+            <phoneNumber>212-686-5522</phoneNumber>
+            <emailAddress>NULL</emailAddress>
+            <facebookUrlId>URL_068</facebookUrlId>
+            <twitterUrlId>URL_067</twitterUrlId>
+            <websiteUrlId>URL_001</websiteUrlId>
+        </contactInfo>
+		<contactInfo>
 			<contactInfoId>CON_007</contactInfoId>
 			<phoneNumber>732-524-0400</phoneNumber>
 			<emailAddress>NULL</emailAddress>
@@ -832,6 +857,7 @@
             <websiteUrlId>URL_111</websiteUrlId>
         </contactInfo>
     </contactInfos>
+
     <orgContactInfos>
         <orgContactInfoPair>
             <orgId>ORG_001</orgId>
@@ -874,6 +900,7 @@
             <contactInfoId>CON_010</contactInfoId>
         </orgContactInfoPair>
     </orgContactInfos>
+
     <citations>
         <citationPair>
             <citationId>CIT_001</citationId>
@@ -1104,6 +1131,7 @@
             <citation>http://en.wikipedia.org/wiki/UNICEF</citation>
         </citationPair>
     </citations>
+
     <crisisCitations>
         <crisisCitationPair>
             <citationId>CIT_001</citationId>
@@ -1202,6 +1230,7 @@
             <crisisId>CRI_010</crisisId>
         </crisisCitationPair>
     </crisisCitations>
+
     <orgCitations>
         <orgCitationPair>
             <orgId>ORG_001</orgId>
@@ -1280,6 +1309,7 @@
             <citationId>CIT_049</citationId>
         </orgCitationPair>
     </orgCitations>
+
     <personCitations>
 		<personCitationPair>
 			<personId>PER_001</personId>
@@ -1338,6 +1368,7 @@
 			<citationId>CIT_051</citationId>
 		</personCitationPair>
     </personCitations>
+
     <urls>
         <url>
             <urlId>URL_001</urlId>
@@ -1413,7 +1444,8 @@
             <urlId>URL_019</urlId>
             <type>ExternalLink</type>
             <urlAddress>http://www.iaea.org/</urlAddress>
-        </url>		
+        </url>
+
 		<url>
             <urlId>URL_020</urlId>
             <type>Image</type>
@@ -1687,7 +1719,7 @@
 		<url>
 			<urlId>URL_086</urlId>
 			<type>ExternalLink</type>
-			<urlAddress>https://www.jnj.com</urlAddress>
+			<urlAddress>www.jnj.com/‎</urlAddress>
 		</url>
 		<url>
 			<urlId>URL_087</urlId>
@@ -1885,6 +1917,7 @@
             <urlAddress>http://www.biography.com/people/barack-obama-12782369</urlAddress>
         </url>
    </urls>
+   
    <crisisUrls>
         <crisisUrlPair>
             <crisisId>CRI_001</crisisId>
@@ -1958,7 +1991,7 @@
             <crisisId>CRI_004</crisisId>
             <urlId>URL_054</urlId>
         </crisisUrlPair>
-		
+
 		<crisisUrlPair>
 			<crisisId>CRI_007</crisisId>
 			<urlId>URL_089</urlId>
@@ -2012,6 +2045,7 @@
             <urlId>URL_119</urlId>
         </crisisUrlPair>
     </crisisUrls>
+
     <orgUrls>
         <orgUrlPair>
             <orgId>ORG_001</orgId>
@@ -2110,6 +2144,7 @@
             <urlId>URL_113</urlId>
         </orgUrlPair>
     </orgUrls>
+
     <personUrls>
         <personUrlPair>
             <personId>PER_001</personId>
@@ -2199,7 +2234,8 @@
             <personId>PER_010</personId>
             <urlId>URL_125</urlId>
         </personUrlPair>
-    </personUrls>	
+    </personUrls>
+
     <crisisOrgs>
         <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
@@ -2234,6 +2270,7 @@
             <orgId>ORG_010</orgId>
         </crisisOrgPair>
     </crisisOrgs>
+
     <crisisPeople>
         <crisisPersonPair>
             <crisisId>CRI_001</crisisId>
@@ -2267,7 +2304,8 @@
             <crisisId>CRI_010</crisisId>
             <personId>PER_010</personId>
         </crisisPersonPair>
-    </crisisPeople>	
+    </crisisPeople>
+
     <orgPeople>
         <orgPersonPair>
             <orgId>ORG_001</orgId>

@@ -1991,7 +1991,46 @@
             <crisisId>CRI_004</crisisId>
             <urlId>URL_054</urlId>
         </crisisUrlPair>
-
+		<crisisUrlPair>
+            <crisisId>CRI_005</crisisId>
+            <urlId>URL_055</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_005</crisisId>
+            <urlId>URL_056</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_005</crisisId>
+            <urlId>URL_057</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_005</crisisId>
+            <urlId>URL_058</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_005</crisisId>
+            <urlId>URL_059</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_005</crisisId>
+            <urlId>URL_065</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_006</crisisId>
+            <urlId>URL_066</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_006</crisisId>
+            <urlId>URL_067</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_006</crisisId>
+            <urlId>URL_068</urlId>
+        </crisisUrlPair>
+        <crisisUrlPair>
+            <crisisId>CRI_006</crisisId>
+            <urlId>URL_069</urlId>
+        </crisisUrlPair>
 		<crisisUrlPair>
 			<crisisId>CRI_007</crisisId>
 			<urlId>URL_089</urlId>
@@ -2104,6 +2143,38 @@
             <urlId>URL_042</urlId>
         </orgUrlPair>
 		<orgUrlPair>
+            <orgId>ORG_005</orgId>
+            <urlId>URL_063</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_005</orgId>
+            <urlId>URL_064</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_005</orgId>
+            <urlId>URL_065</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_006</orgId>
+            <urlId>URL_066</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_006</orgId>
+            <urlId>URL_067</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_006</orgId>
+            <urlId>URL_068</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_006</orgId>
+            <urlId>URL_069</urlId>
+        </orgUrlPair>
+        <orgUrlPair>
+            <orgId>ORG_006</orgId>
+            <urlId>URL_071</urlId>
+        </orgUrlPair>
+		<orgUrlPair>
 			<orgId>ORG_007</orgId>
 			<urlId>URL_096</urlId>
 		</orgUrlPair>
@@ -2195,6 +2266,22 @@
             <urlId>URL_046</urlId>
         </personUrlPair>
 		<personUrlPair>
+            <personId>PER_005</personId>
+            <urlId>URL_069</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_005</personId>
+            <urlId>URL_071</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_006</personId>
+            <urlId>URL_068</urlId>
+        </personUrlPair>
+        <personUrlPair>
+            <personId>PER_006</personId>
+            <urlId>URL_072</urlId>
+        </personUrlPair>
+		<personUrlPair>
 			<personId>PER_007</personId>
 			<urlId>URL_102</urlId>
 		</personUrlPair>
@@ -2254,6 +2341,14 @@
             <orgId>ORG_004</orgId>
         </crisisOrgPair>
 		<crisisOrgPair>
+            <crisisId>CRI_005</crisisId>
+            <orgId>ORG_005</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_006</crisisId>
+            <orgId>ORG_006</orgId>
+        </crisisOrgPair>
+		<crisisOrgPair>
 			<crisisId>CRI_007</crisisId>
 			<orgId>ORG_007</orgId>
 		</crisisOrgPair>
@@ -2289,6 +2384,14 @@
             <personId>PER_004</personId>
         </crisisPersonPair>
 		<crisisPersonPair>
+            <crisisId>CRI_005</crisisId>
+            <personId>PER_005</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_006</crisisId>
+            <personId>PER_006</personId>
+        </crisisPersonPair>
+		<crisisPersonPair>
 			<crisisId>CRI_007</crisisId>
 			<personId>PER_007</personId>
 		</crisisPersonPair>
@@ -2322,6 +2425,14 @@
         <orgPersonPair>
             <orgId>ORG_004</orgId>
             <personId>PER_004</personId>
+        </orgPersonPair>
+		<orgPersonPair>
+            <orgId>ORG_005</orgId>
+            <personId>PER_005</personId>
+        </orgPersonPair>
+        <orgPersonPair>
+            <orgId>ORG_006</orgId>
+            <personId>PER_006</personId>
         </orgPersonPair>
 		<orgPersonPair>
 			<orgId>ORG_007</orgId>

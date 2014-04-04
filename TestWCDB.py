@@ -115,6 +115,93 @@ class TestWCDB(unittest.TestCase):
     curs = db.cursor()
     self.assertTrue(curs.execute('SELECT * from Orgs') == 0)
     self.assertTrue(type(curs.fetchall()) is tuple)
+    
+# -----------------------------------------
+  # test_wcdb_import fuction test 3 in total
+  # -----------------------------------------
+  def test_wcdb_import1(self):
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
+    login_var = wcdb_login(*a)
+    createDB(login_var)
+    tree = ET.parse(StringIO("<WorldCrisis></WorldCrisis>"))
+    wcdb_import(login_var, tree)
+    self.assertTrue(len(wcdb_query(login_var, "select * from Crises;")) == 0)
+
+  def test_wcdb_import2(self):
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
+    login_var = wcdb_login(*a)
+    createDB(login_var)
+    tree = ET.parse(StringIO("""
+                                <root>
+                                  <crises>
+                                    <crisis>
+                                      <crisisId>CRI_001</crisisId>
+                                          <name>Chernobyl Accident</name>
+                                          <kind>Human Error Disaster</kind>
+                                          <streetAddress>NULL</streetAddress>
+                                          <city>Chernobyl</city>
+                                          <stateOrProvince>NULL</stateOrProvince>
+                                          <country>Ukraine</country>
+                                          <dateAndTime>1986-04-26T01:23:48</dateAndTime>
+                                          <fatalities>290000</fatalities>
+                                          <injuries>270000</injuries>
+                                          <populationIll>270000</populationIll>
+                                          <populationDisplaced>335000</populationDisplaced>
+                                          <environmentalImpact>Up to 60 sq. mi. of farmland is likely to remain contaminated for decades</environmentalImpact>
+                                          <politicalChanges>Big impact on the fall of the USSR</politicalChanges>
+                                          <culturalChanges>NULL</culturalChanges>
+                                          <jobsLost>600</jobsLost>
+                                          <damageInUSD>0</damageInUSD>
+                                          <reparationCost>235000000000</reparationCost>
+                                          <regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
+                                    </crisis>
+                                  </crises>
+                                </root>"""))
+    wcdb_import(login_var, tree)
+    self.assertTrue(len(wcdb_query(login_var, "select * from Crises;")) == 1)
+
+  def test_wcdb_import3(self):
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen") # this should be changed before submittion 
+    login_var = wcdb_login(*a)
+    createDB(login_var)
+    tree = ET.parse(StringIO("""
+                                <root>
+                                  <resources>
+                                    <resourcePair>
+                                      <resourceId>RES_000</resourceId>
+                                      <resource>Food</resource>
+                                    </resourcePair>
+                                  </resources>
+                                </root>"""))
+    wcdb_import(login_var, tree)
+    self.assertTrue(len(wcdb_query(login_var, "select * from resources;")) == 1)
+
+  # -----------------------------------------
+  # test_tree_builder fuction test 3 in total
+  # -----------------------------------------
+  def test_tree_builder1(self):
+    tag = 'crises'
+    content = 'abc'
+    root = tree_builder(tag,content)
+    self.assertTrue(type(root) is ET.Element)
+    self.assertTrue(root.tag == 'crises')
+    self.assertTrue(root.text == 'abc')
+    
+  def test_tree_builder2(self):
+    tag = 'crises'
+    content = 'abc'
+    root = tree_builder(tag,content)
+    self.assertTrue(type(root) is ET.Element)
+    self.assertTrue(root.tag != 'crisis')
+    self.assertTrue(root.text != 'abcd')
+    
+  def test_tree_builder3(self):
+    tag = 'crisis'
+    content = 'abcd'
+    root = tree_builder(tag,content)
+    self.assertTrue(type(root) is ET.Element)
+    self.assertTrue(root.tag == 'crisis')
+    self.assertTrue(root.text != 'abc')
 
   # -----------------------------------
   # wcdb_read fuction test 3 in total
@@ -253,7 +340,10 @@ class TestWCDB(unittest.TestCase):
       r2 = StringIO(w1.getvalue())
       wcdb_solve(r2, w2)
       self.assertTrue(w1.getvalue() == w2.getvalue())
-  
+# ----------------------------------------------------
+# wcdb_solve function test 3 in total
+# ----------------------------------------------------
+
   def test_wcdb_export1(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
       login_var = wcdb_login(*a)
@@ -288,6 +378,61 @@ class TestWCDB(unittest.TestCase):
 	  
       root = wcdb_export(login_var)
       self.assertTrue(len(root[0][0]) == 19)
+      
+  def test_wcdb_export2(self):
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+      login_var = wcdb_login(*a)
+      createDB(login_var)
+
+      r = """<root>
+        <orgs>
+        <org>
+            <orgId>ORG_001</orgId>
+            <name>International Nuclear Safety Group (INSAG)</name>
+            <kind>Intergovernmental Agency</kind>
+            <streetAddress>Vienna International Center, PO Box 100, 1400</streetAddress>
+            <city>Vienna</city>
+            <stateOrProvince>Null</stateOrProvince>
+            <postalCode>NULL</postalCode>
+            <country>Austria</country>
+            <foundingMission>The group was founded in 1985 by the International Atomic Energy Agency (IAEA)as an advisory committee in the area of nuclear safety.</foundingMission>
+            <dateFounded>1985-01-01</dateFounded>
+            <majorEvents>First investigation was the Chernobyl Accident</majorEvents>
+        </org>
+        </orgs>
+        </root>"""
+		
+      a = ET.fromstring(r) 
+      wcdb_import(login_var, a)
+	  
+      root = wcdb_export(login_var)
+      self.assertTrue(len(root[0][0]) == 11)
+      
+  def test_wcdb_export3(self):
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+      login_var = wcdb_login(*a)
+      createDB(login_var)
+
+      r = """<root>
+      <people>
+        <person>
+            <personId>PER_004</personId>
+            <name>Michele Pierre Louis</name>
+            <kind>President</kind>
+            <streetAddress>NULL</streetAddress>
+            <city>Jeremie</city>
+            <stateOrProvince>NULL</stateOrProvince>
+            <postalCode>NULL</postalCode>
+            <country>Haiti</country>
+        </person>
+        </people>
+        </root>"""
+		
+      a = ET.fromstring(r) 
+      wcdb_import(login_var, a)
+	  
+      root = wcdb_export(login_var)
+      self.assertTrue(len(root[0][0]) == 8)
 
 
 print("TestWCDB.py")

@@ -34,7 +34,7 @@
 			<fatalities>16</fatalities>
 			<injuries>31</injuries>
 			<populationIll>31</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced>0</populationDisplaced>
 			<environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -95,9 +95,9 @@
 			<country>United States</country>
 			<dateAndTime>2001-09-11 08:46:30</dateAndTime>
 			<fatalities>2996</fatalities>
-			<injuries>NULL</injuries>
-			<populationIll>NULL</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
 			<environmentalImpact>Buildings destroyed and harmful effects from the smoke in the air </environmentalImpact>
 			<politicalChanges>Creation of the Department of Homeland Security and Patriot Act</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -116,8 +116,8 @@
 			<country>United States</country>
 			<dateAndTime>2010-01-12 04:53:00</dateAndTime>
 			<fatalities>222500</fatalities>
-			<injuries>NULL</injuries>
-			<populationIll>NULL</populationIll>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
 			<populationDisplaced>1500000</populationDisplaced>
 			<environmentalImpact>Many buidlings destroyed and area not safe</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
@@ -181,7 +181,7 @@
 			<fatalities>1</fatalities>
 			<injuries>0</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced>0</populationDisplaced>
 			<environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -202,7 +202,7 @@
 			<fatalities>12</fatalities>
 			<injuries>44</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced>0</populationDisplaced>
 			<environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>US as the sole superpower post World War II</politicalChanges>
 			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
@@ -799,6 +799,22 @@
 			<facebookUrlId>URL_001</facebookUrlId>
 			<twitterUrlId>URL_035</twitterUrlId>
 			<websiteUrlId>URL_036</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_005</contactInfoId>
+			<phoneNumber>NULL</phoneNumber>
+			<emailAddress>NULL</emailAddress>
+			<facebookUrlId>URL_001</facebookUrlId>
+			<twitterUrlId>URL_001</twitterUrlId>
+			<websiteUrlId>URL_001</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_006</contactInfoId>
+			<phoneNumber>212-686-5522</phoneNumber>
+			<emailAddress>NULL</emailAddress>
+			<facebookUrlId>URL_068</facebookUrlId>
+			<twitterUrlId>URL_067</twitterUrlId>
+			<websiteUrlId>URL_001</websiteUrlId>
 		</contactInfos>
 		<contactInfos>
 			<contactInfoId>CON_007</contactInfoId>
@@ -1960,6 +1976,46 @@
 			<urlId>URL_054</urlId>
 		</crisisUrlPair>
 		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>URL_055</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>URL_056</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>URL_057</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>URL_058</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>URL_059</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>URL_065</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>URL_066</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>URL_067</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>URL_068</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>URL_069</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
 			<crisisId>CRI_007</crisisId>
 			<urlId>URL_089</urlId>
 		</crisisUrlPair>
@@ -2070,6 +2126,38 @@
 			<urlId>URL_042</urlId>
 		</orgUrlPair>
 		<orgUrlPair>
+			<orgId>ORG_005</orgId>
+			<urlId>URL_063</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_005</orgId>
+			<urlId>URL_064</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_005</orgId>
+			<urlId>URL_065</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>URL_066</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>URL_067</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>URL_068</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>URL_069</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>URL_071</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
 			<orgId>ORG_007</orgId>
 			<urlId>URL_096</urlId>
 		</orgUrlPair>
@@ -2160,6 +2248,22 @@
 			<urlId>URL_046</urlId>
 		</personUrlPair>
 		<personUrlPair>
+			<personId>PER_005</personId>
+			<urlId>URL_069</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_005</personId>
+			<urlId>URL_071</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_006</personId>
+			<urlId>URL_068</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_006</personId>
+			<urlId>URL_072</urlId>
+		</personUrlPair>
+		<personUrlPair>
 			<personId>PER_007</personId>
 			<urlId>URL_102</urlId>
 		</personUrlPair>
@@ -2218,6 +2322,14 @@
 			<orgId>ORG_004</orgId>
 		</crisisOrgPair>
 		<crisisOrgPair>
+			<crisisId>CRI_005</crisisId>
+			<orgId>ORG_005</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_006</crisisId>
+			<orgId>ORG_006</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
 			<crisisId>CRI_007</crisisId>
 			<orgId>ORG_007</orgId>
 		</crisisOrgPair>
@@ -2252,6 +2364,14 @@
 			<personId>PER_004</personId>
 		</crisisPersonPair>
 		<crisisPersonPair>
+			<crisisId>CRI_005</crisisId>
+			<personId>PER_005</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_006</crisisId>
+			<personId>PER_006</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
 			<crisisId>CRI_007</crisisId>
 			<personId>PER_007</personId>
 		</crisisPersonPair>
@@ -2284,6 +2404,14 @@
 		<orgPersonPair>
 			<orgId>ORG_004</orgId>
 			<personId>PER_004</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_005</orgId>
+			<personId>PER_005</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_006</orgId>
+			<personId>PER_006</personId>
 		</orgPersonPair>
 		<orgPersonPair>
 			<orgId>ORG_007</orgId>

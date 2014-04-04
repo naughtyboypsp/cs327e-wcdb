@@ -340,7 +340,10 @@ class TestWCDB(unittest.TestCase):
       r2 = StringIO(w1.getvalue())
       wcdb_solve(r2, w2)
       self.assertTrue(w1.getvalue() == w2.getvalue())
-  
+# ----------------------------------------------------
+# wcdb_solve function test 3 in total
+# ----------------------------------------------------
+
   def test_wcdb_export1(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
       login_var = wcdb_login(*a)
@@ -375,6 +378,61 @@ class TestWCDB(unittest.TestCase):
 	  
       root = wcdb_export(login_var)
       self.assertTrue(len(root[0][0]) == 19)
+      
+  def test_wcdb_export2(self):
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+      login_var = wcdb_login(*a)
+      createDB(login_var)
+
+      r = """<root>
+        <orgs>
+        <org>
+            <orgId>ORG_001</orgId>
+            <name>International Nuclear Safety Group (INSAG)</name>
+            <kind>Intergovernmental Agency</kind>
+            <streetAddress>Vienna International Center, PO Box 100, 1400</streetAddress>
+            <city>Vienna</city>
+            <stateOrProvince>Null</stateOrProvince>
+            <postalCode>NULL</postalCode>
+            <country>Austria</country>
+            <foundingMission>The group was founded in 1985 by the International Atomic Energy Agency (IAEA)as an advisory committee in the area of nuclear safety.</foundingMission>
+            <dateFounded>1985-01-01</dateFounded>
+            <majorEvents>First investigation was the Chernobyl Accident</majorEvents>
+        </org>
+        </orgs>
+        </root>"""
+		
+      a = ET.fromstring(r) 
+      wcdb_import(login_var, a)
+	  
+      root = wcdb_export(login_var)
+      self.assertTrue(len(root[0][0]) == 11)
+      
+  def test_wcdb_export3(self):
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+      login_var = wcdb_login(*a)
+      createDB(login_var)
+
+      r = """<root>
+      <people>
+        <person>
+            <personId>PER_004</personId>
+            <name>Michele Pierre Louis</name>
+            <kind>President</kind>
+            <streetAddress>NULL</streetAddress>
+            <city>Jeremie</city>
+            <stateOrProvince>NULL</stateOrProvince>
+            <postalCode>NULL</postalCode>
+            <country>Haiti</country>
+        </person>
+        </people>
+        </root>"""
+		
+      a = ET.fromstring(r) 
+      wcdb_import(login_var, a)
+	  
+      root = wcdb_export(login_var)
+      self.assertTrue(len(root[0][0]) == 8)
 
 
 print("TestWCDB.py")

@@ -180,7 +180,7 @@
             <fatalities>1</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced>0</populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -379,10 +379,10 @@
         </person>
         <person>
             <personId>PER_004</personId>
-            <name>Michèle Pierre Louis</name>
+            <name>Michele Pierre Louis</name>
             <kind>President</kind>
             <streetAddress>NULL</streetAddress>
-            <city>Jérémie</city>
+            <city>Jeremie</city>
             <stateOrProvince>NULL</stateOrProvince>
             <postalCode>NULL</postalCode>
             <country>Haiti</country>
@@ -1719,7 +1719,7 @@
 		<url>
 			<urlId>URL_086</urlId>
 			<type>ExternalLink</type>
-			<urlAddress>www.jnj.com/‎</urlAddress>
+			<urlAddress>https://www.jnj.com</urlAddress>
 		</url>
 		<url>
 			<urlId>URL_087</urlId>

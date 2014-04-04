@@ -256,9 +256,10 @@ class TestWCDB(unittest.TestCase):
   
   def test_wcdb_export1(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-	  login = wcdb_login(*a)
+      login_var = wcdb_login(*a)
+      createDB(login_var)
 
-      r = StringIO("""<root>
+      r = """<root>
     <crises>
         <crisis>
             <crisisId>CRI_001</crisisId>
@@ -280,16 +281,15 @@ class TestWCDB(unittest.TestCase):
 			<damageInUSD>0</damageInUSD>
 			<reparationCost>235000000000</reparationCost>
             <regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
-        </crisis></crises></root>""")
+        </crisis></crises></root>"""
 		
+      a = ET.fromstring(r) 
+      wcdb_import(login_var, a)
 	  
-      wcdb_import(login, r)
-	  a = ET.fromstring(r)
-	  
-	  root = wcdb_export(login)
-	
-	  self.assertTrue(tostring(a.getvalue()) == tostring(root.getvalue())
-   
+      root = wcdb_export(login_var)
+      self.assertTrue(len(root[0][0]) == 19)
+
+
 print("TestWCDB.py")
 print("Done.")
 unittest.main()

@@ -1155,6 +1155,26 @@
 			<crisisId>CRI_004</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
+			<citationId>CIT_054</citationId>
+			<crisisId>CRI_005</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>CIT_055</citationId>
+			<crisisId>CRI_005</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>CIT_057</citationId>
+			<crisisId>CRI_006</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>CIT_058</citationId>
+			<crisisId>CRI_006</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>CIT_059</citationId>
+			<crisisId>CRI_006</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
 			<citationId>CIT_034</citationId>
 			<crisisId>CRI_007</crisisId>
 		</crisisCitationPair>
@@ -1182,26 +1202,6 @@
 			<citationId>CIT_047</citationId>
 			<crisisId>CRI_010</crisisId>
 		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>CIT_054</citationId>
-			<crisisId>CRI_005</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>CIT_055</citationId>
-			<crisisId>CRI_005</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>CIT_057</citationId>
-			<crisisId>CRI_006</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>CIT_058</citationId>
-			<crisisId>CRI_006</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>CIT_059</citationId>
-			<crisisId>CRI_006</crisisId>
-		</crisisCitationPair>
 	</crisisCitations>
 	<orgCitations>
 		<orgCitationPair>
@@ -1221,6 +1221,10 @@
 			<citationId>CIT_010</citationId>
 		</orgCitationPair>
 		<orgCitationPair>
+			<orgId>ORG_004</orgId>
+			<citationId>CIT_014</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
 			<orgId>ORG_003</orgId>
 			<citationId>CIT_025</citationId>
 		</orgCitationPair>
@@ -1231,10 +1235,6 @@
 		<orgCitationPair>
 			<orgId>ORG_003</orgId>
 			<citationId>CIT_027</citationId>
-		</orgCitationPair>
-		<orgCitationPair>
-			<orgId>ORG_004</orgId>
-			<citationId>CIT_014</citationId>
 		</orgCitationPair>
 		<orgCitationPair>
 			<orgId>ORG_005</orgId>
@@ -2144,20 +2144,20 @@
 			<urlId>URL_031</urlId>
 		</personUrlPair>
 		<personUrlPair>
-			<personId>PER_003</personId>
-			<urlId>URL_045</urlId>
-		</personUrlPair>
-		<personUrlPair>
-			<personId>PER_003</personId>
-			<urlId>URL_046</urlId>
-		</personUrlPair>
-		<personUrlPair>
 			<personId>PER_004</personId>
 			<urlId>URL_043</urlId>
 		</personUrlPair>
 		<personUrlPair>
 			<personId>PER_004</personId>
 			<urlId>URL_044</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_003</personId>
+			<urlId>URL_045</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_003</personId>
+			<urlId>URL_046</urlId>
 		</personUrlPair>
 		<personUrlPair>
 			<personId>PER_007</personId>

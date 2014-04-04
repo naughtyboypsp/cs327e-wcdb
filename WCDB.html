@@ -1,6 +1,6 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head><title>Python: module WCDB</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head><body bgcolor="#f0f0f8">
 
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
@@ -8,11 +8,11 @@
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>WCDB</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/users/josh/documents/github/cs327e-wcdb/wcdb.py">c:\users\josh\documents\github\cs327e-wcdb\wcdb.py</a></font></td></tr></table>
-    <p><tt>#&nbsp;---------------------------------------------------------------------------<br>
-#&nbsp;projects/WCDB(phase1)/WCDB.py<br>
-#&nbsp;Author:&nbsp;Xiaoqin&nbsp;LI<br>
-#&nbsp;Description:</tt></p>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/v/filer4b/v35q001/yj2946/cs327e-wcdb/WCDB.py">/v/filer4b/v35q001/yj2946/cs327e-wcdb/WCDB.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;---------------------------<br>
+#&nbsp;projects/WCDB(phase2)/WCDB2.py<br>
+#&nbsp;Author&nbsp;Xiaoqin&nbsp;LI<br>
+#&nbsp;last&nbsp;updated&nbsp;date:&nbsp;04/01/2014</tt></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#aa55cc">
@@ -21,18 +21,33 @@
     
 <tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="xml.etree.ElementTree.html">xml.etree.ElementTree</a><br>
+</td><td width="25%" valign=top><a href="_mysql.html">_mysql</a><br>
+</td><td width="25%" valign=top><a href="xml.dom.minidom.html">xml.dom.minidom</a><br>
 </td><td width="25%" valign=top><a href="sys.html">sys</a><br>
-</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+</td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#eeaa77">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><dl><dt><a name="-wcdb_read"><strong>wcdb_read</strong></a>(r)</dt><dd><tt>reads&nbsp;an&nbsp;input&nbsp;from&nbsp;a&nbsp;file&nbsp;which&nbsp;have&nbsp;a&nbsp;single&nbsp;top&nbsp;tag<br>
+<td width="100%"><dl><dt><a name="-createDB"><strong>createDB</strong></a>(login)</dt><dd><tt>Create&nbsp;Needed&nbsp;Databases,<br>
+dropping&nbsp;if&nbsp;needed</tt></dd></dl>
+ <dl><dt><a name="-tree_builder"><strong>tree_builder</strong></a>(tag, content<font color="#909090">=''</font>)</dt><dd><tt>builds&nbsp;1&nbsp;xml&nbsp;tree</tt></dd></dl>
+ <dl><dt><a name="-wcdb_export"><strong>wcdb_export</strong></a>(login)</dt><dd><tt>Generates&nbsp;ElementTree&nbsp;from&nbsp;DB<br>
+root:&nbsp;&lt;root&gt;&lt;/root&gt;<br>
+crises_tree:&nbsp;&lt;crises&gt;&lt;/crises&gt;</tt></dd></dl>
+ <dl><dt><a name="-wcdb_import"><strong>wcdb_import</strong></a>(login, tree)</dt><dd><tt>Iterating&nbsp;through&nbsp;crisis&nbsp;tags&nbsp;in&nbsp;crises&nbsp;tag&nbsp;and&nbsp;import&nbsp;into&nbsp;DB:&nbsp;table&nbsp;Crises</tt></dd></dl>
+ <dl><dt><a name="-wcdb_login"><strong>wcdb_login</strong></a>(host, un, pw, database)</dt><dd><tt>takes&nbsp;credentials&nbsp;and&nbsp;logs&nbsp;into&nbsp;DB</tt></dd></dl>
+ <dl><dt><a name="-wcdb_query"><strong>wcdb_query</strong></a>(login, s)</dt><dd><tt>Logs&nbsp;into&nbsp;DB&nbsp;and&nbsp;runs&nbsp;provided&nbsp;string&nbsp;as&nbsp;query</tt></dd></dl>
+ <dl><dt><a name="-wcdb_read"><strong>wcdb_read</strong></a>(r)</dt><dd><tt>reads&nbsp;an&nbsp;input<br>
 creates&nbsp;an&nbsp;element&nbsp;tree&nbsp;from&nbsp;string</tt></dd></dl>
- <dl><dt><a name="-wcdb_solve"><strong>wcdb_solve</strong></a>(stdin, stdout)</dt><dd><tt>stdin&nbsp;is&nbsp;a&nbsp;reader<br>
-stdout&nbsp;is&nbsp;a&nbsp;writer</tt></dd></dl>
+ <dl><dt><a name="-wcdb_solve"><strong>wcdb_solve</strong></a>(r, w)</dt><dd><tt>r&nbsp;is&nbsp;a&nbsp;reader<br>
+w&nbsp;is&nbsp;a&nbsp;writer<br>
+login:&nbsp;Logs&nbsp;into&nbsp;DB,&nbsp;tree:&nbsp;Generates&nbsp;Element&nbsp;Tree,<br>
+<a href="#-createDB">createDB</a>(login):&nbsp;Creates&nbsp;Tables&nbsp;in&nbsp;DB,<br>
+wcdb_import:&nbsp;import&nbsp;data&nbsp;from&nbsp;xml&nbsp;to&nbsp;databases<br>
+wcdb_export:&nbsp;export&nbsp;data&nbsp;from&nbsp;databases&nbsp;to&nbsp;xml</tt></dd></dl>
  <dl><dt><a name="-wcdb_write"><strong>wcdb_write</strong></a>(w, data_tree)</dt><dd><tt>converts&nbsp;an&nbsp;element&nbsp;string&nbsp;to&nbsp;a&nbsp;string&nbsp;data<br>
 exports&nbsp;the&nbsp;string&nbsp;data</tt></dd></dl>
 </td></tr></table>

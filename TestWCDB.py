@@ -174,7 +174,7 @@ class TestWCDB(unittest.TestCase):
                                   </resources>
                                 </root>"""))
     wcdb_import(login_var, tree)
-    self.assertTrue(len(wcdb_query(login_var, "select * from resources;")) == 1)
+    self.assertTrue(len(wcdb_query(login_var, "select * from Resources;")) == 1)
 
   # -----------------------------------------
   # test_tree_builder fuction test 3 in total
@@ -384,9 +384,7 @@ class TestWCDB(unittest.TestCase):
       login_var = wcdb_login(*a)
       createDB(login_var)
 
-      r = """<root>
-        <orgs>
-        <org>
+      r = """<root><orgs><org>
             <orgId>ORG_001</orgId>
             <name>International Nuclear Safety Group (INSAG)</name>
             <kind>Intergovernmental Agency</kind>
@@ -398,24 +396,20 @@ class TestWCDB(unittest.TestCase):
             <foundingMission>The group was founded in 1985 by the International Atomic Energy Agency (IAEA)as an advisory committee in the area of nuclear safety.</foundingMission>
             <dateFounded>1985-01-01</dateFounded>
             <majorEvents>First investigation was the Chernobyl Accident</majorEvents>
-        </org>
-        </orgs>
-        </root>"""
+        </org></orgs></root>"""
 		
       a = ET.fromstring(r) 
       wcdb_import(login_var, a)
 	  
       root = wcdb_export(login_var)
-      self.assertTrue(len(root[0][0]) == 11)
+      self.assertTrue(len(root[0][0]) == 10)
       
   def test_wcdb_export3(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
       login_var = wcdb_login(*a)
       createDB(login_var)
 
-      r = """<root>
-      <people>
-        <person>
+      r = """<root><people><person>
             <personId>PER_004</personId>
             <name>Michele Pierre Louis</name>
             <kind>President</kind>
@@ -424,9 +418,7 @@ class TestWCDB(unittest.TestCase):
             <stateOrProvince>NULL</stateOrProvince>
             <postalCode>NULL</postalCode>
             <country>Haiti</country>
-        </person>
-        </people>
-        </root>"""
+        </person></people></root>"""
 		
       a = ET.fromstring(r) 
       wcdb_import(login_var, a)

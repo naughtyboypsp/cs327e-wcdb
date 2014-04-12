@@ -21,7 +21,6 @@ from _mysql_exceptions import OperationalError
 # --------
 
       #[host, un, pw, database]
-##a = ["z","joshen","pb6bKYnCDs","cs327e_joshen"] # my account on CS computer
 
 #a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
 
@@ -65,34 +64,34 @@ def createDB(login):
     """
     t = wcdb_query(login, "drop table if exists Student;")
     assert(t is None)
+    wcdb_query(login, "drop table if exists CrisisOrgs;")
+    wcdb_query(login, "drop table if exists CrisisPeople;")
+    wcdb_query(login, "drop table if exists OrgPeople;")
+    wcdb_query(login, "drop table if exists CrisisCitations;")
+    wcdb_query(login, "drop table if exists OrgCitations;")
+    wcdb_query(login, "drop table if exists PersonCitations;")
+    wcdb_query(login, "drop table if exists CrisisResources;")
+    wcdb_query(login, "drop table if exists CrisisWaysToHelp;")
+    wcdb_query(login, "drop table if exists OrgContactInfos;")  
+    wcdb_query(login, "drop table if exists CrisisUrls;")
+    wcdb_query(login, "drop table if exists OrgUrls;")
+    wcdb_query(login, "drop table if exists PersonUrls;")
     
     wcdb_query(login, "drop table if exists Crises;")
     wcdb_query(login, "drop table if exists Orgs;")
     wcdb_query(login, "drop table if exists People")
-    wcdb_query(login, "drop table if exists Resources;")
-    wcdb_query(login, "drop table if exists CrisisResources;")
-    wcdb_query(login, "drop table if exists WaysToHelp;")
-    wcdb_query(login, "drop table if exists CrisisWaysToHelp;")
-    wcdb_query(login, "drop table if exists ContactInfos;")
-    wcdb_query(login, "drop table if exists OrgContactInfos;")
-    wcdb_query(login, "drop table if exists Citations;")
-    wcdb_query(login, "drop table if exists CrisisCitations;")
-    wcdb_query(login, "drop table if exists OrgCitations;")
-    wcdb_query(login, "drop table if exists PersonCitations;")
-    wcdb_query(login, "drop table if exists Urls;")
-    wcdb_query(login, "drop table if exists CrisisUrls;")
-    wcdb_query(login, "drop table if exists OrgUrls;")
-    wcdb_query(login, "drop table if exists PersonUrls;")
-    wcdb_query(login, "drop table if exists CrisisOrgs;")
-    wcdb_query(login, "drop table if exists CrisisPeople;")
-    wcdb_query(login, "drop table if exists OrgPeople;")
-
+    wcdb_query(login, "drop table if exists Resources;")    
+    wcdb_query(login, "drop table if exists WaysToHelp;")   
+    wcdb_query(login, "drop table if exists ContactInfos;")    
+    wcdb_query(login, "drop table if exists Citations;")  
+    wcdb_query(login, "drop table if exists Urls;")   
+    
     ##--------------Create Needed Databases---------------##
     t = wcdb_query(
             login,
             """
             CREATE TABLE Crises (
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            crisisId int(6) unsigned NOT NULL AUTO_INCREMENT,
             name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -119,7 +118,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE Orgs (
-            orgsId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            orgId int(6) unsigned NOT NULL AUTO_INCREMENT,
             name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Corporation','Government Agency','Military Force','Intergovernmental Agency','Intergovernmental Public Health Agency', 'Nonprofit / Humanitarian Organization') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -130,7 +129,7 @@ def createDB(login):
             foundingMission text COLLATE utf8_unicode_ci DEFAULT NULL,
             datefounded datetime NOT NULL,
             majorEvents text COLLATE utf8_unicode_ci DEFAULT NULL,
-            PRIMARY KEY (orgsId)
+            PRIMARY KEY (orgId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -138,7 +137,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE People (
-            peopleId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            personId int(6) unsigned NOT NULL AUTO_INCREMENT,
             name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('President','Celebrity','Actor/Actress','Musician','Politician', 'CEO','Humanitarian','Perpetrator','Regular Worker') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -146,7 +145,7 @@ def createDB(login):
             stateOrProvince varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             postalCode varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
             country varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-            PRIMARY KEY (peopleId)
+            PRIMARY KEY (personId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
             """)
             
@@ -154,7 +153,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE Resources (
-            resourceId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            resourceId int(6) unsigned NOT NULL AUTO_INCREMENT,
             resource text COLLATE utf8_unicode_ci NOT NULL,
             PRIMARY KEY (resourceId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -164,16 +163,18 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisResources (
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            resourceId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            crisisId int(6) unsigned NOT NULL,
+            resourceId int(6) unsigned NOT NULL,
+            FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
+            FOREIGN KEY (resourceId) REFERENCES Resources(resourceId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
 
     t = wcdb_query(
             login,
             """
             CREATE TABLE WaysToHelp (
-            helpId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            helpId int(6) unsigned NOT NULL AUTO_INCREMENT,
             wayToHelp text COLLATE utf8_unicode_ci NOT NULL,
             PRIMARY KEY (helpId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -183,16 +184,18 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisWaysToHelp (
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            helpId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            crisisId int(6) unsigned NOT NULL,
+            helpId int(6) unsigned NOT NULL,
+            FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
+            FOREIGN KEY (helpId) REFERENCES WaysToHelp(helpId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
     
     t = wcdb_query(
             login,
             """
             CREATE TABLE ContactInfos (
-            contactInfoId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            contactInfoId int(6) unsigned NOT NULL AUTO_INCREMENT,
             phoneNumber varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
             emailAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             facebookUrlId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
@@ -206,16 +209,18 @@ def createDB(login):
             login,
             """
             CREATE TABLE OrgContactInfos (
-            orgsId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            contactInfoId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            orgId int(6) unsigned NOT NULL,
+            contactInfoId int(6) unsigned NOT NULL,
+            FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
+            FOREIGN KEY (contactInfoId) REFERENCES ContactInfos(contactInfoId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
             
     t = wcdb_query(
             login,
             """
             CREATE TABLE Citations (
-            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            citationId int(6) unsigned NOT NULL AUTO_INCREMENT,
             citation text COLLATE utf8_unicode_ci NOT NULL,
             PRIMARY KEY (citationId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -225,34 +230,40 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisCitations (
-            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            citationId int(6) unsigned NOT NULL,
+            crisisId int(6) unsigned NOT NULL,
+            FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
+            FOREIGN KEY (citationId) REFERENCES Citations(citationId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
 
     t = wcdb_query(
             login,
             """
             CREATE TABLE OrgCitations (
-            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            orgId int(6) unsigned NOT NULL,
+            citationId int(6) unsigned NOT NULL,
+            FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
+            FOREIGN KEY (citationId) REFERENCES Citations(citationId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
     
     t = wcdb_query(
             login,
             """
             CREATE TABLE PersonCitations (
-            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            citationId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            personId int(6) unsigned NOT NULL,
+            citationId int(6) unsigned NOT NULL,
+            FOREIGN KEY (personId) REFERENCES People(personId),
+            FOREIGN KEY (citationId) REFERENCES Citations(citationId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
             
     t = wcdb_query(
             login,
             """
             CREATE TABLE Urls (
-            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            urlId int(6) unsigned NOT NULL AUTO_INCREMENT,
             type enum('Image','Video','Map','SocialNetwork','Website','ExternalLink') COLLATE utf8_unicode_ci NOT NULL,
             urlAddress text COLLATE utf8_unicode_ci NOT NULL,
             PRIMARY KEY (urlId)
@@ -263,68 +274,84 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisUrls (
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            crisisId int(6) unsigned NOT NULL,
+            urlId int(6) unsigned NOT NULL,
+            FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
+            FOREIGN KEY (urlId) REFERENCES Urls(urlId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
             
     t = wcdb_query(
             login,
             """
             CREATE TABLE OrgUrls (
-            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            orgId int(6) unsigned NOT NULL,
+            urlId int(6) unsigned NOT NULL,
+            FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
+            FOREIGN KEY (urlId) REFERENCES Urls(urlId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
             
     t = wcdb_query(
             login,
             """
             CREATE TABLE PersonUrls (
-            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            urlId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            personId int(6) unsigned NOT NULL,
+            urlId int(6) unsigned NOT NULL,
+            FOREIGN KEY (personId) REFERENCES People(personId),
+            FOREIGN KEY (urlId) REFERENCES Urls(urlId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
             
     t = wcdb_query(
             login,
             """
             CREATE TABLE CrisisOrgs (
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            crisisId int(6) unsigned NOT NULL,
+            orgId int(6) unsigned NOT NULL,
+            FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
+            FOREIGN KEY (orgId) REFERENCES Orgs(orgId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
 
     t = wcdb_query(
             login,
             """
             CREATE TABLE CrisisPeople (
-            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            crisisId int(6) unsigned NOT NULL,
+            personId int(6) unsigned NOT NULL,
+            FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
+            FOREIGN KEY (personId) REFERENCES People(personId)
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
             
     t = wcdb_query(
             login,
             """
             CREATE TABLE OrgPeople (
-            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL
-            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+            orgId int(6) unsigned NOT NULL,
+            personId int(6) unsigned NOT NULL,
+            FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
+            FOREIGN KEY (personId) REFERENCES People(personId) 
+            )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
 
-# ----------
+# ---------------------------
+# data import helper function
+# --------------------------- 
+
+# -----------
 # data import
-# ----------
+# -----------
 def wcdb_import(login,tree):
     """
     Iterating through crisis tags in crises tag and import into DB: table Crises 
     """
-    # based on the discussion with Robert in class, we think it is better to put all input stuff in one function.
     #-----------------import crises table-------------------------------------------
     inserts_list = []
     counter = 0
     root_list = tree.findall("./crises/crisis")
+    
     #Iterates over Children of crises
     for parent in root_list:
         insert_entry = {}
@@ -338,440 +365,442 @@ def wcdb_import(login,tree):
     for i in range(0,counter):
         #Queryinseting - Crisis Table
         dict_entry = inserts_list[i]       
-        s = (dict_entry.get('crisisId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+        s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
              dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
              dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
              dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
              dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
              dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
-        s = 'insert into Crises Values' + str(s) + ';'
+        s = 'insert into Crises (name, kind, streetAddress, city, stateOrProvince, country, dateAndTime, fatalities,\
+			injuries, populationIll, populationDisplaced, environmentalImpact, politicalChanges, culturalChanges, jobsLost,\
+			damageInUSD, reparationCost, regulatoryChanges) Values' + str(s) + ';'
         s =s.replace('None', 'Null')       
         t = wcdb_query(login,s)
         
-    #------------------import orgs table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./orgs/org")
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        dict_entry = inserts_list[i]
-        s = (dict_entry.get('orgId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('foundingMission','Null'),\
-             dict_entry.get('dateFounded','Null'),dict_entry.get('majorEvents','Null'))
-        s = 'insert into Orgs Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-        
-    #------------------import people table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./people/person")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]    
-        s = (dict_entry.get('personId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'))
-        s = 'insert into People Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-        
-    #------------------import resources table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./resources/resourcePair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]        
-        s = (dict_entry.get('resourceId'),dict_entry.get('resource'))
-        s = 'insert into Resources Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-        
-    #------------------import crisisResources table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./crisisResources/crisisResourcePair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]     
-        s = (dict_entry.get('crisisId'),dict_entry.get('resourceId'))
-        s = 'insert into CrisisResources Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import waysToHelp table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./waysToHelp/wayToHelpPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]    
-        s = (dict_entry.get('helpId'),dict_entry.get('wayToHelp'))
-        s = 'insert into WaysToHelp Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import crisisWaysToHelp table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./crisisWaysToHelp/crisisWayToHelpPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]       
-        s = (dict_entry.get('crisisId'),dict_entry.get('helpId'))
-        s = 'insert into CrisisWaysToHelp Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import contactInfos table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./contactInfos/contactInfo")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]    
-        s = (dict_entry.get('contactInfoId'),dict_entry.get('phoneNumber'), dict_entry.get('emailAddress'),\
-        dict_entry.get('facebookUrlId'), dict_entry.get('twitterUrlId'), dict_entry.get('websiteUrlId'))
-        s = 'insert into ContactInfos Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-        
-    #------------------import contactInfos table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./orgContactInfos/orgContactInfoPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]
-        
-        s = (dict_entry.get('orgId'),dict_entry.get('contactInfoId'))
-        s = 'insert into OrgContactInfos Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)   
-
-    #------------------import citations table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./citations/citationPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]        
-        s = (dict_entry.get('citationId'),dict_entry.get('citation'))
-        s = 'insert into Citations Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import crisisCitations table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./crisisCitations/crisisCitationPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]       
-        s = (dict_entry.get('citationId'),dict_entry.get('crisisId'))
-        s = 'insert into CrisisCitations Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import orgCitations table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./orgCitations/orgCitationPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]
-        
-        s = (dict_entry.get('orgId'),dict_entry.get('citationId'))
-        s = 'insert into OrgCitations Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import personCitations table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./personCitations/personCitationPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]       
-        s = (dict_entry.get('personId'),dict_entry.get('citationId'))
-        s = 'insert into PersonCitations Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import urls table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./urls/url")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]     
-        s = (dict_entry.get('urlId'),dict_entry.get('type'),dict_entry.get('urlAddress'))
-        s = 'insert into Urls Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import crisisUrls table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./crisisUrls/crisisUrlPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]      
-        s = (dict_entry.get('crisisId'),dict_entry.get('urlId'))
-        s = 'insert into CrisisUrls Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import orgUrls table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./orgUrls/orgUrlPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]
-        
-        s = (dict_entry.get('orgId'),dict_entry.get('urlId'))
-        s = 'insert into OrgUrls Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import personUrls table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./personUrls/personUrlPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]
-        
-        s = (dict_entry.get('personId'),dict_entry.get('urlId'))
-        s = 'insert into PersonUrls Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import crisisOrgs table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./crisisOrgs/crisisOrgPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]
-        
-        s = (dict_entry.get('crisisId'),dict_entry.get('orgId'))
-        s = 'insert into CrisisOrgs Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-
-    #------------------import crisisPeople table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./crisisPeople/crisisPersonPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]       
-        s = (dict_entry.get('crisisId'),dict_entry.get('personId'))
-        s = 'insert into CrisisPeople Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-	
-    #------------------import orgPeople table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./orgPeople/orgPersonPair")
-    #Iterates over Children of crises
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-    #QueryInserting Loop
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]      
-        s = (dict_entry.get('orgId'),dict_entry.get('personId'))
-        s = 'insert into OrgPeople Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
+##    #------------------import orgs table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./orgs/org")
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        dict_entry = inserts_list[i]
+##        s = (dict_entry.get('orgId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+##             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('foundingMission','Null'),\
+##             dict_entry.get('dateFounded','Null'),dict_entry.get('majorEvents','Null'))
+##        s = 'insert into Orgs Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##        
+##    #------------------import people table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./people/person")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]    
+##        s = (dict_entry.get('personId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+##             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'))
+##        s = 'insert into People Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##        
+##    #------------------import resources table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./resources/resourcePair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]        
+##        s = (dict_entry.get('resourceId'),dict_entry.get('resource'))
+##        s = 'insert into Resources Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##        
+##    #------------------import crisisResources table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./crisisResources/crisisResourcePair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]     
+##        s = (dict_entry.get('crisisId'),dict_entry.get('resourceId'))
+##        s = 'insert into CrisisResources Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import waysToHelp table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./waysToHelp/wayToHelpPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]    
+##        s = (dict_entry.get('helpId'),dict_entry.get('wayToHelp'))
+##        s = 'insert into WaysToHelp Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import crisisWaysToHelp table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./crisisWaysToHelp/crisisWayToHelpPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]       
+##        s = (dict_entry.get('crisisId'),dict_entry.get('helpId'))
+##        s = 'insert into CrisisWaysToHelp Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import contactInfos table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./contactInfos/contactInfo")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]    
+##        s = (dict_entry.get('contactInfoId'),dict_entry.get('phoneNumber'), dict_entry.get('emailAddress'),\
+##        dict_entry.get('facebookUrlId'), dict_entry.get('twitterUrlId'), dict_entry.get('websiteUrlId'))
+##        s = 'insert into ContactInfos Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##        
+##    #------------------import contactInfos table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./orgContactInfos/orgContactInfoPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]
+##        
+##        s = (dict_entry.get('orgId'),dict_entry.get('contactInfoId'))
+##        s = 'insert into OrgContactInfos Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)   
+##
+##    #------------------import citations table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./citations/citationPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]        
+##        s = (dict_entry.get('citationId'),dict_entry.get('citation'))
+##        s = 'insert into Citations Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import crisisCitations table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./crisisCitations/crisisCitationPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]       
+##        s = (dict_entry.get('citationId'),dict_entry.get('crisisId'))
+##        s = 'insert into CrisisCitations Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import orgCitations table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./orgCitations/orgCitationPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]
+##        
+##        s = (dict_entry.get('orgId'),dict_entry.get('citationId'))
+##        s = 'insert into OrgCitations Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import personCitations table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./personCitations/personCitationPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]       
+##        s = (dict_entry.get('personId'),dict_entry.get('citationId'))
+##        s = 'insert into PersonCitations Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import urls table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./urls/url")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]     
+##        s = (dict_entry.get('urlId'),dict_entry.get('type'),dict_entry.get('urlAddress'))
+##        s = 'insert into Urls Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import crisisUrls table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./crisisUrls/crisisUrlPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]      
+##        s = (dict_entry.get('crisisId'),dict_entry.get('urlId'))
+##        s = 'insert into CrisisUrls Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import orgUrls table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./orgUrls/orgUrlPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]
+##        
+##        s = (dict_entry.get('orgId'),dict_entry.get('urlId'))
+##        s = 'insert into OrgUrls Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import personUrls table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./personUrls/personUrlPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]
+##        
+##        s = (dict_entry.get('personId'),dict_entry.get('urlId'))
+##        s = 'insert into PersonUrls Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import crisisOrgs table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./crisisOrgs/crisisOrgPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]
+##        
+##        s = (dict_entry.get('crisisId'),dict_entry.get('orgId'))
+##        s = 'insert into CrisisOrgs Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##
+##    #------------------import crisisPeople table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./crisisPeople/crisisPersonPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]       
+##        s = (dict_entry.get('crisisId'),dict_entry.get('personId'))
+##        s = 'insert into CrisisPeople Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
+##	
+##    #------------------import orgPeople table-------------------------------
+##    inserts_list = []
+##    counter = 0
+##    root_list = tree.findall("./orgPeople/orgPersonPair")
+##    #Iterates over Children of crises
+##    for parent in root_list:
+##        insert_entry = {}
+##        #Iterates over Children
+##        for child in parent:
+##            if child.getchildren() == []:
+##                insert_entry[child.tag] = child.text
+##        inserts_list.append(insert_entry)
+##        counter += 1
+##    #QueryInserting Loop
+##    for i in range(0,counter):
+##        #Queryinseting - Crisis Table
+##        dict_entry = inserts_list[i]      
+##        s = (dict_entry.get('orgId'),dict_entry.get('personId'))
+##        s = 'insert into OrgPeople Values' + str(s) + ';'
+##        s =s.replace('None', 'Null')
+##        t = wcdb_query(login,s)
         
 #--------------------end of import----------------
         
@@ -1307,16 +1336,20 @@ def wcdb_export(login):
 # wcdb_read
 # ---------- 
 
-def wcdb_read (r):
+def wcdb_read (filename):
     """
-    reads an input
+    reads xml_filename_list
     creates an element tree from string
+    create the whole tree by iterate the file list
     """
+
+    r = open(filename, 'r')      
     imported_str_data = str(r.read())
     assert(type(imported_str_data) is str)
-    data_tree = ET.fromstring(imported_str_data)
-    assert(type(data_tree) is ET.Element)
-    return data_tree
+    single_data_tree = ET.fromstring(imported_str_data)
+    assert(type(single_data_tree) is ET.Element)
+    print(single_data_tree)
+    return single_data_tree    
     
 # ------------
 # wcdb_write
@@ -1335,7 +1368,7 @@ def wcdb_write (w, data_tree):
 # ------------
 # wcdb_solve
 # ------------
-def wcdb_solve(r,w):
+def wcdb_solve(xml_filename_list,w):
     """
     r is a reader
     w is a writer
@@ -1344,11 +1377,31 @@ def wcdb_solve(r,w):
     wcdb_import: import data from xml to databases
     wcdb_export: export data from databases to xml
     """   
-    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+##    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+    a = ("localhost", "root", "121314", "cs327e-wcdb")
     login_var = wcdb_login(*a)
-    tree = wcdb_read (r)
     createDB(login_var)
-    wcdb_import(login_var, tree)
-    export_data = wcdb_export(login_var)
-    wcdb_write (w, export_data)
+    
+    for filename in xml_filename_list:
+        data_tree = wcdb_read(filename)
+        wcdb_import(login_var, data_tree)
+        
+##    export_data = wcdb_export(login_var)
+##    wcdb_write (w, export_data)
 
+#--------Main fuction--------------------
+def main():
+    xml_filename_list = ['GottaGitThat-WCDB.xml', \
+                         'SeekWolves-WCDB.xml', \
+                         'BashKetchum-WCDB.xml', \
+                         'Brigadeiros-WCDB.xml', \
+                         'Databosses-WCDB.xml', \
+                         'EJADK-WCDB.xml', \
+                         'TeamRocket-WCDB.xml', \
+                         'UtNonObliviscar-WCDB.xml']
+    w = open('RunWCDB.out.xml', 'w')
+    wcdb_solve(xml_filename_list, w)
+##    w.close()
+#------------------------------=---------
+
+main()

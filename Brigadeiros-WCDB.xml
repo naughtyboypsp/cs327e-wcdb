@@ -9,8 +9,7 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>1929-10-29T00:00:00</dateAndTime>
             <fatalities>40000</fatalities>
             <injuries>0</injuries>
@@ -31,7 +30,6 @@
             <streetAddress></streetAddress>
             <city>Zhumadian City</city>
             <stateOrProvince>Henan</stateOrProvince>
-            <postalCode></postalCode>
             <country>China</country>
             <dateAndTime>1975-08-07T00:00:00</dateAndTime>
             <fatalities>171000</fatalities>
@@ -53,7 +51,6 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince>Texas</stateOrProvince>
-            <postalCode></postalCode>
             <country>United States</country>
             <dateAndTime>2011-01-01T00:00:00</dateAndTime>
             <fatalities>6</fatalities>
@@ -75,7 +72,6 @@
             <streetAddress></streetAddress>
             <city>Mexico City</city>
             <stateOrProvince>Mexico DF</stateOrProvince>
-            <postalCode></postalCode>
             <country>Mexico</country>
             <dateAndTime>1985-09-19T00:00:00</dateAndTime>
             <fatalities>10000</fatalities>
@@ -97,7 +93,6 @@
             <streetAddress></streetAddress>
             <city>Benghazi</city>
             <stateOrProvince>Cyrenaica</stateOrProvince>
-            <postalCode>nil=true</postalCode>
             <country>Libya</country>
             <dateAndTime>2011-02-15T00:00:00</dateAndTime>
             <fatalities>30000</fatalities>
@@ -119,7 +114,6 @@
             <streetAddress />
             <city />
             <stateOrProvince />
-            <postalCode />
             <country>United States</country>
             <dateAndTime>2008-09-01T00:00:00</dateAndTime>
             <fatalities>195</fatalities>
@@ -141,8 +135,7 @@
             <streetAddress></streetAddress>
             <city>Austin</city>
             <stateOrProvince>Texas</stateOrProvince>
-            <postalCode>78712</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>1966-08-01T00:00:00</dateAndTime>
             <fatalities>13</fatalities>
             <injuries>43</injuries>
@@ -163,7 +156,6 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
             <country>Haiti</country>
             <dateAndTime>2010-01-12T00:00:00</dateAndTime>
             <fatalities>316000</fatalities>
@@ -185,7 +177,6 @@
             <streetAddress />
             <city>Benghazi</city>
             <stateOrProvince />
-            <postalCode />
             <country>Libya</country>
             <dateAndTime>2012-09-11T00:00:00</dateAndTime>
             <fatalities>4</fatalities>
@@ -207,7 +198,6 @@
             <streetAddress>Hwy 547, Bldg 481</streetAddress>
             <city>Lakehurst</city>
             <stateOrProvince>New Jersey</stateOrProvince>
-            <postalCode>08733</postalCode>
             <country>United States</country>
             <dateAndTime>1937-05-06T19:00:00</dateAndTime>
             <fatalities>36</fatalities>
@@ -230,9 +220,9 @@
 	    <kind>Government Agency</kind>
             <streetAddress></streetAddress>
             <city>Oklahoma City</city>
-            <stateOrProvince>OK</stateOrProvince>
+            <stateOrProvince>Oklahoma</stateOrProvince>
             <postalCode></postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Increase the purchasing power of persons on relief by employing them on useful projects.</foundingMission>
             <dateFounded>1935-04-08</dateFounded>
             <dateAbolished>1943-10-30</dateAbolished>
@@ -312,7 +302,7 @@
                 <city>New York City</city>
                 <stateOrProvince>New York</stateOrProvince>
                 <postalCode>10038 </postalCode>
-                <country>USA</country>
+                <country>United States</country>
                 <foundingMission>To provide emergency food and healthcare to children in countries that had been devastated by World War II</foundingMission>
                 <dateFounded>1946-12-11</dateFounded>
                 <majorEvents>Trick-or-Treat Box, Cartoons for Children's Rights, Girl Stars</majorEvents>
@@ -369,7 +359,7 @@
                 <city>Washington DC</city>
                 <stateOrProvince></stateOrProvince>
                 <postalCode>20500</postalCode>
-                <country>USA</country>
+                <country>United States</country>
             </person>
             <person>
                 <personId>PER_101</personId>
@@ -419,7 +409,7 @@
                 <city>Washington, D.C.</city>
                 <stateOrProvince />
                 <postalCode>20008</postalCode>
-                <country>USA</country>
+                <country>United States</country>
             </person>
             <person>
                 <personId>PER_606</personId>
@@ -429,7 +419,7 @@
                 <city>Austin</city>
                 <stateOrProvince>Texas</stateOrProvince>
                 <postalCode>78712</postalCode>
-                <country>USA</country>
+                <country>United States</country>
             </person>
 
 
@@ -452,7 +442,7 @@
                 <city>Washington, D.C.</city>
                 <stateOrProvince />
                 <postalCode>20500</postalCode>
-                <country>USA</country>
+                <country>United States</country>
             </person>
             <person>
                 <personId>PER_909</personId>

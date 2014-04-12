@@ -196,7 +196,7 @@
             <streetAddress>NULL</streetAddress>
             <city>NULL</city>
             <stateOrProvince>NULL</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>1947-01-01T11:48:00</dateAndTime>
             <fatalities>12</fatalities>
             <injuries>44</injuries>
@@ -326,7 +326,7 @@
             <city>Washington</city>
             <stateOrProvince>District of Columbia</stateOrProvince>
             <postalCode>NULL</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>DIA is first in all-source defense intellengece to prevent strategic surprise and deliver a decision advantage to warfighters, defense planners, and policymakers.</foundingMission>
             <dateFounded>1961-10-01</dateFounded>
             <majorEvents>Failed to adequately act against one of the organizers of 9/11</majorEvents>
@@ -339,7 +339,7 @@
             <city>New York</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>To save succeeding generations from the scourge of war and to reaffirm faith in fundamental human rights.</foundingMission>
             <dateFounded>1945-06-26</dateFounded>
             <majorEvents>Approving the creation of the state of Israel.</majorEvents>
@@ -355,7 +355,7 @@
             <city>Washington DC</city>
             <stateOrProvince>Maryland</stateOrProvince>
             <postalCode>20005</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_002</personId>
@@ -365,7 +365,7 @@
             <city>Lake Worth</city>
             <stateOrProvince>Florida</stateOrProvince>
             <postalCode>NULL</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
 		<person>
             <personId>PER_003</personId>
@@ -375,7 +375,7 @@
             <city>New York City</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>NULL</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_004</personId>
@@ -405,7 +405,7 @@
             <city>Lake Worth</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>NULL</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
 		<person>
 			<personId>PER_007</personId>
@@ -445,7 +445,7 @@
             <city>Washington</city>
             <stateOrProvince>District of Columbia</stateOrProvince>
             <postalCode>20500</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
     </people>
 

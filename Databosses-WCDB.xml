@@ -4,10 +4,9 @@
             <crisisId>CRI_001</crisisId>
             <name>Rwandan Genocide</name>
             <kind>War / Conflict</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Rwanda</country>
             <dateAndTime>1994-04-07T00:00:00</dateAndTime>
             <fatalities>800000</fatalities>
@@ -17,10 +16,9 @@
             <crisisId>CRI_002</crisisId>
             <name>H1N1 Pandemic</name>
             <kind>Natural Disaster</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Global Impact</country>
             <dateAndTime>2009-01-01T00:00:00</dateAndTime>
             <fatalities>14286</fatalities>
@@ -30,11 +28,10 @@
             <crisisId>CRI_003</crisisId>
             <name>Target Data Breach</name>
             <kind>Human Error Disaster</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
-            <country>USA</country>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
+            <country>United States</country>
             <dateAndTime>2013-11-27T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
@@ -45,25 +42,23 @@
             <crisisId>CRI_004</crisisId>
             <name>African HIV/AIDS Epidemic</name>
             <kind>Natural Disaster</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Widespread in Africa</country>
             <dateAndTime>1970-01-01T00:00:00</dateAndTime>
             <fatalities>30000000</fatalities>
             <populationIll>25000000</populationIll>
-            <jobsLost>-1</jobsLost>
+            <jobsLost>0</jobsLost>
             <damageInUSD>9000000000</damageInUSD>
         </crisis>
         <crisis>
             <crisisId>CRI_005</crisisId>
             <name>Argentinian Dirty War</name>
             <kind>War / Conflict</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Argentina</country>
             <dateAndTime>1975-01-01T00:00:00</dateAndTime>
             <fatalities>30000</fatalities>
@@ -72,11 +67,10 @@
             <crisisId>CRI_006</crisisId>
             <name>Hurricane Ike</name>
             <kind>Natural Disaster</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
+            <streetAddress></streetAddress>
+            <city></city>
             <stateOrProvince>Southwest</stateOrProvince>
-            <postalCode>-1</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2008-09-13T02:10:00</dateAndTime>
             <fatalities>192</fatalities>
             <populationDisplaced>1000000</populationDisplaced>
@@ -88,9 +82,8 @@
             <kind>Assassination / Shooting</kind>
             <streetAddress>2400 Inner Campus Dr</streetAddress>
             <city>Austin</city>
-            <stateOrProvince>TX</stateOrProvince>
-            <postalCode>78712</postalCode>
-            <country>USA</country>
+            <stateOrProvince>Texas</stateOrProvince>
+            <country>United States</country>
             <dateAndTime>1966-08-01T02:11:55</dateAndTime>
             <fatalities>13</fatalities>
             <injuries>43</injuries>
@@ -99,10 +92,9 @@
             <crisisId>CRI_008</crisisId>
             <name>2012 Benghazi Attack</name>
             <kind>Natural Disaster</kind>
-            <streetAddress>-1</streetAddress>
+            <streetAddress></streetAddress>
             <city>Benghazi</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
+            <stateOrProvince></stateOrProvince>
             <country>Libya</country>
             <dateAndTime>2012-09-11T00:00:00</dateAndTime>
             <fatalities>4</fatalities>
@@ -118,15 +110,14 @@
             <crisisId>CRI_009</crisisId>
             <name>2010 Haitian Earthquake</name>
             <kind>Natural Disaster</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1n</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Haiti</country>
             <dateAndTime>2010-01-12T00:00:00</dateAndTime>
             <fatalities>316000</fatalities>
             <injuries>300000</injuries>
-            <populationIll>-1</populationIll>
+            <populationIll>0</populationIll>
             <populationDisplaced>1500000</populationDisplaced>
             <damageInUSD>14000000000</damageInUSD>
             <reparationCost>14000000000</reparationCost>
@@ -135,10 +126,10 @@
             <crisisId>CRI_010</crisisId>
             <name>Global Warming</name>
             <kind>Natural Disaster</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <postalCode>-1</postalCode>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
+            <postalCode></postalCode>
             <country>ALL</country>
             <dateAndTime>1970-01-01T00:00:00</dateAndTime>
             <fatalities>140000</fatalities>
@@ -146,7 +137,7 @@
             <populationIll>0</populationIll>
             <populationDisplaced>3</populationDisplaced>
             <environmentalImpact>Pretty much everything</environmentalImpact>
-            <politicalChanges>-1</politicalChanges>
+            <politicalChanges></politicalChanges>
             <culturalChanges>Go Green</culturalChanges>
             <regulatoryChanges>Emission laws</regulatoryChanges>
         </crisis>
@@ -158,12 +149,12 @@
             <kind>Intergovernmental Agency</kind>
             <streetAddress>First Avenue at 46th St</streetAddress>
             <city>New York City</city>
-            <stateOrProvince>NY</stateOrProvince>
+            <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
-            <country>USA</country>
-            <foundingMission>-1</foundingMission>
+            <country>United States</country>
+            <foundingMission></foundingMission>
             <dateFounded>1945-10-24</dateFounded>
-            <majorEvents>-1</majorEvents>
+            <majorEvents></majorEvents>
         </org>
         <org>
             <orgId>ORG_002</orgId>
@@ -171,12 +162,12 @@
             <kind>Intergovernmental Agency</kind>
             <streetAddress>3 United Nations Plaza</streetAddress>
             <city>New York City</city>
-            <stateOrProvince>NY</stateOrProvince>
+            <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
-            <country>USA</country>
-            <foundingMission>-1</foundingMission>
+            <country>United States</country>
+            <foundingMission></foundingMission>
             <dateFounded>1946-12-11</dateFounded>
-            <majorEvents>-1</majorEvents>
+            <majorEvents></majorEvents>
         </org>
         <org>
 
@@ -185,9 +176,9 @@
             <kind>Government Agency</kind>
             <streetAddress>715 E 8th St</streetAddress>
             <city>Austin</city>
-            <stateOrProvince>TX</stateOrProvince>
+            <stateOrProvince>Texas</stateOrProvince>
             <postalCode>78701</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </org>
         <org>
             <orgId>ORG_004</orgId>
@@ -195,9 +186,9 @@
             <kind>Government Agency</kind>
             <streetAddress>1600 Clifton Rd</streetAddress>
             <city>Atlanta</city>
-            <stateOrProvince>GA</stateOrProvince>
+            <stateOrProvince>Georgia</stateOrProvince>
             <postalCode>30333</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateFounded>1946-07-01</dateFounded>
         </org>
         <org>
@@ -216,8 +207,8 @@
             <kind>Nonprofit / Humanitarian Organization</kind>
             <streetAddress>600 First Avenue North</streetAddress>
             <city>Minneapolis</city>
-            <stateOrProvince>MN</stateOrProvince>
-            <country>US</country>
+            <stateOrProvince>Minnesota</stateOrProvince>
+            <country>United States</country>
             <dateFounded>1962-01-01</dateFounded>
         </org>
 	<org>
@@ -226,17 +217,17 @@
             <kind>Nonprofit / Humanitarian Organization</kind>
             <streetAddress>322 W Lamar St</streetAddress>
             <city>Aamericus</city>
-            <stateOrProvince>GA</stateOrProvince>
-            <country>US</country>
+            <stateOrProvince>Georgia</stateOrProvince>
+            <country>United States</country>
             <dateFounded>1942-01-01</dateFounded>
         </org>
 	<org>
             <orgId>ORG_008</orgId>
             <name>Haitian Government</name>
             <kind>Government Agency</kind>
-            <streetAddress>-1</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Haiti</country>
             <dateFounded>1789-01-01</dateFounded>
         </org>
@@ -245,9 +236,9 @@
             <name>United States Department of State</name>
             <kind>Government Agency</kind>
             <streetAddress>2201 C St NW</streetAddress>
-            <city>-1</city>
-            <stateOrProvince>-1</stateOrProvince>
-            <country>US</country>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
+            <country>United States</country>
             <dateFounded>1969-01-01</dateFounded>
         </org>
 	<org>
@@ -266,10 +257,10 @@
              <personId>PER_001</personId>
              <name>Romeo Dallaire</name>
              <kind>Politician</kind>
-             <streetAddress>-1</streetAddress>
-             <city>-1</city>
-             <stateOrProvince>-1</stateOrProvince>
-             <postalCode>-1</postalCode>
+             <streetAddress></streetAddress>
+             <city></city>
+             <stateOrProvince></stateOrProvince>
+             <postalCode></postalCode>
              <country>Canada</country>
          </person>
  	 <person>
@@ -280,7 +271,7 @@
              <city>President's Park</city>
              <stateOrProvince>Washington D.C.</stateOrProvince>
              <postalCode>20500</postalCode>
-             <country>USA</country>
+             <country>United States</country>
          </person>
  	 <person>
              <personId>PER_003</personId>
@@ -290,7 +281,7 @@
              <city>Chappaqua</city>
              <stateOrProvince>New York</stateOrProvince>
              <postalCode>10514</postalCode>
-             <country>USA</country>
+             <country>United States</country>
          </person>
  	 <person>
              <personId>PER_004</personId>
@@ -300,43 +291,43 @@
              <city>Nashville</city>
              <stateOrProvince>Tennessee</stateOrProvince>
              <postalCode>37203</postalCode>
-             <country>USA</country>
+             <country>United States</country>
          </person>
  	 <person>
              <personId>PER_005</personId>
              <name>Jean Max-Bellerive</name>
              <kind>Politician</kind>
-             <streetAddress>-1</streetAddress>
-             <city>-1</city>
-             <stateOrProvince>-1</stateOrProvince>
-             <postalCode>-1</postalCode>
+             <streetAddress></streetAddress>
+             <city></city>
+             <stateOrProvince></stateOrProvince>
+             <postalCode></postalCode>
              <country>Haiti</country>
          </person>
          <person>
              <personId>PER_006</personId>
              <name>Houston McCoy</name>
              <kind>Humanitarian</kind>
-             <streetAddress>-1</streetAddress>
+             <streetAddress></streetAddress>
              <city>Menard</city>
-             <stateOrProvince>TX</stateOrProvince>
-             <postalCode>-1</postalCode>
-             <country>USA</country>
+             <stateOrProvince>Texas</stateOrProvince>
+             <postalCode></postalCode>
+             <country>United States</country>
          </person>
  	 <person>
              <personId>PER_007</personId>
              <name>Steven Galson</name>
              <kind>Politician</kind>
-             <streetAddress>-1</streetAddress>
-             <city>-1</city>
-             <stateOrProvince>-1</stateOrProvince>
-             <postalCode>-1</postalCode>
-             <country>USA</country>
+             <streetAddress></streetAddress>
+             <city></city>
+             <stateOrProvince></stateOrProvince>
+             <postalCode></postalCode>
+             <country>United States</country>
          </person>
  	 <person>
              <personId>PER_008</personId>
              <name>Pope Francis</name>
              <kind>Humanitarian</kind>
-             <streetAddress>-1</streetAddress>
+             <streetAddress></streetAddress>
              <city>Vatican City</city>
              <stateOrProvince>Rome</stateOrProvince>
              <postalCode>SCV-00120</postalCode>
@@ -346,21 +337,21 @@
              <personId>PER_009</personId>
              <name>Greg Steinhafel</name>
              <kind>CEO</kind>
-             <streetAddress>-1</streetAddress>
-             <city>-1</city>
-             <stateOrProvince>-1</stateOrProvince>
-             <postalCode>-1</postalCode>
-             <country>USA</country>
+             <streetAddress></streetAddress>
+             <city></city>
+             <stateOrProvince></stateOrProvince>
+             <postalCode></postalCode>
+             <country>United States</country>
          </person>
  	 <person>
              <personId>PER_010</personId>
              <name>Bill White</name>
              <kind>Politician</kind>
-             <streetAddress>-1</streetAddress>
+             <streetAddress></streetAddress>
              <city>Houston</city>    
-              <stateOrProvince>TX</stateOrProvince>
+              <stateOrProvince>Texas</stateOrProvince>
              <postalCode>78731</postalCode>
-              <country>USA</country>
+              <country>United States</country>
           </person>
       </people>
     <resources>

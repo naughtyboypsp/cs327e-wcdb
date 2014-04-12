@@ -103,7 +103,7 @@
             <streetAddress>500 C Street SW</streetAddress>
             <city>Washington, D.C.</city>
             <postalCode>20472</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Support and protect citizens including during disaster or recovery</foundingMission>
             <dateFounded>1979-04-01</dateFounded>
             <majorEvents>First establishment of a federal emergency management in U.S. by Congressional Act of 1803</majorEvents>
@@ -114,9 +114,9 @@
             <kind>Intergovernmental Public Health Agency</kind>
             <streetAddress>1919 Santa Monica Blvd. Suite 400</streetAddress>
             <city>Santa Monica</city>
-            <stateOrProvince>CA</stateOrProvince>
+            <stateOrProvince>California</stateOrProvince>
             <postalCode>90404</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Provide relief and  aide through health care training and programs</foundingMission>
             <dateFounded>1984-09-01</dateFounded>
             <majorEvents>Founded by Robert Simon</majorEvents>
@@ -129,7 +129,7 @@
             <city>Portland</city>
             <stateOrProvince>Oregon</stateOrProvince>
             <postalCode>97204</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Provide aide during disasters to communities in need through donations and entrepeneurship programs</foundingMission>
             <dateFounded>1979-01-01</dateFounded>
             <majorEvents>Founded by Dan ONeill to aide refugees during the time of the Killing Fields in Cambodia</majorEvents>
@@ -142,7 +142,7 @@
             <city>Alexandria</city>
             <stateOrProvince>Virginia</stateOrProvince>
             <postalCode>22313</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Spread religious message and aide those in need, particularly the poor and homeless</foundingMission>
             <dateFounded>1865-05-19</dateFounded>
             <majorEvents>Founded by William Booth and his wife to preach their message and help the poor</majorEvents>
@@ -155,7 +155,7 @@
             <city>New York</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Promotion and appreciation of the Japanese culture</foundingMission> 
             <dateFounded>1907-01-01</dateFounded>
             <majorEvents>Increased Japanese cultural awareness in 20th century, playing a larger role during political crises and disasters</majorEvents>
@@ -229,7 +229,7 @@
             <city>Los Angeles</city>
             <stateOrProvince>California</stateOrProvince>
             <postalCode>90046-1819</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_015</personId>
@@ -239,7 +239,7 @@
             <city>Montecito</city>
             <stateOrProvince>California</stateOrProvince>
             <postalCode>93108</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_016</personId>
@@ -249,7 +249,7 @@
             <city>New York City</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>10019</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_017</personId>
@@ -259,14 +259,14 @@
             <city>Beverly Hills</city>
             <stateOrProvince>California</stateOrProvince>
             <postalCode>90211</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_018</personId>
             <name>Rosie O'Donnell</name>
             <kind>Celebrity</kind>
             <stateOrProvince>Florida</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_001</personId>
@@ -275,7 +275,7 @@
             <streetAddress>1600 Pennsylvania Ave NW</streetAddress>
             <city>Washington, D.C.</city>
             <postalCode>20500</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_002</personId>
@@ -284,14 +284,14 @@
             <streetAddress>3067 Whitehaven St NW</streetAddress>
             <city>Washington, D.C.</city>
             <postalCode>20008</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_003</personId>
             <name>Ben Bernanke</name>
             <kind>Politician</kind>
             <city>Washington, D.C.</city>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_006</personId>
@@ -307,7 +307,7 @@
             <name>Colin Powell</name>
             <kind>Politician</kind>
             <city>Washington, D.C.</city>
-            <country>USA</country>
+            <country>United States</country>
         </person>
     </people>
 

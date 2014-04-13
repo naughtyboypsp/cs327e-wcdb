@@ -187,6 +187,7 @@
             <city>Austin</city>
             <stateOrProvince>TX</stateOrProvince>
             <postalCode>78701</postalCode>
+			<dateFounded>0000-00-00</dateFounded>
             <country>USA</country>
         </org>
         <org>
@@ -572,113 +573,113 @@
     <citations>
         <citationPair>
             <citationId>CIT_001</citationId>
-            <citation>"11 Facts About HIV in Africa." Dosomething.org. Do Something, n.d. Web. 10 Mar. 2014.</citation>
+            <citation>11 Facts About HIV in Africa. Dosomething.org. Do Something, n.d. Web. 10 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_002</citationId>
-            <citation>"2009 Influenza A (H1N1) Pandemic." ECDC Europa18 Jan. 2010. Web. 10 Mar. 2014.</citation>
+            <citation>2009 Influenza A (H1N1) Pandemic. ECDC Europa18 Jan. 2010. Web. 10 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_003</citationId>
-            <citation>"Argentina: The Dirty War Begins." Infoplease. Infoplease, n.d. Web. 13 Mar. 2014.</citation>
+            <citation>Argentina: The Dirty War Begins. Infoplease. Infoplease, n.d. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_004</citationId>
-            <citation>"Climate Change and Health." WHO. N.p., n.d. Web. 14 Mar. 2014.</citation>
+            <citation>Climate Change and Health. WHO. N.p., n.d. Web. 14 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_005</citationId>
-            <citation>"Data Breach FAQ." Payment Card Issue FAQ. Target.com, n.d. Web. 10 Mar. 2014.</citation>
+            <citation>Data Breach FAQ. Payment Card Issue FAQ. Target.com, n.d. Web. 10 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_006</citationId>
-            <citation>"Experts Rethinking Billions Spent on AIDS." Msnbc.com. MSNBC18 Jan. 2008. Web. 11 Mar. 2014.</citation>
+            <citation>Experts Rethinking Billions Spent on AIDS. Msnbc.com. MSNBC18 Jan. 2008. Web. 11 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_007</citationId>
-            <citation>Fletcher, Pascal. "Haiti Reconstruction Cost May near $14 Billion." Reuters. Thomson Reuters, 16 Feb. 2010. Web. 14 Mar. 2014.</citation>
+            <citation>Fletcher, Pascal. Haiti Reconstruction Cost May near $14 Billion. Reuters. Thomson Reuters, 16 Feb. 2010. Web. 14 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_008</citationId>
-            <citation>"Global Warming." Facts, Causes and Effects of Climate Change. Natural Resources Defense Council, n.d. Web. 12 Mar. 2014.</citation>
+            <citation>Global Warming. Facts, Causes and Effects of Climate Change. Natural Resources Defense Council, n.d. Web. 12 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_009</citationId>
-            <citation>"H1N1." H1N1 (Swine Flu). N.p., n.d. Web. 10 Mar. 2014."H1N1 (Swine Flu)." Centers for Disease Control and Prevention. Centers for Disease 
+            <citation>H1N1. H1N1 (Swine Flu). N.p., n.d. Web. 10 Mar. 2014.H1N1 (Swine Flu). Centers for Disease Control and Prevention. Centers for Disease 
 Control and Prevention22 Nov. 2013. Web. 10 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_010</citationId>
-            <citation>"Haiti Earthquake Facts and Figures." Disasters Emergency Committee. N.p., n.d. Web. 13 Mar. 2014.</citation>
+            <citation>Haiti Earthquake Facts and Figures. Disasters Emergency Committee. N.p., n.d. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_011</citationId>
-            <citation>"Haiti Earthquake Fast Facts." CNN. Cable News Network, 28 Feb. 2014. Web. 13 Mar. 2014.</citation>
+            <citation>Haiti Earthquake Fast Facts. CNN. Cable News Network, 28 Feb. 2014. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_012</citationId>
-            <citation>Helmer, William. "The UT Tower Shooting." Texas Monthly. N.p., n.d. Web. 13 Mar. 2014.</citation>
+            <citation>Helmer, William. The UT Tower Shooting. Texas Monthly. N.p., n.d. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_013</citationId>
-            <citation>"History of HIV, AIDS in Africa." HIV and AIDS Information and Resources. Avertn.d. Web. 11 Mar. 2014.</citation>
+            <citation>History of HIV, AIDS in Africa. HIV and AIDS Information and Resources. Avertn.d. Web. 11 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_014</citationId>
-            <citation>"HIV and AIDS." UNICEF Eastern and Southern Africa. UNICEF2009. Web. 10 Mar. 2014.</citation>
+            <citation>HIV and AIDS. UNICEF Eastern and Southern Africa. UNICEF2009. Web. 10 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_015</citationId>
-            <citation>"Hurricane Ike: The Storm. The Facts." Harris County Flood Control District. Harris County, n.d. Web. 13 Mar. 2014.</citation>
+            <citation>Hurricane Ike: The Storm. The Facts. Harris County Flood Control District. Harris County, n.d. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_016</citationId>
-            <citation>Jayakumar, Amrita. "Data Breach Hits Targets Profits." Washington Post. The Washington Post26 Feb. 2014. Web. 11 Mar. 2014.</citation>
+            <citation>Jayakumar, Amrita. Data Breach Hits Targets Profits. Washington Post. The Washington Post26 Feb. 2014. Web. 11 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_017</citationId>
-            <citation>Klay, Phil. "How to Write About the Dirty War." The Daily Beast. Newsweek10 July 2013. Web. 13 Mar. 2014.</citation>
+            <citation>Klay, Phil. How to Write About the Dirty War. The Daily Beast. Newsweek10 July 2013. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_018</citationId>
-            <citation>Lee, Jason R. "Hurricane Ike." Louisville.edu. University of Louisville2013. Web. 13 Mar. 2014.</citation>
+            <citation>Lee, Jason R. Hurricane Ike. Louisville.edu. University of Louisville2013. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_019</citationId>
-            <citation>Leger, Donna. "Target Executive Details Massive Data Breach." Kvue.com. KVUE4 Feb. 2014. Web. 11 Mar. 2014.</citation>
+            <citation>Leger, Donna. Target Executive Details Massive Data Breach. Kvue.com. KVUE4 Feb. 2014. Web. 11 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_020</citationId>
-            <citation>McLeod, Marlee. "Lost Innocence." Charles Whitman: The Texas Bell Tower Sniper   Crime Library. Crime Library, n.d. Web. 11 Mar. 2014.</citation>
+            <citation>McLeod, Marlee. Lost Innocence. Charles Whitman: The Texas Bell Tower Sniper   Crime Library. Crime Library, n.d. Web. 11 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_021</citationId>
-            <citation>Porter, Eduardo. "The Cost of Climate Change." Economix The Cost of Climate Change Comments. New York Times, 25 Sept. 2013. Web. 14 Mar. 
+            <citation>Porter, Eduardo. The Cost of Climate Change. Economix The Cost of Climate Change Comments. New York Times, 25 Sept. 2013. Web. 14 Mar. 
 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_022</citationId>
-            <citation>"Rwanda After the Genocide." Rwanda after the Genocide. Yale University2010. Web. 10 Mar. 2014.</citation>
+            <citation>Rwanda After the Genocide. Rwanda after the Genocide. Yale University2010. Web. 10 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_023</citationId>
-            <citation>"Rwanda: How the Genocide Happened." BBC News. BBC17 May 2011. Web. 10 Mar. 2014.</citation>
+            <citation>Rwanda: How the Genocide Happened. BBC News. BBC17 May 2011. Web. 10 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_024</citationId>
-            <citation>"The Rwandan Genocide." History.com. A,E Television Networks, n.d. Web. 08 Mar. 2014.</citation>
+            <citation>The Rwandan Genocide. History.com. A,E Television Networks, n.d. Web. 08 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_025</citationId>
-            <citation>Stephen, Chris. "Inside the US Consulate in Benghazi." The Guardian. Guardian News and Media, 14 Sept. 2012. Web. 14 Mar. 2014.</citation>
+            <citation>Stephen, Chris. Inside the US Consulate in Benghazi. The Guardian. Guardian News and Media, 14 Sept. 2012. Web. 14 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_026</citationId>
-            <citation>"Timeline of the Libya Rescue Effort." Military Times. Gannet Company, 2 Nov. 2012. Web. 14 Mar. 2014.</citation>
+            <citation>Timeline of the Libya Rescue Effort. Military Times. Gannet Company, 2 Nov. 2012. Web. 14 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_027</citationId>
-            <citation>White, Audrey. "Galveston Still Healing 5 Years After Hurricane Ike." The Texas Tribune. N.p.26 Apr. 2013. Web. 13 Mar. 2014.</citation>
+            <citation>White, Audrey. Galveston Still Healing 5 Years After Hurricane Ike. The Texas Tribune. N.p.26 Apr. 2013. Web. 13 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_039</citationId>
@@ -713,35 +714,35 @@ commitments”. UNAIDS.  25 May 2013. Web. 20 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_046</citationId>
-            <citation>"Target Corporation". Wikipedia. 16 March 2014. Web. 16 March 2014. </citation>
+            <citation>Target Corporation. Wikipedia. 16 March 2014. Web. 16 March 2014. </citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_047</citationId>
-            <citation>"The history of Habitat". Habitat for Humanity. Web. 19 March 2014.</citation>
+            <citation>The history of Habitat. Habitat for Humanity. Web. 19 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_048</citationId>
-            <citation>"Habitat for Humanity". Wikipedia. 9 March 2014. Web. 20 March 2014.</citation>
+            <citation>Habitat for Humanity. Wikipedia. 9 March 2014. Web. 20 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_049</citationId>
-            <citation>"Politics of Haiti". Wikipedia. 19 February 2014. Web. 20 March 2014.</citation>
+            <citation>Politics of Haiti. Wikipedia. 19 February 2014. Web. 20 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_050</citationId>
-            <citation>"Politics of Haiti". Wikipedia. 19 February 2014. Web. 20 March 2014.</citation>
+            <citation>Politics of Haiti. Wikipedia. 19 February 2014. Web. 20 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_051</citationId>
-            <citation>"United States Department of State". Wikipedia. 11 March 2014. Web. 16 March 2014.</citation>
+            <citation>United States Department of State. Wikipedia. 11 March 2014. Web. 16 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_052</citationId>
-            <citation>"About Us". Greenpeace. Web. 16 March 2014.</citation>
+            <citation>About Us. Greenpeace. Web. 16 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_053</citationId>
-            <citation>"Greenpeace". Wikipedia. 4 March 2014. Web. 16 March 2014.</citation>
+            <citation>Greenpeace. Wikipedia. 4 March 2014. Web. 16 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_028</citationId>
@@ -750,23 +751,23 @@ Web. 15 March 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_029</citationId>
-            <citation>"Steven K. Galson." Wikipedia. Wikimedia Foundation, 14 Mar. 2014. Web. 20 Mar. 2014.</citation>
+            <citation>Steven K. Galson. Wikipedia. Wikimedia Foundation, 14 Mar. 2014. Web. 20 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_030</citationId>
-            <citation>"Pope Francis." Wikipedia. Wikimedia Foundation, 18 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Pope Francis. Wikipedia. Wikimedia Foundation, 18 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_031</citationId>
-            <citation>"Gregg W. Steinhafel." Businessweek.com. N.p., n.d. Web. 20 Mar. 2014.</citation>
+            <citation>Gregg W. Steinhafel. Businessweek.com. N.p., n.d. Web. 20 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_032</citationId>
-            <citation>"Gregg Steinhafel." Forbes. Forbes Magazine, n.d. Web. 20 Mar. 2014.</citation>
+            <citation>Gregg Steinhafel. Forbes. Forbes Magazine, n.d. Web. 20 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_033</citationId>
-            <citation>"Bill White (Texas Politician)." Wikipedia. Wikimedia Foundation, 18 Mar. 2014. Web. 20 Mar. 2014.</citation>
+            <citation>Bill White (Texas Politician). Wikipedia. Wikimedia Foundation, 18 Mar. 2014. Web. 20 Mar. 2014.</citation>
         </citationPair>
 				<citationPair>
 						<citationId>CIT_034</citationId>

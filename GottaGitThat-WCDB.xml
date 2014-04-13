@@ -33,7 +33,7 @@
             <fatalities>16</fatalities>
             <injuries>31</injuries>
 			<populationIll>31</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced>0</populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -201,7 +201,7 @@
             <fatalities>12</fatalities>
             <injuries>44</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced>0</populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>US as the sole superpower post World War II</politicalChanges>
 			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
@@ -1111,10 +1111,6 @@
             <citation>http://en.wikipedia.org/wiki/2010_Haiti_earthquake</citation>
         </citationPair>
         <citationPair>
-            <citationId>CIT_059</citationId>
-            <citation>http://www-ns.iaea.org/downloads/coordination/snr-reg-meeting-2008/1-%20INSAG%20Senior%20Regulators%20Meeting%209-15-08.ppt</citation>
-        </citationPair>
-        <citationPair>
             <citationId>CIT_060</citationId>
             <citation>http://www.who.int/hac/crises/hti/en</citation>
         </citationPair>
@@ -1198,7 +1194,7 @@
             <crisisId>CRI_006</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
-            <citationId>CIT_059</citationId>
+            <citationId>CIT_008</citationId>
             <crisisId>CRI_006</crisisId>
         </crisisCitationPair>
 		<crisisCitationPair>

@@ -92,23 +92,23 @@ def createDB(login):
             """
             CREATE TABLE Crises (
             crisisId int(6) unsigned NOT NULL AUTO_INCREMENT,
-            name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+            name varchar(100) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             city varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-            stateOrProvince varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-            country varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            stateOrProvince varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+            country varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
             dateAndTime datetime NOT NULL,
-            fatalities int unsigned DEFAULT NULL,
-            injuries int unsigned DEFAULT NULL,
-            populationIll int unsigned DEFAULT NULL,
-            populationDisplaced int unsigned DEFAULT NULL,
+            fatalities varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+            injuries varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+            populationIll varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+            populationDisplaced varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
             environmentalImpact text COLLATE utf8_unicode_ci DEFAULT NULL,
             politicalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             culturalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
-            jobsLost int unsigned DEFAULT NULL,
-            damageInUSD bigint(20) unsigned DEFAULT NULL,
-            reparationCost bigint(20) unsigned DEFAULT NULL,
+            jobsLost varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+            damageInUSD varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+            reparationCost varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
             regulatoryChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             PRIMARY KEY (crisisId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -119,15 +119,15 @@ def createDB(login):
             """
             CREATE TABLE Orgs (
             orgId int(6) unsigned NOT NULL AUTO_INCREMENT,
-            name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+            name varchar(100) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Corporation','Government Agency','Military Force','Intergovernmental Agency','Intergovernmental Public Health Agency', 'Nonprofit / Humanitarian Organization') COLLATE utf8_unicode_ci NOT NULL,
-            streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+            streetAddress varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
             city varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             stateOrProvince varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             postalCode varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
             country varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
             foundingMission text COLLATE utf8_unicode_ci DEFAULT NULL,
-            datefounded datetime NOT NULL,
+            datefounded datetime DEFAULT NULL,
             majorEvents text COLLATE utf8_unicode_ci DEFAULT NULL,
             PRIMARY KEY (orgId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -138,7 +138,7 @@ def createDB(login):
             """
             CREATE TABLE People (
             personId int(6) unsigned NOT NULL AUTO_INCREMENT,
-            name varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+            name varchar(100) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('President','Celebrity','Actor/Actress','Musician','Politician', 'CEO','Humanitarian','Perpetrator','Regular Worker') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
             city varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -336,10 +336,6 @@ def createDB(login):
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
 
-# ---------------------------
-# data import helper function
-# --------------------------- 
-
 # -----------
 # data import
 # -----------
@@ -351,7 +347,7 @@ def wcdb_import(login,tree):
     inserts_list = []
     counter = 0
     root_list = tree.findall("./crises/crisis")
-    
+    crisisIds = {}  # important! based on josh's idea, create a dict to save its old and new ID for joint table.
     #Iterates over Children of crises
     for parent in root_list:
         insert_entry = {}
@@ -364,41 +360,69 @@ def wcdb_import(login,tree):
     #QueryInserting Loop
     for i in range(0,counter):
         #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]       
-        s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-             dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
-             dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
-             dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
-             dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
-             dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
-        s = 'insert into Crises (name, kind, streetAddress, city, stateOrProvince, country, dateAndTime, fatalities,\
-			injuries, populationIll, populationDisplaced, environmentalImpact, politicalChanges, culturalChanges, jobsLost,\
-			damageInUSD, reparationCost, regulatoryChanges) Values' + str(s) + ';'
-        s =s.replace('None', 'Null')       
-        t = wcdb_query(login,s)
+        dict_entry = inserts_list[i]
+        #--------------to check if current one is a duplicate----------
+        name_str = dict_entry['name']
+        name_str = name_str.lower()     # to handle capital cases!
+        not_in_flag = True
+        for entry in crises_name_list:   # to handle substring issue see my post on Piazza!
+            if name_str in entry or entry in name_str:
+                not_in_flag = False
+                break
+        #--------------------------------------------------------------   
+        if not_in_flag == True:
+            crises_name_list.append(name_str)  # save this name in the global list, next time check if the current instance we are dealing is in this list
+            s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+                 dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
+                 dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
+                 dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
+                 dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
+                 dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
+            s = 'insert into Crises (name, kind, streetAddress, city, stateOrProvince, country, dateAndTime, fatalities,\
+                            injuries, populationIll, populationDisplaced, environmentalImpact, politicalChanges, culturalChanges, jobsLost,\
+                            damageInUSD, reparationCost, regulatoryChanges) Values' + str(s) + ';'
+            s =s.replace('None', 'Null')       
+            t = wcdb_query(login,s)
+            newID = login.insert_id()    # get the new auto increased ID of this instance 
+            crisisIds[dict_entry['crisisId']] = newID  # save old and new ID of this Instance.
         
-##    #------------------import orgs table-------------------------------
-##    inserts_list = []
-##    counter = 0
-##    root_list = tree.findall("./orgs/org")
-##    for parent in root_list:
-##        insert_entry = {}
-##        #Iterates over Children
-##        for child in parent:
-##            if child.getchildren() == []:
-##                insert_entry[child.tag] = child.text
-##        inserts_list.append(insert_entry)
-##        counter += 1
-##    #QueryInserting Loop
-##    for i in range(0,counter):
-##        dict_entry = inserts_list[i]
-##        s = (dict_entry.get('orgId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-##             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('foundingMission','Null'),\
-##             dict_entry.get('dateFounded','Null'),dict_entry.get('majorEvents','Null'))
-##        s = 'insert into Orgs Values' + str(s) + ';'
-##        s =s.replace('None', 'Null')
-##        t = wcdb_query(login,s)
-##        
+    #------------------import orgs table-------------------------------
+    #-----------This is gonna be similar to crisistable, so no more valuable comments------------
+    inserts_list = []
+    counter = 0
+    root_list = tree.findall("./orgs/org")
+    orgIds = {}
+    for parent in root_list:
+        insert_entry = {}
+        #Iterates over Children
+        for child in parent:
+            if child.getchildren() == []:
+                insert_entry[child.tag] = child.text
+        inserts_list.append(insert_entry)
+        counter += 1
+    #QueryInserting Loop
+    for i in range(0,counter):
+        dict_entry = inserts_list[i]
+        #--------------to check if current one is a duplicate----------
+        name_str = dict_entry['name']
+        name_str = name_str.lower()
+        not_in_flag = True
+        for entry in orgs_name_list:
+            if name_str in entry or entry in name_str:
+                not_in_flag = False
+                break
+        #--------------------------------------------------------------
+        if not_in_flag == True:
+            crises_name_list.append(name_str)
+            s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+                 dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('foundingMission','Null'),\
+                 dict_entry.get('dateFounded','Null'),dict_entry.get('majorEvents','Null'))
+            s = 'insert into Orgs (name, kind, streetAddress, city, stateOrProvince, postalCode, country, foundingMission, dateFounded, majorEvents) Values' + str(s) + ';'
+            s =s.replace('None', 'Null')
+            t = wcdb_query(login,s)
+            newID = login.insert_id()
+            orgIds[dict_entry['orgId']] = newID
+            
 ##    #------------------import people table-------------------------------
 ##    inserts_list = []
 ##    counter = 0
@@ -556,50 +580,64 @@ def wcdb_import(login,tree):
 ##        s =s.replace('None', 'Null')
 ##        t = wcdb_query(login,s)   
 ##
-##    #------------------import citations table-------------------------------
-##    inserts_list = []
-##    counter = 0
-##    root_list = tree.findall("./citations/citationPair")
-##    #Iterates over Children of crises
-##    for parent in root_list:
-##        insert_entry = {}
-##        #Iterates over Children
-##        for child in parent:
-##            if child.getchildren() == []:
-##                insert_entry[child.tag] = child.text
-##        inserts_list.append(insert_entry)
-##        counter += 1
-##    #QueryInserting Loop
-##    for i in range(0,counter):
-##        #Queryinseting - Crisis Table
-##        dict_entry = inserts_list[i]        
-##        s = (dict_entry.get('citationId'),dict_entry.get('citation'))
-##        s = 'insert into Citations Values' + str(s) + ';'
-##        s =s.replace('None', 'Null')
-##        t = wcdb_query(login,s)
-##
-##    #------------------import crisisCitations table-------------------------------
-##    inserts_list = []
-##    counter = 0
-##    root_list = tree.findall("./crisisCitations/crisisCitationPair")
-##    #Iterates over Children of crises
-##    for parent in root_list:
-##        insert_entry = {}
-##        #Iterates over Children
-##        for child in parent:
-##            if child.getchildren() == []:
-##                insert_entry[child.tag] = child.text
-##        inserts_list.append(insert_entry)
-##        counter += 1
-##    #QueryInserting Loop
-##    for i in range(0,counter):
-##        #Queryinseting - Crisis Table
-##        dict_entry = inserts_list[i]       
-##        s = (dict_entry.get('citationId'),dict_entry.get('crisisId'))
-##        s = 'insert into CrisisCitations Values' + str(s) + ';'
-##        s =s.replace('None', 'Null')
-##        t = wcdb_query(login,s)
-##
+    #------------------import citations table-------------------------------
+    inserts_list = []
+    counter = 0
+    root_list = tree.findall("./citations/citationPair")
+    citationIds = {}        # create a dict to save its old and new ID for joint table.
+    #Iterates over Children of crises
+    for parent in root_list:
+        insert_entry = {}
+        #Iterates over Children
+        for child in parent:
+            if child.getchildren() == []:
+                insert_entry[child.tag] = child.text
+        inserts_list.append(insert_entry)
+        counter += 1
+    #QueryInserting Loop
+    for i in range(0,counter):
+        #Queryinseting - Crisis Table 
+        dict_entry = inserts_list[i]
+        #--------------to check if current one is a duplicate----------
+        if dict_entry['citation'] not in citation_list:   # no need to handle substring since citations are so long, should not have that case.
+            citation_list.append(dict_entry['citation'])
+            s = (dict_entry.get('citation'))  # only one col here, as a result: 's' is no longer a tuple, it is a string, and you really need to do the following:
+            s = s.encode('utf8') # some groups' data have weird stuff which can't be interpret as an ascii code, so you need to add this in like urls insertion as well as those with long text content
+            s = 'insert into Citations (citation) Values' + "(\""+ str(s) +"\")"+ ';'
+            s =s.replace('None', 'Null')
+            t = wcdb_query(login,s)
+            newID = login.insert_id()
+            citationIds[dict_entry['citationId']] = newID
+            
+    #------------------import crisisCitations table---------------------------------
+    #-this is a joint table, be careful to make sure you insert the right new IDs---
+    inserts_list = []
+    counter = 0
+    root_list = tree.findall("./crisisCitations/crisisCitationPair")
+    #Iterates over Children of crises
+    for parent in root_list:
+        insert_entry = {}
+        #Iterates over Children
+        for child in parent:
+            if child.getchildren() == []:
+                insert_entry[child.tag] = child.text
+        inserts_list.append(insert_entry)
+        counter += 1
+    #QueryInserting Loop
+    for i in range(0,counter):
+        #Queryinseting - Crisis Table
+        dict_entry = inserts_list[i]
+        citationId = dict_entry['citationId'] # get its old ID from the tree
+        crisisId = dict_entry['crisisId'] # get its old ID from the tree
+        #----do not forget to check soemthing like this on any joint tables:
+        #----you want to make sure the one you are inserting in this joint table is not a duplicate instance in other tables
+        if citationId in citationIds and crisisId in crisisIds:
+        #------------------------------------------------------------------
+            #--------------insert new IDs based on what we have saved in citationIds and crisisIds dicts--------------
+            s = 'insert into CrisisCitations (citationId, crisisID) Values (' + str(citationIds[dict_entry['citationId']]) + ', ' + str(crisisIds[dict_entry['crisisId']]) + ')' + ';'
+            s =s.replace('None', 'Null')
+            t = wcdb_query(login,s)
+
 ##    #------------------import orgCitations table-------------------------------
 ##    inserts_list = []
 ##    counter = 0
@@ -1342,13 +1380,13 @@ def wcdb_read (filename):
     creates an element tree from string
     create the whole tree by iterate the file list
     """
-
+    #---- instead of Stdin and Stdout as arguments, this read function now only read filename---------
     r = open(filename, 'r')      
     imported_str_data = str(r.read())
     assert(type(imported_str_data) is str)
     single_data_tree = ET.fromstring(imported_str_data)
     assert(type(single_data_tree) is ET.Element)
-    print(single_data_tree)
+    print(single_data_tree)  # for debugging fake, it tells you which file do bugs come from.
     return single_data_tree    
     
 # ------------
@@ -1382,6 +1420,15 @@ def wcdb_solve(xml_filename_list,w):
     login_var = wcdb_login(*a)
     createDB(login_var)
     
+    #-----------create global lists to save their unique names to get rid of duplicates ----------
+    # I finished these 3 table insertion so there are only three, you have to add more for others
+    global crises_name_list
+    global orgs_name_list
+    global citation_list
+    crises_name_list = []
+    orgs_name_list = []
+    citation_list = []
+    
     for filename in xml_filename_list:
         data_tree = wcdb_read(filename)
         wcdb_import(login_var, data_tree)
@@ -1391,14 +1438,18 @@ def wcdb_solve(xml_filename_list,w):
 
 #--------Main fuction--------------------
 def main():
+    #---------- a list to save the filenames----------
     xml_filename_list = ['GottaGitThat-WCDB.xml', \
                          'SeekWolves-WCDB.xml', \
                          'BashKetchum-WCDB.xml', \
                          'Brigadeiros-WCDB.xml', \
                          'Databosses-WCDB.xml', \
                          'EJADK-WCDB.xml', \
-                         'TeamRocket-WCDB.xml', \
+##                         'TeamRocket-WCDB.xml', \  # their  data does not have kind tag.
                          'UtNonObliviscar-WCDB.xml']
+##    xml_filename_list = ['GottaGitThat-WCDB.xml','SeekWolves-WCDB.xml']
+    #-----I do not know if we still need stdin and stdout to handle RunWCDB.in/out.xml,
+    # since we will read these files in anyway.
     w = open('RunWCDB.out.xml', 'w')
     wcdb_solve(xml_filename_list, w)
 ##    w.close()

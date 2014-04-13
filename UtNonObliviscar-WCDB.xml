@@ -1,4 +1,4 @@
-<root>
+﻿<root>
     <crises>
         <crisis>
             <crisisId>CRI_000</crisisId>
@@ -37,7 +37,7 @@
             <environmentalImpact>Buildings destroyed</environmentalImpact>
             <politicalChanges>Storm Watch Alert</politicalChanges>
             <culturalChanges>protecting people</culturalChanges>
-            <jobsLost>-6254</jobsLost>
+            <jobsLost>6254</jobsLost>
             <damageInUSD>5000000000</damageInUSD>
             <reparationCost>40000000</reparationCost>
             <regulatoryChanges>economic repair</regulatoryChanges>
@@ -58,7 +58,7 @@
             <environmentalImpact>no environmental impact</environmentalImpact>
             <politicalChanges>impeach president</politicalChanges>
             <culturalChanges>change of president image</culturalChanges>
-            <jobsLost>-200</jobsLost>
+            <jobsLost>200</jobsLost>
             <damageInUSD>10000000</damageInUSD>
             <reparationCost>500000</reparationCost>
             <regulatoryChanges>Nixon resignation</regulatoryChanges>
@@ -89,8 +89,8 @@
             <name>Oklahoma City Bombing</name>
             <kind>Act of Terrorism</kind>
             <streetAddress>San Jacinto</streetAddress>
-            <city>OKC</city>
-            <stateOrProvince>OK</stateOrProvince>
+            <city>Oklahoma City</city>
+            <stateOrProvince>Oklahoma</stateOrProvince>
             <country>North America</country>
             <dateAndTime>1995-04-19T05:40:00</dateAndTime>
             <fatalities>168</fatalities>
@@ -233,7 +233,7 @@
             <city>Trenton</city>
             <stateOrProvince>New Jersey</stateOrProvince>
             <postalCode>NULL</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Man balloons and dirigibles</foundingMission>
             <dateFounded>1907-08-01</dateFounded>
             <majorEvents>Fire response</majorEvents>
@@ -246,7 +246,7 @@
             <city>New York</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>10036</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Publication</foundingMission>
             <dateFounded>2002-12-10</dateFounded>
             <majorEvents>Publish the Wall Street Journal</majorEvents>
@@ -259,7 +259,7 @@
             <city>NULL</city>
             <stateOrProvince>NULL</stateOrProvince>
             <postalCode>NULL</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Fight Great Britain</foundingMission>
             <dateFounded>1775-06-14</dateFounded>
             <majorEvents>American Revolutionary War</majorEvents>
@@ -272,7 +272,7 @@
             <city>Washington, DC</city>
             <stateOrProvince>Washington, DC</stateOrProvince>
             <postalCode>20535</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Identify known criminals</foundingMission>
             <dateFounded>1908-07-26</dateFounded>
             <majorEvents>Counterterrorism Watch</majorEvents>
@@ -298,7 +298,7 @@
             <city>Washington, D.C.</city>
             <stateOrProvince>Washington, D.C.</stateOrProvince>
             <postalCode>20593</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Founded as Revenue Marine</foundingMission>
             <dateFounded>1790-08-04</dateFounded>
             <majorEvents>Maritime law enforcement</majorEvents>
@@ -311,7 +311,7 @@
             <city>New York</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Promote international co-operation</foundingMission>
             <dateFounded>1945-10-24</dateFounded>
             <majorEvents>Cold War</majorEvents>
@@ -360,9 +360,9 @@
             <kind>Politician</kind>
             <streetAddress>125 W State St</streetAddress>
             <city>Trenton</city>
-            <stateOrProvince>NJ</stateOrProvince>
+            <stateOrProvince>New Jersey</stateOrProvince>
             <postalCode>08608</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_002</personId>
@@ -382,7 +382,7 @@
             <city>Washington</city>
             <stateOrProvince>DC</stateOrProvince>
             <postalCode>20500</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_004</personId>
@@ -390,9 +390,9 @@
             <kind>Perpetrator</kind>
             <streetAddress>5880 Colorado 67</streetAddress>
             <city>Florence</city>
-            <stateOrProvince>CO</stateOrProvince>
+            <stateOrProvince>Colorado</stateOrProvince>
             <postalCode>81226</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_005</personId>
@@ -412,7 +412,7 @@
             <city>Washington, DC</city>
             <stateOrProvince></stateOrProvince>
             <postalCode>20036</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_007</personId>
@@ -422,7 +422,7 @@
             <city>Washington, DC</city>
             <stateOrProvince></stateOrProvince>
             <postalCode>20500</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_008</personId>

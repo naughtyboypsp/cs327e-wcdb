@@ -7,14 +7,13 @@
             <kind>Act of Terrorism</kind>
             <streetAddress></streetAddress>
             <city>Boston</city>
-            <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
-            <country>USA</country>
+            <stateOrProvince>Massachusetts</stateOrProvince>
+            <country>United States</country>
             <dateAndTime>2013-04-15T00:00:00</dateAndTime>
             <fatalities>3</fatalities>
             <injuries>264</injuries>
             <populationIll>0</populationIll>
-            <populationDisplaced></populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact></environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges></culturalChanges>
@@ -29,14 +28,13 @@
             <kind>Human Error Disaster</kind>
             <streetAddress></streetAddress>
             <city>West</city>
-            <stateOrProvince>TX</stateOrProvince>
-            <postalCode></postalCode>
-            <country></country>
+            <stateOrProvince>Texas</stateOrProvince>
+            <country>United States</country>
             <dateAndTime>2013-04-17T00:00:00</dateAndTime>
             <fatalities>15</fatalities>
             <injuries>160</injuries>
             <populationIll>0</populationIll>
-            <populationDisplaced></populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact></environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges></culturalChanges>
@@ -53,12 +51,12 @@
             <city></city>
             <stateOrProvince></stateOrProvince>
             <postalCode></postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2008-09-01T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
-            <populationDisplaced></populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact></environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges></culturalChanges>
@@ -74,13 +72,12 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
             <country>Darfur</country>
             <dateAndTime>2003-02-01T00:00:00</dateAndTime>
             <fatalities>461520</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
-            <populationDisplaced></populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact></environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges></culturalChanges>
@@ -97,7 +94,7 @@
             <city></city>
             <stateOrProvince></stateOrProvince>
             <postalCode></postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2001-06-04T00:00:00</dateAndTime>
             <fatalities>41</fatalities>
             <injuries>0</injuries>
@@ -118,13 +115,12 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2008-08-01T00:00:00</dateAndTime>
             <fatalities>195</fatalities>
             <injuries>23</injuries>
             <populationIll>0</populationIll>
-            <populationDisplaced></populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact>Pollution from Oil and gas spills</environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges></culturalChanges>
@@ -140,13 +136,12 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2014-01-01T00:00:00</dateAndTime>
             <fatalities>12</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
-            <populationDisplaced></populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact></environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges>Flights grounded and power outages</culturalChanges>
@@ -162,7 +157,6 @@
             <streetAddress></streetAddress>
             <city>Benghazi</city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
             <country>Libya</country>
             <dateAndTime>2012-09-11T00:00:00</dateAndTime>
             <fatalities>4</fatalities>
@@ -184,7 +178,6 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
             <country>Haiti</country>
             <dateAndTime>2010-01-12T00:00:00</dateAndTime>
             <fatalities>316000</fatalities>
@@ -206,13 +199,12 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <postalCode></postalCode>
             <country>Iceland</country>
             <dateAndTime>2010-03-20T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
-            <populationDisplaced></populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact>Pollution</environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges>Air traffic issues</culturalChanges>
@@ -230,12 +222,11 @@
             <kind>Intergovernmental Agency</kind>
             <streetAddress>First Aveue at 46th Street</streetAddress>
             <city>New York</city>
-            <stateOrProvince>NY</stateOrProvince>
+            <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>UN was made in 1945 at the end of World War II to replace the League of Nations</foundingMission>
             <dateFounded>1945-01-01</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -246,10 +237,9 @@
             <city>Washington DC</city>
             <stateOrProvince></stateOrProvince>
             <postalCode>20006</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Founded by Clara Barton on May 21, 1881 as a means to provide disaster relief</foundingMission>
             <dateFounded>1881-05-21</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -260,10 +250,9 @@
             <city>Washington DC</city>
             <stateOrProvince></stateOrProvince>
             <postalCode></postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Founded in 1790 as the Revenue Marine</foundingMission>
             <dateFounded>1970-01-01</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -272,12 +261,11 @@
             <kind>Government Agency</kind>
             <streetAddress>20551 Constitution Ave NW Washington</streetAddress>
             <city>Washington DC</city>
-            <stateOrProvince>USA</stateOrProvince>
+            <stateOrProvince>United States</stateOrProvince>
             <postalCode></postalCode>
-            <country></country>
+            <country>United States</country>
             <foundingMission>Created December 23, 1913 with the Federal Reserve Act</foundingMission>
             <dateFounded>1913-12-23</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -286,12 +274,11 @@
             <kind>Government Agency</kind>
             <streetAddress></streetAddress>
             <city>New York City</city>
-            <stateOrProvince>NY</stateOrProvince>
+            <stateOrProvince>New York</stateOrProvince>
             <postalCode></postalCode>
-            <country></country>
+            <country>United States</country>
             <foundingMission>Founded in Montogomery, Alabama in 1850 as a general store by German immigrants</foundingMission>
             <dateFounded>1850-01-01</dateFounded>
-            <dateAbolished>2008-09-15</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -300,12 +287,11 @@
             <kind>Government Agency</kind>
             <streetAddress></streetAddress>
             <city>Port-au-Prince</city>
-            <stateOrProvince>Haiti</stateOrProvince>
+            <stateOrProvince></stateOrProvince>
             <postalCode></postalCode>
-            <country></country>
+            <country>Haiti</country>
             <foundingMission>The government transitioned away from a military government starting in 1987; however it met with opposition. In 1994, Bill Clinton steepped in and had Jimmy Carter lead a negotiating team to help</foundingMission>
             <dateFounded>1987-01-01</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -314,12 +300,11 @@
             <kind>Government Agency</kind>
             <streetAddress></streetAddress>
             <city>Darfur</city>
-            <stateOrProvince>Sudan</stateOrProvince>
+            <stateOrProvince></stateOrProvince>
             <postalCode></postalCode>
-            <country></country>
+            <country>Sudan</country>
             <foundingMission>Founded on February 23, 2010 by several Darfur Sudanese Rebel groups</foundingMission>
             <dateFounded>2010-02-23</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -328,12 +313,11 @@
             <kind>Nonprofit / Humanitarian Organization</kind>
             <streetAddress>3 United Nations Plaza</streetAddress>
             <city>New York City</city>
-            <stateOrProvince>NY</stateOrProvince>
+            <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
             <country></country>
             <foundingMission>Created in 1946 by the United Nations to help proved children with food, clothing and care in Europe</foundingMission>
             <dateFounded>1946-01-01</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
         <org>
@@ -344,7 +328,7 @@
             <city>Washington DC</city>
             <stateOrProvince></stateOrProvince>
             <postalCode></postalCode>
-            <country>US</country>
+            <country>United States</country>
             <foundingMission>After the September 11 attacks the department of homeland security was created to safegaurd against terrorism within the US and respond to future attacks</foundingMission>
             <dateFounded>2001-09-11</dateFounded>
             <dateAbolished>2015-01-01</dateAbolished>
@@ -356,12 +340,11 @@
             <kind>Government Agency</kind>
             <streetAddress>200 West ST</streetAddress>
             <city>New York City</city>
-            <stateOrProvince>NY</stateOrProvince>
+            <stateOrProvince>New York</stateOrProvince>
             <postalCode></postalCode>
-            <country></country>
+            <country>United States</country>
             <foundingMission>Founded by Marcus Goldman in New York City 1869</foundingMission>
             <dateFounded>1869-01-01</dateFounded>
-            <dateAbolished>2015-01-01</dateAbolished>
             <majorEvents></majorEvents>
         </org>
     </orgs>
@@ -374,7 +357,7 @@
             <streetAddress>NULL</streetAddress>
             <city>Washington</city>
             <stateOrProvince>D.C</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_002</personId>
@@ -383,7 +366,7 @@
             <streetAddress>NULL</streetAddress>
             <city>Dallas</city>
             <stateOrProvince>Texas</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_003</personId>
@@ -391,8 +374,8 @@
             <kind>Politician</kind>
             <streetAddress>NULL</streetAddress>
             <city>Westchester County</city>
-            <stateOrProvince>NY</stateOrProvince>
-            <country>USA</country>
+            <stateOrProvince>New York</stateOrProvince>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_004</personId>
@@ -401,7 +384,7 @@
             <streetAddress>NULL</streetAddress>
             <city>Augusta</city>
             <stateOrProvince>Georgia</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_005</personId>
@@ -409,8 +392,8 @@
             <kind>CEO</kind>
             <streetAddress>NULL</streetAddress>
             <city>New York</city>
-            <stateOrProvince>NY</stateOrProvince>
-            <country>USA</country>
+            <stateOrProvince>New York</stateOrProvince>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_006</personId>
@@ -419,7 +402,7 @@
             <streetAddress>NULL</streetAddress>
             <city>Boston</city>
             <stateOrProvince>Massachusetts</stateOrProvince>
-            <country>USA</country> 
+            <country>United States</country> 
         </person>
         <person>
             <personId>PER_007</personId>
@@ -428,7 +411,7 @@
             <streetAddress>NULL</streetAddress>
             <city>Boston</city>
             <stateOrProvince>Massachusetts</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_008</personId>

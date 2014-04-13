@@ -14,7 +14,7 @@
             <fatalities>246</fatalities>
             <injuries>2</injuries>
             <populationIll>246</populationIll>
-            <populationDisplaced>Unknown</populationDisplaced>
+            <populationDisplaced>0</populationDisplaced>
             <environmentalImpact>Unknown</environmentalImpact>
             <politicalChanges>Unknown</politicalChanges>
             <culturalChanges>Unknown</culturalChanges>
@@ -30,7 +30,7 @@
             <streetAddress>14300 E Alameda Avenue</streetAddress>
             <city>Aurora</city>
             <stateOrProvince>Colorado</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2012-07-20T12:38:00</dateAndTime>
             <fatalities>12</fatalities>
             <injuries>70</injuries>
@@ -51,7 +51,6 @@
             <streetAddress>BOX 4080 University of Melbourne</streetAddress>
             <city>Melbourne</city>
             <stateOrProvince>Victoria</stateOrProvince>
-            <postalCode>3052</postalCode>
             <country>Australia</country>
             <dateAndTime>2010-11-12T05:40:00</dateAndTime>
             <fatalities>0</fatalities>
@@ -72,9 +71,8 @@
             <kind>Natural Disaster</kind>
             <streetAddress>823 Rosenberg, Suite 203</streetAddress>
             <city>Galveston</city>
-            <stateOrProvince>TX</stateOrProvince>
-            <postalCode>77550</postalCode>
-            <country>USA</country>
+            <stateOrProvince>Texas</stateOrProvince>
+            <country>United States</country>
             <dateAndTime>2012-09-13T05:40:00</dateAndTime>
             <fatalities>74</fatalities>
             <injuries>7700</injuries>
@@ -115,9 +113,9 @@
             <kind>Assassination / Shooting</kind>
             <streetAddress>University Avenue</streetAddress>
             <city>Austin</city>
-            <stateOrProvince>TX</stateOrProvince>
+            <stateOrProvince>Texas</stateOrProvince>
             <postalCode>78705</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>1966-08-01T03:00:00</dateAndTime>
             <fatalities>16</fatalities>
             <injuries>32</injuries>
@@ -138,7 +136,7 @@
             <streetAddress>Lakehurst Naval Air Station</streetAddress>
             <city>Lakehurst</city>
             <stateOrProvince>New Jersey</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2012-12-13T05:40:00</dateAndTime>
             <fatalities>36</fatalities>
             <injuries>0</injuries>
@@ -159,7 +157,7 @@
             <streetAddress>NULL</streetAddress>
             <city>NULL</city>
             <stateOrProvince>NULL</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
             <dateAndTime>2013-05-20T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
@@ -180,7 +178,6 @@
             <streetAddress>Tjarnargata 11</streetAddress>
             <city>Reykjavik</city>
             <stateOrProvince>Suourland</stateOrProvince>
-            <postalCode>101</postalCode>
             <country>Iceland</country>
             <dateAndTime>2008-12-13T02:10:00</dateAndTime>
             <fatalities>0</fatalities>
@@ -237,7 +234,7 @@
             <streetAddress>15001 E Alameda Pkwy</streetAddress>
             <city>Aurora</city>
             <stateOrProvince>Colorado</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Protect city of Aurora</foundingMission>
             <dateFounded>1907-03-04</dateFounded>
             <majorEvents>This event</majorEvents>
@@ -262,7 +259,7 @@
             <city>Johns Island</city>
             <stateOrProvince>SC</stateOrProvince>
             <postalCode>29455</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Assist the disabled and distressed</foundingMission>
             <dateFounded>1997-06-01</dateFounded>
             <majorEvents>Hurricane relief in Texas</majorEvents>
@@ -285,9 +282,9 @@
             <kind>Government Agency</kind>
             <streetAddress>715 E 8th St</streetAddress>
             <city>Austin</city>
-            <stateOrProvince>TX</stateOrProvince>
+            <stateOrProvince>Texas</stateOrProvince>
             <postalCode>78705</postalCode>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>Protect the city of Austin</foundingMission>
             <dateFounded>1839-01-01</dateFounded>
             <majorEvents>UT Tower Shooting</majorEvents>
@@ -311,7 +308,7 @@
             <streetAddress>NULL</streetAddress>
             <city>Fort Meade</city>
             <stateOrProvince>Maryland</stateOrProvince>
-            <country>USA</country>
+            <country>United States</country>
             <foundingMission>global monitoring for national security purposes</foundingMission>
             <dateFounded>1917-04-28</dateFounded>
             <majorEvents>Snowden shares info in Hong Kong, US revokes passport, charged with espionage</majorEvents>
@@ -379,7 +376,7 @@
             <city>Washington</city>
             <stateOrProvince>DC</stateOrProvince>
             <postalCode>20500</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_004</personId>
@@ -396,9 +393,9 @@
             <kind>Perpetrator</kind>
             <streetAddress>University Avenue</streetAddress>
             <city>Austin</city>
-            <stateOrProvince>TX</stateOrProvince>
+            <stateOrProvince>Texas</stateOrProvince>
             <postalCode>78705</postalCode>
-            <country>USA</country>
+            <country>United States</country>
         </person>
         <person>
             <personId>PER_006</personId>

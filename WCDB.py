@@ -20,10 +20,6 @@ from _mysql_exceptions import OperationalError
 # DB Login
 # --------
 
-      #[host, un, pw, database]
-
-#a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-
 def wcdb_login ( host, un, pw, database ) :
     """takes credentials and logs into DB"""
     try:
@@ -99,16 +95,16 @@ def createDB(login):
             stateOrProvince varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
             country varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
             dateAndTime datetime NOT NULL,
-            fatalities varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-            injuries varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-            populationIll varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-            populationDisplaced varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+            fatalities bigint(12) unsigned NULL,
+            injuries bigint(12) unsigned NULL,
+            populationIll bigint(12) unsigned NULL,
+            populationDisplaced bigint(12) unsigned NULL,
             environmentalImpact text COLLATE utf8_unicode_ci DEFAULT NULL,
             politicalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             culturalChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
-            jobsLost varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-            damageInUSD varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-            reparationCost varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+            jobsLost bigint(12) unsigned NULL,
+            damageInUSD bigint(12) unsigned NULL,
+            reparationCost bigint(12) unsigned NULL,
             regulatoryChanges text COLLATE utf8_unicode_ci DEFAULT NULL,
             PRIMARY KEY (crisisId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -341,7 +337,7 @@ def createDB(login):
 # -----------
 def wcdb_import(login,tree):
     """
-    Iterating through crisis tags in crises tag and import into DB: table Crises 
+    Iterating through crisis tags in crises tag and import into DB: table Crises
     """
     #-----------------import crises table-------------------------------------------
     inserts_list = []
@@ -362,16 +358,13 @@ def wcdb_import(login,tree):
         #Queryinseting - Crisis Table
         dict_entry = inserts_list[i]
         #--------------to check if current one is a duplicate----------
-        name_str = dict_entry['name']
-        name_str = name_str.lower()     # to handle capital cases!
+        id_str = dict_entry['crisisId']
         not_in_flag = True
-        for entry in crises_name_list:   # to handle substring issue see my post on Piazza!
-            if name_str in entry or entry in name_str:
-                not_in_flag = False
-                break
+        if id_str in crises_id_list:
+            not_in_flag = False
         #--------------------------------------------------------------   
         if not_in_flag == True:
-            crises_name_list.append(name_str)  # save this name in the global list, next time check if the current instance we are dealing is in this list
+            crises_id_list.append(id_str)  # save this name in the global list, next time check if the current instance we are dealing is in this list
             s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
                  dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
                  dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
@@ -404,16 +397,13 @@ def wcdb_import(login,tree):
     for i in range(0,counter):
         dict_entry = inserts_list[i]
         #--------------to check if current one is a duplicate----------
-        name_str = dict_entry['name']
-        name_str = name_str.lower()
+        id_str = dict_entry['orgId']
         not_in_flag = True
-        for entry in orgs_name_list:
-            if name_str in entry or entry in name_str:
-                not_in_flag = False
-                break
+        if id_str in orgs_id_list:
+            not_in_flag = False
         #--------------------------------------------------------------
         if not_in_flag == True:
-            crises_name_list.append(name_str)
+            crises_id_list.append(id_str)
             s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
                  dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('foundingMission','Null'),\
                  dict_entry.get('dateFounded','Null'),dict_entry.get('majorEvents','Null'))
@@ -423,29 +413,40 @@ def wcdb_import(login,tree):
             newID = login.insert_id()
             orgIds[dict_entry['orgId']] = newID
             
-##    #------------------import people table-------------------------------
-##    inserts_list = []
-##    counter = 0
-##    root_list = tree.findall("./people/person")
-##    #Iterates over Children of crises
-##    for parent in root_list:
-##        insert_entry = {}
-##        #Iterates over Children
-##        for child in parent:
-##            if child.getchildren() == []:
-##                insert_entry[child.tag] = child.text
-##        inserts_list.append(insert_entry)
-##        counter += 1
-##    #QueryInserting Loop
-##    for i in range(0,counter):
-##        #Queryinseting - Crisis Table
-##        dict_entry = inserts_list[i]    
-##        s = (dict_entry.get('personId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-##             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'))
-##        s = 'insert into People Values' + str(s) + ';'
-##        s =s.replace('None', 'Null')
-##        t = wcdb_query(login,s)
-##        
+    #------------------import people table-------------------------------
+    inserts_list = []
+    counter = 0
+    root_list = tree.findall("./people/person")
+    peopleIds = {}
+    #Iterates over Children of crises
+    for parent in root_list:
+        insert_entry = {}
+        #Iterates over Children
+        for child in parent:
+            if child.getchildren() == []:
+                insert_entry[child.tag] = child.text
+        inserts_list.append(insert_entry)
+        counter += 1
+    #QueryInserting Loop
+    for i in range(0,counter):
+        #Queryinseting - Crisis Table
+        dict_entry = inserts_list[i]
+        #--------------to check if current one is a duplicate----------
+        id_str = dict_entry['personId']
+        not_in_flag = True
+        if id_str in people_id_list:
+            not_in_flag = False
+        #--------------------------------------------------------------
+        if not_in_flag == True:
+            people_id_list.append(id_str)
+            s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+                 dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'))
+            s = 'insert into People (name, kind, streetAddress, city, stateOrProvince, postalCode, country) Values' + str(s) + ';'
+            s =s.replace('None', 'Null')
+            t = wcdb_query(login,s)
+            newID = login.insert_id()
+            peopleIds[dict_entry['personId']] = newID
+            
 ##    #------------------import resources table-------------------------------
 ##    inserts_list = []
 ##    counter = 0
@@ -599,15 +600,15 @@ def wcdb_import(login,tree):
         #Queryinseting - Crisis Table 
         dict_entry = inserts_list[i]
         #--------------to check if current one is a duplicate----------
-        if dict_entry['citation'] not in citation_list:   # no need to handle substring since citations are so long, should not have that case.
-            citation_list.append(dict_entry['citation'])
-            s = (dict_entry.get('citation'))  # only one col here, as a result: 's' is no longer a tuple, it is a string, and you really need to do the following:
-            s = s.encode('utf8') # some groups' data have weird stuff which can't be interpret as an ascii code, so you need to add this in like urls insertion as well as those with long text content
-            s = 'insert into Citations (citation) Values' + "(\""+ str(s) +"\")"+ ';'
-            s =s.replace('None', 'Null')
-            t = wcdb_query(login,s)
-            newID = login.insert_id()
-            citationIds[dict_entry['citationId']] = newID
+##        if dict_entry['citation'] not in citation_list:   # no need to handle duplicates as we discussed Monday afternoon
+##            citation_list.append(dict_entry['citation'])
+        s = (dict_entry.get('citation'))  # only one col here, as a result: 's' is no longer a tuple, it is a string, and you really need to do the following:
+        s = s.encode('utf8') # some groups' data have weird stuff which can't be interpret as an ascii code, so you need to add this in like urls insertion as well as those with long text content
+        s = 'insert into Citations (citation) Values' + "(\""+ str(s) +"\")"+ ';'
+        s =s.replace('None', 'Null')
+        t = wcdb_query(login,s)
+        newID = login.insert_id()
+        citationIds[dict_entry['citationId']] = newID
             
     #------------------import crisisCitations table---------------------------------
     #-this is a joint table, be careful to make sure you insert the right new IDs---
@@ -631,7 +632,7 @@ def wcdb_import(login,tree):
         crisisId = dict_entry['crisisId'] # get its old ID from the tree
         #----do not forget to check soemthing like this on any joint tables:
         #----you want to make sure the one you are inserting in this joint table is not a duplicate instance in other tables
-        if citationId in citationIds and crisisId in crisisIds:
+        if citationId in citationIds and crisisId in crisisIds:  # if we want add rows in joint table about a duplicates, change "and" to "or" in this line
         #------------------------------------------------------------------
             #--------------insert new IDs based on what we have saved in citationIds and crisisIds dicts--------------
             s = 'insert into CrisisCitations (citationId, crisisID) Values (' + str(citationIds[dict_entry['citationId']]) + ', ' + str(crisisIds[dict_entry['crisisId']]) + ')' + ';'
@@ -1374,20 +1375,29 @@ def wcdb_export(login):
 # wcdb_read
 # ---------- 
 
-def wcdb_read (filename):
+def wcdb_read (stdin,flag,filename=" "):
     """
     reads xml_filename_list
     creates an element tree from string
-    create the whole tree by iterate the file list
+    flag is for reading choices
+    default filename is empty space
     """
+    if flag == True:
+        imported_str_data = str(stdin.read())
+        assert(type(imported_str_data) is str)
+        data_tree = ET.fromstring(imported_str_data)
+        assert(type(data_tree) is ET.Element)
+        return data_tree
+    
+    else:
     #---- instead of Stdin and Stdout as arguments, this read function now only read filename---------
-    r = open(filename, 'r')      
-    imported_str_data = str(r.read())
-    assert(type(imported_str_data) is str)
-    single_data_tree = ET.fromstring(imported_str_data)
-    assert(type(single_data_tree) is ET.Element)
-    print(single_data_tree)  # for debugging fake, it tells you which file do bugs come from.
-    return single_data_tree    
+        r = open(filename, 'r')      
+        imported_str_data = str(r.read())
+        assert(type(imported_str_data) is str)
+        data_tree = ET.fromstring(imported_str_data)
+        assert(type(data_tree) is ET.Element)
+        print(data_tree)  # for debugging fake, it tells you which file do bugs come from.
+        return data_tree    
     
 # ------------
 # wcdb_write
@@ -1406,7 +1416,7 @@ def wcdb_write (w, data_tree):
 # ------------
 # wcdb_solve
 # ------------
-def wcdb_solve(xml_filename_list,w):
+def wcdb_solve(r,w,xml_filename_list):
     """
     r is a reader
     w is a writer
@@ -1418,41 +1428,42 @@ def wcdb_solve(xml_filename_list,w):
 ##    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
     a = ("localhost", "root", "121314", "cs327e-wcdb")
     login_var = wcdb_login(*a)
-    createDB(login_var)
-    
-    #-----------create global lists to save their unique names to get rid of duplicates ----------
-    # I finished these 3 table insertion so there are only three, you have to add more for others
-    global crises_name_list
-    global orgs_name_list
+    #-------------for acceptance tests-----------------
+    #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
+    global crises_id_list
+    global orgs_id_list
+    global people_id_list
     global citation_list
-    crises_name_list = []
-    orgs_name_list = []
+    crises_id_list = []
+    orgs_id_list = []
+    people_id_list = []
     citation_list = []
+    #--------------------------------------------------------------------------------------------------------
+    createDB(login_var)
+    r_flag = True
+    data_tree = wcdb_read(r,r_flag)
+    wcdb_import(login_var, data_tree)
+    export_data = wcdb_export(login_var)
+    wcdb_write (w, export_data)
     
+    #----for real data from 8 groups-------------------
+    #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
+    global crises_id_list
+    global orgs_id_list
+    global people_id_list
+    global citation_list
+    crises_id_list = []
+    orgs_id_list = []
+    people_id_list = []
+    citation_list = []
+    #--------------------------------------------------------------------------------------------------------
+    createDB(login_var)
+    r_flag = False
     for filename in xml_filename_list:
-        data_tree = wcdb_read(filename)
-        wcdb_import(login_var, data_tree)
-        
+        data_tree = wcdb_read(r,r_flag,filename)
+        wcdb_import(login_var, data_tree)       
 ##    export_data = wcdb_export(login_var)
-##    wcdb_write (w, export_data)
+##    write = open('WCDB.out.xml', 'w')
+##    wcdb_write (write, export_data)
+##    write.close()
 
-#--------Main fuction--------------------
-def main():
-    #---------- a list to save the filenames----------
-    xml_filename_list = ['GottaGitThat-WCDB.xml', \
-                         'SeekWolves-WCDB.xml', \
-                         'BashKetchum-WCDB.xml', \
-                         'Brigadeiros-WCDB.xml', \
-                         'Databosses-WCDB.xml', \
-                         'EJADK-WCDB.xml', \
-##                         'TeamRocket-WCDB.xml', \  # their  data does not have kind tag.
-                         'UtNonObliviscar-WCDB.xml']
-##    xml_filename_list = ['GottaGitThat-WCDB.xml','SeekWolves-WCDB.xml']
-    #-----I do not know if we still need stdin and stdout to handle RunWCDB.in/out.xml,
-    # since we will read these files in anyway.
-    w = open('RunWCDB.out.xml', 'w')
-    wcdb_solve(xml_filename_list, w)
-##    w.close()
-#------------------------------=---------
-
-main()

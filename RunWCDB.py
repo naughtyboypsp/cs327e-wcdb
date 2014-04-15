@@ -24,7 +24,17 @@ import WCDB
 
 #--------Main fuction--------------------
 def main():
-    WCDB.wcdb_solve(sys.stdin, sys.stdout)
-#------------------------------=---------
+    #---------- a list to save the filenames----------
+    xml_filename_list = ['GottaGitThat-WCDB.xml', \
+                         'UtNonObliviscar-WCDB.xml', \
+                         'SeekWolves-WCDB.xml', \
+                         'BashKetchum-WCDB.xml', \
+                         'Brigadeiros-WCDB.xml', \                         
+                         'EJADK-WCDB.xml', \
+##                         'TeamRocket-WCDB.xml', \  # their  data does not have kind tag
+                         'Databosses-WCDB.xml']
+    WCDB.wcdb_solve(sys.stdin, sys.stdout,xml_filename_list)
+    #----------------------------------------
 
 main()
+

@@ -240,12 +240,18 @@ def createDB(login):
             CREATE TABLE CrisisCitations (
             citationId int(6) unsigned NOT NULL,
 <<<<<<< HEAD
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,    
+            FOREIGN KEY (citationId) REFERENCES Citations(citationId),
+            FOREIGN KEY (crisisId) REFERENCES Crises(crisisId)
+=======
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
 =======
             crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
 >>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
             FOREIGN KEY (citationId) REFERENCES Citations(citationId)
+>>>>>>> 87fe73fd3a1a19d200472372c09892feecfb1827
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
             """)
 
@@ -378,11 +384,15 @@ def wcdb_import(login,tree):
     counter = 0
     root_list = tree.findall("./crises/crisis")
 <<<<<<< HEAD
+    crisisIds = []
+=======
+<<<<<<< HEAD
     global crises_id_list
 =======
 
 >>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
 	
+>>>>>>> 87fe73fd3a1a19d200472372c09892feecfb1827
     for parent in root_list:
         insert_entry = {}
         #Iterates over Children
@@ -395,6 +405,9 @@ def wcdb_import(login,tree):
     #QueryInserting Loop
     for i in range(0,counter):
         dict_entry = inserts_list[i]
+<<<<<<< HEAD
+        #--------------to check if current one is a duplicate----------	
+=======
 
         #--------------to check if current one is a duplicate----------
 		
@@ -414,10 +427,10 @@ def wcdb_import(login,tree):
 	s =s.replace('None', 'Null')       
 	t = wcdb_query(login,s)
 =======
+>>>>>>> 87fe73fd3a1a19d200472372c09892feecfb1827
         if dict_entry['crisisId'] in crises_id_list:
             continue
-
-#--------------------------------------------------------------   
+        #--------------------------------------------------------------   
         crises_id_list.append(dict_entry['crisisId'])  # save this id in the global list, next time check if the current instance we are dealing is in this list
         s = (dict_entry.get('crisisId'), dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
                  dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
@@ -428,15 +441,19 @@ def wcdb_import(login,tree):
         s = 'insert into Crises Values' + str(s) + ';'
         s =s.replace('None', 'Null')       
         t = wcdb_query(login,s)
+<<<<<<< HEAD
+	crisisIds.append(dict_entry['crisisId'])	
+=======
 >>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
 			
+>>>>>>> 87fe73fd3a1a19d200472372c09892feecfb1827
         
     #------------------import orgs table-------------------------------
     #-----------This is gonna be similar to crisistable, so no more valuable comments------------
-    '''inserts_list = []
+    inserts_list = []
     counter = 0
     root_list = tree.findall("./orgs/org")
-    orgIds = {}
+    orgIds = []
     for parent in root_list:
         insert_entry = {}
         #Iterates over Children
@@ -448,28 +465,24 @@ def wcdb_import(login,tree):
     #QueryInserting Loop
     for i in range(0,counter):
         dict_entry = inserts_list[i]
-        #--------------to check if current one is a duplicate----------
-        id_str = dict_entry['orgId']
-        not_in_flag = True
-        if id_str in orgs_id_list:
-            not_in_flag = False
-        #--------------------------------------------------------------
-        if not_in_flag == True:
-            crises_id_list.append(id_str)
-            s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-                 dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('foundingMission','Null'),\
-                 dict_entry.get('dateFounded','Null'),dict_entry.get('majorEvents','Null'))
-            s = 'insert into Orgs (name, kind, streetAddress, city, stateOrProvince, postalCode, country, foundingMission, dateFounded, majorEvents) Values' + str(s) + ';'
-            s =s.replace('None', 'Null')
-            t = wcdb_query(login,s)
-            newID = login.insert_id()
-            orgIds[dict_entry['orgId']] = newID'''
+        #--------------to check if current one is a duplicate----------	
+        if dict_entry['orgId'] in orgs_id_list:
+            continue
+        #--------------------------------------------------------------   
+        orgs_id_list.append(dict_entry['orgId'])
+        s = (dict_entry.get('orgId'),dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'),dict_entry.get('foundingMission','Null'),\
+             dict_entry.get('dateFounded','Null'),dict_entry.get('majorEvents','Null'))
+        s = 'insert into Orgs  Values' + str(s) + ';'
+        s =s.replace('None', 'Null')
+        t = wcdb_query(login,s)
+        orgIds.append(dict_entry['orgId'])
             
     #------------------import people table-------------------------------
-    '''inserts_list = []
+    inserts_list = []
     counter = 0
     root_list = tree.findall("./people/person")
-    peopleIds = {}
+    peopleIds = []
     #Iterates over Children of crises
     for parent in root_list:
         insert_entry = {}
@@ -483,21 +496,17 @@ def wcdb_import(login,tree):
     for i in range(0,counter):
         #Queryinseting - Crisis Table
         dict_entry = inserts_list[i]
-        #--------------to check if current one is a duplicate----------
-        id_str = dict_entry['personId']
-        not_in_flag = True
-        if id_str in people_id_list:
-            not_in_flag = False
-        #--------------------------------------------------------------
-        if not_in_flag == True:
-            people_id_list.append(id_str)
-            s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-                 dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'))
-            s = 'insert into People (name, kind, streetAddress, city, stateOrProvince, postalCode, country) Values' + str(s) + ';'
-            s =s.replace('None', 'Null')
-            t = wcdb_query(login,s)
-            newID = login.insert_id()
-            peopleIds[dict_entry['personId']] = newID'''
+        #--------------to check if current one is a duplicate----------	
+        if dict_entry['personId'] in people_id_list:
+            continue
+        #--------------------------------------------------------------     
+        people_id_list.append(dict_entry['personId'])
+        s = (dict_entry.get('personId'), dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+             dict_entry.get('stateOrProvince','Null'),dict_entry.get('postalCode','Null'),dict_entry.get('country','Null'))
+        s = 'insert into People Values' + str(s) + ';'
+        s =s.replace('None', 'Null')
+        t = wcdb_query(login,s)
+        peopleIds.append(dict_entry['personId'])
             
 ##    #------------------import resources table-------------------------------
 ##    inserts_list = []
@@ -634,7 +643,7 @@ def wcdb_import(login,tree):
 ##        t = wcdb_query(login,s)   
 ##
     #------------------import citations table-------------------------------
-    '''inserts_list = []
+    inserts_list = []
     counter = 0
     root_list = tree.findall("./citations/citationPair")
     citationIds = {}        # create a dict to save its old and new ID for joint table.
@@ -652,19 +661,17 @@ def wcdb_import(login,tree):
         #Queryinseting - Crisis Table 
         dict_entry = inserts_list[i]
         #--------------to check if current one is a duplicate----------
-##        if dict_entry['citation'] not in citation_list:   # no need to handle duplicates as we discussed Monday afternoon
-##            citation_list.append(dict_entry['citation'])
         s = (dict_entry.get('citation'))  # only one col here, as a result: 's' is no longer a tuple, it is a string, and you really need to do the following:
         s = s.encode('utf8') # some groups' data have weird stuff which can't be interpret as an ascii code, so you need to add this in like urls insertion as well as those with long text content
         s = 'insert into Citations (citation) Values' + "(\""+ str(s) +"\")"+ ';'
         s =s.replace('None', 'Null')
         t = wcdb_query(login,s)
         newID = login.insert_id()
-        citationIds[dict_entry['citationId']] = newID'''
+        citationIds[dict_entry['citationId']] = newID
             
     #------------------import crisisCitations table---------------------------------
     #-this is a joint table, be careful to make sure you insert the right new IDs---
-    '''inserts_list = []
+    inserts_list = []
     counter = 0
     root_list = tree.findall("./crisisCitations/crisisCitationPair")
     #Iterates over Children of crises
@@ -684,12 +691,14 @@ def wcdb_import(login,tree):
         crisisId = dict_entry['crisisId'] # get its old ID from the tree
         #----do not forget to check soemthing like this on any joint tables:
         #----you want to make sure the one you are inserting in this joint table is not a duplicate instance in other tables
-        if citationId in citationIds and crisisId in crisisIds:  # if we want add rows in joint table about a duplicates, change "and" to "or" in this line
+        if citationId in citationIds and crisisId in crisisIds:  # if we want add rows in joint table for a duplicates, change "and" to "or" in this line
         #------------------------------------------------------------------
-            #--------------insert new IDs based on what we have saved in citationIds and crisisIds dicts--------------
-            s = 'insert into CrisisCitations (citationId, crisisID) Values (' + str(citationIds[dict_entry['citationId']]) + ', ' + str(crisisIds[dict_entry['crisisId']]) + ')' + ';'
+        #--------------insert new IDs based on what we have saved in citationIds dicts--------------
+            s = 'insert into CrisisCitations (citationId, crisisID) Values (' + \
+                str(citationIds[dict_entry['citationId']]) + ', ' + "'"+ str(dict_entry.get('crisisId')) + "'"+ ')' + ';'
+            print(s)
             s =s.replace('None', 'Null')
-            t = wcdb_query(login,s)'''
+            t = wcdb_query(login,s)
 
 ##    #------------------import orgCitations table-------------------------------
 ##    inserts_list = []

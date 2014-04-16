@@ -619,7 +619,7 @@
     </crisisWaysToHelp>
     <contactInfos>
         <contactInfo>
-            <contactInfoId>CON_011</contactInfoId>
+            <contactInfoId>CON_000</contactInfoId>
             <phoneNumber>202-267-0-3967</phoneNumber>
             <emailAddress>erc@egyptianrc.org</emailAddress>
             <facebookUrlId>URL_141</facebookUrlId>
@@ -627,7 +627,7 @@
             <websiteUrlId>URL_151</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_012</contactInfoId>
+            <contactInfoId>CON_001</contactInfoId>
             <phoneNumber>NULL</phoneNumber>
             <emailAddress>NULL</emailAddress>
             <facebookUrlId>URL_241</facebookUrlId>
@@ -635,7 +635,7 @@
             <websiteUrlId>URL_251</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_013</contactInfoId>
+            <contactInfoId>CON_002</contactInfoId>
             <phoneNumber>1-212-438-2046</phoneNumber>
             <emailAddress>index_services@spdji.com</emailAddress>
             <facebookUrlId>URL_341</facebookUrlId>
@@ -643,7 +643,7 @@
             <websiteUrlId>URL_351</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_014</contactInfoId>
+            <contactInfoId>CON_003</contactInfoId>
             <phoneNumber>1-866-335-2769</phoneNumber>
             <emailAddress>help@us.army.mil</emailAddress>
             <facebookUrlId>URL_441</facebookUrlId>
@@ -651,7 +651,7 @@
             <websiteUrlId>URL_451</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_015</contactInfoId>
+            <contactInfoId>CON_004</contactInfoId>
             <phoneNumber>1-202-324-3000</phoneNumber>
             <emailAddress>disaster@leo.gov</emailAddress>
             <facebookUrlId>URL_541</facebookUrlId>
@@ -659,7 +659,7 @@
             <websiteUrlId>URL_551</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_016</contactInfoId>
+            <contactInfoId>CON_005</contactInfoId>
             <phoneNumber>NULL</phoneNumber>
             <emailAddress>NULL</emailAddress>
             <facebookUrlId>URL_641</facebookUrlId>
@@ -667,7 +667,7 @@
             <websiteUrlId>URL_651</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_017</contactInfoId>
+            <contactInfoId>CON_006</contactInfoId>
             <phoneNumber>NULL</phoneNumber>
             <emailAddress>NULL</emailAddress>
             <facebookUrlId>URL_741</facebookUrlId>
@@ -675,7 +675,7 @@
             <websiteUrlId>URL_743</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_018</contactInfoId>
+            <contactInfoId>CON_007</contactInfoId>
             <phoneNumber>212-697-3315</phoneNumber>
             <emailAddress>inquiries@un.org</emailAddress>
             <facebookUrlId>URL_841</facebookUrlId>
@@ -683,7 +683,7 @@
             <websiteUrlId>URL_851</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_019</contactInfoId>
+            <contactInfoId>CON_008</contactInfoId>
             <phoneNumber>44 870 900 0100 </phoneNumber>
             <emailAddress>enquiries@metoffice.gov.uk</emailAddress>
             <facebookUrlId>URL_941</facebookUrlId>
@@ -691,7 +691,7 @@
             <websiteUrlId>URL_951</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_020</contactInfoId>
+            <contactInfoId>CON_009</contactInfoId>
             <phoneNumber></phoneNumber>
             <emailAddress></emailAddress>
             <facebookUrlId>URL_999</facebookUrlId>
@@ -702,43 +702,43 @@
     <orgContactInfos>
         <orgContactInfoPair>
             <orgId>ORG_049</orgId>
-            <contactInfoId>CON_011</contactInfoId>
+            <contactInfoId>CON_000</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_050</orgId>
-            <contactInfoId>CON_012</contactInfoId>
+            <contactInfoId>CON_001</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_051</orgId>
-            <contactInfoId>CON_013</contactInfoId>
+            <contactInfoId>CON_002</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
              <orgId>ORG_052</orgId>
-            <contactInfoId>CON_014</contactInfoId>
+            <contactInfoId>CON_003</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_053</orgId>
-            <contactInfoId>CON_015</contactInfoId>
+            <contactInfoId>CON_004</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_006</orgId>
-            <contactInfoId>CON_016</contactInfoId>
+            <contactInfoId>CON_005</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_003</orgId>
-            <contactInfoId>CON_017</contactInfoId>
+            <contactInfoId>CON_006</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_002</orgId>
-            <contactInfoId>CON_018</contactInfoId>
+            <contactInfoId>CON_007</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_013</orgId>
-            <contactInfoId>CON_019</contactInfoId>
+            <contactInfoId>CON_008</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_007</orgId>
-            <contactInfoId>CON_020</contactInfoId>
+            <contactInfoId>CON_009</contactInfoId>
         </orgContactInfoPair>
     </orgContactInfos>
     <citations>
@@ -1025,7 +1025,7 @@
         <url>
             <urlId>URL_999</urlId>
             <type>SocialNetwork</type>
-            <urlAddress>NULL</urlAddress>
+            <urlAddress></urlAddress>
         </url>
         <url>
             <urlId>URL_030</urlId>

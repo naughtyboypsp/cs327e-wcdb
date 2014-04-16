@@ -760,23 +760,23 @@
         <citations>
             <citationPair>
                 <citationId>CIT_0</citationId>
-                <citation>Meyer, Robinson. Suicide and the Economy. Atlantic. 26 09 2013: n. page. Web. 20 Mar. 2014. http://www.theatlantic.com/health/archive/2013/09/suicide-and-the-economy/279961/</citation>
+                <citation>Meyer, Robinson. "Suicide and the Economy." Atlantic. 26 09 2013: n. page. Web. 20 Mar. 2014. http://www.theatlantic.com/health/archive/2013/09/suicide-and-the-economy/279961/</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_10</citationId>
-                <citation>Great Depression Facts. Great Depression. Croft Communications, n.d. Web. 20 Mar 2014.</citation>
+                <citation>"Great Depression Facts." Great Depression. Croft Communications, n.d. Web. 20 Mar 2014.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_11</citationId>
-                <citation>Work Projects Administration. The Columbia Electronic Encyclopedia. 2012.</citation>
+                <citation>"Work Projects Administration." The Columbia Electronic Encyclopedia. 2012.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_12</citationId>
-                <citation>Long, Tony. April 8, 1935: WPA Puts Millions Back to Work. Wired. 08 04 200: n. page. Web. 20 Mar. 2014.</citation>
+                <citation>Long, Tony. "April 8, 1935: WPA Puts Millions Back to Work." Wired. 08 04 200: n. page. Web. 20 Mar. 2014.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_13</citationId>
-                <citation>Franklin D. Roosevelt. 2014. The Biography Channel website. Mar 20 2014, 07:24 http://www.biography.com/people/franklin-d-roosevelt-9463381.</citation>
+                <citation>"Franklin D. Roosevelt." 2014. The Biography Channel website. Mar 20 2014, 07:24 http://www.biography.com/people/franklin-d-roosevelt-9463381.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_101</citationId>
@@ -858,19 +858,19 @@
             </citationPair>
             <citationPair> 
                 <citationId>CIT_615</citationId>
-                <citation>Helmer, William. The UT Tower Shooting. Texas Monthly. N.p., n.d. Web. 13 Mar. 2014.; McLeod, Marlee. Lost Innocence. Charles Whitman: The Texas Bell Tower Sniper — Crime Library. Crime Library, n.d. Web. 11 Mar. 2014.</citation>
+                <citation>Helmer, William. "The UT Tower Shooting." Texas Monthly. N.p., n.d. Web. 13 Mar. 2014.; McLeod, Marlee. "Lost Innocence." Charles Whitman: The Texas Bell Tower Sniper — Crime Library. Crime Library, n.d. Web. 11 Mar. 2014.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_701</citationId>
-                <citation>Fletcher, Pascal. Haiti Reconstruction Cost May near $14 Billion. Reuters. Thomson Reuters, 16 Feb. 2010. Web. 14 Mar. 2014.</citation>
+                <citation>Fletcher, Pascal. "Haiti Reconstruction Cost May near $14 Billion." Reuters. Thomson Reuters, 16 Feb. 2010. Web. 14 Mar. 2014.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_702</citationId>
-                <citation>Haiti Earthquake Facts and Figures. Disasters Emergency Committee. N.p., n.d. Web. 13 Mar. 2014.</citation>
+                <citation>"Haiti Earthquake Facts and Figures." Disasters Emergency Committee. N.p., n.d. Web. 13 Mar. 2014.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_703</citationId>
-                <citation>Haiti Earthquake Fast Facts. CNN. Cable News Network, 28 Feb. 2014. Web. 13 Mar. 2014.</citation>
+                <citation>"Haiti Earthquake Fast Facts." CNN. Cable News Network, 28 Feb. 2014. Web. 13 Mar. 2014.</citation>
             </citationPair>
             <citationPair>
                 <citationId>CIT_704</citationId>
@@ -1741,12 +1741,12 @@
             <url>
                 <urlId>URL_718</urlId>
                 <type>Map</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_719</urlId>
                 <type>SocialNetwork</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_801</urlId>
@@ -1856,7 +1856,7 @@
             <url>
                 <urlId>URL_907</urlId>
                 <type>SocialNetwork</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_908</urlId>
@@ -1866,17 +1866,17 @@
             <url>
                 <urlId>URL_909</urlId>
                 <type>Video</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_910</urlId>
                 <type>Map</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_911</urlId>
                 <type>SocialNetwork</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_912</urlId>
@@ -1886,17 +1886,17 @@
             <url>
                 <urlId>URL_913</urlId>
                 <type>Video</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_914</urlId>
                 <type>Map</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
             <url>
                 <urlId>URL_915</urlId>
                 <type>SocialNetwork</type>
-                <urlAddress>NULL</urlAddress>
+                <urlAddress></urlAddress>
             </url>
         </urls>
 

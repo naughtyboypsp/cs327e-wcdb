@@ -33,7 +33,7 @@
             <fatalities>16</fatalities>
             <injuries>31</injuries>
 <populationIll>31</populationIll>
-<populationDisplaced></populationDisplaced>
+<populationDisplaced>NULL</populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 <politicalChanges>NULL</politicalChanges>
 <culturalChanges>NULL</culturalChanges>
@@ -70,7 +70,7 @@
             <streetAddress>NULL</streetAddress>
             <city>NULL</city>
             <stateOrProvince>NULL</stateOrProvince>
-            <country>United States</country>
+            <country>Haiti, United States, Bahamas, Cuba, Dominican Republic</country>
             <dateAndTime>2008-09-01T00:00:00</dateAndTime>
             <fatalities>195</fatalities>
             <injuries>1000000</injuries>
@@ -201,7 +201,7 @@
             <fatalities>12</fatalities>
             <injuries>44</injuries>
 <populationIll>0</populationIll>
-<populationDisplaced></populationDisplaced>
+<populationDisplaced>NULL</populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 <politicalChanges>United States as the sole superpower post World War II</politicalChanges>
 <culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
@@ -243,7 +243,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 <org>
             <orgId>ORG_035</orgId>
             <name>BP</name>
-            <kind>Nonprofit / Humanitarian Organization</kind>
+            <kind>Corporation</kind>
             <streetAddress>International Headquarters 1 St James's Square</streetAddress>
             <city>London</city>
             <stateOrProvince>NULL</stateOrProvince>
@@ -295,7 +295,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 <org>
 <orgId>ORG_037</orgId>
 <name>Johnson and Johnson</name>
-<kind>Nonprofit / Humanitarian Organization</kind>
+<kind>Corporation</kind>
 <streetAddress>Johnson and Johnson, One Johnson and Johnson Plaza</streetAddress>
 <city>New Brunswick</city>
 <stateOrProvince>New Jersey</stateOrProvince>
@@ -308,7 +308,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 <org>
 <orgId>ORG_007</orgId>
 <name>Luftschiffbau Zeppelin</name>
-<kind>Nonprofit / Humanitarian Organization</kind>
+<kind>Corporation</kind>
 <streetAddress>NULL</streetAddress>
 <city>Friedrichshafen</city>
 <stateOrProvince>NULL</stateOrProvince>
@@ -420,7 +420,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 <person>
 <personId>PER_007</personId>
 <name>Ernst August Lehmann</name>
-<kind>Perpetrator</kind>
+<kind>Regular Worker</kind>
 <streetAddress>NULL</streetAddress>
 <city>Ludwigshafen am Rhein</city>
 <stateOrProvince>NULL</stateOrProvince>
@@ -445,7 +445,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
             <city>Washington</city>
             <stateOrProvince>District of Columbia</stateOrProvince>
             <postalCode>20500</postalCode>
-            <country>United States</country>
+            <country>USA</country>
         </person>
     </people>
 
@@ -456,27 +456,27 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
             <resource>Food</resource>
         </resourcePair>
         <resourcePair>
-            <resourceId>RES_023</resourceId>
-            <resource>Labor Union</resource>
+            <resourceId>RES_003</resourceId>
+            <resource>LaborUnion</resource>
         </resourcePair>
         <resourcePair>
             <resourceId>RES_006</resourceId>
-            <resource>Military/Police</resource>
+            <resource>Police</resource>
         </resourcePair>
         <resourcePair>
-            <resourceId>RES_024</resourceId>
+            <resourceId>RES_021</resourceId>
             <resource>Repair</resource>
         </resourcePair>
         <resourcePair>
-            <resourceId>RES_025</resourceId>
+            <resourceId>RES_008</resourceId>
             <resource>National Guards</resource>
         </resourcePair>
         <resourcePair>
-            <resourceId>RES_026</resourceId>
+            <resourceId>RES_022</resourceId>
             <resource>Machinery</resource>
         </resourcePair>
         <resourcePair>
-            <resourceId>RES_027</resourceId>
+            <resourceId>RES_024</resourceId>
             <resource>Servicemen</resource>
         </resourcePair>
         <resourcePair>
@@ -484,7 +484,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
             <resource>Water</resource>
         </resourcePair>
         <resourcePair>
-            <resourceId>RES_028</resourceId>
+            <resourceId>RES_023</resourceId>
             <resource>Medical Supplies</resource>
         </resourcePair>
         <resourcePair>
@@ -500,15 +500,15 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
     <crisisResources>
         <crisisResourcePair>
             <crisisId>CRI_030</crisisId>
-            <resourceId>RES_024</resourceId>
+            <resourceId>RES_021</resourceId>
 </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_030</crisisId>
-            <resourceId>RES_026</resourceId>
+            <resourceId>RES_022</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_030</crisisId>
-            <resourceId>RES_028</resourceId>
+            <resourceId>RES_023</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_030</crisisId>
@@ -524,11 +524,11 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisResourcePair>
 <crisisResourcePair>
             <crisisId>CRI_006</crisisId>
-            <resourceId>RES_024</resourceId>
+            <resourceId>RES_021</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_006</crisisId>
-            <resourceId>RES_028</resourceId>
+            <resourceId>RES_023</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_006</crisisId>
@@ -536,7 +536,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_031</crisisId>
-            <resourceId>RES_027</resourceId>
+            <resourceId>RES_024</resourceId>
 </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_031</crisisId>
@@ -548,7 +548,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisResourcePair>
 <crisisResourcePair>
             <crisisId>CRI_002</crisisId>
-            <resourceId>RES_027</resourceId>
+            <resourceId>RES_024</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_002</crisisId>
@@ -556,7 +556,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_002</crisisId>
-            <resourceId>RES_028</resourceId>
+            <resourceId>RES_023</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_002</crisisId>
@@ -568,7 +568,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisResourcePair>
 <crisisResourcePair>
             <crisisId>CRI_032</crisisId>
-            <resourceId>RES_028</resourceId>
+            <resourceId>RES_023</resourceId>
 </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_032</crisisId>
@@ -584,23 +584,23 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_001</crisisId>
-            <resourceId>RES_027</resourceId>
+            <resourceId>RES_006</resourceId>
         </crisisResourcePair>
 <crisisResourcePair>
             <crisisId>CRI_001</crisisId>
-            <resourceId>RES_024</resourceId>
+            <resourceId>RES_021</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_001</crisisId>
-            <resourceId>RES_025</resourceId>
+            <resourceId>RES_008</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_001</crisisId>
-            <resourceId>RES_026</resourceId>
+            <resourceId>RES_022</resourceId>
         </crisisResourcePair>
           <crisisResourcePair>
             <crisisId>CRI_001</crisisId>
-            <resourceId>RES_028</resourceId>
+            <resourceId>RES_023</resourceId>
         </crisisResourcePair>
           <crisisResourcePair>
             <crisisId>CRI_001</crisisId>
@@ -612,7 +612,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 </crisisResourcePair>
 <crisisResourcePair>
 <crisisId>CRI_033</crisisId>
-<resourceId>RES_024</resourceId>
+<resourceId>RES_021</resourceId>
 </crisisResourcePair>
 <crisisResourcePair>
 <crisisId>CRI_033</crisisId>
@@ -620,7 +620,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 </crisisResourcePair>
 <crisisResourcePair>
 <crisisId>CRI_033</crisisId>
-<resourceId>RES_028</resourceId>
+<resourceId>RES_023</resourceId>
 </crisisResourcePair>
 <crisisResourcePair>
 <crisisId>CRI_033</crisisId>
@@ -632,7 +632,7 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 </crisisResourcePair>
 <crisisResourcePair>
 <crisisId>CRI_007</crisisId>
-<resourceId>RES_028</resourceId>
+<resourceId>RES_023</resourceId>
 </crisisResourcePair>	
 <crisisResourcePair>
 <crisisId>CRI_007</crisisId>
@@ -640,19 +640,19 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 </crisisResourcePair>
 <crisisResourcePair>
             <crisisId>CRI_034</crisisId>
-            <resourceId>RES_025</resourceId>
+            <resourceId>RES_008</resourceId>
 </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_034</crisisId>
-            <resourceId>RES_006</resourceId>
+            <resourceId>RES_024</resourceId>
 </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_005</crisisId>
-            <resourceId>RES_025</resourceId>
+            <resourceId>RES_008</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_005</crisisId>
-            <resourceId>RES_006</resourceId>
+            <resourceId>RES_024</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
             <crisisId>CRI_005</crisisId>
@@ -662,59 +662,59 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 
     <waysToHelp>
         <wayToHelpPair>
-            <helpId>HEL_007</helpId>
-            <wayToHelp>Donate food</wayToHelp>
+            <helpId>HEL_012</helpId>
+            <wayToHelp>Bring food</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_022</helpId>
+            <helpId>HEL_018</helpId>
             <wayToHelp>Bring supplies</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_023</helpId>
+            <helpId>HEL_019</helpId>
             <wayToHelp>Call National Guards</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_024</helpId>
+            <helpId>HEL_009</helpId>
             <wayToHelp>Give donations</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_025</helpId>
+            <helpId>HEL_021</helpId>
             <wayToHelp>Bring police</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
             <helpId>HEL_020</helpId>
-            <wayToHelp>Raise Awareness</wayToHelp>
+            <wayToHelp>Raise awareness</wayToHelp>
         </wayToHelpPair>
     </waysToHelp>
 
     <crisisWaysToHelp>
         <crisisWayToHelpPair>
             <crisisId>CRI_030</crisisId>
-            <helpId>HEL_022</helpId>
+            <helpId>HEL_018</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_030</crisisId>
-            <helpId>HEL_024</helpId>
+            <helpId>HEL_009</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_006</crisisId>
-            <helpId>HEL_025</helpId>
+            <helpId>HEL_021</helpId>
         </crisisWayToHelpPair>
 <crisisWayToHelpPair>
             <crisisId>CRI_031</crisisId>
-            <helpId>HEL_024</helpId>
+            <helpId>HEL_009</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_002</crisisId>
-            <helpId>HEL_007</helpId>
+            <helpId>HEL_012</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_002</crisisId>
-            <helpId>HEL_022</helpId>
+            <helpId>HEL_018</helpId>
         </crisisWayToHelpPair>
             <crisisWayToHelpPair>
             <crisisId>CRI_002</crisisId>
-            <helpId>HEL_024</helpId>
+            <helpId>HEL_009</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_002</crisisId>
@@ -722,39 +722,39 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisWayToHelpPair>
 <crisisWayToHelpPair>
             <crisisId>CRI_032</crisisId>
-            <helpId>HEL_024</helpId>
+            <helpId>HEL_009</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_001</crisisId>
-            <helpId>HEL_007</helpId>
+            <helpId>HEL_012</helpId>
         </crisisWayToHelpPair>
          <crisisWayToHelpPair>
             <crisisId>CRI_001</crisisId>
-            <helpId>HEL_022</helpId>
+            <helpId>HEL_018</helpId>
         </crisisWayToHelpPair>
 <crisisWayToHelpPair>
 <crisisId>CRI_033</crisisId>
-<helpId>HEL_007</helpId>
+<helpId>HEL_012</helpId>
 </crisisWayToHelpPair>
 <crisisWayToHelpPair>
 <crisisId>CRI_033</crisisId>
-<helpId>HEL_022</helpId>
+<helpId>HEL_018</helpId>
 </crisisWayToHelpPair>
 <crisisWayToHelpPair>
 <crisisId>CRI_033</crisisId>
-<helpId>HEL_024</helpId>
+<helpId>HEL_009</helpId>
 </crisisWayToHelpPair>
 <crisisWayToHelpPair>
 <crisisId>CRI_007</crisisId>
-<helpId>HEL_022</helpId>
+<helpId>HEL_018</helpId>
 </crisisWayToHelpPair>
 <crisisWayToHelpPair>
 <crisisId>CRI_007</crisisId>
-<helpId>HEL_024</helpId>
+<helpId>HEL_009</helpId>
 </crisisWayToHelpPair>
 <crisisWayToHelpPair>
             <crisisId>CRI_034</crisisId>
-            <helpId>HEL_023</helpId>
+            <helpId>HEL_019</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_034</crisisId>
@@ -762,11 +762,11 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_005</crisisId>
-            <helpId>HEL_022</helpId>
+            <helpId>HEL_018</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_005</crisisId>
-            <helpId>HEL_024</helpId>
+            <helpId>HEL_009</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_005</crisisId>
@@ -1312,59 +1312,59 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 
     <personCitations>
 <personCitationPair>
-<personId>PER_034</personId>
+<personId>PER_001</personId>
 <citationId>CIT_011</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_009</personId>
+<personId>PER_002</personId>
 <citationId>CIT_012</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_009</personId>
+<personId>PER_002</personId>
 <citationId>CIT_013</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_035</personId>
+<personId>PER_003</personId>
 <citationId>CIT_018</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_035</personId>
+<personId>PER_003</personId>
 <citationId>CIT_019</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_012</personId>
+<personId>PER_004</personId>
 <citationId>CIT_020</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_012</personId>
+<personId>PER_004</personId>
 <citationId>CIT_021</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_036</personId>
+<personId>PER_005</personId>
 <citationId>CIT_056</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_013</personId>
+<personId>PER_006</personId>
 <citationId>CIT_060</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_013</personId>
+<personId>PER_006</personId>
 <citationId>CIT_061</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_037</personId>
+<personId>PER_007</personId>
 <citationId>CIT_044</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_007</personId>
+<personId>PER_008</personId>
 <citationId>CIT_045</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_038</personId>
+<personId>PER_009</personId>
 <citationId>CIT_050</citationId>
 </personCitationPair>
 <personCitationPair>
-<personId>PER_001</personId>
+<personId>PER_010</personId>
 <citationId>CIT_051</citationId>
 </personCitationPair>
     </personCitations>
@@ -2218,107 +2218,107 @@ as an advisory committee in the area of nuclear safety.</foundingMission>
 
     <personUrls>
         <personUrlPair>
-            <personId>PER_034</personId>
+            <personId>PER_001</personId>
             <urlId>URL_024</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_034</personId>
+            <personId>PER_001</personId>
             <urlId>URL_025</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_034</personId>
+            <personId>PER_001</personId>
             <urlId>URL_026</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_034</personId>
+            <personId>PER_001</personId>
             <urlId>URL_027</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_002</personId>
             <urlId>URL_028</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_002</personId>
             <urlId>URL_029</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_002</personId>
             <urlId>URL_030</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_002</personId>
             <urlId>URL_031</urlId>
         </personUrlPair>
 <personUrlPair>
-            <personId>PER_012</personId>
+            <personId>PER_004</personId>
             <urlId>URL_043</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_012</personId>
+            <personId>PER_004</personId>
             <urlId>URL_044</urlId>
         </personUrlPair>
                <personUrlPair>
-            <personId>PER_035</personId>
+            <personId>PER_003</personId>
             <urlId>URL_045</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_035</personId>
+            <personId>PER_003</personId>
             <urlId>URL_046</urlId>
         </personUrlPair>
 <personUrlPair>
-            <personId>PER_036</personId>
+            <personId>PER_005</personId>
             <urlId>URL_069</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_036</personId>
+            <personId>PER_005</personId>
             <urlId>URL_071</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_013</personId>
+            <personId>PER_006</personId>
             <urlId>URL_068</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_013</personId>
+            <personId>PER_006</personId>
             <urlId>URL_072</urlId>
         </personUrlPair>
 <personUrlPair>
-<personId>PER_037</personId>
+<personId>PER_007</personId>
 <urlId>URL_102</urlId>
 </personUrlPair>
 <personUrlPair>
-<personId>PER_037</personId>
+<personId>PER_007</personId>
 <urlId>URL_103</urlId>
 </personUrlPair>
 <personUrlPair>
-<personId>PER_007</personId>
+<personId>PER_008</personId>
 <urlId>URL_104</urlId>
 </personUrlPair>
 <personUrlPair>
-<personId>PER_007</personId>
+<personId>PER_008</personId>
 <urlId>URL_105</urlId>
 </personUrlPair>
 <personUrlPair>
-            <personId>PER_038</personId>
+            <personId>PER_009</personId>
             <urlId>URL_120</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_038</personId>
+            <personId>PER_009</personId>
             <urlId>URL_121</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_038</personId>
+            <personId>PER_009</personId>
             <urlId>URL_122</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>PER_010</personId>
             <urlId>URL_123</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>PER_010</personId>
             <urlId>URL_124</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>PER_010</personId>
             <urlId>URL_125</urlId>
         </personUrlPair>
     </personUrls>

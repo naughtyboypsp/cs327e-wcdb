@@ -32,6 +32,7 @@ def main():
 
 
      #                    'SeekWolves-WCDB.xml', \
+, \
                         # 'BashKetchum-WCDB.xml', \
                         #  \                         
                         # 'EJADK-WCDB.xml', \

@@ -33,7 +33,7 @@
             <fatalities>16</fatalities>
             <injuries>31</injuries>
 			<populationIll>31</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced></populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
@@ -201,7 +201,7 @@
             <fatalities>12</fatalities>
             <injuries>44</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
+			<populationDisplaced></populationDisplaced>
             <environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>United States as the sole superpower post World War II</politicalChanges>
 			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>

@@ -66,43 +66,43 @@
 		</crisis>
 		<crisis>
 			<crisisId>CRI_003</crisisId>
-			<name>2008 Financial Crises</name>
-			<kind>Human Error Disaster</kind>
+			<name>Benghazi Attack</name>
+			<kind>Act of Terrorism</kind>
 			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
+			<city>Benghazi</city>
 			<stateOrProvince>NULL</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>2008-09-01 00:00:00</dateAndTime>
-			<fatalities>0</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>5500000</jobsLost>
-			<damageInUSD>648000</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_004</crisisId>
-			<name>Darfur Genocides</name>
-			<kind>War / Conflict</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Darfur</country>
-			<dateAndTime>2003-02-01 00:00:00</dateAndTime>
-			<fatalities>461520</fatalities>
-			<injuries>0</injuries>
+			<country>Libya</country>
+			<dateAndTime>2012-09-11 00:00:00</dateAndTime>
+			<fatalities>4</fatalities>
+			<injuries>11</injuries>
 			<populationIll>0</populationIll>
 			<populationDisplaced>0</populationDisplaced>
 			<environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
 			<culturalChanges>NULL</culturalChanges>
 			<jobsLost>0</jobsLost>
-			<damageInUSD>760</damageInUSD>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_004</crisisId>
+			<name>Eruptions of Island mountain glacier(Iceland Volcano)</name>
+			<kind>Natural Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Iceland</country>
+			<dateAndTime>2010-03-20 00:00:00</dateAndTime>
+			<fatalities>0</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>Pollution</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>Air traffic issues</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
 			<reparationCost>0</reparationCost>
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
@@ -171,64 +171,43 @@
 		</crisis>
 		<crisis>
 			<crisisId>CRI_008</crisisId>
-			<name>Benghazi Attack</name>
-			<kind>Act of Terrorism</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Benghazi</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Libya</country>
-			<dateAndTime>2012-09-11 00:00:00</dateAndTime>
-			<fatalities>4</fatalities>
-			<injuries>11</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_009</crisisId>
-			<name>Haiti Earthquake</name>
-			<kind>Natural Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Haiti</country>
-			<dateAndTime>2010-01-12 00:00:00</dateAndTime>
-			<fatalities>316000</fatalities>
-			<injuries>300000</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>1500000</populationDisplaced>
-			<environmentalImpact>Debris</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>14000</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_010</crisisId>
-			<name>Eruptions of Island mountain glacier(Iceland Volcano)</name>
+			<name>2010 Icelandic Volcano Eruption</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
 			<city>NULL</city>
 			<stateOrProvince>NULL</stateOrProvince>
 			<country>Iceland</country>
-			<dateAndTime>2010-03-20 00:00:00</dateAndTime>
+			<dateAndTime>2010-03-20 07:00:00</dateAndTime>
 			<fatalities>0</fatalities>
+			<injuries>11</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>1300</populationDisplaced>
+			<environmentalImpact>Reduction of CO2 in the atmosphere</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>1700000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>Null</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_009</crisisId>
+			<name>Arctic Vortex</name>
+			<kind>Natural Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>USA</country>
+			<dateAndTime>2014-01-01 00:00:00</dateAndTime>
+			<fatalities>12</fatalities>
 			<injuries>0</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>Pollution</environmentalImpact>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
 			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>Air traffic issues</culturalChanges>
+			<culturalChanges>Flights grounded and power outages</culturalChanges>
 			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
+			<damageInUSD>5000</damageInUSD>
 			<reparationCost>0</reparationCost>
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
@@ -337,6 +316,111 @@
 			<reparationCost>0</reparationCost>
 			<regulatoryChanges>Embargo against Cuba</regulatoryChanges>
 		</crisis>
+		<crisis>
+			<crisisId>CRI_035</crisisId>
+			<name>Boston Marathon Bombing</name>
+			<kind>Act of Terrorism</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Boston</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>USA</country>
+			<dateAndTime>2013-04-15 00:00:00</dateAndTime>
+			<fatalities>3</fatalities>
+			<injuries>264</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>333</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_036</crisisId>
+			<name>West Plant Explosion</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>West</city>
+			<stateOrProvince>TX</stateOrProvince>
+			<country>NULL</country>
+			<dateAndTime>2013-04-17 00:00:00</dateAndTime>
+			<fatalities>15</fatalities>
+			<injuries>160</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>186</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_037</crisisId>
+			<name>2008 Financial Crises</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>USA</country>
+			<dateAndTime>2008-09-01 00:00:00</dateAndTime>
+			<fatalities>0</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>5500000</jobsLost>
+			<damageInUSD>648000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_038</crisisId>
+			<name>Darfur Genocides</name>
+			<kind>War / Conflict</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Darfur</country>
+			<dateAndTime>2003-02-01 00:00:00</dateAndTime>
+			<fatalities>461520</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>760</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_039</crisisId>
+			<name>Tropical Storm Allison</name>
+			<kind>Natural Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>USA</country>
+			<dateAndTime>2001-06-04 00:00:00</dateAndTime>
+			<fatalities>41</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>30000</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>5500</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
 	</crises>
 	<orgs>
 		<org>
@@ -386,36 +470,36 @@
 			<city>Washington DC</city>
 			<stateOrProvince>NULL</stateOrProvince>
 			<postalCode>NULL</postalCode>
-			<country>United States</country>
+			<country>USA</country>
 			<foundingMission>Founded in 1790 as the Revenue Marine</foundingMission>
 			<datefounded>1970-01-01 00:00:00</datefounded>
 			<majorEvents>NULL</majorEvents>
 		</org>
 		<org>
 			<orgId>ORG_004</orgId>
-			<name>Federal Reserve</name>
+			<name>FBI</name>
 			<kind>Government Agency</kind>
-			<streetAddress>20551 Constitution Ave NW Washington</streetAddress>
-			<city>Washington DC</city>
-			<stateOrProvince>United States</stateOrProvince>
-			<postalCode>NULL</postalCode>
+			<streetAddress>935 Pennsylvania Ave NW</streetAddress>
+			<city>Washington, DC</city>
+			<stateOrProvince>Washington, DC</stateOrProvince>
+			<postalCode>20535</postalCode>
 			<country>United States</country>
-			<foundingMission>Created December 23, 1913 with the Federal Reserve Act</foundingMission>
-			<datefounded>1913-12-23 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
+			<foundingMission>Identify known criminals</foundingMission>
+			<datefounded>1908-07-26 00:00:00</datefounded>
+			<majorEvents>Counterterrorism Watch</majorEvents>
 		</org>
 		<org>
 			<orgId>ORG_005</orgId>
-			<name>Lehman Brothers</name>
+			<name>Haitian Government</name>
 			<kind>Government Agency</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
+			<streetAddress>Avenue de la Republique</streetAddress>
+			<city>Port-au-Prince</city>
+			<stateOrProvince>NULL</stateOrProvince>
 			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded in Montogomery, Alabama in 1850 as a general store by German immigrants</foundingMission>
-			<datefounded>1850-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
+			<country>Haiti</country>
+			<foundingMission>Form a semi-presidential republic for Haiti</foundingMission>
+			<datefounded>1987-01-01 00:00:00</datefounded>
+			<majorEvents>Writing of constitution</majorEvents>
 		</org>
 		<org>
 			<orgId>ORG_006</orgId>
@@ -458,28 +542,28 @@
 		</org>
 		<org>
 			<orgId>ORG_009</orgId>
+			<name>Luftschiffbau Zeppelin</name>
+			<kind>Intergovernmental Agency</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>Germany</country>
+			<foundingMission>Build Zeppelin type airships</foundingMission>
+			<datefounded>1990-01-01 00:00:00</datefounded>
+			<majorEvents>Zeppelin manufacture</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_012</orgId>
 			<name>Homeland Security</name>
 			<kind>Government Agency</kind>
 			<streetAddress>Nebraska Avenue Complex</streetAddress>
 			<city>Washington DC</city>
 			<stateOrProvince>NULL</stateOrProvince>
 			<postalCode>NULL</postalCode>
-			<country>United States</country>
+			<country>US</country>
 			<foundingMission>After the September 11 attacks the department of homeland security was created to safegaurd against terrorism within the US and respond to future attacks</foundingMission>
 			<datefounded>2001-09-11 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>ORG_010</orgId>
-			<name>Goldman Sachs</name>
-			<kind>Government Agency</kind>
-			<streetAddress>200 West ST</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded by Marcus Goldman in New York City 1869</foundingMission>
-			<datefounded>1869-01-01 00:00:00</datefounded>
 			<majorEvents>NULL</majorEvents>
 		</org>
 		<org>
@@ -548,6 +632,71 @@
 			<datefounded>1961-10-01 00:00:00</datefounded>
 			<majorEvents>Failed to adequately act against one of the organizers of 9/11</majorEvents>
 		</org>
+		<org>
+			<orgId>ORG_039</orgId>
+			<name>American Red Cross</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
+			<streetAddress>2025 E St, NW Washington</streetAddress>
+			<city>Washington DC</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>20006</postalCode>
+			<country>USA</country>
+			<foundingMission>Founded by Clara Barton on May 21, 1881 as a means to provide disaster relief</foundingMission>
+			<datefounded>1881-05-21 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_040</orgId>
+			<name>Federal Reserve</name>
+			<kind>Government Agency</kind>
+			<streetAddress>20551 Constitution Ave NW Washington</streetAddress>
+			<city>Washington DC</city>
+			<stateOrProvince>USA</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Created December 23, 1913 with the Federal Reserve Act</foundingMission>
+			<datefounded>1913-12-23 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_041</orgId>
+			<name>Lehman Brothers</name>
+			<kind>Government Agency</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New York City</city>
+			<stateOrProvince>NY</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Founded in Montogomery, Alabama in 1850 as a general store by German immigrants</foundingMission>
+			<datefounded>1850-01-01 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_042</orgId>
+			<name>Liberation and Justice Movement</name>
+			<kind>Government Agency</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Darfur</city>
+			<stateOrProvince>Sudan</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Founded on February 23, 2010 by several Darfur Sudanese Rebel groups</foundingMission>
+			<datefounded>2010-02-23 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_043</orgId>
+			<name>Goldman Sachs</name>
+			<kind>Government Agency</kind>
+			<streetAddress>200 West ST</streetAddress>
+			<city>New York City</city>
+			<stateOrProvince>NY</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Founded by Marcus Goldman in New York City 1869</foundingMission>
+			<datefounded>1869-01-01 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
 	</orgs>
 	<people>
 		<person>
@@ -572,52 +721,52 @@
 		</person>
 		<person>
 			<personId>PER_002</personId>
-			<name>George W. Bush</name>
-			<kind>President</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Dallas</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>United States</country>
-		</person>
-		<person>
-			<personId>PER_003</personId>
 			<name>Hillary Clinton</name>
 			<kind>Politician</kind>
 			<streetAddress>NULL</streetAddress>
 			<city>Westchester County</city>
-			<stateOrProvince>New York</stateOrProvince>
+			<stateOrProvince>NY</stateOrProvince>
 			<postalCode>Null</postalCode>
-			<country>United States</country>
+			<country>USA</country>
 		</person>
 		<person>
-			<personId>PER_004</personId>
+			<personId>PER_003</personId>
 			<name>Ben S. Bernanke</name>
 			<kind>Politician</kind>
 			<streetAddress>NULL</streetAddress>
 			<city>Augusta</city>
 			<stateOrProvince>Georgia</stateOrProvince>
 			<postalCode>Null</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_004</personId>
+			<name>Timothy James McVeigh</name>
+			<kind>Perpetrator</kind>
+			<streetAddress>5880 Colorado 67</streetAddress>
+			<city>Florence</city>
+			<stateOrProvince>Colorado</stateOrProvince>
+			<postalCode>81226</postalCode>
 			<country>United States</country>
 		</person>
 		<person>
 			<personId>PER_005</personId>
-			<name>Richard S. Fuld</name>
-			<kind>CEO</kind>
+			<name>Jean-Max Bellerive</name>
+			<kind>Politician</kind>
 			<streetAddress>NULL</streetAddress>
-			<city>New York</city>
-			<stateOrProvince>New York</stateOrProvince>
+			<city>Port-au-Prince</city>
+			<stateOrProvince>Port-au-Prince</stateOrProvince>
 			<postalCode>Null</postalCode>
-			<country>United States</country>
+			<country>Haiti</country>
 		</person>
 		<person>
 			<personId>PER_006</personId>
-			<name>Tamerlan Tsarnaev</name>
-			<kind>Perpetrator</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Boston</city>
-			<stateOrProvince>Massachusetts</stateOrProvince>
-			<postalCode>Null</postalCode>
+			<name>Hillary Clinton</name>
+			<kind>Politician</kind>
+			<streetAddress>1900 M Street, NW</streetAddress>
+			<city>Washington, DC</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>20036</postalCode>
 			<country>United States</country>
 		</person>
 		<person>
@@ -632,13 +781,13 @@
 		</person>
 		<person>
 			<personId>PER_008</personId>
-			<name>Omar al-Bashir</name>
+			<name>George W. Bush</name>
 			<kind>President</kind>
 			<streetAddress>NULL</streetAddress>
-			<city>Khartoum</city>
-			<stateOrProvince>Khartoum State</stateOrProvince>
+			<city>Dallas</city>
+			<stateOrProvince>Texas</stateOrProvince>
 			<postalCode>Null</postalCode>
-			<country>Sudan</country>
+			<country>USA</country>
 		</person>
 		<person>
 			<personId>PER_009</personId>
@@ -649,16 +798,6 @@
 			<stateOrProvince>Florida</stateOrProvince>
 			<postalCode>NULL</postalCode>
 			<country>USA</country>
-		</person>
-		<person>
-			<personId>PER_010</personId>
-			<name>Jean-Max Bellerive</name>
-			<kind>Politician</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Port-au-Prince</city>
-			<stateOrProvince>Port-au-Prince</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>Haiti</country>
 		</person>
 		<person>
 			<personId>PER_012</personId>
@@ -729,6 +868,56 @@
 			<stateOrProvince>NULL</stateOrProvince>
 			<postalCode>NULL</postalCode>
 			<country>Cuba</country>
+		</person>
+		<person>
+			<personId>PER_039</personId>
+			<name>Richard S. Fuld</name>
+			<kind>CEO</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New York</city>
+			<stateOrProvince>NY</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_040</personId>
+			<name>Tamerlan Tsarnaev</name>
+			<kind>Perpetrator</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Boston</city>
+			<stateOrProvince>Massachusetts</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_041</personId>
+			<name>Dzhokhar Tsarnaev</name>
+			<kind>Perpetrator</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Boston</city>
+			<stateOrProvince>Massachusetts</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_042</personId>
+			<name>Omar al-Bashir</name>
+			<kind>President</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Khartoum</city>
+			<stateOrProvince>Khartoum State</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>Sudan</country>
+		</person>
+		<person>
+			<personId>PER_043</personId>
+			<name>Tijani Sese</name>
+			<kind>Politician</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Khartoum</city>
+			<stateOrProvince>Khartoum State</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>Sudan</country>
 		</person>
 	</people>
 	<resources/>
@@ -1123,128 +1312,7 @@
 			<citation>Ernst August Lehmann. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
 		</citationPair>
 	</citations>
-	<crisisCitations>
-		<crisisCitationPair>
-			<citationId>1</citationId>
-			<crisisId>CRI_030</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>2</citationId>
-			<crisisId>CRI_030</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>3</citationId>
-			<crisisId>CRI_030</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>4</citationId>
-			<crisisId>CRI_030</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>5</citationId>
-			<crisisId>CRI_006</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>6</citationId>
-			<crisisId>CRI_006</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>15</citationId>
-			<crisisId>CRI_031</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>16</citationId>
-			<crisisId>CRI_031</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>17</citationId>
-			<crisisId>CRI_031</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>22</citationId>
-			<crisisId>CRI_002</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>23</citationId>
-			<crisisId>CRI_002</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>24</citationId>
-			<crisisId>CRI_002</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>48</citationId>
-			<crisisId>CRI_032</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>49</citationId>
-			<crisisId>CRI_032</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>51</citationId>
-			<crisisId>CRI_001</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>52</citationId>
-			<crisisId>CRI_001</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>53</citationId>
-			<crisisId>CRI_001</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>28</citationId>
-			<crisisId>CRI_033</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>29</citationId>
-			<crisisId>CRI_033</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>30</citationId>
-			<crisisId>CRI_033</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>31</citationId>
-			<crisisId>CRI_033</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>32</citationId>
-			<crisisId>CRI_007</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>40</citationId>
-			<crisisId>CRI_034</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>41</citationId>
-			<crisisId>CRI_005</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>CRI_003</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>CRI_004</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>CRI_008</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>CRI_009</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>CRI_010</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>63</citationId>
-			<crisisId>CRI_000</crisisId>
-		</crisisCitationPair>
-	</crisisCitations>
+	<crisisCitations/>
 	<orgCitations/>
 	<personCitations/>
 	<urls/>

@@ -335,7 +335,7 @@ def createDB(login):
 # -----------
 # data import
 # -----------
-
+#---------create global list her to save their id to get rid of duplicates
 global crises_id_list
 global orgs_id_list
 global people_id_list
@@ -344,6 +344,7 @@ crises_id_list = []
 orgs_id_list = []
 people_id_list = []
 citation_list = []
+#--------------------------------------------------------------------------
 
 def wcdb_import(login,tree):
     """
@@ -837,10 +838,6 @@ def wcdb_import(login,tree):
         
 #--------------------end of import----------------
         
-##def wcdb_import(login, tree):
-##    crises_import(login, tree)
-##    return None
-
 # -------------
 # data export
 # -------------
@@ -1424,26 +1421,18 @@ def wcdb_solve(r,w,xml_filename_list):
     a = ("localhost", "root", "121314", "cs327e-wcdb")
     login_var = wcdb_login(*a)
     #-------------for acceptance tests-----------------
-    #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
-
-
-    #--------------------------------------------------------------------------------------------------------
-
     createDB(login_var)
     r_flag = True
     data_tree = wcdb_read(r,r_flag)
     wcdb_import(login_var, data_tree)
     export_data = wcdb_export(login_var)
-    wcdb_write (w, export_data)
-    
+    wcdb_write (w, export_data) 
     #----for real data from 8 groups-------------------
-
     crises_id_list = []
     orgs_id_list = []
     people_id_list = []
     citation_list = []
-
-    #--------------------------------------------------------------------------------------------------------
+    #--------------------------------------------------
     createDB(login_var)
     r_flag = False
     for filename in xml_filename_list:

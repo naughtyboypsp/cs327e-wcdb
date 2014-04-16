@@ -11,18 +11,37 @@
             <dateAndTime>1994-04-07T00:00:00</dateAndTime>
             <fatalities>800000</fatalities>
             <injuries>250000</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_002</crisisId>
             <name>H1N1 Pandemic</name>
             <kind>Natural Disaster</kind>
             <streetAddress></streetAddress>
-            <city></city>
-            <stateOrProvince></stateOrProvince>
-            <country>Global Impact</country>
-            <dateAndTime>2009-01-01T00:00:00</dateAndTime>
-            <fatalities>14286</fatalities>
-            <populationIll>25584595</populationIll>
+			<city></city>
+			<stateOrProvince></stateOrProvince>
+			<country>Global Impact</country>
+			<dateAndTime>2009-01-01T00:00:00</dateAndTime>
+			<fatalities>14286</fatalities>
+			<injuries>0</injuries>
+			<populationIll>25584595</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+            <politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
+			
         </crisis>
         <crisis>
             <crisisId>CRI_003</crisisId>
@@ -37,6 +56,13 @@
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_004</crisisId>
@@ -48,9 +74,16 @@
             <country>Widespread in Africa</country>
             <dateAndTime>1970-01-01T00:00:00</dateAndTime>
             <fatalities>30000000</fatalities>
+			<injuries>0</injuries>
             <populationIll>25000000</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
             <jobsLost>0</jobsLost>
             <damageInUSD>9000000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_005</crisisId>
@@ -62,6 +95,16 @@
             <country>Argentina</country>
             <dateAndTime>1975-01-01T00:00:00</dateAndTime>
             <fatalities>30000</fatalities>
+			<injuries>0</injuries>
+            <populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
+            <jobsLost>0</jobsLost>
+            <damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_006</crisisId>
@@ -73,8 +116,16 @@
             <country>United States</country>
             <dateAndTime>2008-09-13T02:10:00</dateAndTime>
             <fatalities>192</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
             <populationDisplaced>1000000</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
+            <jobsLost>0</jobsLost>
             <damageInUSD>37500000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_007</crisisId>
@@ -87,6 +138,15 @@
             <dateAndTime>1966-08-01T02:11:55</dateAndTime>
             <fatalities>13</fatalities>
             <injuries>43</injuries>
+			<populationIll>0</populationIll>
+            <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
+            <jobsLost>0</jobsLost>
+            <damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_008</crisisId>
@@ -101,10 +161,13 @@
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
             <politicalChanges>Regime changes</politicalChanges>
             <culturalChanges>Lost generation</culturalChanges>
             <jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_009</crisisId>
@@ -119,8 +182,13 @@
             <injuries>300000</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>1500000</populationDisplaced>
-            <damageInUSD>14000000000</damageInUSD>
-            <reparationCost>14000000000</reparationCost>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>14000000000</damageInUSD>
+			<reparationCost>14000000000</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_010</crisisId>
@@ -139,6 +207,9 @@
             <environmentalImpact>Pretty much everything</environmentalImpact>
             <politicalChanges></politicalChanges>
             <culturalChanges>Go Green</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
             <regulatoryChanges>Emission laws</regulatoryChanges>
         </crisis>
     </crises>
@@ -178,9 +249,12 @@
             <city>Austin</city>
             <stateOrProvince>Texas</stateOrProvince>
             <postalCode>78701</postalCode>
+			<country>United States</country>
+			<foundingMission></foundingMission>
 			<dateFounded>0000-00-00</dateFounded>
-            <country>USA</country>
-            <country>United States</country>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
+            
         </org>
         <org>
             <orgId>ORG_004</orgId>
@@ -191,7 +265,10 @@
             <stateOrProvince>Georgia</stateOrProvince>
             <postalCode>30333</postalCode>
             <country>United States</country>
+			<foundingMission></foundingMission>
             <dateFounded>1946-07-01</dateFounded>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
         </org>
         <org>
             <orgId>ORG_005</orgId>
@@ -200,8 +277,12 @@
             <streetAddress>78 rue de Lausanne</streetAddress>
             <city>Geneva</city>
             <stateOrProvince>Geneva</stateOrProvince>
-            <country>Switzerland</country>
+			<postalCode></postalCode>
+			<country>Switzerland</country>
+			<foundingMission></foundingMission>
             <dateFounded>1971-01-01</dateFounded>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
         </org>
 	<org>
             <orgId>ORG_006</orgId>
@@ -210,8 +291,12 @@
             <streetAddress>600 First Avenue North</streetAddress>
             <city>Minneapolis</city>
             <stateOrProvince>Minnesota</stateOrProvince>
-            <country>United States</country>
+			<postalCode></postalCode>
+			<country>United States</country>
+			<foundingMission></foundingMission>
             <dateFounded>1962-01-01</dateFounded>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
         </org>
 	<org>
             <orgId>ORG_007</orgId>
@@ -220,8 +305,12 @@
             <streetAddress>322 W Lamar St</streetAddress>
             <city>Aamericus</city>
             <stateOrProvince>Georgia</stateOrProvince>
+			<postalCode></postalCode>
             <country>United States</country>
+			<foundingMission></foundingMission>
             <dateFounded>1942-01-01</dateFounded>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
         </org>
 	<org>
             <orgId>ORG_008</orgId>
@@ -230,8 +319,12 @@
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
-            <country>Haiti</country>
+			<postalCode></postalCode>
+			<country>Haiti</country>
+			<foundingMission></foundingMission>
             <dateFounded>1789-01-01</dateFounded>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
         </org>
 	<org>
             <orgId>ORG_009</orgId>
@@ -240,8 +333,12 @@
             <streetAddress>2201 C St NW</streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
+			<postalCode></postalCode>
             <country>United States</country>
+			<foundingMission></foundingMission>
             <dateFounded>1969-01-01</dateFounded>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
         </org>
 	<org>
             <orgId>ORG_010</orgId>
@@ -250,8 +347,12 @@
             <streetAddress>Ottho Heldringstraat 5</streetAddress>
             <city>Amsterdam</city>
             <stateOrProvince>North Holland</stateOrProvince>
-            <country>Netherlands</country>
+			<postalCode></postalCode>
+			<country>Netherlands</country>
+			<foundingMission></foundingMission>
             <dateFounded>1969-01-01</dateFounded>
+			<dateAbolished>0000-00-00</dateAbolished>
+			<majorEvents></majorEvents>
         </org>
     </orgs>
          <people>

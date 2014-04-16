@@ -1,4 +1,4 @@
-use cs327e_yj2946
+use cs327e_joshen
 drop table if exists CrisisOrgs;
 drop table if exists CrisisPeople;
 drop table if exists OrgPeople;

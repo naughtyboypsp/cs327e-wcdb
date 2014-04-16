@@ -340,11 +340,11 @@ def wcdb_import(login,tree):
     Iterating through crisis tags in crises tag and import into DB: table Crises
     """
     #-----------------import crises table-------------------------------------------
-    inserts_list = []
+    inserts_list = [] #this is a list of dictionaries with each dictionary being a row in crises
     counter = 0
     root_list = tree.findall("./crises/crisis")
-    crisisIds = {}  # important! based on josh's idea, create a dict to save its old and new ID for joint table.
-    #Iterates over Children of crises
+	global crises_id_list
+	
     for parent in root_list:
         insert_entry = {}
         #Iterates over Children
@@ -352,36 +352,33 @@ def wcdb_import(login,tree):
             if child.getchildren() == []:
                 insert_entry[child.tag] = child.text             
         inserts_list.append(insert_entry)
-        counter += 1       
+        counter += 1      
+		
     #QueryInserting Loop
     for i in range(0,counter):
-        #Queryinseting - Crisis Table
         dict_entry = inserts_list[i]
+
         #--------------to check if current one is a duplicate----------
-        id_str = dict_entry['crisisId']
-        not_in_flag = True
-        if id_str in crises_id_list:
-            not_in_flag = False
+		
+		if dict_entry['crisisId'] in crisis_id_list:
+			continue
+
         #--------------------------------------------------------------   
-        if not_in_flag == True:
-            crises_id_list.append(id_str)  # save this name in the global list, next time check if the current instance we are dealing is in this list
-            s = (dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-                 dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
-                 dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
-                 dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
-                 dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
-                 dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
-            s = 'insert into Crises (name, kind, streetAddress, city, stateOrProvince, country, dateAndTime, fatalities,\
-                            injuries, populationIll, populationDisplaced, environmentalImpact, politicalChanges, culturalChanges, jobsLost,\
-                            damageInUSD, reparationCost, regulatoryChanges) Values' + str(s) + ';'
-            s =s.replace('None', 'Null')       
-            t = wcdb_query(login,s)
-            newID = login.insert_id()    # get the new auto increased ID of this instance 
-            crisisIds[dict_entry['crisisId']] = newID  # save old and new ID of this Instance.
+		crises_id_list.append(dict_entry['crisisId'])  # save this id in the global list, next time check if the current instance we are dealing is in this list
+		s = (dict_entry.get('crisisId'), dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+			 dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
+			 dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
+			 dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
+			 dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
+			 dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
+		s = 'insert into Crises Values' + str(s) + ';'
+		s =s.replace('None', 'Null')       
+		t = wcdb_query(login,s)
+			
         
     #------------------import orgs table-------------------------------
     #-----------This is gonna be similar to crisistable, so no more valuable comments------------
-    inserts_list = []
+    '''inserts_list = []
     counter = 0
     root_list = tree.findall("./orgs/org")
     orgIds = {}
@@ -411,10 +408,10 @@ def wcdb_import(login,tree):
             s =s.replace('None', 'Null')
             t = wcdb_query(login,s)
             newID = login.insert_id()
-            orgIds[dict_entry['orgId']] = newID
+            orgIds[dict_entry['orgId']] = newID'''
             
     #------------------import people table-------------------------------
-    inserts_list = []
+    '''inserts_list = []
     counter = 0
     root_list = tree.findall("./people/person")
     peopleIds = {}
@@ -445,7 +442,7 @@ def wcdb_import(login,tree):
             s =s.replace('None', 'Null')
             t = wcdb_query(login,s)
             newID = login.insert_id()
-            peopleIds[dict_entry['personId']] = newID
+            peopleIds[dict_entry['personId']] = newID'''
             
 ##    #------------------import resources table-------------------------------
 ##    inserts_list = []
@@ -582,7 +579,7 @@ def wcdb_import(login,tree):
 ##        t = wcdb_query(login,s)   
 ##
     #------------------import citations table-------------------------------
-    inserts_list = []
+    '''inserts_list = []
     counter = 0
     root_list = tree.findall("./citations/citationPair")
     citationIds = {}        # create a dict to save its old and new ID for joint table.
@@ -608,11 +605,11 @@ def wcdb_import(login,tree):
         s =s.replace('None', 'Null')
         t = wcdb_query(login,s)
         newID = login.insert_id()
-        citationIds[dict_entry['citationId']] = newID
+        citationIds[dict_entry['citationId']] = newID'''
             
     #------------------import crisisCitations table---------------------------------
     #-this is a joint table, be careful to make sure you insert the right new IDs---
-    inserts_list = []
+    '''inserts_list = []
     counter = 0
     root_list = tree.findall("./crisisCitations/crisisCitationPair")
     #Iterates over Children of crises
@@ -637,7 +634,7 @@ def wcdb_import(login,tree):
             #--------------insert new IDs based on what we have saved in citationIds and crisisIds dicts--------------
             s = 'insert into CrisisCitations (citationId, crisisID) Values (' + str(citationIds[dict_entry['citationId']]) + ', ' + str(crisisIds[dict_entry['crisisId']]) + ')' + ';'
             s =s.replace('None', 'Null')
-            t = wcdb_query(login,s)
+            t = wcdb_query(login,s)'''
 
 ##    #------------------import orgCitations table-------------------------------
 ##    inserts_list = []
@@ -1396,7 +1393,7 @@ def wcdb_read (stdin,flag,filename=" "):
         assert(type(imported_str_data) is str)
         data_tree = ET.fromstring(imported_str_data)
         assert(type(data_tree) is ET.Element)
-        print(data_tree)  # for debugging fake, it tells you which file do bugs come from.
+        #print(data_tree)  # for debugging fake, it tells you which file do bugs come from.
         return data_tree    
     
 # ------------
@@ -1429,16 +1426,7 @@ def wcdb_solve(r,w,xml_filename_list):
     a = ("localhost", "root", "121314", "cs327e-wcdb")
     login_var = wcdb_login(*a)
     #-------------for acceptance tests-----------------
-    #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
-    global crises_id_list
-    global orgs_id_list
-    global people_id_list
-    global citation_list
-    crises_id_list = []
-    orgs_id_list = []
-    people_id_list = []
-    citation_list = []
-    #--------------------------------------------------------------------------------------------------------
+
     createDB(login_var)
     r_flag = True
     data_tree = wcdb_read(r,r_flag)
@@ -1449,10 +1437,15 @@ def wcdb_solve(r,w,xml_filename_list):
     #----for real data from 8 groups-------------------
     #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
 
+	global crises_id_list
+    global orgs_id_list
+    global people_id_list
+    global citation_list
     crises_id_list = []
     orgs_id_list = []
     people_id_list = []
     citation_list = []
+
     #--------------------------------------------------------------------------------------------------------
     createDB(login_var)
     r_flag = False

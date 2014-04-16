@@ -361,19 +361,6 @@ def wcdb_import(login,tree):
     for i in range(0,counter):
         dict_entry = inserts_list[i]
         #--------------to check if current one is a duplicate----------
-	if dict_entry['crisisId'] in crises_id_list:
-	    continue
-        #--------------------------------------------------------------   
-	crises_id_list.append(dict_entry['crisisId'])  # save this id in the global list, next time check if the current instance we are dealing is in this list
-	s = (dict_entry.get('crisisId'), dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
-			 dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
-			 dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
-			 dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
-			 dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
-			 dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
-	s = 'insert into Crises Values' + str(s) + ';'
-	s =s.replace('None', 'Null')       
-	t = wcdb_query(login,s)
         if dict_entry['crisisId'] in crises_id_list:
             continue
         #--------------------------------------------------------------   
@@ -637,7 +624,6 @@ def wcdb_import(login,tree):
         #--------------insert new IDs based on what we have saved in citationIds dicts--------------
             s = 'insert into CrisisCitations (citationId, crisisID) Values (' + \
                 str(citationIds[dict_entry['citationId']]) + ', ' + "'"+ str(dict_entry.get('crisisId')) + "'"+ ')' + ';'
-            print(s)
             s =s.replace('None', 'Null')
             t = wcdb_query(login,s)
 

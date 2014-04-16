@@ -337,7 +337,13 @@ def createDB(login):
 # -----------
 
 global crises_id_list
+global orgs_id_list
+global people_id_list
+global citation_list
 crises_id_list = []
+orgs_id_list = []
+people_id_list = []
+citation_list = []
 
 def wcdb_import(login,tree):
     """
@@ -1420,14 +1426,7 @@ def wcdb_solve(r,w,xml_filename_list):
     #-------------for acceptance tests-----------------
     #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
 
-    global crises_id_list
-    global orgs_id_list
-    global people_id_list
-    global citation_list
-    crises_id_list = []
-    orgs_id_list = []
-    people_id_list = []
-    citation_list = []
+
     #--------------------------------------------------------------------------------------------------------
 
     createDB(login_var)

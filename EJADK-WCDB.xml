@@ -441,74 +441,74 @@
     </people>
     <resources>
         <resourcePair>
-            <resourceId>RES_000</resourceId>
+            <resourceId>RES_010</resourceId>
             <resource>Food</resource>
         </resourcePair>
         <resourcePair>
-            <resourceId>RES_001</resourceId>
+            <resourceId>RES_019</resourceId>
             <resource>Water</resource>
         </resourcePair>
     </resources>
     <crisisResources>
         <crisisResourcePair>
             <crisisId>CRI_027</crisisId>
-            <resourceId>RES_001</resourceId>
+            <resourceId>RES_019</resourceId>
         </crisisResourcePair>
     </crisisResources> 
     <waysToHelp>
         <wayToHelpPair>
-            <helpId>HEL_000</helpId>
+            <helpId>HEL_011</helpId>
             <wayToHelp>Find passengers</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_001</helpId>
+            <helpId>HEL_012</helpId>
             <wayToHelp>Bring food and water</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_002</helpId>
+            <helpId>HEL_013</helpId>
             <wayToHelp>Donate money to Red Cross</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_003</helpId>
+            <helpId>HEL_014</helpId>
             <wayToHelp>Evacuate survivors</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_004</helpId>
+            <helpId>HEL_015</helpId>
             <wayToHelp>Donate to UNHCR</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_005</helpId>
+            <helpId>HEL_016</helpId>
             <wayToHelp>Help families of victims in shooting</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
-            <helpId>HEL_006</helpId>
+            <helpId>HEL_017</helpId>
             <wayToHelp>Treatment for residents with respiratory problems</wayToHelp>
         </wayToHelpPair>
     </waysToHelp>
     <crisisWaysToHelp>
         <crisisWayToHelpPair>
             <crisisId>CRI_025</crisisId>
-            <helpId>HEL_000</helpId>
+            <helpId>HEL_011</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_002</crisisId>
-            <helpId>HEL_001</helpId>
+            <helpId>HEL_012</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_002</crisisId>
-            <helpId>HEL_002</helpId>
+            <helpId>HEL_013</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_002</crisisId>
-            <helpId>HEL_003</helpId>
+            <helpId>HEL_014</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_027</crisisId>
-            <helpId>HEL_004</helpId>
+            <helpId>HEL_015</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
             <crisisId>CRI_004</crisisId>
-            <helpId>HEL_006</helpId>
+            <helpId>HEL_017</helpId>
         </crisisWayToHelpPair>
     </crisisWaysToHelp>
     <contactInfos>

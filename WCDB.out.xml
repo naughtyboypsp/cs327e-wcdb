@@ -2,174 +2,6 @@
 <root>
 	<crises>
 		<crisis>
-			<crisisId>CRI_001</crisisId>
-			<name>Haiti Earthquake</name>
-			<kind>Natural Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Leogane</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>2010-01-12 04:53:00</dateAndTime>
-			<fatalities>222500</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>1500000</populationDisplaced>
-			<environmentalImpact>Many buidlings destroyed and area not safe</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>14000000000</reparationCost>
-			<regulatoryChanges>Food and water is sent still to Haiti for earthquake victims</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_002</crisisId>
-			<name>Hurricane Ike</name>
-			<kind>Natural Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>2008-09-01 00:00:00</dateAndTime>
-			<fatalities>195</fatalities>
-			<injuries>1000000</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>There was significant property damage and flooding throughout all the affected areas</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>37500000000</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_003</crisisId>
-			<name>Benghazi Attack</name>
-			<kind>Act of Terrorism</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Benghazi</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Libya</country>
-			<dateAndTime>2012-09-11 00:00:00</dateAndTime>
-			<fatalities>4</fatalities>
-			<injuries>11</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_004</crisisId>
-			<name>Eruptions of Island mountain glacier(Iceland Volcano)</name>
-			<kind>Natural Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Iceland</country>
-			<dateAndTime>2010-03-20 00:00:00</dateAndTime>
-			<fatalities>0</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
-			<environmentalImpact>Pollution</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>Air traffic issues</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_005</crisisId>
-			<name>Cold War</name>
-			<kind>War / Conflict</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>1947-01-01 11:48:00</dateAndTime>
-			<fatalities>12</fatalities>
-			<injuries>44</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>United States as the sole superpower post World War II</politicalChanges>
-			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>8000000</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>Open trade policy with China</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_006</crisisId>
-			<name>UT Tower Shooting</name>
-			<kind>Assassination / Shooting</kind>
-			<streetAddress>110 Inner Campus Drive</streetAddress>
-			<city>Austin</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>1966-08-01 11:48:00</dateAndTime>
-			<fatalities>16</fatalities>
-			<injuries>31</injuries>
-			<populationIll>31</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>5000</reparationCost>
-			<regulatoryChanges>Tower deck is closed due to safety regulations</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_007</crisisId>
-			<name>Hindenburg Crash</name>
-			<kind>Human Error Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Lakehurst</city>
-			<stateOrProvince>New Jersey</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>1937-05-06 19:25:00</dateAndTime>
-			<fatalities>36</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>0</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>CRI_009</crisisId>
-			<name>Arctic Vortex</name>
-			<kind>Natural Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>USA</country>
-			<dateAndTime>2014-01-01 00:00:00</dateAndTime>
-			<fatalities>12</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>Flights grounded and power outages</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>5000</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
 			<crisisId>CRI_030</crisisId>
 			<name>Chernobyl Accident</name>
 			<kind>Human Error Disaster</kind>
@@ -487,84 +319,6 @@
 	</crises>
 	<orgs>
 		<org>
-			<orgId>ORG_001</orgId>
-			<name>UNICEF</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>Austin Police Department, PO Box 689001</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10038</postalCode>
-			<country>United States</country>
-			<foundingMission>UNICEF was created by the United Nations General Assembly on December 11, 1946, to provide emergency food and healthcare to children in countries that had been devastated by World War II.</foundingMission>
-			<datefounded>1946-12-11 00:00:00</datefounded>
-			<majorEvents>UNICEF was created by the United Nations General Assembly on December 11, 1946, to provide emergency food and healthcare to children in countries that had been devastated by World War II. </majorEvents>
-		</org>
-		<org>
-			<orgId>ORG_002</orgId>
-			<name>United Nations</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>UN Headquarters First Avenue at 46th Street</streetAddress>
-			<city>New York</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10017</postalCode>
-			<country>United States</country>
-			<foundingMission>To save succeeding generations from the scourge of war and to reaffirm faith in fundamental human rights.</foundingMission>
-			<datefounded>1945-06-26 00:00:00</datefounded>
-			<majorEvents>Approving the creation of the state of Israel.</majorEvents>
-		</org>
-		<org>
-			<orgId>ORG_003</orgId>
-			<name>US Coast Guard</name>
-			<kind>Military Force</kind>
-			<streetAddress>2100 Second ST, SW Washington</streetAddress>
-			<city>Washington DC</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>USA</country>
-			<foundingMission>Founded in 1790 as the Revenue Marine</foundingMission>
-			<datefounded>1970-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>ORG_006</orgId>
-			<name>Haitian Government</name>
-			<kind>Government Agency</kind>
-			<streetAddress>Morne A Tuff</streetAddress>
-			<city>Port Au Prince</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Haiti</country>
-			<foundingMission>To provide an executive, legislative, and judicial system of government for the people of Haiti.</foundingMission>
-			<datefounded>1987-03-29 00:00:00</datefounded>
-			<majorEvents>The National Palace was destroyed in the Haiti Earthquake.</majorEvents>
-		</org>
-		<org>
-			<orgId>ORG_007</orgId>
-			<name>Luftschiffbau Zeppelin</name>
-			<kind>Corporation</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Friedrichshafen</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Germany</country>
-			<foundingMission>Count Ferdinand von Zeppelin gathered his staff to begin the production of giant &quot;flying boats&quot; making the town of Friedrichshafen a major aviation center.</foundingMission>
-			<datefounded>1908-01-01 00:00:00</datefounded>
-			<majorEvents>In 1937, the Hindenburg disaster meant the end of an era for this company, which after the world wars has come back into the airship business.</majorEvents>
-		</org>
-		<org>
-			<orgId>ORG_008</orgId>
-			<name>Austin Police Department</name>
-			<kind>Government Agency</kind>
-			<streetAddress>Austin Police Department, PO Box 689001</streetAddress>
-			<city>Austin</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<postalCode>78768-9001</postalCode>
-			<country>United States</country>
-			<foundingMission>To protect the safety and well being of the diverse Austin community</foundingMission>
-			<datefounded>1849-01-01 00:00:00</datefounded>
-			<majorEvents>In 2000, ADP became the first agency in Texas to become nationally accredited by the Commission on Accreditation for Law Enforcement Agencies</majorEvents>
-		</org>
-		<org>
 			<orgId>ORG_012</orgId>
 			<name>Homeland Security</name>
 			<kind>Government Agency</kind>
@@ -607,7 +361,7 @@
 		<org>
 			<orgId>ORG_035</orgId>
 			<name>BP</name>
-			<kind>Corporation</kind>
+			<kind>Nonprofit / Humanitarian Organization</kind>
 			<streetAddress>International Headquarters 1 St James's Square</streetAddress>
 			<city>London</city>
 			<stateOrProvince>NULL</stateOrProvince>
@@ -633,7 +387,7 @@
 		<org>
 			<orgId>ORG_037</orgId>
 			<name>Johnson and Johnson</name>
-			<kind>Corporation</kind>
+			<kind>Nonprofit / Humanitarian Organization</kind>
 			<streetAddress>Johnson and Johnson, One Johnson and Johnson Plaza</streetAddress>
 			<city>New Brunswick</city>
 			<stateOrProvince>New Jersey</stateOrProvince>
@@ -788,86 +542,6 @@
 		</org>
 	</orgs>
 	<people>
-		<person>
-			<personId>PER_001</personId>
-			<name>Barack Obama</name>
-			<kind>President</kind>
-			<streetAddress>1600 Pennsylvania Avenue NW</streetAddress>
-			<city>Washington</city>
-			<stateOrProvince>District of Columbia</stateOrProvince>
-			<postalCode>20500</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>PER_002</personId>
-			<name>Hillary Clinton</name>
-			<kind>Politician</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Westchester County</city>
-			<stateOrProvince>NY</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>PER_003</personId>
-			<name>Ben S. Bernanke</name>
-			<kind>Politician</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Augusta</city>
-			<stateOrProvince>Georgia</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>PER_005</personId>
-			<name>Jean-Max Bellerive</name>
-			<kind>Politician</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Port-au-Prince</city>
-			<stateOrProvince>Port-au-Prince</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>Haiti</country>
-		</person>
-		<person>
-			<personId>PER_006</personId>
-			<name>Olafur Grimsson</name>
-			<kind>Politician</kind>
-			<streetAddress>Unreadable</streetAddress>
-			<city>Unreadable</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>IS-150</postalCode>
-			<country>Iceland</country>
-		</person>
-		<person>
-			<personId>PER_007</personId>
-			<name>Ernst August Lehmann</name>
-			<kind>Regular Worker</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Ludwigshafen am Rhein</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Germany</country>
-		</person>
-		<person>
-			<personId>PER_008</personId>
-			<name>George W. Bush</name>
-			<kind>President</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Dallas</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>PER_009</personId>
-			<name>Charlie Whitman</name>
-			<kind>Perpetrator</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Lake Worth</city>
-			<stateOrProvince>Florida</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>USA</country>
-		</person>
 		<person>
 			<personId>PER_012</personId>
 			<name>Michele Pierre Louis</name>
@@ -1431,7 +1105,108 @@
 			<citation>Ernst August Lehmann. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
 		</citationPair>
 	</citations>
-	<crisisCitations/>
+	<crisisCitations>
+		<crisisCitationPair>
+			<citationId>1</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>2</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>3</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>4</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>15</citationId>
+			<crisisId>CRI_031</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>16</citationId>
+			<crisisId>CRI_031</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>17</citationId>
+			<crisisId>CRI_031</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>48</citationId>
+			<crisisId>CRI_032</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>49</citationId>
+			<crisisId>CRI_032</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>28</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>29</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>30</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>31</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>40</citationId>
+			<crisisId>CRI_034</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_035</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_036</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_037</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_038</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_039</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>61</citationId>
+			<crisisId>CRI_039</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>63</citationId>
+			<crisisId>CRI_045</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>64</citationId>
+			<crisisId>CRI_046</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>65</citationId>
+			<crisisId>CRI_047</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>66</citationId>
+			<crisisId>CRI_048</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>67</citationId>
+			<crisisId>CRI_049</crisisId>
+		</crisisCitationPair>
+	</crisisCitations>
 	<orgCitations/>
 	<personCitations/>
 	<urls/>

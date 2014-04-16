@@ -1,210 +1,221 @@
 <root>
     <crises>
         <crisis>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <name>Venezuela Protest</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+			<kind>Human Error Disaster</kind>
+            <streetAddress> </streetAddress>
+            <city></city>
+            <stateOrProvince> </stateOrProvince>
             <country>Venezuela</country>
-            <dateAndTime>January 2014</dateAndTime>
+            <dateAndTime>2014-01-01T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
             <politicalChanges>Increased Crime Rates</politicalChanges>
             <culturalChanges>Inflation and shortage of foodstamps</culturalChanges>
-            <culturalChanges />
-            <jobsLost>0</jobsLost>
+			<jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+           <regulatoryChanges> </regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <name>Ukraine Crisis</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+			<kind>War / Conflict</kind>
+            <streetAddress></streetAddress>
+            <city> </city>
+            <stateOrProvince></stateOrProvince>
             <country>Crimea</country>
-            <dateAndTime>February 23, 2014</dateAndTime>
+            <dateAndTime>2014-02-23T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
             <politicalChanges>Impeachment of Viktor Yanukovych</politicalChanges>
             <culturalChanges>wants to be considered part of Russia</culturalChanges>
-            <culturalChanges />
             <jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges> </regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <name>Pussy Riot</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+			<kind>Human Error Disaster</kind>
+            <streetAddress> </streetAddress>
+            <city> </city>
+            <stateOrProvince></stateOrProvince>
             <country>Russia</country>
-            <dateAndTime>August 14</dateAndTime>
+            <dateAndTime>2014-08-01T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
             <politicalChanges>More strictly enforced rules against public riots</politicalChanges>
             <culturalChanges>Increase in fight for woment's rights in Russia</culturalChanges>
-            <culturalChanges />
             <jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <name>Syrian Protests</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+			<kind>Human Error Disaster</kind>
+            <streetAddress> </streetAddress>
+            <city> </city>
+            <stateOrProvince></stateOrProvince>
             <country>Syria</country>
-            <dateAndTime>March 15, 2011 ~</dateAndTime>
+            <dateAndTime>2011-03-15T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
             <politicalChanges>abuse of power against the people of Syria</politicalChanges>
             <culturalChanges>Increase in unemployment rate and growing</culturalChanges>
-            <culturalChanges />
             <jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <name>Crimes in NK</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+			<kind>Human Error Disaster</kind>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>North Korea</country>
-            <dateAndTime>December 2011~</dateAndTime>
+            <dateAndTime>2011-12-01T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
+			<environmentalImpact></environmentalImpact>
             <politicalChanges>Stronger power demonstrated through public execution</politicalChanges>
             <culturalChanges>people of NK even more scared of dictatorship</culturalChanges>
-            <culturalChanges />
             <jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_006</crisisId>
-            <name>Haiti Earthquake (2010)</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+            <crisisId>CRI_001</crisisId>
+            <name>Haiti Earthquake</name>
+			<kind>Natural Disaster</kind>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Haiti</country>
             <dateAndTime>2010-01-12T00:00:00</dateAndTime>
             <fatalities>159000</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
-            <environmentalImpact />
-            <politicalChanges />
-            <culturalChanges />
+            <environmentalImpact></environmentalImpact>
+            <politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
             <jobsLost>0</jobsLost>
-            <damageInUSD>14000000000</damageInUSD>
+            <damageInUSD>2000000000</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges> </regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <name>Hurricane Ike</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+			<kind>Natural Disaster</kind>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>United States</country>
             <dateAndTime>2008-09-01T00:00:00</dateAndTime>
             <fatalities>195</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
-            <environmentalImpact />
-            <politicalChanges />
-            <culturalChanges />
+            <environmentalImpact></environmentalImpact>
+            <politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
             <jobsLost>0</jobsLost>
-            <damageInUSD>22000000000</damageInUSD>
+            <damageInUSD>2000000000</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_008</crisisId>
-            <name>2012 Benghazi attack </name>
-            <streetAddress />
+            <crisisId>CRI_003</crisisId>
+            <name>Benghazi Attack</name>
+			<kind>War / Conflict</kind>
+            <streetAddress> </streetAddress>
             <city>Benghazi</city>
-            <stateOrProvince />
+            <stateOrProvince> </stateOrProvince>
             <country>Libya</country>
             <dateAndTime>2012-09-11T00:00:00</dateAndTime>
             <fatalities>4</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
-            <environmentalImpact />
-            <politicalChanges />
-            <culturalChanges />
+            <environmentalImpact></environmentalImpact>
+            <politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
             <jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_009</crisisId>
-            <name>2010 eruptions of Eyjafjallaj&amp;#65533;kull (Iceland Volcano)</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+            <crisisId>CRI_004</crisisId>
+            <name> Eruption of Eyjafjallaj</name>
+			<kind>Natural Disaster</kind>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Iceland</country>
             <dateAndTime>2010-03-10T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
-            <environmentalImpact />
-            <politicalChanges />
-            <culturalChanges />
+            <environmentalImpact></environmentalImpact>
+            <politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
             <jobsLost>0</jobsLost>
-            <damageInUSD>7300000000</damageInUSD>
+            <damageInUSD>2000000000</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_005</crisisId>
             <name>Cold War</name>
-            <streetAddress />
-            <city />
-            <stateOrProvince />
+			<kind>War / Conflict</kind>
+            <streetAddress></streetAddress>
+            <city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Earth</country>
             <dateAndTime>1947-01-01T00:00:00</dateAndTime>
             <fatalities>0</fatalities>
             <injuries>0</injuries>
             <populationIll>0</populationIll>
             <populationDisplaced>0</populationDisplaced>
-            <environmentalImpact />
-            <politicalChanges />
-            <culturalChanges />
+            <environmentalImpact></environmentalImpact>
+            <politicalChanges></politicalChanges>
+            <culturalChanges></culturalChanges>
             <jobsLost>0</jobsLost>
             <damageInUSD>0</damageInUSD>
             <reparationCost>0</reparationCost>
-            <regulatoryChanges />
+            <regulatoryChanges></regulatoryChanges>
         </crisis>
     </crises>
 <orgs>
         <org>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <name>CNN</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
             <streetAddress>384 Northyards Blvd NW</streetAddress>
             <city>Atlanta</city>
             <stateOrProvince>Georgia</stateOrProvince>
@@ -215,56 +226,61 @@
             <majorEvents />
         </org>
         <org>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <name>The New York Times</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
             <streetAddress>620 Eighth Avenue</streetAddress>
             <city>New York City</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>10018</postalCode>
             <country>United States</country>
-            <foundingMission />
+            <foundingMission></foundingMission>
             <dateFounded>1851-09-18</dateFounded>
             <majorEvents>Has won 112 Pulitzer Prizes, most for any news org</majorEvents>
         </org>
         <org>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <name>BRAVEN (Brazilian and Venezuelan Student Association)</name>
-            <streetAddress />
+			<kind>Nonprofit / Humanitarian Organization</kind>
+            <streetAddress></streetAddress>
             <city>Austin</city>
             <stateOrProvince>Texas</stateOrProvince>
             <postalCode>78712</postalCode>
             <country>United States</country>
             <foundingMission>"bring together two different however, very much alike cultures" and "aid not only on the adjustments of new incoming students but also make the University of Texas at Austin a home away from home."</foundingMission>
             <dateFounded>2013-09-26</dateFounded>
-            <majorEvents />
+            <majorEvents></majorEvents>
         </org>
         <org>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <name>Al Jazeera</name>
-            <streetAddress />
+			<kind>Nonprofit / Humanitarian Organization</kind>
+            <streetAddress></streetAddress>
             <city>Doha</city>
-            <stateOrProvince />
-            <postalCode />
+            <stateOrProvince></stateOrProvince>
+            <postalCode></postalCode>
             <country>Qatar</country>
             <foundingMission>Launched as an Arabic news channel</foundingMission>
             <dateFounded>1996-11-01</dateFounded>
             <majorEvents>Covered war live</majorEvents>
         </org>
         <org>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <name>Pussy Riot</name>
-            <streetAddress />
+			<kind>Nonprofit / Humanitarian Organization</kind>
+            <streetAddress></streetAddress>
             <city>Moscow</city>
-            <stateOrProvince />
-            <postalCode />
+            <stateOrProvince></stateOrProvince>
+            <postalCode></postalCode>
             <country>Russia</country>
             <foundingMission>Russian Feminist punk rock protest group</foundingMission>
             <dateFounded>2011-08-01</dateFounded>
             <majorEvents>Beaten and imprissoned in Russia</majorEvents>
         </org>
         <org>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <name>UNICEF</name>
+			<kind>Intergovernmental Agency</kind>
             <streetAddress>3 United Nations Plaza</streetAddress>
             <city>New York</city>
             <stateOrProvince>New York</stateOrProvince>
@@ -275,8 +291,9 @@
             <majorEvents>None</majorEvents>
         </org>
         <org>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <name>United Nations (UN)</name>
+			<kind>Intergovernmental Agency</kind>
             <streetAddress>760 United Nations Plaza</streetAddress>
             <city>New York</city>
             <stateOrProvince>New York</stateOrProvince>
@@ -287,8 +304,9 @@
             <majorEvents>None</majorEvents>
         </org>
         <org>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <name>U.S. Coast Guard</name>
+			<kind>Military Force</kind>
             <streetAddress>2100 2nd Street</streetAddress>
             <city>Washington D.C.</city>
             <stateOrProvince>None</stateOrProvince>
@@ -299,8 +317,9 @@
             <majorEvents>None</majorEvents>
         </org>
         <org>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <name>U.S. Marine Corps</name>
+			<kind>Military Force</kind>
             <streetAddress>2008 Elliot Road</streetAddress>
             <city>Quantico</city>
             <stateOrProvince>Virginia</stateOrProvince>
@@ -311,8 +330,9 @@
             <majorEvents>None</majorEvents>
         </org>
         <org>
-            <orgId>ORG_010</orgId>
-            <name>World Health Organization (WHO)</name>
+            <orgId>ORG_005</orgId>
+            <name>World Health Organization </name>
+			<kind>Intergovernmental Agency</kind>
             <streetAddress>Avenue Appia 20</streetAddress>
             <city>Geneva</city>
             <stateOrProvince>Romandy</stateOrProvince>
@@ -325,8 +345,9 @@
     </orgs>
     <people>
         <person>
-            <personId>PER_001</personId>
+            <personId>ORG_044</personId>
             <name>Kim Jong Un</name>
+			<kind>President</kind>
             <streetAddress>434 Gangnam Style Avenue</streetAddress>
             <city>Some town</city>
             <stateOrProvince>Provencal</stateOrProvince>
@@ -334,8 +355,9 @@
             <country>North Korea</country>
         </person>
         <person>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <name>Nicolas Maduro</name>
+			<kind>Perpetrator</kind>
             <streetAddress>1234 Riivolution Way</streetAddress>
             <city>Podunk</city>
             <stateOrProvince>Poslam</stateOrProvince>
@@ -343,8 +365,9 @@
             <country>Venezuela</country>
         </person>
         <person>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <name>Leopoldo Lopez</name>
+			<kind>Perpetrator</kind>
             <streetAddress>1234 Banaste Calle</streetAddress>
             <city>Some city</city>
             <stateOrProvince>Some prov</stateOrProvince>
@@ -352,8 +375,9 @@
             <country>Venezuela</country>
         </person>
         <person>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <name>Vladimir Putin</name>
+			<kind>President</kind>
             <streetAddress>1337 Waifu Lane</streetAddress>
             <city>Flash Sentry</city>
             <stateOrProvince>Groznyjgrad</stateOrProvince>
@@ -361,186 +385,67 @@
             <country>Russia</country>
         </person>
         <person>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <name>Oleksandr Valentynovych Turchynov</name>
-            <streetAddress />
-            <city />
+			<kind>Perpetrator</kind>
+            <streetAddress></streetAddress>
+            <city></city>
             <stateOrProvince>Crimea River</stateOrProvince>
-            <postalCode />
+            <postalCode></postalCode>
             <country>Ukraine</country>
         </person>
         <person>
-            <personId>PER_006</personId>
+            <personId>PER_001</personId>
             <name>Barack Obama</name>
+			<kind>President</kind>
             <streetAddress>1600 Pennsylvania Ave NW</streetAddress>
             <city>Washington, D.C.</city>
-            <stateOrProvince />
+            <stateOrProvince></stateOrProvince>
             <postalCode>20500</postalCode>
             <country>United States</country>
         </person>
         <person>
-            <personId>PER_007</personId>
+            <personId>PER_002</personId>
             <name>Hillary Clinton</name>
+			<kind>Politician</kind>
             <streetAddress>3067 Whitehaven St NW</streetAddress>
             <city>Washington, D.C.</city>
-            <stateOrProvince />
+            <stateOrProvince></stateOrProvince>
             <postalCode>20008</postalCode>
             <country>United States</country>
         </person>
         <person>
-            <personId>PER_008</personId>
+            <personId>PER_003</personId>
             <name>Ben Bernanke</name>
-            <streetAddress />
+			<kind>President</kind>
+            <streetAddress></streetAddress>
             <city>Washington, D.C.</city>
-            <stateOrProvince />
-            <postalCode />
+            <stateOrProvince></stateOrProvince>
+            <postalCode></postalCode>
             <country>United States</country>
         </person>
         <person>
-            <personId>PER_009</personId>
+            <personId>PER_006</personId>
             <name>Olafur Ragnar Grimsson</name>
-            <streetAddress />
+			<kind>Perpetrator</kind>
+            <streetAddress></streetAddress>
             <city>Bessastaoir</city>
             <stateOrProvince>Garoabaer</stateOrProvince>
             <postalCode>20472</postalCode>
             <country>Iceland</country>
         </person>
         <person>
-            <personId>PER_010</personId>
+            <personId>PER_004</personId>
             <name>Colin Powell</name>
-            <streetAddress />
+			<kind>Politician</kind>
+            <streetAddress></streetAddress>
             <city>Washington, D.C.</city>
-            <stateOrProvince />
-            <postalCode />
+            <stateOrProvince></stateOrProvince>
+            <postalCode></postalCode>
             <country>United States</country>
         </person>
     </people>
-<crisisKinds>
-        <crisisKindPair>
-            <crisisId>CRI_001</crisisId>
-            <kind>Protest</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_002</crisisId>
-            <kind>Protest</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_003</crisisId>
-            <kind>Riot</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_004</crisisId>
-            <kind>Uprising</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_005</crisisId>
-            <kind>Dictatorshipr</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_006</crisisId>
-            <kind>Natural Disaster</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_007</crisisId>
-            <kind>Natural Disaster</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_008</crisisId>
-            <kind>War / Conflict</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_009</crisisId>
-            <kind>Natural Disaster</kind>
-        </crisisKindPair>
-        <crisisKindPair>
-            <crisisId>CRI_010</crisisId>
-            <kind>War / Conflict</kind>
-        </crisisKindPair>
-    </crisisKinds>
-    <orgKinds>
-        <orgKindPair>
-            <orgId>ORG_001</orgId>
-            <kind>Corporation</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_002</orgId>
-            <kind>Corporation</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_003</orgId>
-            <kind>Nonprofit / Humanitarian Organization</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_004</orgId>
-            <kind>Corporation</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_005</orgId>
-            <kind>Nonprofit / Humanitarian Organization</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_006</orgId>
-            <kind>Nonprofit / Humanitarian Organization</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_007</orgId>
-            <kind>Intergovernmental Agency</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_008</orgId>
-            <kind>Military Force</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_009</orgId>
-            <kind>Military Force</kind>
-        </orgKindPair>
-        <orgKindPair>
-            <orgId>ORG_010</orgId>
-            <kind>Intergovernmental Agency</kind>
-        </orgKindPair>
-    </orgKinds>
-    <personKinds>
-        <personKindPair>
-            <personId>PER_001</personId>
-            <kind>Dictator</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_002</personId>
-            <kind>President</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_003</personId>
-            <kind>Politician</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_004</personId>
-            <kind>President</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_005</personId>
-            <kind>President</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_006</personId>
-            <kind>President</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_007</personId>
-            <kind>Other Politician</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_008</personId>
-            <kind>Other Politician</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_009</personId>
-            <kind>President</kind>
-        </personKindPair>
-        <personKindPair>
-            <personId>PER_010</personId>
-            <kind>Other Politician</kind>
-        </personKindPair>
-    </personKinds>
+
     <resources>
         <resourcePair>
             <resourceId>RES_001</resourceId>
@@ -585,295 +490,299 @@
     </resources>
     <crisisResources>
         <crisisResourcePair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <resourceId>RES_001</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <resourceId>RES_002</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <resourceId>RES_003</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <resourceId>RES_004</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <resourceId>RES_006</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <resourceId>RES_001</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <resourceId>RES_002</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <resourceId>RES_003</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <resourceId>RES_004</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <resourceId>RES_006</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <resourceId>RES_001</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <resourceId>RES_006</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <resourceId>RES_001</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <resourceId>RES_002</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <resourceId>RES_003</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <resourceId>RES_004</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <resourceId>RES_006</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <resourceId>RES_001</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <resourceId>RES_002</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <resourceId>RES_003</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <resourceId>RES_004</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <resourceId>RES_005</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <resourceId>RES_006</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <resourceId>RES_002</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <resourceId>RES_003</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <resourceId>RES_004</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <resourceId>RES_005</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <resourceId>RES_009</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <resourceId>RES_010</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <resourceId>RES_002</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <resourceId>RES_003</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <resourceId>RES_004</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <resourceId>RES_005</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <resourceId>RES_009</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <resourceId>RES_010</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_008</crisisId>
+            <crisisId>CRI_003</crisisId>
             <resourceId>RES_002</resourceId>
         </crisisResourcePair>
         <crisisResourcePair>
-            <crisisId>CRI_009</crisisId>
+            <crisisId>CRI_004</crisisId>
             <resourceId>RES_010</resourceId>
         </crisisResourcePair>
     </crisisResources>
-    <waysToHelp>
+   <waysToHelp>
+        <wayToHelpPair>
+            <helpId>HEL_000</helpId>
+            <wayToHelp>Bring food</wayToHelp>
+        </wayToHelpPair>
         <wayToHelpPair>
             <helpId>HEL_001</helpId>
-            <wayToHelp>Donate food</wayToHelp>
+            <wayToHelp>Bring supplies</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
             <helpId>HEL_002</helpId>
-            <wayToHelp>Donate Clothes</wayToHelp>
+            <wayToHelp>Call National Guards</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
             <helpId>HEL_003</helpId>
-            <wayToHelp>Donate Money</wayToHelp>
+            <wayToHelp>Give donations</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
             <helpId>HEL_004</helpId>
-            <wayToHelp>Send in troops</wayToHelp>
+            <wayToHelp>Bring police</wayToHelp>
         </wayToHelpPair>
         <wayToHelpPair>
             <helpId>HEL_005</helpId>
-            <wayToHelp>Media Coverage</wayToHelp>
+            <wayToHelp>Raise awareness</wayToHelp>
         </wayToHelpPair>
     </waysToHelp>
     <crisisWaysToHelp>
         <crisisWayToHelpPair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <helpId>HEL_001</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <helpId>HEL_002</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <helpId>HEL_003</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <helpId>HEL_004</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <helpId>HEL_001</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <helpId>HEL_002</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <helpId>HEL_003</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <helpId>HEL_004</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_002</crisisId>
-            <helpId>HEL_006</helpId>
+            <crisisId>CRI_041</crisisId>
+            <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <helpId>HEL_001</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <helpId>HEL_002</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
 	<crisisWayToHelpPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <helpId>HEL_001</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <helpId>HEL_002</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <helpId>HEL_003</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <helpId>HEL_004</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_004</crisisId>
-            <helpId>HEL_006</helpId>
+            <crisisId>CRI_043</crisisId>
+            <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
 	<crisisWayToHelpPair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <helpId>HEL_001</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <helpId>HEL_002</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <helpId>HEL_003</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <helpId>HEL_004</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_005</crisisId>
-            <helpId>HEL_006</helpId>
+            <crisisId>CRI_044</crisisId>
+            <helpId>HEL_005</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <helpId>HEL_001</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <helpId>HEL_002</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <helpId>HEL_003</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <helpId>HEL_004</helpId>
         </crisisWayToHelpPair>
         <crisisWayToHelpPair>
-            <crisisId>CRI_009</crisisId>
+            <crisisId>CRI_004</crisisId>
             <helpId>HEL_003</helpId>
         </crisisWayToHelpPair>
     </crisisWaysToHelp>
@@ -961,43 +870,43 @@
     </contactInfos>
     <orgContactInfos>
         <orgContactInfoPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <contactInfoId>CON_001</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <contactInfoId>CON_002</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <contactInfoId>CON_003</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <contactInfoId>CON_004</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <contactInfoId>CON_005</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <contactInfoId>CON_006</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <contactInfoId>CON_007</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <contactInfoId>CON_008</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <contactInfoId>CON_009</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <contactInfoId>CON_010</contactInfoId>
         </orgContactInfoPair>
     </orgContactInfos>
@@ -1127,126 +1036,126 @@
     <crisisCitations>
         <crisisCitationPair>
             <citationId>CIT_101</citationId>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_102</citationId>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_103</citationId>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_104</citationId>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_105</citationId>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_106</citationId>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_107</citationId>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_108</citationId>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_109</citationId>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
         </crisisCitationPair>
         <crisisCitationPair>
             <citationId>CIT_110</citationId>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
         </crisisCitationPair>
     </crisisCitations>
     <orgCitations>
         <orgCitationPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <citationId>CIT_201</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <citationId>CIT_202</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <citationId>CIT_203</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <citationId>CIT_204</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <citationId>CIT_205</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <citationId>CIT_206</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <citationId>CIT_207</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <citationId>CIT_208</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <citationId>CIT_209</citationId>
         </orgCitationPair>
         <orgCitationPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <citationId>CIT_210</citationId>
         </orgCitationPair>
     </orgCitations>
     <personCitations>
         <personCitationPair>
-            <personId>PER_001</personId>
+            <personId>ORG_044</personId>
             <citationId>CIT_301</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <citationId>CIT_302</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <citationId>CIT_303</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <citationId>CIT_304</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <citationId>CIT_305</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_006</personId>
+            <personId>PER_001</personId>
             <citationId>CIT_306</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_007</personId>
+            <personId>PER_002</personId>
             <citationId>CIT_307</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_008</personId>
+            <personId>PER_003</personId>
             <citationId>CIT_308</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_009</personId>
+            <personId>PER_006</personId>
             <citationId>CIT_309</citationId>
         </personCitationPair>
         <personCitationPair>
-            <personId>PER_010</personId>
+            <personId>PER_004</personId>
             <citationId>CIT_310</citationId>
         </personCitationPair>
     </personCitations>
@@ -2264,744 +2173,800 @@
     </urls>
     <crisisUrls>
        <crisisUrlPair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <urlId>URL_101</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_001</crisisId>
+            <crisisId>CRI_040</crisisId>
             <urlId>URL_102</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <urlId>URL_103</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <urlId>URL_104</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_002</crisisId>
+            <crisisId>CRI_041</crisisId>
             <urlId>URL_105</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <urlId>URL_106</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_003</crisisId>
+            <crisisId>CRI_042</crisisId>
             <urlId>URL_107</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <urlId>URL_108</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
             <urlId>URL_109</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <urlId>URL_110</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_044</crisisId>
             <urlId>URL_111</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <urlId>URL_126</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <urlId>URL_127</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <urlId>URL_128</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <urlId>URL_129</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_006</crisisId>
+            <crisisId>CRI_001</crisisId>
             <urlId>URL_130</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <urlId>URL_131</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <urlId>URL_132</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <urlId>URL_133</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <urlId>URL_134</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_007</crisisId>
+            <crisisId>CRI_002</crisisId>
             <urlId>URL_135</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_008</crisisId>
+            <crisisId>CRI_003</crisisId>
             <urlId>URL_136</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_008</crisisId>
+            <crisisId>CRI_003</crisisId>
             <urlId>URL_137</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_008</crisisId>
+            <crisisId>CRI_003</crisisId>
             <urlId>URL_138</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_008</crisisId>
+            <crisisId>CRI_003</crisisId>
             <urlId>URL_139</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_008</crisisId>
+            <crisisId>CRI_003</crisisId>
             <urlId>URL_140</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_009</crisisId>
+            <crisisId>CRI_004</crisisId>
             <urlId>URL_141</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_009</crisisId>
+            <crisisId>CRI_004</crisisId>
             <urlId>URL_142</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_009</crisisId>
+            <crisisId>CRI_004</crisisId>
             <urlId>URL_143</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_009</crisisId>
+            <crisisId>CRI_004</crisisId>
             <urlId>URL_144</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_009</crisisId>
+            <crisisId>CRI_004</crisisId>
             <urlId>URL_145</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_005</crisisId>
             <urlId>URL_146</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_005</crisisId>
             <urlId>URL_147</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_005</crisisId>
             <urlId>URL_148</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_005</crisisId>
             <urlId>URL_149</urlId>
         </crisisUrlPair>
         <crisisUrlPair>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_005</crisisId>
             <urlId>URL_150</urlId>
         </crisisUrlPair>
     </crisisUrls>
     <orgUrls>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_201</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_202</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_203</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_204</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_205</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_206</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_207</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_001</orgId>
+            <orgId>ORG_044</orgId>
             <urlId>URL_208</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <urlId>URL_209</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <urlId>URL_210</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <urlId>URL_211</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <urlId>URL_212</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <urlId>URL_213</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <urlId>URL_214</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_002</orgId>
+            <orgId>ORG_045</orgId>
             <urlId>URL_215</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_216</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_217</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_218</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_219</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_220</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_221</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_222</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_003</orgId>
+            <orgId>ORG_046</orgId>
             <urlId>URL_223</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <urlId>URL_224</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <urlId>URL_225</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <urlId>URL_226</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <urlId>URL_227</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <urlId>URL_228</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <urlId>URL_229</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_004</orgId>
+            <orgId>ORG_047</orgId>
             <urlId>URL_230</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <urlId>URL_231</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <urlId>URL_232</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <urlId>URL_233</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <urlId>URL_234</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <urlId>URL_235</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <urlId>URL_236</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_005</orgId>
+            <orgId>ORG_048</orgId>
             <urlId>URL_237</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <urlId>URL_238</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <urlId>URL_239</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <urlId>URL_240</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <urlId>URL_241</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <urlId>URL_242</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <urlId>URL_243</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_006</orgId>
+            <orgId>ORG_001</orgId>
             <urlId>URL_244</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <urlId>URL_245</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <urlId>URL_246</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <urlId>URL_247</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <urlId>URL_248</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <urlId>URL_249</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_007</orgId>
+            <orgId>ORG_002</orgId>
             <urlId>URL_250</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <urlId>URL_251</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <urlId>URL_252</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <urlId>URL_253</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <urlId>URL_254</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <urlId>URL_255</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <urlId>URL_256</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_008</orgId>
+            <orgId>ORG_003</orgId>
             <urlId>URL_257</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_258</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_259</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_260</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_261</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_262</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_263</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_264</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_265</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_009</orgId>
+            <orgId>ORG_004</orgId>
             <urlId>URL_266</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <urlId>URL_267</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <urlId>URL_268</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <urlId>URL_269</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <urlId>URL_270</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <urlId>URL_271</urlId>
         </orgUrlPair>
         <orgUrlPair>
-            <orgId>ORG_010</orgId>
+            <orgId>ORG_005</orgId>
             <urlId>URL_272</urlId>
         </orgUrlPair>
     </orgUrls>
     <personUrls>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>ORG_044</personId>
             <urlId>URL_301</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>ORG_044</personId>
             <urlId>URL_302</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>ORG_044</personId>
             <urlId>URL_303</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>ORG_044</personId>
             <urlId>URL_304</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_001</personId>
+            <personId>ORG_044</personId>
             <urlId>URL_305</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <urlId>URL_306</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <urlId>URL_307</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <urlId>URL_308</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <urlId>URL_309</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <urlId>URL_310</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_002</personId>
+            <personId>PER_045</personId>
             <urlId>URL_311</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <urlId>URL_312</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <urlId>URL_313</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <urlId>URL_314</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <urlId>URL_315</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <urlId>URL_316</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_003</personId>
+            <personId>PER_046</personId>
             <urlId>URL_317</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <urlId>URL_318</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <urlId>URL_319</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <urlId>URL_320</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <urlId>URL_321</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <urlId>URL_322</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <urlId>URL_323</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_004</personId>
+            <personId>PER_047</personId>
             <urlId>URL_324</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <urlId>URL_325</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <urlId>URL_326</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <urlId>URL_327</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <urlId>URL_328</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <urlId>URL_329</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_005</personId>
+            <personId>PER_048</personId>
             <urlId>URL_330</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_006</personId>
+            <personId>PER_001</personId>
             <urlId>URL_331</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_006</personId>
+            <personId>PER_001</personId>
             <urlId>URL_332</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_006</personId>
+            <personId>PER_001</personId>
             <urlId>URL_333</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_006</personId>
+            <personId>PER_001</personId>
             <urlId>URL_334</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_006</personId>
+            <personId>PER_001</personId>
             <urlId>URL_335</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_007</personId>
+            <personId>PER_002</personId>
             <urlId>URL_336</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_007</personId>
+            <personId>PER_002</personId>
             <urlId>URL_337</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_007</personId>
+            <personId>PER_002</personId>
             <urlId>URL_338</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_007</personId>
+            <personId>PER_002</personId>
             <urlId>URL_339</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_007</personId>
+            <personId>PER_002</personId>
             <urlId>URL_376</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_008</personId>
+            <personId>PER_003</personId>
             <urlId>URL_377</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_008</personId>
+            <personId>PER_003</personId>
             <urlId>URL_378</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_008</personId>
+            <personId>PER_003</personId>
             <urlId>URL_379</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_008</personId>
+            <personId>PER_003</personId>
             <urlId>URL_380</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_006</personId>
             <urlId>URL_381</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_006</personId>
             <urlId>URL_382</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_006</personId>
             <urlId>URL_383</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_006</personId>
             <urlId>URL_384</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_009</personId>
+            <personId>PER_006</personId>
             <urlId>URL_390</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_010</personId>
+            <personId>PER_004</personId>
             <urlId>URL_385</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_010</personId>
+            <personId>PER_004</personId>
             <urlId>URL_386</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_010</personId>
+            <personId>PER_004</personId>
             <urlId>URL_387</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_010</personId>
+            <personId>PER_004</personId>
             <urlId>URL_388</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>PER_010</personId>
+            <personId>PER_004</personId>
             <urlId>URL_389</urlId>
         </personUrlPair>
     </personUrls>
     <crisisOrgs>
         <crisisOrgPair>
+            <crisisId>CRI_040</crisisId>
+            <orgId>ORG_044</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_043</crisisId>
+            <orgId>ORG_045</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_001</crisisId>
+            <orgId>ORG_045</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_043</crisisId>
+            <orgId>ORG_046</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_040</crisisId>
+            <orgId>ORG_047</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_044</crisisId>
+            <orgId>ORG_047</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_001</crisisId>
+            <orgId>ORG_047</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_042</crisisId>
+            <orgId>ORG_048</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
             <orgId>ORG_001</orgId>
         </crisisOrgPair>
         <crisisOrgPair>
-            <crisisId>CRI_004</crisisId>
-            <orgId>ORG_002</orgId>
+            <crisisId>CRI_041</crisisId>
+            <orgId>ORG_001</orgId>
         </crisisOrgPair>
         <crisisOrgPair>
-            <crisisId>CRI_006</crisisId>
-            <orgId>ORG_002</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_004</crisisId>
-            <orgId>ORG_003</orgId>
+            <crisisId>CRI_042</crisisId>
+            <orgId>ORG_001</orgId>
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
-            <orgId>ORG_004</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_005</crisisId>
-            <orgId>ORG_004</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_006</crisisId>
-            <orgId>ORG_004</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_003</crisisId>
-            <orgId>ORG_005</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_006</crisisId>
-            <orgId>ORG_006</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_002</crisisId>
-            <orgId>ORG_006</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_003</crisisId>
-            <orgId>ORG_006</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_006</crisisId>
             <orgId>ORG_07</orgId>
         </crisisOrgPair>
         <crisisOrgPair>
-            <crisisId>CRI_001</crisisId>
-            <orgId>ORG_008</orgId>
+            <crisisId>CRI_040</crisisId>
+            <orgId>ORG_003</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_040</crisisId>
+            <orgId>ORG_004</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_040</crisisId>
+            <orgId>ORG_005</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_041</crisisId>
+            <orgId>ORG_005</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_042</crisisId>
+            <orgId>ORG_005</orgId>
+        </crisisOrgPair>
+        <crisisOrgPair>
+            <crisisId>CRI_044</crisisId>
+            <orgId>ORG_005</orgId>
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
-            <orgId>ORG_009</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_001</crisisId>
-            <orgId>ORG_010</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_002</crisisId>
-            <orgId>ORG_010</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_003</crisisId>
-            <orgId>ORG_010</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_005</crisisId>
-            <orgId>ORG_010</orgId>
-        </crisisOrgPair>
-        <crisisOrgPair>
-            <crisisId>CRI_006</crisisId>
             <orgId>ORG_10</orgId>
         </crisisOrgPair>
     </crisisOrgs>
     <crisisPeople>
         <crisisPersonPair>
-            <crisisId>CRI_004</crisisId>
+            <crisisId>CRI_043</crisisId>
+            <personId>ORG_044</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_005</crisisId>
+            <personId>ORG_044</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_040</crisisId>
+            <personId>PER_045</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_040</crisisId>
+            <personId>PER_046</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_041</crisisId>
+            <personId>PER_047</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_042</crisisId>
+            <personId>PER_047</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_041</crisisId>
+            <personId>PER_048</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_040</crisisId>
             <personId>PER_001</personId>
         </crisisPersonPair>
         <crisisPersonPair>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_041</crisisId>
             <personId>PER_001</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_042</crisisId>
+            <personId>PER_001</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_043</crisisId>
+            <personId>PER_001</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_001</crisisId>
+            <personId>PER_001</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_040</crisisId>
+            <personId>PER_002</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_042</crisisId>
+            <personId>PER_002</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_043</crisisId>
+            <personId>PER_002</personId>
+        </crisisPersonPair>
+        <crisisPersonPair>
+            <crisisId>CRI_044</crisisId>
+            <personId>PER_002</personId>
         </crisisPersonPair>
         <crisisPersonPair>
             <crisisId>CRI_001</crisisId>
@@ -3009,101 +2974,45 @@
         </crisisPersonPair>
         <crisisPersonPair>
             <crisisId>CRI_001</crisisId>
-            <personId>PER_003</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_002</crisisId>
             <personId>PER_004</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_003</crisisId>
-            <personId>PER_004</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_002</crisisId>
-            <personId>PER_005</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_001</crisisId>
-            <personId>PER_006</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_002</crisisId>
-            <personId>PER_006</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_003</crisisId>
-            <personId>PER_006</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_004</crisisId>
-            <personId>PER_006</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_006</crisisId>
-            <personId>PER_006</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_001</crisisId>
-            <personId>PER_007</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_003</crisisId>
-            <personId>PER_007</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_004</crisisId>
-            <personId>PER_007</personId>
         </crisisPersonPair>
         <crisisPersonPair>
             <crisisId>CRI_005</crisisId>
-            <personId>PER_007</personId>
+            <personId>PER_001</personId>
         </crisisPersonPair>
         <crisisPersonPair>
-            <crisisId>CRI_006</crisisId>
-            <personId>PER_007</personId>
+            <crisisId>CRI_005</crisisId>
+            <personId>PER_002</personId>
         </crisisPersonPair>
         <crisisPersonPair>
-            <crisisId>CRI_006</crisisId>
-            <personId>PER_010</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_010</crisisId>
+            <crisisId>CRI_004</crisisId>
             <personId>PER_006</personId>
         </crisisPersonPair>
         <crisisPersonPair>
-            <crisisId>CRI_010</crisisId>
-            <personId>PER_007</personId>
+            <crisisId>CRI_003</crisisId>
+            <personId>PER_001</personId>
         </crisisPersonPair>
         <crisisPersonPair>
-            <crisisId>CRI_009</crisisId>
-            <personId>PER_009</personId>
+            <crisisId>CRI_002</crisisId>
+            <personId>PER_001</personId>
         </crisisPersonPair>
         <crisisPersonPair>
-            <crisisId>CRI_008</crisisId>
-            <personId>PER_006</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_007</crisisId>
-            <personId>PER_006</personId>
-        </crisisPersonPair>
-        <crisisPersonPair>
-            <crisisId>CRI_007</crisisId>
-            <personId>PER_007</personId>
+            <crisisId>CRI_002</crisisId>
+            <personId>PER_002</personId>
         </crisisPersonPair>
     </crisisPeople>
     <orgPeople>
         <orgPersonPair>
-            <orgId>ORG_005</orgId>
-            <personId>PER_004</personId>
+            <orgId>ORG_048</orgId>
+            <personId>PER_047</personId>
+        </orgPersonPair>
+        <orgPersonPair>
+            <orgId>ORG_044</orgId>
+            <personId>PER_048</personId>
         </orgPersonPair>
         <orgPersonPair>
             <orgId>ORG_001</orgId>
-            <personId>PER_005</personId>
-        </orgPersonPair>
-        <orgPersonPair>
-            <orgId>ORG_006</orgId>
-            <personId>PER_008</personId>
+            <personId>PER_003</personId>
         </orgPersonPair>
     </orgPeople>
 </root>

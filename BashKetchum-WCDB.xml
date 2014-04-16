@@ -1,97 +1,214 @@
 <root>
     <crises>      
         <crisis>
-            <crisisId>CRI_005</crisisId>
+            <crisisId>CRI_010</crisisId>
             <name>Katrina</name>
             <kind>Natural Disaster</kind>
+			<streetAddress></streetAddress>
             <city>New Orleans</city>
             <stateOrProvince>Louisiana</stateOrProvince>
             <country>United States</country>
             <dateAndTime>2005-08-26T09:00:00</dateAndTime>
             <fatalities>1300</fatalities>
-            <damageInUSD>10000000000</damageInUSD>
+            <injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>10000000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_011</crisisId>
             <name>Fukushima Daiichi nuclear disaster</name>
             <kind>Human Error Disaster</kind>
+			<streetAddress></streetAddress>
             <city>Okuma</city>
             <stateOrProvince>Fukushima</stateOrProvince>
             <country>Japan</country>
             <dateAndTime>2011-03-11T05:52:00</dateAndTime>
             <fatalities>20100</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
             <damageInUSD>375000000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_012</crisisId>
             <name>Tohuku Earthquake and Tsunami</name>
             <kind>Natural Disaster</kind>
+			<streetAddress></streetAddress>
+			<city></city>
             <stateOrProvince>Tohuku</stateOrProvince>
             <country>Japan</country>
             <dateAndTime>2011-03-11T05:46:00</dateAndTime>
             <fatalities>15884</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
             <damageInUSD>122000000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_013</crisisId>
             <name>Sumatra-Andaman Earthquake</name>
             <kind>Natural Disaster</kind>
+			<streetAddress></streetAddress>
+			<city></city>
             <stateOrProvince>Sumatra</stateOrProvince>
             <country>Indonesia</country>
             <dateAndTime>2004-12-26T00:58:53</dateAndTime>
             <fatalities>227898</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
             <damageInUSD>10000000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_014</crisisId>
             <name>Sichuan Earthquake</name>
             <kind>Natural Disaster</kind>
+			<streetAddress></streetAddress>
+			<city></city>
             <stateOrProvince>Sichuan</stateOrProvince>
+			<country></country>
             <dateAndTime>2008-05-12T06:28:01</dateAndTime>
             <fatalities>69197</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
             <damageInUSD>146500000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_001</crisisId>
             <name>Haiti Earthquake</name>
             <kind>Natural Disaster</kind>
+			<streetAddress></streetAddress>
+			<city></city>
+            <stateOrProvince></stateOrProvince>
             <country>Haiti</country>
             <dateAndTime>2010-01-12T00:00:00</dateAndTime>
             <fatalities>159000</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
             <damageInUSD>14000000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_002</crisisId>
             <name>Hurricane Ike</name>
             <kind>Natural Disaster</kind>
+			<streetAddress></streetAddress>
+			<city></city>
+            <stateOrProvince></stateOrProvince>
             <country>United States</country>
             <dateAndTime>2008-09-01T00:00:00</dateAndTime>
             <fatalities>195</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
             <damageInUSD>22000000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_003</crisisId>
             <name>Benghazi attack </name>
             <kind>Act of Terrorism</kind>
+			<streetAddress></streetAddress>
             <city>Benghazi</city>
+			<stateOrProvince></stateOrProvince>
             <country>Libya</country>
             <dateAndTime>2012-09-11T00:00:00</dateAndTime>
             <fatalities>4</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
+            <damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_004</crisisId>
             <name>Eruptions of Eyjafjallajokull</name>
             <kind>Natural Disaster</kind>
+			<streetAddress></streetAddress>
+            <city></city>
+			<stateOrProvince></stateOrProvince>
             <country>Iceland</country>
             <dateAndTime>2010-03-10T00:00:00</dateAndTime>
+			<fatalities>4</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
             <damageInUSD>7300000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
         <crisis>
             <crisisId>CRI_005</crisisId>
             <name>Cold War</name>
             <kind>War / Conflict</kind>
+			<streetAddress></streetAddress>
+            <city></city>
+			<stateOrProvince></stateOrProvince>
             <country>Earth</country>
             <dateAndTime>1947-01-01T00:00:00</dateAndTime>
+			<fatalities>0</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced></populationDisplaced>
+			<environmentalImpact></environmentalImpact>
+			<politicalChanges></politicalChanges>
+			<culturalChanges></culturalChanges>
+			<jobsLost>0</jobsLost>
+            <damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges></regulatoryChanges>
         </crisis>
     </crises>
     
@@ -102,6 +219,7 @@
             <kind>Government Agency</kind>
             <streetAddress>500 C Street SW</streetAddress>
             <city>Washington, D.C.</city>
+			<stateOrProvince></stateOrProvince>
             <postalCode>20472</postalCode>
             <country>United States</country>
             <foundingMission>Support and protect citizens including during disaster or recovery</foundingMission>
@@ -155,7 +273,7 @@
             <city>New York</city>
             <stateOrProvince>New York</stateOrProvince>
             <postalCode>10017</postalCode>
-            <country>United States</country>
+            <country>USA</country>
             <foundingMission>Promotion and appreciation of the Japanese culture</foundingMission> 
             <dateFounded>1907-01-01</dateFounded>
             <majorEvents>Increased Japanese cultural awareness in 20th century, playing a larger role during political crises and disasters</majorEvents>
@@ -171,6 +289,7 @@
             <country>United States</country>
             <foundingMission>Response to childrens' plight during WWII</foundingMission>
             <dateFounded>1946-12-11</dateFounded>
+			<majorEvents></majorEvents>
         </org>
         <org>
             <orgId>ORG_002</orgId>
@@ -183,6 +302,7 @@
             <country>United States</country>
             <foundingMission>Created following WWII</foundingMission>
             <dateFounded>1945-10-24</dateFounded>
+			<majorEvents></majorEvents>
         </org>
         <org>
             <orgId>ORG_003</orgId>
@@ -190,10 +310,12 @@
             <kind>Military Force</kind>
             <streetAddress>2100 2nd Street</streetAddress>
             <city>Washington D.C.</city>
+			<stateOrProvince></stateOrProvince>
             <postalCode>20593-7238</postalCode>
             <country>United States</country>
             <foundingMission>Founded by Congress. Ready today. Prepared for tomorrow.</foundingMission>
             <dateFounded>1915-01-28</dateFounded>
+			<majorEvents></majorEvents>
         </org>
         <org>
             <orgId>ORG_004</orgId>
@@ -206,6 +328,7 @@
             <country>United States</country>
             <foundingMission>Provide power projection from the sea.</foundingMission>
             <dateFounded>1775-11-10</dateFounded>
+			<majorEvents></majorEvents>
         </org>
         <org>
             <orgId>ORG_005</orgId>
@@ -217,6 +340,7 @@
             <country>Switzerland</country>
             <foundingMission>Established by U.N.</foundingMission>
             <dateFounded>1948-04-07</dateFounded>
+			<majorEvents></majorEvents>
         </org>
     </orgs>
 
@@ -265,6 +389,8 @@
             <personId>PER_018</personId>
             <name>Rosie O'Donnell</name>
             <kind>Celebrity</kind>
+			<streetAddress></streetAddress>
+			<city></city>
             <stateOrProvince>Florida</stateOrProvince>
             <country>United States</country>
         </person>
@@ -274,6 +400,7 @@
             <kind>President</kind>
             <streetAddress>1600 Pennsylvania Ave NW</streetAddress>
             <city>Washington, D.C.</city>
+			<stateOrProvince></stateOrProvince>
             <postalCode>20500</postalCode>
             <country>United States</country>
         </person>
@@ -283,6 +410,7 @@
             <kind>Politician</kind>
             <streetAddress>3067 Whitehaven St NW</streetAddress>
             <city>Washington, D.C.</city>
+			<stateOrProvince></stateOrProvince>
             <postalCode>20008</postalCode>
             <country>United States</country>
         </person>
@@ -290,13 +418,16 @@
             <personId>PER_003</personId>
             <name>Ben Bernanke</name>
             <kind>Politician</kind>
+			<streetAddress></streetAddress>
             <city>Washington, D.C.</city>
+			<stateOrProvince></stateOrProvince>
             <country>United States</country>
         </person>
         <person>
             <personId>PER_006</personId>
             <name>Olafur Ragnar Grimsson</name>
             <kind>President</kind>
+			<streetAddress></streetAddress>
             <city>Bessastaoir</city>
             <stateOrProvince>Garoabaer</stateOrProvince>
             <postalCode>20472</postalCode>
@@ -306,7 +437,9 @@
             <personId>PER_004</personId>
             <name>Colin Powell</name>
             <kind>Politician</kind>
+			<streetAddress></streetAddress>
             <city>Washington, D.C.</city>
+			<stateOrProvince></stateOrProvince>
             <country>United States</country>
         </person>
     </people>
@@ -1641,7 +1774,7 @@
         <url>
             <urlId>URL_304</urlId>
             <type>SocialNetwork</type>
-            <urlAddress />
+            <urlAddress>https://www.facebook.com/pages/George-Clooney/106055702758671</urlAddress>
         </url>
         <url>
             <urlId>URL_305</urlId>
@@ -2785,7 +2918,7 @@
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
-            <orgId>ORG_07</orgId>
+            <orgId>ORG_002</orgId>
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_005</crisisId>
@@ -2813,7 +2946,7 @@
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
-            <orgId>ORG_10</orgId>
+            <orgId>ORG_005</orgId>
         </crisisOrgPair>
     </crisisOrgs>
 

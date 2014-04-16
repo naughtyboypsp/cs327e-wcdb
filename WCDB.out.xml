@@ -2,112 +2,28 @@
 <root>
 	<crises>
 		<crisis>
-			<crisisId>1</crisisId>
-			<name>Chernobyl Accident</name>
-			<kind>Human Error Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Chernobyl</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Ukraine</country>
-			<dateAndTime>1986-04-26 01:23:48</dateAndTime>
-			<fatalities>290000</fatalities>
-			<injuries>270000</injuries>
-			<populationIll>270000</populationIll>
-			<populationDisplaced>335000</populationDisplaced>
-			<environmentalImpact>Up to 60 sq. mi. of farmland is likely to remain contaminated for decades</environmentalImpact>
-			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>600</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>235000000000</reparationCost>
-			<regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>2</crisisId>
-			<name>UT Tower Shooting</name>
-			<kind>Assassination / Shooting</kind>
-			<streetAddress>110 Inner Campus Drive</streetAddress>
-			<city>Austin</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>1966-08-01 11:48:00</dateAndTime>
-			<fatalities>16</fatalities>
-			<injuries>31</injuries>
-			<populationIll>31</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
+			<crisisId>CRI_000</crisisId>
+			<name>Egypt Revolution of 2011</name>
+			<kind>War / Conflict</kind>
+			<streetAddress>Egypt</streetAddress>
+			<city>Arab Spring</city>
+			<stateOrProvince>Egypt</stateOrProvince>
+			<country>Egypt</country>
+			<dateAndTime>2011-01-25 05:40:00</dateAndTime>
+			<fatalities>846</fatalities>
+			<injuries>6467</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>50000</populationDisplaced>
+			<environmentalImpact>Buildings destroyed</environmentalImpact>
+			<politicalChanges>Changing leader</politicalChanges>
+			<culturalChanges>Changing leadership</culturalChanges>
 			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>5000</reparationCost>
-			<regulatoryChanges>Tower deck is closed due to safety regulations</regulatoryChanges>
+			<damageInUSD>98756235</damageInUSD>
+			<reparationCost>4563215</reparationCost>
+			<regulatoryChanges>overthrow of Mubarak government</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>3</crisisId>
-			<name>BP Oil Spill</name>
-			<kind>Human Error Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Gulf of Mexico</country>
-			<dateAndTime>2010-04-20 21:45:00</dateAndTime>
-			<fatalities>11</fatalities>
-			<injuries>17</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>Wildlife was severely affected. The Gulf Coast's economic sectors were impacted such as offshore drilling, fishing, and tourism.</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>400000</jobsLost>
-			<damageInUSD>42200000000</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>Stricter regulatory control on oil companies to prevent future accidents. It also increased BP's financial responsibility for affected companies</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>4</crisisId>
-			<name>Hurricane Ike</name>
-			<kind>Natural Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>2008-09-01 00:00:00</dateAndTime>
-			<fatalities>195</fatalities>
-			<injuries>1000000</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>There was significant property damage and flooding throughout all the affected areas</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>37500000000</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>5</crisisId>
-			<name>9-11</name>
-			<kind>Act of Terrorism</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>2001-09-11 08:46:30</dateAndTime>
-			<fatalities>2996</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>Buildings destroyed and harmful effects from the smoke in the air </environmentalImpact>
-			<politicalChanges>Creation of the Department of Homeland Security and Patriot Act</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>100000</jobsLost>
-			<damageInUSD>10000000000</damageInUSD>
-			<reparationCost>3900000000</reparationCost>
-			<regulatoryChanges>Increased security measures put into place</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>6</crisisId>
+			<crisisId>CRI_001</crisisId>
 			<name>Haiti Earthquake</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -128,91 +44,28 @@
 			<regulatoryChanges>Food and water is sent still to Haiti for earthquake victims</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>7</crisisId>
-			<name>1900 Galveston Hurricane</name>
+			<crisisId>CRI_002</crisisId>
+			<name>Hurricane Ike</name>
 			<kind>Natural Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Galveston</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>1900-09-08 08:45:00</dateAndTime>
-			<fatalities>8000</fatalities>
-			<injuries>5000</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>Galveston municipal government adopted a more centralized structure to deal with the storm aftermath.</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>30000000</damageInUSD>
-			<reparationCost>1250000</reparationCost>
-			<regulatoryChanges>NULL</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>8</crisisId>
-			<name>Hindenburg Crash</name>
-			<kind>Human Error Disaster</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Lakehurst</city>
-			<stateOrProvince>New Jersey</stateOrProvince>
-			<country>United States</country>
-			<dateAndTime>1937-05-06 19:25:00</dateAndTime>
-			<fatalities>36</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>NULL</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>0</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>9</crisisId>
-			<name>Cuban Missile Crisis</name>
-			<kind>War / Conflict</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NUll</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<country>Cuba</country>
-			<dateAndTime>1962-10-14 00:00:00</dateAndTime>
-			<fatalities>1</fatalities>
-			<injuries>0</injuries>
-			<populationIll>0</populationIll>
-			<populationDisplaced>0</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
-			<culturalChanges>NULL</culturalChanges>
-			<jobsLost>0</jobsLost>
-			<damageInUSD>0</damageInUSD>
-			<reparationCost>0</reparationCost>
-			<regulatoryChanges>Embargo against Cuba</regulatoryChanges>
-		</crisis>
-		<crisis>
-			<crisisId>10</crisisId>
-			<name>Cold War</name>
-			<kind>War / Conflict</kind>
 			<streetAddress>NULL</streetAddress>
 			<city>NULL</city>
 			<stateOrProvince>NULL</stateOrProvince>
 			<country>United States</country>
-			<dateAndTime>1947-01-01 11:48:00</dateAndTime>
-			<fatalities>12</fatalities>
-			<injuries>44</injuries>
+			<dateAndTime>2008-09-01 00:00:00</dateAndTime>
+			<fatalities>195</fatalities>
+			<injuries>1000000</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced>NULL</populationDisplaced>
-			<environmentalImpact>NULL</environmentalImpact>
-			<politicalChanges>United States as the sole superpower post World War II</politicalChanges>
-			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>There was significant property damage and flooding throughout all the affected areas</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
 			<jobsLost>0</jobsLost>
-			<damageInUSD>8000000</damageInUSD>
+			<damageInUSD>37500000000</damageInUSD>
 			<reparationCost>0</reparationCost>
-			<regulatoryChanges>Open trade policy with China</regulatoryChanges>
+			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>11</crisisId>
+			<crisisId>CRI_003</crisisId>
 			<name>2008 Financial Crises</name>
 			<kind>Human Error Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -233,7 +86,7 @@
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>12</crisisId>
+			<crisisId>CRI_004</crisisId>
 			<name>Darfur Genocides</name>
 			<kind>War / Conflict</kind>
 			<streetAddress>NULL</streetAddress>
@@ -254,7 +107,70 @@
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>13</crisisId>
+			<crisisId>CRI_005</crisisId>
+			<name>Cold War</name>
+			<kind>War / Conflict</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>1947-01-01 11:48:00</dateAndTime>
+			<fatalities>12</fatalities>
+			<injuries>44</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>United States as the sole superpower post World War II</politicalChanges>
+			<culturalChanges>Fear and war orientate movies and tv programs</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>8000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>Open trade policy with China</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_006</crisisId>
+			<name>UT Tower Shooting</name>
+			<kind>Assassination / Shooting</kind>
+			<streetAddress>110 Inner Campus Drive</streetAddress>
+			<city>Austin</city>
+			<stateOrProvince>Texas</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>1966-08-01 11:48:00</dateAndTime>
+			<fatalities>16</fatalities>
+			<injuries>31</injuries>
+			<populationIll>31</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>5000</reparationCost>
+			<regulatoryChanges>Tower deck is closed due to safety regulations</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_007</crisisId>
+			<name>Hindenburg Crash</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Lakehurst</city>
+			<stateOrProvince>New Jersey</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>1937-05-06 19:25:00</dateAndTime>
+			<fatalities>36</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>0</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_008</crisisId>
 			<name>Benghazi Attack</name>
 			<kind>Act of Terrorism</kind>
 			<streetAddress>NULL</streetAddress>
@@ -275,7 +191,7 @@
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>14</crisisId>
+			<crisisId>CRI_009</crisisId>
 			<name>Haiti Earthquake</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -296,7 +212,7 @@
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>15</crisisId>
+			<crisisId>CRI_010</crisisId>
 			<name>Eruptions of Island mountain glacier(Iceland Volcano)</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -317,1116 +233,121 @@
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>16</crisisId>
-			<name>Egypt Revolution of 2011</name>
-			<kind>War / Conflict</kind>
-			<streetAddress>Egypt</streetAddress>
-			<city>Arab Spring</city>
-			<stateOrProvince>Egypt</stateOrProvince>
-			<country>Egypt</country>
-			<dateAndTime>2011-01-25 05:40:00</dateAndTime>
-			<fatalities>846</fatalities>
-			<injuries>6467</injuries>
+			<crisisId>CRI_030</crisisId>
+			<name>Chernobyl Accident</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Chernobyl</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Ukraine</country>
+			<dateAndTime>1986-04-26 01:23:48</dateAndTime>
+			<fatalities>290000</fatalities>
+			<injuries>270000</injuries>
+			<populationIll>270000</populationIll>
+			<populationDisplaced>335000</populationDisplaced>
+			<environmentalImpact>Up to 60 sq. mi. of farmland is likely to remain contaminated for decades</environmentalImpact>
+			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>600</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>235000000000</reparationCost>
+			<regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_031</crisisId>
+			<name>BP Oil Spill</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Gulf of Mexico</country>
+			<dateAndTime>2010-04-20 21:45:00</dateAndTime>
+			<fatalities>11</fatalities>
+			<injuries>17</injuries>
 			<populationIll>0</populationIll>
-			<populationDisplaced>50000</populationDisplaced>
-			<environmentalImpact>Buildings destroyed</environmentalImpact>
-			<politicalChanges>Changing leader</politicalChanges>
-			<culturalChanges>Changing leadership</culturalChanges>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>Wildlife was severely affected. The Gulf Coast's economic sectors were impacted such as offshore drilling, fishing, and tourism.</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>400000</jobsLost>
+			<damageInUSD>42200000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>Stricter regulatory control on oil companies to prevent future accidents. It also increased BP's financial responsibility for affected companies</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_032</crisisId>
+			<name>9-11</name>
+			<kind>Act of Terrorism</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New York City</city>
+			<stateOrProvince>New York</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>2001-09-11 08:46:30</dateAndTime>
+			<fatalities>2996</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>Buildings destroyed and harmful effects from the smoke in the air </environmentalImpact>
+			<politicalChanges>Creation of the Department of Homeland Security and Patriot Act</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>100000</jobsLost>
+			<damageInUSD>10000000000</damageInUSD>
+			<reparationCost>3900000000</reparationCost>
+			<regulatoryChanges>Increased security measures put into place</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_033</crisisId>
+			<name>1900 Galveston Hurricane</name>
+			<kind>Natural Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Galveston</city>
+			<stateOrProvince>Texas</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>1900-09-08 08:45:00</dateAndTime>
+			<fatalities>8000</fatalities>
+			<injuries>5000</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>Galveston municipal government adopted a more centralized structure to deal with the storm aftermath.</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
 			<jobsLost>0</jobsLost>
-			<damageInUSD>98756235</damageInUSD>
-			<reparationCost>4563215</reparationCost>
-			<regulatoryChanges>overthrow of Mubarak government</regulatoryChanges>
+			<damageInUSD>30000000</damageInUSD>
+			<reparationCost>1250000</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_034</crisisId>
+			<name>Cuban Missile Crisis</name>
+			<kind>War / Conflict</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NUll</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Cuba</country>
+			<dateAndTime>1962-10-14 00:00:00</dateAndTime>
+			<fatalities>1</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>Embargo against Cuba</regulatoryChanges>
 		</crisis>
 	</crises>
-	<orgs>
-		<org>
-			<orgId>1</orgId>
-			<name>International Nuclear Safety Group (INSAG)</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>Vienna International Center, PO Box 100, 1400</streetAddress>
-			<city>Vienna</city>
-			<stateOrProvince>Null</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Austria</country>
-			<foundingMission>The group was founded in 1985 by the International Atomic Energy Agency (IAEA) 
-			as an advisory committee in the area of nuclear safety.</foundingMission>
-			<datefounded>1985-01-01 00:00:00</datefounded>
-			<majorEvents>First investigation was the Chernobyl Accident</majorEvents>
-		</org>
-		<org>
-			<orgId>2</orgId>
-			<name>Austin Police Department</name>
-			<kind>Government Agency</kind>
-			<streetAddress>Austin Police Department, PO Box 689001</streetAddress>
-			<city>Austin</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<postalCode>78768-9001</postalCode>
-			<country>United States</country>
-			<foundingMission>To protect the safety and well being of the diverse Austin community</foundingMission>
-			<datefounded>1849-01-01 00:00:00</datefounded>
-			<majorEvents>In 2000, ADP became the first agency in Texas to become nationally accredited by the Commission on Accreditation for Law Enforcement Agencies</majorEvents>
-		</org>
-		<org>
-			<orgId>3</orgId>
-			<name>BP</name>
-			<kind>Corporation</kind>
-			<streetAddress>International Headquarters 1 St James's Square</streetAddress>
-			<city>London</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>SW1Y 4PD</postalCode>
-			<country>United Kingdom</country>
-			<foundingMission>To provide energy to people around the world</foundingMission>
-			<datefounded>1908-05-01 00:00:00</datefounded>
-			<majorEvents>It caused the BP oil spill, it was the first company to discover oil in the North Sea, and has become one of the top 6 oil and gas companies in the world.</majorEvents>
-		</org>
-		<org>
-			<orgId>4</orgId>
-			<name>Haitian Government</name>
-			<kind>Government Agency</kind>
-			<streetAddress>Morne A Tuff</streetAddress>
-			<city>Port Au Prince</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Haiti</country>
-			<foundingMission>To provide an executive, legislative, and judicial system of government for the people of Haiti.</foundingMission>
-			<datefounded>1987-03-29 00:00:00</datefounded>
-			<majorEvents>The National Palace was destroyed in the Haiti Earthquake.</majorEvents>
-		</org>
-		<org>
-			<orgId>5</orgId>
-			<name>Al-Qaeda</name>
-			<kind>Military Force</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>Null</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>NULL</country>
-			<foundingMission>Al-Qaeda is a global militant Islamist and takfiri organization founded by Osama bin Laden in Peshawar, Pakistan, around August 1988.</foundingMission>
-			<datefounded>1988-08-01 00:00:00</datefounded>
-			<majorEvents>Behind the 9-11 attacks and many other bombings</majorEvents>
-		</org>
-		<org>
-			<orgId>6</orgId>
-			<name>UNICEF</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>Austin Police Department, PO Box 689001</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10038</postalCode>
-			<country>United States</country>
-			<foundingMission>UNICEF was created by the United Nations General Assembly on December 11, 1946, to provide emergency food and healthcare to children in countries that had been devastated by World War II.</foundingMission>
-			<datefounded>1946-12-11 00:00:00</datefounded>
-			<majorEvents>UNICEF was created by the United Nations General Assembly on December 11, 1946, to provide emergency food and healthcare to children in countries that had been devastated by World War II. </majorEvents>
-		</org>
-		<org>
-			<orgId>7</orgId>
-			<name>Johnson and Johnson</name>
-			<kind>Corporation</kind>
-			<streetAddress>Johnson and Johnson, One Johnson and Johnson Plaza</streetAddress>
-			<city>New Brunswick</city>
-			<stateOrProvince>New Jersey</stateOrProvince>
-			<postalCode>08933</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded by brothers Robert Wood Johnson, James Wood Johnson, and Edward Mead Johnson in New Brunswick, New Jersey as a pharmaceuticals company.</foundingMission>
-			<datefounded>1886-01-01 00:00:00</datefounded>
-			<majorEvents>First philanthropic gesture was donations to 1900 Galveston Hurricane victims.</majorEvents>
-		</org>
-		<org>
-			<orgId>8</orgId>
-			<name>Luftschiffbau Zeppelin</name>
-			<kind>Corporation</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Friedrichshafen</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Germany</country>
-			<foundingMission>Count Ferdinand von Zeppelin gathered his staff to begin the production of giant &quot;flying boats&quot; making the town of Friedrichshafen a major aviation center.</foundingMission>
-			<datefounded>1908-01-01 00:00:00</datefounded>
-			<majorEvents>In 1937, the Hindenburg disaster meant the end of an era for this company, which after the world wars has come back into the airship business.</majorEvents>
-		</org>
-		<org>
-			<orgId>9</orgId>
-			<name>Defense Intellegence Agency</name>
-			<kind>Government Agency</kind>
-			<streetAddress>200 Mac Dill Blvd</streetAddress>
-			<city>Washington</city>
-			<stateOrProvince>District of Columbia</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>DIA is first in all-source defense intellengece to prevent strategic surprise and deliver a decision advantage to warfighters, defense planners, and policymakers.</foundingMission>
-			<datefounded>1961-10-01 00:00:00</datefounded>
-			<majorEvents>Failed to adequately act against one of the organizers of 9/11</majorEvents>
-		</org>
-		<org>
-			<orgId>10</orgId>
-			<name>United Nations</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>UN Headquarters First Avenue at 46th Street</streetAddress>
-			<city>New York</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10017</postalCode>
-			<country>United States</country>
-			<foundingMission>To save succeeding generations from the scourge of war and to reaffirm faith in fundamental human rights.</foundingMission>
-			<datefounded>1945-06-26 00:00:00</datefounded>
-			<majorEvents>Approving the creation of the state of Israel.</majorEvents>
-		</org>
-		<org>
-			<orgId>11</orgId>
-			<name>United Nations</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>First Aveue at 46th Street</streetAddress>
-			<city>New York</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10017</postalCode>
-			<country>United States</country>
-			<foundingMission>UN was made in 1945 at the end of World War II to replace the League of Nations</foundingMission>
-			<datefounded>1945-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>12</orgId>
-			<name>American Red Cross</name>
-			<kind>Nonprofit / Humanitarian Organization</kind>
-			<streetAddress>2025 E St, NW Washington</streetAddress>
-			<city>Washington DC</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>20006</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded by Clara Barton on May 21, 1881 as a means to provide disaster relief</foundingMission>
-			<datefounded>1881-05-21 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>13</orgId>
-			<name>US Coast Guard</name>
-			<kind>Military Force</kind>
-			<streetAddress>2100 Second ST, SW Washington</streetAddress>
-			<city>Washington DC</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded in 1790 as the Revenue Marine</foundingMission>
-			<datefounded>1970-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>14</orgId>
-			<name>Federal Reserve</name>
-			<kind>Government Agency</kind>
-			<streetAddress>20551 Constitution Ave NW Washington</streetAddress>
-			<city>Washington DC</city>
-			<stateOrProvince>United States</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Created December 23, 1913 with the Federal Reserve Act</foundingMission>
-			<datefounded>1913-12-23 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>15</orgId>
-			<name>Lehman Brothers</name>
-			<kind>Government Agency</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded in Montogomery, Alabama in 1850 as a general store by German immigrants</foundingMission>
-			<datefounded>1850-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>16</orgId>
-			<name>Haitian Government</name>
-			<kind>Government Agency</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Port-au-Prince</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Haiti</country>
-			<foundingMission>The government transitioned away from a military government starting in 1987; however it met with opposition. In 1994, Bill Clinton steepped in and had Jimmy Carter lead a negotiating team to help</foundingMission>
-			<datefounded>1987-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>17</orgId>
-			<name>Liberation and Justice Movement</name>
-			<kind>Government Agency</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Darfur</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Sudan</country>
-			<foundingMission>Founded on February 23, 2010 by several Darfur Sudanese Rebel groups</foundingMission>
-			<datefounded>2010-02-23 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>18</orgId>
-			<name>UNICEF</name>
-			<kind>Nonprofit / Humanitarian Organization</kind>
-			<streetAddress>3 United Nations Plaza</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10017</postalCode>
-			<country>NULL</country>
-			<foundingMission>Created in 1946 by the United Nations to help proved children with food, clothing and care in Europe</foundingMission>
-			<datefounded>1946-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>19</orgId>
-			<name>Homeland Security</name>
-			<kind>Government Agency</kind>
-			<streetAddress>Nebraska Avenue Complex</streetAddress>
-			<city>Washington DC</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>After the September 11 attacks the department of homeland security was created to safegaurd against terrorism within the US and respond to future attacks</foundingMission>
-			<datefounded>2001-09-11 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>20</orgId>
-			<name>Goldman Sachs</name>
-			<kind>Government Agency</kind>
-			<streetAddress>200 West ST</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded by Marcus Goldman in New York City 1869</foundingMission>
-			<datefounded>1869-01-01 00:00:00</datefounded>
-			<majorEvents>NULL</majorEvents>
-		</org>
-		<org>
-			<orgId>21</orgId>
-			<name>Egyptian Red Crescent</name>
-			<kind>Nonprofit / Humanitarian Organization</kind>
-			<streetAddress>Abd El Razik El Sanhouri St</streetAddress>
-			<city>Nasr City</city>
-			<stateOrProvince>Cairo</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Egypt</country>
-			<foundingMission>Provide emergency assistance</foundingMission>
-			<datefounded>1911-01-01 00:00:00</datefounded>
-			<majorEvents>Development project of Al Nahda city</majorEvents>
-		</org>
-		<org>
-			<orgId>22</orgId>
-			<name>US Air Force</name>
-			<kind>Military Force</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Trenton</city>
-			<stateOrProvince>New Jersey</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Man balloons and dirigibles</foundingMission>
-			<datefounded>1907-08-01 00:00:00</datefounded>
-			<majorEvents>Fire response</majorEvents>
-		</org>
-		<org>
-			<orgId>23</orgId>
-			<name>Dow Jones and Company</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>1211 Avenue of the Americas</streetAddress>
-			<city>New York</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10036</postalCode>
-			<country>United States</country>
-			<foundingMission>Publication</foundingMission>
-			<datefounded>2002-12-10 00:00:00</datefounded>
-			<majorEvents>Publish the Wall Street Journal</majorEvents>
-		</org>
-		<org>
-			<orgId>24</orgId>
-			<name>US Army</name>
-			<kind>Military Force</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>United States</country>
-			<foundingMission>Fight Great Britain</foundingMission>
-			<datefounded>1775-06-14 00:00:00</datefounded>
-			<majorEvents>American Revolutionary War</majorEvents>
-		</org>
-		<org>
-			<orgId>25</orgId>
-			<name>FBI</name>
-			<kind>Government Agency</kind>
-			<streetAddress>935 Pennsylvania Ave NW</streetAddress>
-			<city>Washington, DC</city>
-			<stateOrProvince>Washington, DC</stateOrProvince>
-			<postalCode>20535</postalCode>
-			<country>United States</country>
-			<foundingMission>Identify known criminals</foundingMission>
-			<datefounded>1908-07-26 00:00:00</datefounded>
-			<majorEvents>Counterterrorism Watch</majorEvents>
-		</org>
-		<org>
-			<orgId>26</orgId>
-			<name>Haitian Government</name>
-			<kind>Government Agency</kind>
-			<streetAddress>Avenue de la Republique</streetAddress>
-			<city>Port-au-Prince</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Haiti</country>
-			<foundingMission>Form a semi-presidential republic for Haiti</foundingMission>
-			<datefounded>1987-01-01 00:00:00</datefounded>
-			<majorEvents>Writing of constitution</majorEvents>
-		</org>
-		<org>
-			<orgId>27</orgId>
-			<name>US Coast Guard</name>
-			<kind>Military Force</kind>
-			<streetAddress>2100 Second Street SW</streetAddress>
-			<city>Washington, D.C.</city>
-			<stateOrProvince>Washington, D.C.</stateOrProvince>
-			<postalCode>20593</postalCode>
-			<country>United States</country>
-			<foundingMission>Founded as Revenue Marine</foundingMission>
-			<datefounded>1790-08-04 00:00:00</datefounded>
-			<majorEvents>Maritime law enforcement</majorEvents>
-		</org>
-		<org>
-			<orgId>28</orgId>
-			<name>United Nations</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>1760 United Nations Plaza</streetAddress>
-			<city>New York</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>10017</postalCode>
-			<country>United States</country>
-			<foundingMission>Promote international co-operation</foundingMission>
-			<datefounded>1945-10-24 00:00:00</datefounded>
-			<majorEvents>Cold War</majorEvents>
-		</org>
-		<org>
-			<orgId>29</orgId>
-			<name>London Volcanic Ash Advisory Center</name>
-			<kind>Nonprofit / Humanitarian Organization</kind>
-			<streetAddress>Fitzroy Rd</streetAddress>
-			<city>Exeter</city>
-			<stateOrProvince>Devon</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>England</country>
-			<foundingMission>Coordinating and disseminating information on atmospheric volcanic ash</foundingMission>
-			<datefounded>1854-01-01 00:00:00</datefounded>
-			<majorEvents>Forecasts location of ash clouds from volcanic eruptions</majorEvents>
-		</org>
-		<org>
-			<orgId>30</orgId>
-			<name>Luftschiffbau Zeppelin</name>
-			<kind>Intergovernmental Agency</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>NULL</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Germany</country>
-			<foundingMission>Build Zeppelin type airships</foundingMission>
-			<datefounded>1990-01-01 00:00:00</datefounded>
-			<majorEvents>Zeppelin manufacture</majorEvents>
-		</org>
-	</orgs>
-	<people>
-		<person>
-			<personId>1</personId>
-			<name>Richard A. Meserve</name>
-			<kind>President</kind>
-			<streetAddress>Carnegie Institution for Science, 1530 P Street Northwest</streetAddress>
-			<city>Washington DC</city>
-			<stateOrProvince>Maryland</stateOrProvince>
-			<postalCode>20005</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>2</personId>
-			<name>Charlie Whitman</name>
-			<kind>Perpetrator</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Lake Worth</city>
-			<stateOrProvince>Florida</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>3</personId>
-			<name>Robert Warren Dudley</name>
-			<kind>CEO</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>New York City</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>4</personId>
-			<name>Michele Pierre Louis</name>
-			<kind>President</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Jeremie</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Haiti</country>
-		</person>
-		<person>
-			<personId>5</personId>
-			<name>Osama bin Laden</name>
-			<kind>President</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Abottabad</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Pakistan</country>
-		</person>
-		<person>
-			<personId>6</personId>
-			<name>Anthony Lake</name>
-			<kind>CEO</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Lake Worth</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>7</personId>
-			<name>Robert Wood Johnson</name>
-			<kind>CEO</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>New Brunswick</city>
-			<stateOrProvince>New Jersey</stateOrProvince>
-			<postalCode>08933</postalCode>
-			<country>United States</country>
-		</person>
-		<person>
-			<personId>8</personId>
-			<name>Ernst August Lehmann</name>
-			<kind>Regular Worker</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Ludwigshafen am Rhein</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Germany</country>
-		</person>
-		<person>
-			<personId>9</personId>
-			<name>Fidel Castro</name>
-			<kind>President</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Biran</city>
-			<stateOrProvince>NULL</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Cuba</country>
-		</person>
-		<person>
-			<personId>10</personId>
-			<name>Barack Obama</name>
-			<kind>President</kind>
-			<streetAddress>1600 Pennsylvania Avenue NW</streetAddress>
-			<city>Washington</city>
-			<stateOrProvince>District of Columbia</stateOrProvince>
-			<postalCode>20500</postalCode>
-			<country>USA</country>
-		</person>
-		<person>
-			<personId>11</personId>
-			<name>George W. Bush</name>
-			<kind>President</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Dallas</city>
-			<stateOrProvince>Texas</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>United States</country>
-		</person>
-		<person>
-			<personId>12</personId>
-			<name>Hillary Clinton</name>
-			<kind>Politician</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Westchester County</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>United States</country>
-		</person>
-		<person>
-			<personId>13</personId>
-			<name>Ben S. Bernanke</name>
-			<kind>Politician</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Augusta</city>
-			<stateOrProvince>Georgia</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>United States</country>
-		</person>
-		<person>
-			<personId>14</personId>
-			<name>Richard S. Fuld</name>
-			<kind>CEO</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>New York</city>
-			<stateOrProvince>New York</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>United States</country>
-		</person>
-		<person>
-			<personId>15</personId>
-			<name>Tamerlan Tsarnaev</name>
-			<kind>Perpetrator</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Boston</city>
-			<stateOrProvince>Massachusetts</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>United States</country>
-		</person>
-		<person>
-			<personId>16</personId>
-			<name>Omar al-Bashir</name>
-			<kind>President</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Khartoum</city>
-			<stateOrProvince>Khartoum State</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>Sudan</country>
-		</person>
-		<person>
-			<personId>17</personId>
-			<name>Jean-Max Bellerive</name>
-			<kind>Politician</kind>
-			<streetAddress>NULL</streetAddress>
-			<city>Port-au-Prince</city>
-			<stateOrProvince>Port-au-Prince</stateOrProvince>
-			<postalCode>Null</postalCode>
-			<country>Haiti</country>
-		</person>
-		<person>
-			<personId>18</personId>
-			<name>Hosni Mubarak</name>
-			<kind>President</kind>
-			<streetAddress>El-Gomhoreya Square, Rahbet Abdin</streetAddress>
-			<city>Abdeen</city>
-			<stateOrProvince>Cairo Governorate</stateOrProvince>
-			<postalCode>NULL</postalCode>
-			<country>Egypt</country>
-		</person>
-	</people>
+	<orgs/>
+	<people/>
 	<resources/>
 	<crisisResources/>
 	<waysToHelp/>
 	<crisisWaysToHelp/>
 	<contactInfos/>
 	<orgContactInfos/>
-	<citations>
-		<citationPair>
-			<citationId>1</citationId>
-			<citation>http://www.ccoc.net/the-chernobyl-disaster/the-story</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>2</citationId>
-			<citation>http://www.world-nuclear.org/info/Safety-and-Security/Safety-of-Plants/Chernobyl-Accident/</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>3</citationId>
-			<citation>http://www.forbes.com/2011/03/16/japan-disaster-nuclear-opinions-roubini-economics.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>4</citationId>
-			<citation>http://www.iaea.org/newscenter/focus/chernobyl/faqs.shtml</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>5</citationId>
-			<citation>http://alcalde.texasexes.org/2012/08/remembering-the-ut-tower-shooting-46-years-later/</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>6</citationId>
-			<citation>http://www.crimelibrary.com/notorious_murders/mass/whitman/index_1.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>7</citationId>
-			<citation>http://www-ns.iaea.org/committees/insag.asp</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>8</citationId>
-			<citation>http://www-ns.iaea.org/downloads/coordination/snr-reg-meeting-2008/1-%20INSAG%20Senior%20Regulators%20Meeting%209-15-08.ppt</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>9</citationId>
-			<citation>http://www.austintexas.gov/department/police/about</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>10</citationId>
-			<citation>http://www.lawofficer.com/article/magazine-feature/austin-police-department</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>11</citationId>
-			<citation>http://carnegiescience.edu/president_richard_meserve</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>12</citationId>
-			<citation>http://www.tshaonline.org/handbook/online/articles/fwh42</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>13</citationId>
-			<citation>http://www.biography.com/people/charles-whitman-11495598</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>14</citationId>
-			<citation>http://pdba.georgetown.edu/constitutions/haiti/haiti1987.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>15</citationId>
-			<citation>http://www.theguardian.com/commentisfree/cifamerica/2011/feb/01/bp-twitter-oil-spill</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>16</citationId>
-			<citation>http://www.telegraph.co.uk/finance/newsbysector/energy/oilandgas/7924009/BP-leak-the-worlds-worst-accidental-oil-spill.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>17</citationId>
-			<citation>http://www.register-iri.com/forms/upload/Republic_of_the_Marshall_Islands_DEEPWATER_HORIZON_Marine_Casualty_Investigation_Report-Low_Resolution.pdf</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>18</citationId>
-			<citation>http://www.csmonitor.com/USA/2010/0618/Who-is-Bob-Dudley-Five-things-to-know-about-BP-s-new-point-man/</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>19</citationId>
-			<citation>http://investing.businessweek.com/research/stocks/people/person.asp?personId=10698473&amp;ticker=BP/:LN</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>20</citationId>
-			<citation>http://english.people.com.cn/90001/90777/90852/6453569.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>21</citationId>
-			<citation>http://www.google.com/hostednews/afp/article/ALeqM5iWbpczz9GEwzBlnN9BaRtZituP-A</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>22</citationId>
-			<citation>http://news.bbc.co.uk/2/hi/americas/7613851.stm</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>23</citationId>
-			<citation>http://www.nhc.noaa.gov/pdf/TCR-AL092008_Ike_3May10.pdf</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>24</citationId>
-			<citation>http://usatoday30.usatoday.com/news/world/2008-09-07-haiti_N.htm</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>25</citationId>
-			<citation>http://www.cnbc.com/id/101385068</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>26</citationId>
-			<citation>http://quotes.wsj.com/BP/company-people</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>27</citationId>
-			<citation>http://www.nytimes.com/2010/06/13/us/politics/13bp.html?_r=0</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>28</citationId>
-			<citation>http://www.history.noaa.gov/stories_tales/cline2.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>29</citationId>
-			<citation>http://www.gthcenter.org/exhibits/storms/1900/victims/stormfaq.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>30</citationId>
-			<citation>http://www.nationalgeographic.com/features/04/forcesofnature/forces/h_2.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>31</citationId>
-			<citation>http://www.texasalmanac.com/topics/history/galvestons-response-hurricane-1900</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>32</citationId>
-			<citation>http://www.airships.net/hindenburg/disaster</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>33</citationId>
-			<citation>https://www.ccc-consumercarecenter.com/universal-contact-us/us-jnj-ucu/www.jnj.com</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>34</citationId>
-			<citation>http://www.zeppelin-lz.com/ueberuns.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>35</citationId>
-			<citation>http://www.zeppelin-lz.com/test.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>36</citationId>
-			<citation>http://www.zeppelin-lz.com/historie.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>37</citationId>
-			<citation>http://www.zeppelin-lz.com/impressum.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>38</citationId>
-			<citation>http://www.jnj.com/about-jnj/company-history/founders</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>39</citationId>
-			<citation>http://www.airships.net/captain-ernst-lehmann</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>40</citationId>
-			<citation>http://www.jfklibrary.org/JFK/JFK-in-Historyd]/Cuban-Missile-Crisis.aspx</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>41</citationId>
-			<citation>http://en.wikipedia.org/wiki/United_States_military_casualties_of_war</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>42</citationId>
-			<citation>http://www.dia.mil/About.aspx</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>43</citationId>
-			<citation>http://www.un.org/en/</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>44</citationId>
-			<citation>http://www.britannica.com/EBchecked/topic/98822/Fidel-Castro</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>45</citationId>
-			<citation>http://en.wikipedia.org/wiki/Barack_Obama</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>46</citationId>
-			<citation>http://en.wikipedia.org/wiki/Al-Qaeda</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>47</citationId>
-			<citation>http://www.onislam.net/english/news/global/453845-decade-after-911-al-qaeda-in-shambles.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>48</citationId>
-			<citation>http://www.nysm.nysed.gov/wtc/index.html</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>49</citationId>
-			<citation>http://en.wikipedia.org/wiki/U.S._government_response_to_the_September_11_attacks</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>50</citationId>
-			<citation>ttp://en.wikipedia.org/wiki/Osama_bin_Laden</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>51</citationId>
-			<citation>http://www.oxfam.org/en/haitiquake</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>52</citationId>
-			<citation>http://en.wikipedia.org/wiki/2010_Haiti_earthquake</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>53</citationId>
-			<citation>http://www-ns.iaea.org/downloads/coordination/snr-reg-meeting-2008/1-%20INSAG%20Senior%20Regulators%20Meeting%209-15-08.ppt</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>54</citationId>
-			<citation>http://www.who.int/hac/crises/hti/en</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>55</citationId>
-			<citation>http://en.wikipedia.org/wiki/Anthony_Lake</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>56</citationId>
-			<citation>http://www.unicefusa.org</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>57</citationId>
-			<citation>http://en.wikipedia.org/wiki/UNICEF</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>58</citationId>
-			<citation>Wikipedia</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>59</citationId>
-			<citation>Facebook</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>60</citationId>
-			<citation>Twitter</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>61</citationId>
-			<citation>YouTube</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>62</citationId>
-			<citation>Google Images</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>63</citationId>
-			<citation>Egyptian Revolution of 2011. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 15 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>64</citationId>
-			<citation>Hurricane Sandy. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 16 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>65</citationId>
-			<citation>Nixon Shock. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 16 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>66</citationId>
-			<citation>Iran Hostage Crisis. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 16 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>67</citationId>
-			<citation>http://en.wikipedia.org/wiki/Oklahoma_City_bombing</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>68</citationId>
-			<citation>http://en.wikipedia.org/wiki/2010_Haiti_earthquake</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>69</citationId>
-			<citation>http://www.fao.org/emergencies/crisis/haiti-earthquake-2010/en/</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>70</citationId>
-			<citation>http://en.wikipedia.org/wiki/2010_eruptions_of_Eyjafjallaj%C3%B6kull</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>71</citationId>
-			<citation>http://en.wikipedia.org/wiki/2012_Benghazi_attack</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>72</citationId>
-			<citation>http://en.wikipedia.org/wiki/Hurricane_Ike</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>73</citationId>
-			<citation>http://www.nhc.noaa.gov/pdf/TCR-AL092008_Ike_3May10.pdf</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>74</citationId>
-			<citation>http://en.wikipedia.org/wiki/LZ_129_Hindenburg</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>75</citationId>
-			<citation>http://en.wikipedia.org/wiki/Hindenburg_disaster</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>76</citationId>
-			<citation>http://www.airships.net/hindenburg</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>77</citationId>
-			<citation> Maldivian Red Crescent officially joins the IFRC at the 18th General Assembly, published: 23 November 2011: The Maldivian Red Crescent became the 187th member of the International Federation of Red Cross and Red Crescent Societies (IFRC)</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>78</citationId>
-			<citation> Robert Pitta, Gordon Rottman, Jeff Fannell (1993). US Army Air Force (1). Osprey Publishing. p.3. ISBN 1-85532-295-1</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>79</citationId>
-			<citation>Dow Jones and Company Inc v Gutnick [2002] HCA 56; 210 CLR 575; 194 ALR 433; 77 ALJR 255 (10 December 2002)</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>80</citationId>
-			<citation>Wright, Jr., Robert K. (1983). The Continental Army (Army Lineage Series). Washington, DC: Center of Military History, United States Army. ISBN 9780160019319.OCLC 8806011</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>81</citationId>
-			<citation>FBI Indian Country Crime. Fbi.gov. 2010-04-16. Retrieved 2012-03-03.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>82</citationId>
-			<citation>Abbott, Elizabeth, and Elizabeth Abbott. Haiti: A Shattered Nation. New York : Overlook: Duckworth, 2011. Print.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>83</citationId>
-			<citation>Dear, Ian, and Peter Kemp. Kemp. The Oxford Companion to Ships and the Sea. Oxford: Oxford UP, 2006. Print.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>84</citationId>
-			<citation>Meisler, Stanley. United Nations: A History. New York: Grove, 2011. Print.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>85</citationId>
-			<citation>Watkin, S. C. The Application of AVHRR Data for the Detection of Volcanic Ash in a Volcanic Ash Advisory Centre. Meteorological Applications 10.4 (1999): 301-11. Wiley Online Library. Web. 19 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>86</citationId>
-			<citation>Nitske, W. Robert. The Zeppelin Story. South Brunswick: A.S. Barnes, 1977. Print.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>87</citationId>
-			<citation>Hosni Mubarak. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>88</citationId>
-			<citation>Chris Christie. Wikipedia. Wikimedia Foundation, 14 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>89</citationId>
-			<citation>Richard Nixon. Wikipedia. Wikimedia Foundation, 3 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>90</citationId>
-			<citation>Jimmy Carter. Wikipedia. Wikimedia Foundation, 17 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>91</citationId>
-			<citation>Timothy McVeigh. Wikipedia. Wikimedia Foundation, 9 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>92</citationId>
-			<citation>Jean-Max Bellerive. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>93</citationId>
-			<citation>Hillary Clinton. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>94</citationId>
-			<citation>Barack Obama. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>95</citationId>
-			<citation>Olafur Grimsson. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-		<citationPair>
-			<citationId>96</citationId>
-			<citation>Ernst August Lehmann. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
-		</citationPair>
-	</citations>
-	<crisisCitations>
-		<crisisCitationPair>
-			<citationId>1</citationId>
-			<crisisId>1</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>2</citationId>
-			<crisisId>1</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>3</citationId>
-			<crisisId>1</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>4</citationId>
-			<crisisId>1</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>5</citationId>
-			<crisisId>2</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>6</citationId>
-			<crisisId>2</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>15</citationId>
-			<crisisId>3</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>16</citationId>
-			<crisisId>3</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>17</citationId>
-			<crisisId>3</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>22</citationId>
-			<crisisId>4</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>23</citationId>
-			<crisisId>4</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>24</citationId>
-			<crisisId>4</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>48</citationId>
-			<crisisId>5</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>49</citationId>
-			<crisisId>5</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>51</citationId>
-			<crisisId>6</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>52</citationId>
-			<crisisId>6</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>53</citationId>
-			<crisisId>6</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>28</citationId>
-			<crisisId>7</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>29</citationId>
-			<crisisId>7</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>30</citationId>
-			<crisisId>7</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>31</citationId>
-			<crisisId>7</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>32</citationId>
-			<crisisId>8</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>40</citationId>
-			<crisisId>9</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>41</citationId>
-			<crisisId>10</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>11</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>12</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>13</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>14</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>58</citationId>
-			<crisisId>15</crisisId>
-		</crisisCitationPair>
-		<crisisCitationPair>
-			<citationId>63</citationId>
-			<crisisId>16</crisisId>
-		</crisisCitationPair>
-	</crisisCitations>
+	<citations/>
+	<crisisCitations/>
 	<orgCitations/>
 	<personCitations/>
 	<urls/>

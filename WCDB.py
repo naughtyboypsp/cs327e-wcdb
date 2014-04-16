@@ -1384,6 +1384,7 @@ def wcdb_read (stdin,flag,filename=" "):
     """
     if flag == True:
         imported_str_data = str(stdin.read())
+##        imported_str_data = imported_str_data.decode('utf-8')
         assert(type(imported_str_data) is str)
         data_tree = ET.fromstring(imported_str_data)
         assert(type(data_tree) is ET.Element)
@@ -1407,7 +1408,7 @@ def wcdb_write (w, data_tree):
     converts an element string to a string data
     exports the string data 
     """
-    rough_exported_string = ET.tostring(data_tree, 'utf-8', method = "xml")
+    rough_exported_string = ET.tostring(data_tree, encoding='utf-8', method = "xml")
     assert(type(rough_exported_string) is str)
     reparsed = minidom.parseString(rough_exported_string)
     pretty_exported_string = reparsed.toprettyxml(indent="\t")
@@ -1459,8 +1460,8 @@ def wcdb_solve(r,w,xml_filename_list):
     for filename in xml_filename_list:
         data_tree = wcdb_read(r,r_flag,filename)
         wcdb_import(login_var, data_tree)       
-##    export_data = wcdb_export(login_var)
-##    write = open('WCDB.out.xml', 'w')
-##    wcdb_write (write, export_data)
-##    write.close()
+    export_data = wcdb_export(login_var)
+    write = open('WCDB.out.xml', 'w')
+    wcdb_write (write, export_data)
+    write.close()
 

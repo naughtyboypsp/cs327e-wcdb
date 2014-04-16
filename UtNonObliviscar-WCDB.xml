@@ -428,8 +428,8 @@
             <personId>PER_008</personId>
             <name>Olafur Grimsson</name>
             <kind>Politician</kind>
-            <streetAddress>SÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³leyjargata 1</streetAddress>
-            <city>ReykjavÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­k</city>
+            <streetAddress>Unreadable</streetAddress>
+            <city>Unreadable</city>
             <stateOrProvince></stateOrProvince>
             <postalCode>IS-150</postalCode>
             <country>Iceland</country>
@@ -816,7 +816,7 @@
         </citationPair>
         <citationPair>
             <citationId>CIT_204</citationId>
-            <citation>FBI ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âª Indian Country Crime. Fbi.gov. 2010-04-16. Retrieved 2012-03-03.</citation>
+            <citation>FBI Indian Country Crime. Fbi.gov. 2010-04-16. Retrieved 2012-03-03.</citation>
         </citationPair>
          <citationPair>
             <citationId>CIT_205</citationId>
@@ -1070,7 +1070,7 @@
         <url>
             <urlId>URL_001</urlId>
             <type>Image</type>
-            <urlAddress>http://upload.wikimedia.org/wikipedia/commons/7/7d/Sandy_Oct_25_2012_0400Z.JPG</urlAddress>
+            <urlAddress>http://upload.wikimedia.org/wikipedia/commons/7/7d/Sandy_Oct_25_2012_0400Z.jpg</urlAddress>
         </url>
         <url>
             <urlId>URL_002</urlId>

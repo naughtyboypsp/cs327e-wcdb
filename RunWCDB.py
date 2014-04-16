@@ -25,8 +25,8 @@ import WCDB
 #--------Main fuction--------------------
 def main():
     #---------- a list to save the filenames----------
-    xml_filename_list = ['GottaGitThat-WCDB.xml', \
-                         'UtNonObliviscar-WCDB.xml']#, \
+    xml_filename_list = ['GottaGitThat-WCDB.xml'] \
+                        # 'UtNonObliviscar-WCDB.xml']#, \
                          #'SeekWolves-WCDB.xml', \
                         # 'BashKetchum-WCDB.xml', \
                         # 'Brigadeiros-WCDB.xml', \                         

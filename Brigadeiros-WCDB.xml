@@ -466,173 +466,148 @@
 
         <resources>
             <resourcePair>
-                <resourceId>RES_0</resourceId>
+                <resourceId>RES_010</resourceId>
                 <resource>Food</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_10</resourceId>
+                <resourceId>RES_011</resourceId>
                 <resource>Shelter</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_101</resourceId>
+                <resourceId>RES_020</resourceId>
                 <resource>Clay</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_202</resourceId>
+                <resourceId>RES_019</resourceId>
                 <resource>Water</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_313</resourceId>
-                <resource>Police Support</resource>
+                <resourceId>RES_006</resourceId>
+                <resource>Military/Police</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_404</resourceId>
+                <resourceId>RES_017</resourceId>
                 <resource>Money</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_502</resourceId>
+                <resourceId>RES_009</resourceId>
                 <resource>Hospitalization</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_503</resourceId>
-                <resource>Food</resource>
-            </resourcePair>
-            <resourcePair>
-                <resourceId>RES_504</resourceId>
-                <resource>Shelter</resource>
-            </resourcePair>
-            <resourcePair>
-                <resourceId>RES_505</resourceId>
+                <resourceId>RES_012</resourceId>
                 <resource>Electricity</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_509</resourceId>
+                <resourceId>RES_016</resourceId>
                 <resource>Sanitation</resource>
             </resourcePair>
             <resourcePair>
-                <resourceId>RES_510</resourceId>
-                <resource>Money</resource>
-            </resourcePair>
-            <resourcePair>
-                <resourceId>RES_606</resourceId>
-                <resource>Police Support</resource>
-            </resourcePair>
-            <resourcePair>
-                <resourceId>RES_701</resourceId>
-                <resource>Money</resource>
-            </resourcePair>
-            <resourcePair>
-                <resourceId>RES_702</resourceId>
+                <resourceId>RES_021</resourceId>
                 <resource>Natural Resources</resource>
             </resourcePair>
-
             <resourcePair>
-                <resourceId>RES_802</resourceId>
-                <resource>Hospitalization</resource>
-            </resourcePair>
-            <resourcePair>
-                <resourceId>RES_909</resourceId>
+                <resourceId>RES_022</resourceId>
                 <resource>Hydrogen</resource>
             </resourcePair>
         </resources>
         <crisisResources>
             <crisisResourcePair>
                 <crisisId>CRI_015</crisisId>
-                <resourceId>RES_0</resourceId>
+                <resourceId>RES_010</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_015</crisisId>
-                <resourceId>RES_10</resourceId>
+                <resourceId>RES_011</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_016</crisisId>
-                <resourceId>RES_101</resourceId>
+                <resourceId>RES_020</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_017</crisisId>
-                <resourceId>RES_202</resourceId>
+                <resourceId>RES_019</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_018</crisisId>
-                <resourceId>RES_313</resourceId>
+                <resourceId>RES_006</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_019</crisisId>
-                <resourceId>RES_404</resourceId>
+                <resourceId>RES_017</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_002</crisisId>
-                <resourceId>RES_502</resourceId>
+                <resourceId>RES_009</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_002</crisisId>
-                <resourceId>RES_503</resourceId>
+                <resourceId>RES_010</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_002</crisisId>
-                <resourceId>RES_504</resourceId>
+                <resourceId>RES_011</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_002</crisisId>
-                <resourceId>RES_505</resourceId>
+                <resourceId>RES_012</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_002</crisisId>
-                <resourceId>RES_509</resourceId>
+                <resourceId>RES_016</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_002</crisisId>
-                <resourceId>RES_510</resourceId>
+                <resourceId>RES_017</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_006</crisisId>
-                <resourceId>RES_606</resourceId>
+                <resourceId>RES_006</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_001</crisisId>
-                <resourceId>RES_701</resourceId>
+                <resourceId>RES_017</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_001</crisisId>
-                <resourceId>RES_702</resourceId>
+                <resourceId>RES_021</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_003</crisisId>
-                <resourceId>RES_802</resourceId>
+                <resourceId>RES_009</resourceId>
             </crisisResourcePair>
             <crisisResourcePair>
                 <crisisId>CRI_007</crisisId>
-                <resourceId>RES_909</resourceId>
+                <resourceId>RES_022</resourceId>
             </crisisResourcePair>
         </crisisResources> 
 
         <waysToHelp>
             <wayToHelpPair>
-                <helpId>HEL_0</helpId>
+                <helpId>HEL_007</helpId>
                 <wayToHelp>Provide Food</wayToHelp>
             </wayToHelpPair>
             <wayToHelpPair>
-                <helpId>HEL_10</helpId>
+                <helpId>HEL_018</helpId>
                 <wayToHelp>Provide Jobs</wayToHelp>
             </wayToHelpPair>
             <wayToHelpPair>
-                <helpId>HEL_11</helpId>
-                <wayToHelp>Lend Money</wayToHelp>
+                <helpId>HEL_009</helpId>
+                <wayToHelp>Donate Money</wayToHelp>
             </wayToHelpPair>
             <wayToHelpPair>
-                <helpId>HEL_101</helpId>
+                <helpId>HEL_019</helpId>
                 <wayToHelp>Donate</wayToHelp>
             </wayToHelpPair>
             <wayToHelpPair>
-                <helpId>HEL_202</helpId>
+                <helpId>HEL_020</helpId>
                 <wayToHelp>Raise Awareness</wayToHelp>
             </wayToHelpPair>
             <wayToHelpPair>
-                <helpId>HEL_606</helpId>
+                <helpId>HEL_021</helpId>
                 <wayToHelp>Tribute to the people who died</wayToHelp>
             </wayToHelpPair>
             <wayToHelpPair>
-                <helpId>HEL_701</helpId>
+                <helpId>HEL_002</helpId>
                 <wayToHelp>Volunteer Time</wayToHelp>
             </wayToHelpPair>
         </waysToHelp>
@@ -640,55 +615,55 @@
         <crisisWaysToHelp>
             <crisisWayToHelpPair>
                 <crisisId>CRI_015</crisisId>
-                <helpId>HEL_0</helpId>
+                <helpId>HEL_007</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_015</crisisId>
-                <helpId>HEL_10</helpId>
+                <helpId>HEL_018</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_015</crisisId>
-                <helpId>HEL_11</helpId>
+                <helpId>HEL_009</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_016</crisisId>
-                <helpId>HEL_101</helpId>
+                <helpId>HEL_019</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_017</crisisId>
-                <helpId>HEL_202</helpId>
+                <helpId>HEL_020</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_018</crisisId>
-                <helpId>HEL_0</helpId>
+                <helpId>HEL_007</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_019</crisisId>
-                <helpId>HEL_101</helpId>
+                <helpId>HEL_019</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_002</crisisId>
-                <helpId>HEL_701</helpId>
+                <helpId>HEL_002</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_002</crisisId>
-                <helpId>HEL_0</helpId>
+                <helpId>HEL_007</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_002</crisisId>
-                <helpId>HEL_101</helpId>
+                <helpId>HEL_019</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_006</crisisId>
-                <helpId>HEL_606</helpId>
+                <helpId>HEL_021</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_001</crisisId>
-                <helpId>HEL_701</helpId>
+                <helpId>HEL_002</helpId>
             </crisisWayToHelpPair>
             <crisisWayToHelpPair>
                 <crisisId>CRI_001</crisisId>
-                <helpId>HEL_101</helpId>
+                <helpId>HEL_019</helpId>
             </crisisWayToHelpPair>
         </crisisWaysToHelp>
 

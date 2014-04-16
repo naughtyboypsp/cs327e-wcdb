@@ -37,7 +37,7 @@
             <environmentalImpact>Buildings destroyed</environmentalImpact>
             <politicalChanges>Storm Watch Alert</politicalChanges>
             <culturalChanges>protecting people</culturalChanges>
-            <jobsLost>-6254</jobsLost>
+            <jobsLost>6254</jobsLost>
             <damageInUSD>5000000000</damageInUSD>
             <reparationCost>40000000</reparationCost>
             <regulatoryChanges>economic repair</regulatoryChanges>
@@ -58,7 +58,7 @@
             <environmentalImpact>no environmental impact</environmentalImpact>
             <politicalChanges>impeach president</politicalChanges>
             <culturalChanges>change of president image</culturalChanges>
-            <jobsLost>-200</jobsLost>
+            <jobsLost>200</jobsLost>
             <damageInUSD>10000000</damageInUSD>
             <reparationCost>500000</reparationCost>
             <regulatoryChanges>Nixon resignation</regulatoryChanges>
@@ -744,19 +744,19 @@
     <citations>
         <citationPair>
             <citationId>CIT_100</citationId>
-            <citation>"Egyptian Revolution of 2011." Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 15 Mar. 2014.</citation>
+            <citation>Egyptian Revolution of 2011. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 15 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_101</citationId>
-            <citation>"Hurricane Sandy." Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 16 Mar. 2014.</citation>
+            <citation>Hurricane Sandy. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 16 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_102</citationId>
-            <citation>"Nixon Shock." Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 16 Mar. 2014.</citation>
+            <citation>Nixon Shock. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 16 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_103</citationId>
-            <citation>"Iran Hostage Crisis." Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 16 Mar. 2014.</citation>
+            <citation>Iran Hostage Crisis. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 16 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_104</citationId>
@@ -800,11 +800,11 @@
         </citationPair>
          <citationPair>
             <citationId>CIT_200</citationId>
-            <citation> Maldivian Red Crescent officially joins the IFRC at the 18th General Assembly, published: 23 November 2011: "The Maldivian Red Crescent became the 187th member of the International Federation of Red Cross and Red Crescent Societies (IFRC)</citation>
+            <citation> Maldivian Red Crescent officially joins the IFRC at the 18th General Assembly, published: 23 November 2011: The Maldivian Red Crescent became the 187th member of the International Federation of Red Cross and Red Crescent Societies (IFRC)</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_201</citationId>
-            <citation> Robert Pitta, Gordon Rottman, Jeff Fannell (1993). "US Army Air Force (1)". Osprey Publishing. p.3. ISBN 1-85532-295-1</citation>
+            <citation> Robert Pitta, Gordon Rottman, Jeff Fannell (1993). US Army Air Force (1). Osprey Publishing. p.3. ISBN 1-85532-295-1</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_202</citationId>
@@ -832,7 +832,7 @@
         </citationPair>
         <citationPair>
             <citationId>CIT_208</citationId>
-            <citation>Watkin, S. C. "The Application of AVHRR Data for the Detection of Volcanic Ash in a Volcanic Ash Advisory Centre." Meteorological Applications 10.4 (1999): 301-11. Wiley Online Library. Web. 19 Mar. 2014.</citation>
+            <citation>Watkin, S. C. The Application of AVHRR Data for the Detection of Volcanic Ash in a Volcanic Ash Advisory Centre. Meteorological Applications 10.4 (1999): 301-11. Wiley Online Library. Web. 19 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_209</citationId>
@@ -840,43 +840,43 @@
         </citationPair>
         <citationPair>
             <citationId>CIT_300</citationId>
-            <citation>Hosni Mubarak." Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Hosni Mubarak. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_301</citationId>
-            <citation>Chris Christie." Wikipedia. Wikimedia Foundation, 14 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Chris Christie. Wikipedia. Wikimedia Foundation, 14 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_302</citationId>
-            <citation>Richard Nixon." Wikipedia. Wikimedia Foundation, 3 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Richard Nixon. Wikipedia. Wikimedia Foundation, 3 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_303</citationId>
-            <citation>Jimmy Carter." Wikipedia. Wikimedia Foundation, 17 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Jimmy Carter. Wikipedia. Wikimedia Foundation, 17 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_304</citationId>
-            <citation>Timothy McVeigh." Wikipedia. Wikimedia Foundation, 9 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Timothy McVeigh. Wikipedia. Wikimedia Foundation, 9 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_305</citationId>
-            <citation>Jean-Max Bellerive." Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Jean-Max Bellerive. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_306</citationId>
-            <citation>Hillary Clinton." Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
+            <citation>Hillary Clinton. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
              <citationId>CIT_307</citationId>
-             <citation>Barack Obama." Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
+             <citation>Barack Obama. Wikipedia. Wikimedia Foundation, 15 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
              <citationId>CIT_308</citationId>
-             <citation>Olafur Grimsson." Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
+             <citation>Olafur Grimsson. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
         <citationPair>
              <citationId>CIT_309</citationId>
-             <citation>Ernst August Lehmann." Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
+             <citation>Ernst August Lehmann. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
         </citationPair>
     </citations>
     <crisisCitations>

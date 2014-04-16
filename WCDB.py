@@ -87,7 +87,11 @@ def createDB(login):
             login,
             """
             CREATE TABLE Crises (
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+=======
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             name varchar(100) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Natural Disaster','War / Conflict','Act of Terrorism','Human Error Disaster','Assassination / Shooting') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -114,7 +118,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE Orgs (
-            orgId int(6) unsigned NOT NULL AUTO_INCREMENT,
+            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             name varchar(100) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('Corporation','Government Agency','Military Force','Intergovernmental Agency','Intergovernmental Public Health Agency', 'Nonprofit / Humanitarian Organization') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -133,7 +137,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE People (
-            personId int(6) unsigned NOT NULL AUTO_INCREMENT,
+            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             name varchar(100) COLLATE utf8_unicode_ci NOT NULL,
             kind enum('President','Celebrity','Actor/Actress','Musician','Politician', 'CEO','Humanitarian','Perpetrator','Regular Worker') COLLATE utf8_unicode_ci NOT NULL,
             streetAddress varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -159,7 +163,11 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisResources (
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+=======
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             resourceId int(6) unsigned NOT NULL,
             FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
             FOREIGN KEY (resourceId) REFERENCES Resources(resourceId)
@@ -180,7 +188,11 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisWaysToHelp (
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+=======
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             helpId int(6) unsigned NOT NULL,
             FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
             FOREIGN KEY (helpId) REFERENCES WaysToHelp(helpId)
@@ -205,7 +217,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE OrgContactInfos (
-            orgId int(6) unsigned NOT NULL,
+            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             contactInfoId int(6) unsigned NOT NULL,
             FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
             FOREIGN KEY (contactInfoId) REFERENCES ContactInfos(contactInfoId)
@@ -227,7 +239,11 @@ def createDB(login):
             """
             CREATE TABLE CrisisCitations (
             citationId int(6) unsigned NOT NULL,
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+=======
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
             FOREIGN KEY (citationId) REFERENCES Citations(citationId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -237,7 +253,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE OrgCitations (
-            orgId int(6) unsigned NOT NULL,
+            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             citationId int(6) unsigned NOT NULL,
             FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
             FOREIGN KEY (citationId) REFERENCES Citations(citationId)
@@ -248,7 +264,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE PersonCitations (
-            personId int(6) unsigned NOT NULL,
+            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             citationId int(6) unsigned NOT NULL,
             FOREIGN KEY (personId) REFERENCES People(personId),
             FOREIGN KEY (citationId) REFERENCES Citations(citationId)
@@ -270,7 +286,11 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisUrls (
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+=======
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             urlId int(6) unsigned NOT NULL,
             FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
             FOREIGN KEY (urlId) REFERENCES Urls(urlId)
@@ -281,7 +301,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE OrgUrls (
-            orgId int(6) unsigned NOT NULL,
+            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             urlId int(6) unsigned NOT NULL,
             FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
             FOREIGN KEY (urlId) REFERENCES Urls(urlId)
@@ -292,7 +312,7 @@ def createDB(login):
             login,
             """
             CREATE TABLE PersonUrls (
-            personId int(6) unsigned NOT NULL,
+            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             urlId int(6) unsigned NOT NULL,
             FOREIGN KEY (personId) REFERENCES People(personId),
             FOREIGN KEY (urlId) REFERENCES Urls(urlId)
@@ -303,8 +323,13 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisOrgs (
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
             orgId int(6) unsigned NOT NULL,
+=======
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
             FOREIGN KEY (orgId) REFERENCES Orgs(orgId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -314,8 +339,13 @@ def createDB(login):
             login,
             """
             CREATE TABLE CrisisPeople (
+<<<<<<< HEAD
             crisisId varchar(10) COLLATE utf8_unicode_ci NOT NULL,
             personId int(6) unsigned NOT NULL,
+=======
+            crisisId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
             FOREIGN KEY (crisisId) REFERENCES Crises(crisisId),
             FOREIGN KEY (personId) REFERENCES People(personId)
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -325,8 +355,8 @@ def createDB(login):
             login,
             """
             CREATE TABLE OrgPeople (
-            orgId int(6) unsigned NOT NULL,
-            personId int(6) unsigned NOT NULL,
+            orgId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+            personId varchar(20) COLLATE utf8_unicode_ci NOT NULL,
             FOREIGN KEY (orgId) REFERENCES Orgs(orgId),
             FOREIGN KEY (personId) REFERENCES People(personId) 
             )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -347,7 +377,11 @@ def wcdb_import(login,tree):
     inserts_list = [] #this is a list of dictionaries with each dictionary being a row in crises
     counter = 0
     root_list = tree.findall("./crises/crisis")
+<<<<<<< HEAD
     global crises_id_list
+=======
+
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
 	
     for parent in root_list:
         insert_entry = {}
@@ -364,6 +398,7 @@ def wcdb_import(login,tree):
 
         #--------------to check if current one is a duplicate----------
 		
+<<<<<<< HEAD
 	if dict_entry['crisisId'] in crises_id_list:
 	    continue
 
@@ -378,6 +413,22 @@ def wcdb_import(login,tree):
 	s = 'insert into Crises Values' + str(s) + ';'
 	s =s.replace('None', 'Null')       
 	t = wcdb_query(login,s)
+=======
+        if dict_entry['crisisId'] in crises_id_list:
+            continue
+
+#--------------------------------------------------------------   
+        crises_id_list.append(dict_entry['crisisId'])  # save this id in the global list, next time check if the current instance we are dealing is in this list
+        s = (dict_entry.get('crisisId'), dict_entry.get('name'),dict_entry.get('kind'),dict_entry.get('streetAddress','Null'),dict_entry.get('city','Null'),\
+                 dict_entry.get('stateOrProvince','Null'),dict_entry.get('country','Null'),dict_entry.get('dateAndTime','Null'),\
+                 dict_entry.get('fatalities','Null'),dict_entry.get('injuries','Null'),dict_entry.get('populationIll','Null'),\
+                 dict_entry.get('populationDisplaced','Null'),dict_entry.get('environmentalImpact','Null'),dict_entry.get('politicalChanges','Null'),\
+                 dict_entry.get('culturalChanges','Null'),dict_entry.get('jobsLost','Null'),dict_entry.get('damageInUSD','Null'),\
+                 dict_entry.get('reparationCost','Null'),dict_entry.get('regulatoryChanges','Null'))
+        s = 'insert into Crises Values' + str(s) + ';'
+        s =s.replace('None', 'Null')       
+        t = wcdb_query(login,s)
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
 			
         
     #------------------import orgs table-------------------------------
@@ -1385,6 +1436,7 @@ def wcdb_read (stdin,flag,filename=" "):
     """
     if flag == True:
         imported_str_data = str(stdin.read())
+##        imported_str_data = imported_str_data.decode('utf-8')
         assert(type(imported_str_data) is str)
         data_tree = ET.fromstring(imported_str_data)
         assert(type(data_tree) is ET.Element)
@@ -1397,7 +1449,7 @@ def wcdb_read (stdin,flag,filename=" "):
         assert(type(imported_str_data) is str)
         data_tree = ET.fromstring(imported_str_data)
         assert(type(data_tree) is ET.Element)
-        #print(data_tree)  # for debugging fake, it tells you which file do bugs come from.
+        print(data_tree)  # for debugging fake, it tells you which file do bugs come from.
         return data_tree    
     
 # ------------
@@ -1408,7 +1460,7 @@ def wcdb_write (w, data_tree):
     converts an element string to a string data
     exports the string data 
     """
-    rough_exported_string = ET.tostring(data_tree, 'utf-8', method = "xml")
+    rough_exported_string = ET.tostring(data_tree, encoding='utf-8', method = "xml")
     assert(type(rough_exported_string) is str)
     reparsed = minidom.parseString(rough_exported_string)
     pretty_exported_string = reparsed.toprettyxml(indent="\t")
@@ -1430,6 +1482,17 @@ def wcdb_solve(r,w,xml_filename_list):
 ##    a = ("localhost", "root", "121314", "cs327e-wcdb")
     login_var = wcdb_login(*a)
     #-------------for acceptance tests-----------------
+    #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
+
+    global crises_id_list
+    global orgs_id_list
+    global people_id_list
+    global citation_list
+    crises_id_list = []
+    orgs_id_list = []
+    people_id_list = []
+    citation_list = []
+    #--------------------------------------------------------------------------------------------------------
 
     createDB(login_var)
     r_flag = True
@@ -1441,10 +1504,13 @@ def wcdb_solve(r,w,xml_filename_list):
     #----for real data from 8 groups-------------------
     #-----------create global lists to save Crises/Orgs/People unique Ids to get rid of duplicates ----------
 
+<<<<<<< HEAD
     global crises_id_list
     global orgs_id_list
     global people_id_list
     global citation_list
+=======
+>>>>>>> c7688e72567cf5a3f441e4b0fc271c35c3520a6b
     crises_id_list = []
     orgs_id_list = []
     people_id_list = []
@@ -1456,8 +1522,8 @@ def wcdb_solve(r,w,xml_filename_list):
     for filename in xml_filename_list:
         data_tree = wcdb_read(r,r_flag,filename)
         wcdb_import(login_var, data_tree)       
-##    export_data = wcdb_export(login_var)
-##    write = open('WCDB.out.xml', 'w')
-##    wcdb_write (write, export_data)
-##    write.close()
+    export_data = wcdb_export(login_var)
+    write = open('WCDB.out.xml', 'w')
+    wcdb_write (write, export_data)
+    write.close()
 

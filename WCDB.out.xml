@@ -1,8 +1,718 @@
 <?xml version="1.0" ?>
 <root>
-	<crises/>
-	<orgs/>
-	<people/>
+	<crises>
+		<crisis>
+			<crisisId>CRI_030</crisisId>
+			<name>Chernobyl Accident</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Chernobyl</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Ukraine</country>
+			<dateAndTime>1986-04-26 01:23:48</dateAndTime>
+			<fatalities>290000</fatalities>
+			<injuries>270000</injuries>
+			<populationIll>270000</populationIll>
+			<populationDisplaced>335000</populationDisplaced>
+			<environmentalImpact>Up to 60 sq. mi. of farmland is likely to remain contaminated for decades</environmentalImpact>
+			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>600</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>235000000000</reparationCost>
+			<regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_031</crisisId>
+			<name>BP Oil Spill</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Gulf of Mexico</country>
+			<dateAndTime>2010-04-20 21:45:00</dateAndTime>
+			<fatalities>11</fatalities>
+			<injuries>17</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>Wildlife was severely affected. The Gulf Coast's economic sectors were impacted such as offshore drilling, fishing, and tourism.</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>400000</jobsLost>
+			<damageInUSD>42200000000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>Stricter regulatory control on oil companies to prevent future accidents. It also increased BP's financial responsibility for affected companies</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_032</crisisId>
+			<name>9-11</name>
+			<kind>Act of Terrorism</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New York City</city>
+			<stateOrProvince>New York</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>2001-09-11 08:46:30</dateAndTime>
+			<fatalities>2996</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>Buildings destroyed and harmful effects from the smoke in the air </environmentalImpact>
+			<politicalChanges>Creation of the Department of Homeland Security and Patriot Act</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>100000</jobsLost>
+			<damageInUSD>10000000000</damageInUSD>
+			<reparationCost>3900000000</reparationCost>
+			<regulatoryChanges>Increased security measures put into place</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_033</crisisId>
+			<name>1900 Galveston Hurricane</name>
+			<kind>Natural Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Galveston</city>
+			<stateOrProvince>Texas</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>1900-09-08 08:45:00</dateAndTime>
+			<fatalities>8000</fatalities>
+			<injuries>5000</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>Galveston municipal government adopted a more centralized structure to deal with the storm aftermath.</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>30000000</damageInUSD>
+			<reparationCost>1250000</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_034</crisisId>
+			<name>Cuban Missile Crisis</name>
+			<kind>War / Conflict</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NUll</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Cuba</country>
+			<dateAndTime>1962-10-14 00:00:00</dateAndTime>
+			<fatalities>1</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>0</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>Big impact on the fall of the USSR</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>0</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>Embargo against Cuba</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_035</crisisId>
+			<name>Boston Marathon Bombing</name>
+			<kind>Act of Terrorism</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Boston</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>USA</country>
+			<dateAndTime>2013-04-15 00:00:00</dateAndTime>
+			<fatalities>3</fatalities>
+			<injuries>264</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>333</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_036</crisisId>
+			<name>West Plant Explosion</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>West</city>
+			<stateOrProvince>TX</stateOrProvince>
+			<country>NULL</country>
+			<dateAndTime>2013-04-17 00:00:00</dateAndTime>
+			<fatalities>15</fatalities>
+			<injuries>160</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>186</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_037</crisisId>
+			<name>2008 Financial Crises</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>USA</country>
+			<dateAndTime>2008-09-01 00:00:00</dateAndTime>
+			<fatalities>0</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>5500000</jobsLost>
+			<damageInUSD>648000</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_038</crisisId>
+			<name>Darfur Genocides</name>
+			<kind>War / Conflict</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>Darfur</country>
+			<dateAndTime>2003-02-01 00:00:00</dateAndTime>
+			<fatalities>461520</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>NULL</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>760</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_039</crisisId>
+			<name>Tropical Storm Allison</name>
+			<kind>Natural Disaster</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<country>USA</country>
+			<dateAndTime>2001-06-04 00:00:00</dateAndTime>
+			<fatalities>41</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>30000</populationDisplaced>
+			<environmentalImpact>NULL</environmentalImpact>
+			<politicalChanges>NULL</politicalChanges>
+			<culturalChanges>NULL</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>5500</damageInUSD>
+			<reparationCost>0</reparationCost>
+			<regulatoryChanges>NULL</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_045</crisisId>
+			<name>Egypt Revolution of 2011</name>
+			<kind>War / Conflict</kind>
+			<streetAddress>Egypt</streetAddress>
+			<city>Arab Spring</city>
+			<stateOrProvince>Egypt</stateOrProvince>
+			<country>Egypt</country>
+			<dateAndTime>2011-01-25 05:40:00</dateAndTime>
+			<fatalities>846</fatalities>
+			<injuries>6467</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>50000</populationDisplaced>
+			<environmentalImpact>Buildings destroyed</environmentalImpact>
+			<politicalChanges>Changing leader</politicalChanges>
+			<culturalChanges>Changing leadership</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>98756235</damageInUSD>
+			<reparationCost>4563215</reparationCost>
+			<regulatoryChanges>overthrow of Mubarak government</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_046</crisisId>
+			<name>Hurricane Sandy</name>
+			<kind>Natural Disaster</kind>
+			<streetAddress>Null</streetAddress>
+			<city>Null</city>
+			<stateOrProvince>Null</stateOrProvince>
+			<country>North America</country>
+			<dateAndTime>2012-10-25 05:40:00</dateAndTime>
+			<fatalities>148</fatalities>
+			<injuries>138</injuries>
+			<populationIll>620</populationIll>
+			<populationDisplaced>3000</populationDisplaced>
+			<environmentalImpact>Buildings destroyed</environmentalImpact>
+			<politicalChanges>Storm Watch Alert</politicalChanges>
+			<culturalChanges>protecting people</culturalChanges>
+			<jobsLost>6254</jobsLost>
+			<damageInUSD>5000000000</damageInUSD>
+			<reparationCost>40000000</reparationCost>
+			<regulatoryChanges>economic repair</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_047</crisisId>
+			<name>Nixon Shock</name>
+			<kind>Human Error Disaster</kind>
+			<streetAddress>Entire nation</streetAddress>
+			<city>Washington DC</city>
+			<stateOrProvince>DC</stateOrProvince>
+			<country>United States</country>
+			<dateAndTime>1971-09-13 02:10:00</dateAndTime>
+			<fatalities>0</fatalities>
+			<injuries>0</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>100</populationDisplaced>
+			<environmentalImpact>no environmental impact</environmentalImpact>
+			<politicalChanges>impeach president</politicalChanges>
+			<culturalChanges>change of president image</culturalChanges>
+			<jobsLost>200</jobsLost>
+			<damageInUSD>10000000</damageInUSD>
+			<reparationCost>500000</reparationCost>
+			<regulatoryChanges>Nixon resignation</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_048</crisisId>
+			<name>Iran Hostage Crisis</name>
+			<kind>Act of Terrorism</kind>
+			<streetAddress>Secret location</streetAddress>
+			<city>consealed information</city>
+			<stateOrProvince>United States</stateOrProvince>
+			<country>Iran</country>
+			<dateAndTime>1979-09-13 02:10:00</dateAndTime>
+			<fatalities>10</fatalities>
+			<injuries>15</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>5000</populationDisplaced>
+			<environmentalImpact>resources drained from Iran</environmentalImpact>
+			<politicalChanges>Protest against US</politicalChanges>
+			<culturalChanges>US gains negative image</culturalChanges>
+			<jobsLost>0</jobsLost>
+			<damageInUSD>100000</damageInUSD>
+			<reparationCost>500000</reparationCost>
+			<regulatoryChanges>Prisoners exchange</regulatoryChanges>
+		</crisis>
+		<crisis>
+			<crisisId>CRI_049</crisisId>
+			<name>Oklahoma City Bombing</name>
+			<kind>Act of Terrorism</kind>
+			<streetAddress>San Jacinto</streetAddress>
+			<city>OKC</city>
+			<stateOrProvince>OK</stateOrProvince>
+			<country>North America</country>
+			<dateAndTime>1995-04-19 05:40:00</dateAndTime>
+			<fatalities>168</fatalities>
+			<injuries>680</injuries>
+			<populationIll>0</populationIll>
+			<populationDisplaced>600</populationDisplaced>
+			<environmentalImpact>Buildings destroyed</environmentalImpact>
+			<politicalChanges>Increase terrorism awareness</politicalChanges>
+			<culturalChanges>understanding terrorism</culturalChanges>
+			<jobsLost>1000</jobsLost>
+			<damageInUSD>456300</damageInUSD>
+			<reparationCost>623000</reparationCost>
+			<regulatoryChanges>Buildings repair</regulatoryChanges>
+		</crisis>
+	</crises>
+	<orgs>
+		<org>
+			<orgId>ORG_012</orgId>
+			<name>Homeland Security</name>
+			<kind>Government Agency</kind>
+			<streetAddress>Nebraska Avenue Complex</streetAddress>
+			<city>Washington DC</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>US</country>
+			<foundingMission>After the September 11 attacks the department of homeland security was created to safegaurd against terrorism within the US and respond to future attacks</foundingMission>
+			<datefounded>2001-09-11 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_013</orgId>
+			<name>London Volcanic Ash Advisory Center</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
+			<streetAddress>Fitzroy Rd</streetAddress>
+			<city>Exeter</city>
+			<stateOrProvince>Devon</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>England</country>
+			<foundingMission>Coordinating and disseminating information on atmospheric volcanic ash</foundingMission>
+			<datefounded>1854-01-01 00:00:00</datefounded>
+			<majorEvents>Forecasts location of ash clouds from volcanic eruptions</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_034</orgId>
+			<name>International Nuclear Safety Group (INSAG)</name>
+			<kind>Intergovernmental Agency</kind>
+			<streetAddress>Vienna International Center, PO Box 100, 1400</streetAddress>
+			<city>Vienna</city>
+			<stateOrProvince>Null</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>Austria</country>
+			<foundingMission>The group was founded in 1985 by the International Atomic Energy Agency (IAEA) 
+			as an advisory committee in the area of nuclear safety.</foundingMission>
+			<datefounded>1985-01-01 00:00:00</datefounded>
+			<majorEvents>First investigation was the Chernobyl Accident</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_035</orgId>
+			<name>BP</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
+			<streetAddress>International Headquarters 1 St James's Square</streetAddress>
+			<city>London</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>SW1Y 4PD</postalCode>
+			<country>United Kingdom</country>
+			<foundingMission>To provide energy to people around the world</foundingMission>
+			<datefounded>1908-05-01 00:00:00</datefounded>
+			<majorEvents>It caused the BP oil spill, it was the first company to discover oil in the North Sea, and has become one of the top 6 oil and gas companies in the world.</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_036</orgId>
+			<name>Al-Qaeda</name>
+			<kind>Military Force</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>Null</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Al-Qaeda is a global militant Islamist and takfiri organization founded by Osama bin Laden in Peshawar, Pakistan, around August 1988.</foundingMission>
+			<datefounded>1988-08-01 00:00:00</datefounded>
+			<majorEvents>Behind the 9-11 attacks and many other bombings</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_037</orgId>
+			<name>Johnson and Johnson</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
+			<streetAddress>Johnson and Johnson, One Johnson and Johnson Plaza</streetAddress>
+			<city>New Brunswick</city>
+			<stateOrProvince>New Jersey</stateOrProvince>
+			<postalCode>08933</postalCode>
+			<country>United States</country>
+			<foundingMission>Founded by brothers Robert Wood Johnson, James Wood Johnson, and Edward Mead Johnson in New Brunswick, New Jersey as a pharmaceuticals company.</foundingMission>
+			<datefounded>1886-01-01 00:00:00</datefounded>
+			<majorEvents>First philanthropic gesture was donations to 1900 Galveston Hurricane victims.</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_038</orgId>
+			<name>Defense Intellegence Agency</name>
+			<kind>Government Agency</kind>
+			<streetAddress>200 Mac Dill Blvd</streetAddress>
+			<city>Washington</city>
+			<stateOrProvince>District of Columbia</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>United States</country>
+			<foundingMission>DIA is first in all-source defense intellengece to prevent strategic surprise and deliver a decision advantage to warfighters, defense planners, and policymakers.</foundingMission>
+			<datefounded>1961-10-01 00:00:00</datefounded>
+			<majorEvents>Failed to adequately act against one of the organizers of 9/11</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_039</orgId>
+			<name>American Red Cross</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
+			<streetAddress>2025 E St, NW Washington</streetAddress>
+			<city>Washington DC</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>20006</postalCode>
+			<country>USA</country>
+			<foundingMission>Founded by Clara Barton on May 21, 1881 as a means to provide disaster relief</foundingMission>
+			<datefounded>1881-05-21 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_040</orgId>
+			<name>Federal Reserve</name>
+			<kind>Government Agency</kind>
+			<streetAddress>20551 Constitution Ave NW Washington</streetAddress>
+			<city>Washington DC</city>
+			<stateOrProvince>USA</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Created December 23, 1913 with the Federal Reserve Act</foundingMission>
+			<datefounded>1913-12-23 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_041</orgId>
+			<name>Lehman Brothers</name>
+			<kind>Government Agency</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New York City</city>
+			<stateOrProvince>NY</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Founded in Montogomery, Alabama in 1850 as a general store by German immigrants</foundingMission>
+			<datefounded>1850-01-01 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_042</orgId>
+			<name>Liberation and Justice Movement</name>
+			<kind>Government Agency</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Darfur</city>
+			<stateOrProvince>Sudan</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Founded on February 23, 2010 by several Darfur Sudanese Rebel groups</foundingMission>
+			<datefounded>2010-02-23 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_043</orgId>
+			<name>Goldman Sachs</name>
+			<kind>Government Agency</kind>
+			<streetAddress>200 West ST</streetAddress>
+			<city>New York City</city>
+			<stateOrProvince>NY</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>NULL</country>
+			<foundingMission>Founded by Marcus Goldman in New York City 1869</foundingMission>
+			<datefounded>1869-01-01 00:00:00</datefounded>
+			<majorEvents>NULL</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_049</orgId>
+			<name>Egyptian Red Crescent</name>
+			<kind>Nonprofit / Humanitarian Organization</kind>
+			<streetAddress>Abd El Razik El Sanhouri St</streetAddress>
+			<city>Nasr City</city>
+			<stateOrProvince>Cairo</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>Egypt</country>
+			<foundingMission>Provide emergency assistance</foundingMission>
+			<datefounded>1911-01-01 00:00:00</datefounded>
+			<majorEvents>Development project of Al Nahda city</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_050</orgId>
+			<name>US Air Force</name>
+			<kind>Military Force</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Trenton</city>
+			<stateOrProvince>New Jersey</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>USA</country>
+			<foundingMission>Man balloons and dirigibles</foundingMission>
+			<datefounded>1907-08-01 00:00:00</datefounded>
+			<majorEvents>Fire response</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_051</orgId>
+			<name>Dow Jones and Company</name>
+			<kind>Intergovernmental Agency</kind>
+			<streetAddress>1211 Avenue of the Americas</streetAddress>
+			<city>New York</city>
+			<stateOrProvince>New York</stateOrProvince>
+			<postalCode>10036</postalCode>
+			<country>USA</country>
+			<foundingMission>Publication</foundingMission>
+			<datefounded>2002-12-10 00:00:00</datefounded>
+			<majorEvents>Publish the Wall Street Journal</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_052</orgId>
+			<name>US Army</name>
+			<kind>Military Force</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>NULL</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>USA</country>
+			<foundingMission>Fight Great Britain</foundingMission>
+			<datefounded>1775-06-14 00:00:00</datefounded>
+			<majorEvents>American Revolutionary War</majorEvents>
+		</org>
+		<org>
+			<orgId>ORG_053</orgId>
+			<name>FBI</name>
+			<kind>Government Agency</kind>
+			<streetAddress>935 Pennsylvania Ave NW</streetAddress>
+			<city>Washington, DC</city>
+			<stateOrProvince>Washington, DC</stateOrProvince>
+			<postalCode>20535</postalCode>
+			<country>USA</country>
+			<foundingMission>Identify known criminals</foundingMission>
+			<datefounded>1908-07-26 00:00:00</datefounded>
+			<majorEvents>Counterterrorism Watch</majorEvents>
+		</org>
+	</orgs>
+	<people>
+		<person>
+			<personId>PER_012</personId>
+			<name>Michele Pierre Louis</name>
+			<kind>President</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Jeremie</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>Haiti</country>
+		</person>
+		<person>
+			<personId>PER_013</personId>
+			<name>Anthony Lake</name>
+			<kind>CEO</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Lake Worth</city>
+			<stateOrProvince>New York</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_034</personId>
+			<name>Richard A. Meserve</name>
+			<kind>President</kind>
+			<streetAddress>Carnegie Institution for Science, 1530 P Street Northwest</streetAddress>
+			<city>Washington DC</city>
+			<stateOrProvince>Maryland</stateOrProvince>
+			<postalCode>20005</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_035</personId>
+			<name>Robert Warren Dudley</name>
+			<kind>CEO</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New York City</city>
+			<stateOrProvince>New York</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_036</personId>
+			<name>Osama bin Laden</name>
+			<kind>President</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Abottabad</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>Pakistan</country>
+		</person>
+		<person>
+			<personId>PER_037</personId>
+			<name>Robert Wood Johnson</name>
+			<kind>CEO</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New Brunswick</city>
+			<stateOrProvince>New Jersey</stateOrProvince>
+			<postalCode>08933</postalCode>
+			<country>United States</country>
+		</person>
+		<person>
+			<personId>PER_038</personId>
+			<name>Fidel Castro</name>
+			<kind>President</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Biran</city>
+			<stateOrProvince>NULL</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>Cuba</country>
+		</person>
+		<person>
+			<personId>PER_039</personId>
+			<name>Richard S. Fuld</name>
+			<kind>CEO</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>New York</city>
+			<stateOrProvince>NY</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_040</personId>
+			<name>Tamerlan Tsarnaev</name>
+			<kind>Perpetrator</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Boston</city>
+			<stateOrProvince>Massachusetts</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_041</personId>
+			<name>Dzhokhar Tsarnaev</name>
+			<kind>Perpetrator</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Boston</city>
+			<stateOrProvince>Massachusetts</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_042</personId>
+			<name>Omar al-Bashir</name>
+			<kind>President</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Khartoum</city>
+			<stateOrProvince>Khartoum State</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>Sudan</country>
+		</person>
+		<person>
+			<personId>PER_043</personId>
+			<name>Tijani Sese</name>
+			<kind>Politician</kind>
+			<streetAddress>NULL</streetAddress>
+			<city>Khartoum</city>
+			<stateOrProvince>Khartoum State</stateOrProvince>
+			<postalCode>Null</postalCode>
+			<country>Sudan</country>
+		</person>
+		<person>
+			<personId>PER_049</personId>
+			<name>Hosni Mubarak</name>
+			<kind>President</kind>
+			<streetAddress>El-Gomhoreya Square, Rahbet Abdin</streetAddress>
+			<city>Abdeen</city>
+			<stateOrProvince>Cairo Governorate</stateOrProvince>
+			<postalCode>NULL</postalCode>
+			<country>Egypt</country>
+		</person>
+		<person>
+			<personId>PER_050</personId>
+			<name>Chris Christie</name>
+			<kind>Politician</kind>
+			<streetAddress>125 W State St</streetAddress>
+			<city>Trenton</city>
+			<stateOrProvince>NJ</stateOrProvince>
+			<postalCode>08608</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_051</personId>
+			<name>Richard Nixon</name>
+			<kind>President</kind>
+			<streetAddress>1600 Pennsylvania Ave NW</streetAddress>
+			<city>Washington</city>
+			<stateOrProvince>DC</stateOrProvince>
+			<postalCode>20500</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_052</personId>
+			<name>Jimmy Carter</name>
+			<kind>President</kind>
+			<streetAddress>1600 Pennsylvania Ave NW</streetAddress>
+			<city>Washington</city>
+			<stateOrProvince>DC</stateOrProvince>
+			<postalCode>20500</postalCode>
+			<country>USA</country>
+		</person>
+		<person>
+			<personId>PER_053</personId>
+			<name>Timothy James McVeigh</name>
+			<kind>Perpetrator</kind>
+			<streetAddress>5880 Colorado 67</streetAddress>
+			<city>Florence</city>
+			<stateOrProvince>CO</stateOrProvince>
+			<postalCode>81226</postalCode>
+			<country>USA</country>
+		</person>
+	</people>
 	<resources/>
 	<crisisResources/>
 	<waysToHelp/>
@@ -395,7 +1105,108 @@
 			<citation>Ernst August Lehmann. Wikipedia. Wikimedia Foundation, 16 Mar. 2014. Web. 18 Mar. 2014.</citation>
 		</citationPair>
 	</citations>
-	<crisisCitations/>
+	<crisisCitations>
+		<crisisCitationPair>
+			<citationId>1</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>2</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>3</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>4</citationId>
+			<crisisId>CRI_030</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>15</citationId>
+			<crisisId>CRI_031</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>16</citationId>
+			<crisisId>CRI_031</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>17</citationId>
+			<crisisId>CRI_031</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>48</citationId>
+			<crisisId>CRI_032</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>49</citationId>
+			<crisisId>CRI_032</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>28</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>29</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>30</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>31</citationId>
+			<crisisId>CRI_033</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>40</citationId>
+			<crisisId>CRI_034</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_035</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_036</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_037</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_038</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>58</citationId>
+			<crisisId>CRI_039</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>61</citationId>
+			<crisisId>CRI_039</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>63</citationId>
+			<crisisId>CRI_045</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>64</citationId>
+			<crisisId>CRI_046</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>65</citationId>
+			<crisisId>CRI_047</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>66</citationId>
+			<crisisId>CRI_048</crisisId>
+		</crisisCitationPair>
+		<crisisCitationPair>
+			<citationId>67</citationId>
+			<crisisId>CRI_049</crisisId>
+		</crisisCitationPair>
+	</crisisCitations>
 	<orgCitations/>
 	<personCitations/>
 	<urls/>

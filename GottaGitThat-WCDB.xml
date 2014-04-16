@@ -243,7 +243,7 @@
 		<org>
             <orgId>ORG_035</orgId>
             <name>BP</name>
-            <kind>Corporation</kind>
+            <kind>Nonprofit / Humanitarian Organization</kind>
             <streetAddress>International Headquarters 1 St James's Square</streetAddress>
             <city>London</city>
             <stateOrProvince>NULL</stateOrProvince>
@@ -295,7 +295,7 @@
 		<org>
 			<orgId>ORG_037</orgId>
 			<name>Johnson and Johnson</name>
-			<kind>Corporation</kind>
+			<kind>Nonprofit / Humanitarian Organization</kind>
 			<streetAddress>Johnson and Johnson, One Johnson and Johnson Plaza</streetAddress>
 			<city>New Brunswick</city>
 			<stateOrProvince>New Jersey</stateOrProvince>
@@ -308,7 +308,7 @@
 		<org>
 			<orgId>ORG_007</orgId>
 			<name>Luftschiffbau Zeppelin</name>
-			<kind>Corporation</kind>
+			<kind>Nonprofit / Humanitarian Organization</kind>
 			<streetAddress>NULL</streetAddress>
 			<city>Friedrichshafen</city>
 			<stateOrProvince>NULL</stateOrProvince>
@@ -420,7 +420,7 @@
 		<person>
 			<personId>PER_007</personId>
 			<name>Ernst August Lehmann</name>
-			<kind>Regular Worker</kind>
+			<kind>Perpetrator</kind>
 			<streetAddress>NULL</streetAddress>
 			<city>Ludwigshafen am Rhein</city>
 			<stateOrProvince>NULL</stateOrProvince>

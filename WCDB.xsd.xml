@@ -232,7 +232,6 @@
                                     <xs:enumeration value="Intergovernmental Agency"/>
                                     <xs:enumeration value="Intergovernmental Public Health Agency"/>
                                     <xs:enumeration value="Nonprofit / Humanitarian Organization"/>
-									<xs:enumeration value="Corporation"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
@@ -269,7 +268,6 @@
                                     <xs:enumeration value="CEO"/>
                                     <xs:enumeration value="Humanitarian"/>
                                     <xs:enumeration value="Perpetrator"/>
-									<xs:enumeration value="Regular Worker"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>

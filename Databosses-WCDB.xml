@@ -251,8 +251,7 @@
             <postalCode>78701</postalCode>
 			<country>United States</country>
 			<foundingMission></foundingMission>
-			<dateFounded>0000-00-00</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
+			<dateFounded>0001-01-01</dateFounded>
 			<majorEvents></majorEvents>
             
         </org>
@@ -267,7 +266,6 @@
             <country>United States</country>
 			<foundingMission></foundingMission>
             <dateFounded>1946-07-01</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
 			<majorEvents></majorEvents>
         </org>
         <org>
@@ -281,7 +279,6 @@
 			<country>Switzerland</country>
 			<foundingMission></foundingMission>
             <dateFounded>1971-01-01</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
 			<majorEvents></majorEvents>
         </org>
 	<org>
@@ -295,7 +292,6 @@
 			<country>United States</country>
 			<foundingMission></foundingMission>
             <dateFounded>1962-01-01</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
 			<majorEvents></majorEvents>
         </org>
 	<org>
@@ -309,7 +305,6 @@
             <country>United States</country>
 			<foundingMission></foundingMission>
             <dateFounded>1942-01-01</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
 			<majorEvents></majorEvents>
         </org>
 	<org>
@@ -323,7 +318,6 @@
 			<country>Haiti</country>
 			<foundingMission></foundingMission>
             <dateFounded>1789-01-01</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
 			<majorEvents></majorEvents>
         </org>
 	<org>
@@ -337,7 +331,6 @@
             <country>United States</country>
 			<foundingMission></foundingMission>
             <dateFounded>1969-01-01</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
 			<majorEvents></majorEvents>
         </org>
 	<org>
@@ -351,7 +344,6 @@
 			<country>Netherlands</country>
 			<foundingMission></foundingMission>
             <dateFounded>1969-01-01</dateFounded>
-			<dateAbolished>0000-00-00</dateAbolished>
 			<majorEvents></majorEvents>
         </org>
     </orgs>

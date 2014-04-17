@@ -1,6 +1,9 @@
 use cs327e_joshen;
 
 /* -----------------------------------------------------------------------
+How to login to database
+mysql --host=z --user=joshen --password=pb6bKYnCDs
+
 How to execute this file: mysql -v -H < Queries.sql > Queries.html
 GottaGitThat Questions
 
@@ -107,9 +110,6 @@ select  country, sum(damageinUSD) as Total_Cost from Crises where country = 'Uni
 # ------------------------------------------------------------------------
 
 select "Are there more organizations based outside of the United States (within this database) than American organizations?";
-select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country <> 'United States' and country <> 'US' and country <> 'USA' order by country Is Null desc) as O2 union select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country = 'United States' or country = 'US' or country = 'USA') as O3;
-
-
 select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country <> 'United States' and country <> 'US' and country <> 'USA' order by substring_index(country,'NULL',1)) as O2 union select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country = 'United States' or country = 'US' or country = 'USA') as O3;
 # ------------------------------------------------------------------------
 

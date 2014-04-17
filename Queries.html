@@ -135,10 +135,6 @@ select "Are there more organizations based outside of the United States (within 
 --------------
 
 <TABLE BORDER=1><TR><TH>Are there more organizations based outside of the United States (within this database) than American organizations?</TH></TR><TR><TD>Are there more organizations based outside of the United States (within this database) than American organizations?</TD></TR></TABLE>--------------
-select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country <> 'United States' and country <> 'US' and country <> 'USA' order by country Is Null desc) as O2 union select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country = 'United States' or country = 'US' or country = 'USA') as O3
---------------
-
-<TABLE BORDER=1><TR><TH>OrganizationCount</TH><TH>Country</TH></TR><TR><TD>8</TD><TD>Germany</TD></TR><TR><TD>18</TD><TD>United States</TD></TR></TABLE>--------------
 select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country <> 'United States' and country <> 'US' and country <> 'USA' order by substring_index(country,'NULL',1)) as O2 union select sum(Count) as OrganizationCount, country as Country from (select count(name) as Count, country from Orgs group by country having country = 'United States' or country = 'US' or country = 'USA') as O3
 --------------
 

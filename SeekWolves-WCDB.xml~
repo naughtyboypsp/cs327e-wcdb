@@ -636,7 +636,7 @@
 
 	<contactInfos>
 		<contactInfo>
-			<contactInfoId>CON_021</contactInfoId>
+			<contactInfoId>CON_001</contactInfoId>
 			<phoneNumber>800-553-3210</phoneNumber>
 			<emailAddress>dpi_dis_unit@un.org</emailAddress>
 			<facebookUrlId>URL_096</facebookUrlId>
@@ -648,7 +648,7 @@
 	<orgContactInfos>
 		<orgContactInfoPair>
 			<orgId>ORG_002</orgId>
-			<contactInfoId>CON_021</contactInfoId>
+			<contactInfoId>CON_001</contactInfoId>
 		</orgContactInfoPair>
 	</orgContactInfos>
 		

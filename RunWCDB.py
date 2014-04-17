@@ -28,14 +28,10 @@ def main():
 
     xml_filename_list = ['GottaGitThat-WCDB.xml', \
                         'UtNonObliviscar-WCDB.xml', \
-                         'Brigadeiros-WCDB.xml']
-
-
-     #                    'SeekWolves-WCDB.xml', \
-                        # 'BashKetchum-WCDB.xml', \
-                        #  \                         
+			'SeekWolves-WCDB.xml', \
+                        'BashKetchum-WCDB.xml']#, \
+                        #'Databosses-WCDB.xml']           
                         # 'EJADK-WCDB.xml', \
-##                         'TeamRocket-WCDB.xml', \  # their data does not have kind tag
                        #  'Databosses-WCDB.xml']
     WCDB2.wcdb_solve(sys.stdin, sys.stdout,xml_filename_list)
     #----------------------------------------

@@ -331,7 +331,7 @@
         </org>
         <org>
             <orgId>ORG_005</orgId>
-            <name>World Health Organization</name>
+            <name>World Health Organization </name>
 			<kind>Intergovernmental Agency</kind>
             <streetAddress>Avenue Appia 20</streetAddress>
             <city>Geneva</city>

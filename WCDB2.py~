@@ -496,7 +496,6 @@ def wcdb_import(login,tree):
     for i in range(0,counter):
         dict_entry = inserts_list[i]     
         s = (dict_entry.get('crisisId'),dict_entry.get('resourceId'))
-	print s
         s = 'insert into CrisisResources Values' + str(s) + ';'
         s =s.replace('None', 'Null')
         t = wcdb_query(login,s)
@@ -1418,6 +1417,7 @@ def wcdb_write (w, data_tree):
 
 # ------------
 # wcdb_solve
+
 # ------------
 def wcdb_solve(r,w,xml_filename_list):
     """

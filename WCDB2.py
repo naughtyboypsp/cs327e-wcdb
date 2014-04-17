@@ -75,7 +75,7 @@ def createDB(login):
     
     wcdb_query(login, "drop table if exists Crises;")
     wcdb_query(login, "drop table if exists Orgs;")
-    wcdb_query(login, "drop table if exists People")
+    wcdb_query(login, "drop table if exists People;")
     wcdb_query(login, "drop table if exists Resources;")    
     wcdb_query(login, "drop table if exists WaysToHelp;")   
     wcdb_query(login, "drop table if exists ContactInfos;")    

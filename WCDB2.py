@@ -548,49 +548,6 @@ def wcdb_import(login,tree):
         s = 'insert into CrisisWaysToHelp Values' + str(s) + ';'
         t = wcdb_query(login,s)
 
-    #------------------import contactInfos table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./contactInfos/contactInfo")
-
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-
-    for i in range(0,counter):
-        #Queryinseting - Crisis Table
-        dict_entry = inserts_list[i]    
-        s = (dict_entry.get('contactInfoId'),dict_entry.get('phoneNumber'), dict_entry.get('emailAddress'),\
-        dict_entry.get('facebookUrlId'), dict_entry.get('twitterUrlId'), dict_entry.get('websiteUrlId'))
-        s = 'insert into ContactInfos Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)
-        
-    #------------------import orgContactInfos table-------------------------------
-    inserts_list = []
-    counter = 0
-    root_list = tree.findall("./orgContactInfos/orgContactInfoPair")
-
-    for parent in root_list:
-        insert_entry = {}
-        #Iterates over Children
-        for child in parent:
-            if child.getchildren() == []:
-                insert_entry[child.tag] = child.text
-        inserts_list.append(insert_entry)
-        counter += 1
-
-    for i in range(0,counter):
-        dict_entry = inserts_list[i]
-        s = (dict_entry.get('orgId'),dict_entry.get('contactInfoId'))
-        s = 'insert into OrgContactInfos Values' + str(s) + ';'
-        s =s.replace('None', 'Null')
-        t = wcdb_query(login,s)   
 
     #------------------import citations table-------------------------------
     inserts_list = []
@@ -720,6 +677,54 @@ def wcdb_import(login,tree):
         t = wcdb_query(login,s)
         newID = login.insert_id()
         urlIds[dict_entry['urlId']] = int(newID)
+
+    #------------------import contactInfos table-------------------------------
+    inserts_list = []
+    counter = 0
+    root_list = tree.findall("./contactInfos/contactInfo")
+
+    for parent in root_list:
+        insert_entry = {}
+        #Iterates over Children
+        for child in parent:
+            if child.getchildren() == []:
+                insert_entry[child.tag] = child.text
+        inserts_list.append(insert_entry)
+        counter += 1
+
+    for i in range(0,counter):
+        #Queryinseting - Crisis Table
+        dict_entry = inserts_list[i]    
+        s = "('" + str(dict_entry.get('contactInfoId')) + "', " \
+		+ "'" + str(dict_entry.get('phoneNumber')) + "', " \
+		+ "'" + str(dict_entry.get('emailAddress')) + "', " \
+		+ str(urlIds[dict_entry['facebookUrlId']]) + ", " \
+		+ str(urlIds[dict_entry['twitterUrlId']]) + ", " \
+		+ str(urlIds[dict_entry['websiteUrlId']]) + ')'
+        s = 'insert into ContactInfos Values' + s + ';'
+        s =s.replace('None', 'Null')
+        t = wcdb_query(login,s)
+        
+    #------------------import orgContactInfos table-------------------------------
+    inserts_list = []
+    counter = 0
+    root_list = tree.findall("./orgContactInfos/orgContactInfoPair")
+
+    for parent in root_list:
+        insert_entry = {}
+        #Iterates over Children
+        for child in parent:
+            if child.getchildren() == []:
+                insert_entry[child.tag] = child.text
+        inserts_list.append(insert_entry)
+        counter += 1
+
+    for i in range(0,counter):
+        dict_entry = inserts_list[i]
+        s = (dict_entry.get('orgId'),dict_entry.get('contactInfoId'))
+        s = 'insert into OrgContactInfos Values' + str(s) + ';'
+        s =s.replace('None', 'Null')
+        t = wcdb_query(login,s)   
 
     #------------------import crisisUrls table-------------------------------
     inserts_list = []

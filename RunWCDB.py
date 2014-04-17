@@ -26,13 +26,15 @@ import WCDB2
 def main():
     #---------- a list to save the filenames----------
 
-    xml_filename_list = ['GottaGitThat-WCDB.xml', \
-                        'UtNonObliviscar-WCDB.xml', \
-			'SeekWolves-WCDB.xml', \
-                        'BashKetchum-WCDB.xml']#, \
-                        #'Databosses-WCDB.xml']           
-                        # 'EJADK-WCDB.xml', \
-                       #  'Databosses-WCDB.xml']
+    xml_filename_list = ['EJADK-WCDB.xml']#, \]           
+
+#Working List = ['GottaGitThat-WCDB.xml', \
+#                        'UtNonObliviscar-WCDB.xml', \
+#			'SeekWolves-WCDB.xml', \
+#                        'BashKetchum-WCDB.xml', \
+#			'TeamRocket-WCDB.xml', \
+#			'Databosses-WCDB.xml']
+
     WCDB2.wcdb_solve(sys.stdin, sys.stdout,xml_filename_list)
     #----------------------------------------
 

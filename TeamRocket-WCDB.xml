@@ -345,7 +345,7 @@
     </orgs>
     <people>
         <person>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
             <name>Kim Jong Un</name>
 			<kind>President</kind>
             <streetAddress>434 Gangnam Style Avenue</streetAddress>
@@ -788,7 +788,7 @@
     </crisisWaysToHelp>
 <contactInfos>
         <contactInfo>
-            <contactInfoId>CON_001</contactInfoId>
+            <contactInfoId>CON_041</contactInfoId>
             <phoneNumber>1-404-827-1500</phoneNumber>
             <emailAddress />
             <facebookUrlId>URL_204</facebookUrlId>
@@ -796,7 +796,7 @@
             <websiteUrlId>URL_206</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_002</contactInfoId>
+            <contactInfoId>CON_042</contactInfoId>
             <phoneNumber>1-888-698-6397</phoneNumber>
             <emailAddress>nytnews@nytimes.com</emailAddress>
             <facebookUrlId>URL_212</facebookUrlId>
@@ -804,7 +804,7 @@
             <websiteUrlId>URL_213</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_003</contactInfoId>
+            <contactInfoId>CON_043</contactInfoId>
             <phoneNumber />
             <emailAddress>longhornbraven@gmail.com</emailAddress>
             <facebookUrlId>URL_219</facebookUrlId>
@@ -812,7 +812,7 @@
             <websiteUrlId>URL_223</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_004</contactInfoId>
+            <contactInfoId>CON_044</contactInfoId>
             <phoneNumber />
             <emailAddress>america@aljazeera.net</emailAddress>
             <facebookUrlId>URL_227</facebookUrlId>
@@ -820,7 +820,7 @@
             <websiteUrlId>URL_230</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_005</contactInfoId>
+            <contactInfoId>CON_045</contactInfoId>
             <phoneNumber />
             <emailAddress />
             <facebookUrlId>URL_234</facebookUrlId>
@@ -828,7 +828,7 @@
             <websiteUrlId>URL_236</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_006</contactInfoId>
+            <contactInfoId>CON_046</contactInfoId>
             <phoneNumber>1-800-621-3362</phoneNumber>
             <emailAddress />
             <facebookUrlId>URL_241</facebookUrlId>
@@ -836,7 +836,7 @@
             <websiteUrlId>URL_244</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_007</contactInfoId>
+            <contactInfoId>CON_047</contactInfoId>
             <phoneNumber>1-212-963-4475</phoneNumber>
             <emailAddress />
             <facebookUrlId>URL_248</facebookUrlId>
@@ -844,7 +844,7 @@
             <websiteUrlId>URL_250</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_008</contactInfoId>
+            <contactInfoId>CON_048</contactInfoId>
             <phoneNumber>1-202-372-2100</phoneNumber>
             <emailAddress />
             <facebookUrlId>URL_254</facebookUrlId>
@@ -852,7 +852,7 @@
             <websiteUrlId>URL_257</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_009</contactInfoId>
+            <contactInfoId>CON_049</contactInfoId>
             <phoneNumber>1-800-268-3710</phoneNumber>
             <emailAddress />
             <facebookUrlId>URL_261</facebookUrlId>
@@ -860,7 +860,7 @@
             <websiteUrlId>URL_264</websiteUrlId>
         </contactInfo>
         <contactInfo>
-            <contactInfoId>CON_010</contactInfoId>
+            <contactInfoId>CON_050</contactInfoId>
             <phoneNumber>41 22 791 21 11</phoneNumber>
             <emailAddress />
             <facebookUrlId>URL_270</facebookUrlId>
@@ -871,86 +871,86 @@
     <orgContactInfos>
         <orgContactInfoPair>
             <orgId>ORG_044</orgId>
-            <contactInfoId>CON_001</contactInfoId>
+            <contactInfoId>CON_041</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_045</orgId>
-            <contactInfoId>CON_002</contactInfoId>
+            <contactInfoId>CON_042</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_046</orgId>
-            <contactInfoId>CON_003</contactInfoId>
+            <contactInfoId>CON_043</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_047</orgId>
-            <contactInfoId>CON_004</contactInfoId>
+            <contactInfoId>CON_044</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_048</orgId>
-            <contactInfoId>CON_005</contactInfoId>
+            <contactInfoId>CON_045</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_001</orgId>
-            <contactInfoId>CON_006</contactInfoId>
+            <contactInfoId>CON_046</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_002</orgId>
-            <contactInfoId>CON_007</contactInfoId>
+            <contactInfoId>CON_047</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_003</orgId>
-            <contactInfoId>CON_008</contactInfoId>
+            <contactInfoId>CON_048</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_004</orgId>
-            <contactInfoId>CON_009</contactInfoId>
+            <contactInfoId>CON_049</contactInfoId>
         </orgContactInfoPair>
         <orgContactInfoPair>
             <orgId>ORG_005</orgId>
-            <contactInfoId>CON_010</contactInfoId>
+            <contactInfoId>CON_050</contactInfoId>
         </orgContactInfoPair>
     </orgContactInfos>
    <citations>
         <citationPair>
             <citationId>CIT_101</citationId>
-            <citation> "Venezuela's Maduro says 2013 annual inflation was 56.2 pct". Reuters. 30 December 2013</citation>
+            <citation> Venezuela's Maduro says 2013 annual inflation was 56.2 pct. Reuters. 30 December 2013</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_102</citationId>
-            <citation> "At least two killed by gunfire at Venezuela protests". Reuters. 12 February 2014</citation>
+            <citation> At least two killed by gunfire at Venezuela protests. Reuters. 12 February 2014</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_103</citationId>
-            <citation>"Ukraine crisis: Early results show Crimea votes to join Russia" CNN. 14, March 2014</citation>
+            <citation>Ukraine crisis: Early results show Crimea votes to join Russia CNN. 14, March 2014</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_104</citationId>
-            <citation>"Ukraine crisis: EU and US impose sanctions over Crimea" CNN. 17, March 2014</citation>
+            <citation>Ukraine crisis: EU and US impose sanctions over Crimea CNN. 17, March 2014</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_105</citationId>
-            <citation> "Press aghast at Pussy Riot verdict". BBC News. August 18, 2012. Archived from the original on October 27, 2012. Retrieved October 27, 2012.</citation>
+            <citation> Press aghast at Pussy Riot verdict. BBC News. August 18, 2012. Archived from the original on October 27, 2012. Retrieved October 27, 2012.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_106</citationId>
-            <citation> "Pussy Riot found guilty of hooliganism by Moscow court". BBC News. August 17, 2012.</citation>
+            <citation> Pussy Riot found guilty of hooliganism by Moscow court. BBC News. August 17, 2012.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_107</citationId>
-            <citation>"Syrian mourners call for revolt, forces fire tear gas". Reuters. 19, March 2011</citation>
+            <citation>Syrian mourners call for revolt, forces fire tear gas. Reuters. 19, March 2011</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_108</citationId>
-            <citation>"Syrian Unemployment Rate". Index Mundy. 2013</citation>
+            <citation>Syrian Unemployment Rate. Index Mundy. 2013</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_109</citationId>
-            <citation>"""Could Kim Jong Un face prosecution for the treatment of his people?"" CNN. 17, Feb 2014
-"</citation>
+            <citation>Could Kim Jong Un face prosecution for the treatment of his people? CNN. 17, Feb 2014
+</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_110</citationId>
-            <citation>"U.N. Panel Faults China on North Korean Refugees" NYT. 18, Feb 2014</citation>
+            <citation>U.N. Panel Faults China on North Korean Refugees NYT. 18, Feb 2014</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_201</citationId>
@@ -998,11 +998,11 @@
         </citationPair>
         <citationPair>
             <citationId>CIT_302</citationId>
-            <citation>Fangmann, Alexander (13 April 2013). "Maduro prepares cutbacks for post-election Venezuela". World Socialist Web Site. Retrieved 14 April 2013.</citation>
+            <citation>Fangmann, Alexander (13 April 2013). Maduro prepares cutbacks for post-election Venezuela. World Socialist Web Site. Retrieved 14 April 2013.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_303</citationId>
-            <citation>"Leopoldo Lopez: Venezuela blueblood, ardent Maduro foe". Yahoo News. 19 February 2014. Retrieved 23 February 2014.</citation>
+            <citation>Leopoldo Lopez: Venezuela blueblood, ardent Maduro foe. Yahoo News. 19 February 2014. Retrieved 23 February 2014.</citation>
         </citationPair>
         <citationPair>
             <citationId>CIT_304</citationId>
@@ -1119,7 +1119,7 @@
     </orgCitations>
     <personCitations>
         <personCitationPair>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
             <citationId>CIT_301</citationId>
         </personCitationPair>
         <personCitationPair>
@@ -1193,7 +1193,7 @@
         <url>
             <urlId>URL_107</urlId>
             <type>ExternalLink</type>
-            <urlAddress></urlAddress>
+            <urlAddress>NULL</urlAddress>
         </url>
         <url>
             <urlId>URL_108</urlId>
@@ -2609,23 +2609,23 @@
     </orgUrls>
     <personUrls>
         <personUrlPair>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
             <urlId>URL_301</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
             <urlId>URL_302</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
             <urlId>URL_303</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
             <urlId>URL_304</urlId>
         </personUrlPair>
         <personUrlPair>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
             <urlId>URL_305</urlId>
         </personUrlPair>
         <personUrlPair>
@@ -2872,7 +2872,7 @@
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
-            <orgId>ORG_07</orgId>
+            <orgId>ORG_002</orgId>
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_040</crisisId>
@@ -2900,17 +2900,17 @@
         </crisisOrgPair>
         <crisisOrgPair>
             <crisisId>CRI_001</crisisId>
-            <orgId>ORG_10</orgId>
+            <orgId>ORG_005</orgId>
         </crisisOrgPair>
     </crisisOrgs>
     <crisisPeople>
         <crisisPersonPair>
             <crisisId>CRI_043</crisisId>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
         </crisisPersonPair>
         <crisisPersonPair>
             <crisisId>CRI_005</crisisId>
-            <personId>ORG_044</personId>
+            <personId>PER_044</personId>
         </crisisPersonPair>
         <crisisPersonPair>
             <crisisId>CRI_040</crisisId>

@@ -38,7 +38,7 @@ def wcdb_login ( host, un, pw, database ) :
 
 def wcdb_query (login, s):
     """Logs into DB and runs provided string as query"""
-    assert (str(type(login)) == "<type '_mysql.connection'>")
+    assert str(type(login)) == "<type '_mysql.connection'>"
     assert (type(s) is str)
     login.query(s)
     r = login.use_result()
@@ -1417,8 +1417,8 @@ def wcdb_solve(r,w,xml_filename_list):
     wcdb_import: import data from xml to databases
     wcdb_export: export data from databases to xml
     """   
-##    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-    a = ("localhost", "root", "121314", "cs327e-wcdb")
+    a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+#    a = ("localhost", "root", "121314", "cs327e-wcdb")
     login_var = wcdb_login(*a)
     #-------------for acceptance tests-----------------
     createDB(login_var)

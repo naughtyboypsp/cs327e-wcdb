@@ -20,7 +20,7 @@ import sys
 import _mysql
 import xml.dom.minidom as minidom
 import xml.etree.ElementTree as ET
-from WCDB import *
+from WCDB2 import *
 
 # ----------------------------------
 # TestWCDB.py,  unit tests in total
@@ -38,8 +38,8 @@ class TestWCDB(unittest.TestCase):
   # 3 ["z","joshen","pb6bKYnCDs","cs327e_joshen"]
   # -----------------------------------------------
   global a
-  a = ("localhost", "root", "121314", "cs327e-wcdb") # test_wcdb_export functions need re assign login tuple 'a'
-##a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+#  a = ("localhost", "root", "121314", "cs327e-wcdb") # test_wcdb_export functions need re assign login tuple 'a'
+  a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
   # -----------------------------------------------
   
   def test_wcdb_login1 (self):
@@ -265,8 +265,8 @@ class TestWCDB(unittest.TestCase):
   # ----------------------------------------------------
   # a simple test on nested tag
   def test_wcdb_export1(self):
-##      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-      a = ("localhost", "root", "121314", "cs327e-wcdb")
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+   #   a = ("localhost", "root", "121314", "cs327e-wcdb")
       login_var = wcdb_login(*a)
       createDB(login_var)
 
@@ -303,8 +303,8 @@ class TestWCDB(unittest.TestCase):
       self.assertTrue(len(root[0][0]) == 19)
       
   def test_wcdb_export2(self):
-##      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-      a = ("localhost", "root", "121314", "cs327e-wcdb")
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+ #     a = ("localhost", "root", "121314", "cs327e-wcdb")
       login_var = wcdb_login(*a)
       createDB(login_var)
 
@@ -329,8 +329,8 @@ class TestWCDB(unittest.TestCase):
       self.assertTrue(len(root[1][0]) == 11)
       
   def test_wcdb_export3(self):
-##      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-      a = ("localhost", "root", "121314", "cs327e-wcdb")
+      a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
+#      a = ("localhost", "root", "121314", "cs327e-wcdb")
       login_var = wcdb_login(*a)
       createDB(login_var)
 

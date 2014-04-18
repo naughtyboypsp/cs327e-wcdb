@@ -1403,7 +1403,6 @@ def wcdb_read (stdin,flag,filename=" "):
         data_tree = ET.fromstring(imported_str_data)
         assert(type(data_tree) is ET.Element)
         #print(data_tree)  # for debugging fake, it tells you which file do bugs come from.
-	print("file read.")
         return data_tree    
     
 # ------------

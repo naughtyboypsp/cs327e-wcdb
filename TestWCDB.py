@@ -20,7 +20,7 @@ import sys
 import _mysql
 import xml.dom.minidom as minidom
 import xml.etree.ElementTree as ET
-from WCDB2 import *
+from WCDB import *
 
 # ----------------------------------
 # TestWCDB.py,  unit tests in total
@@ -38,11 +38,7 @@ class TestWCDB(unittest.TestCase):
   # 3 ["z","joshen","pb6bKYnCDs","cs327e_joshen"]
   # -----------------------------------------------
   global a
-<<<<<<< HEAD
   #a = ("localhost", "root", "121314", "cs327e-wcdb") # test_wcdb_export functions need re assign login tuple 'a'
-=======
-#  a = ("localhost", "root", "121314", "cs327e-wcdb") # test_wcdb_export functions need re assign login tuple 'a'
->>>>>>> aad53586961d41ee1e248d31d0deaabcc8ad09ca
   a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
   # -----------------------------------------------
   
@@ -270,11 +266,7 @@ class TestWCDB(unittest.TestCase):
   # a simple test on nested tag
   def test_wcdb_export1(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-<<<<<<< HEAD
       #a = ("localhost", "root", "121314", "cs327e-wcdb")
-=======
-   #   a = ("localhost", "root", "121314", "cs327e-wcdb")
->>>>>>> aad53586961d41ee1e248d31d0deaabcc8ad09ca
       login_var = wcdb_login(*a)
       createDB(login_var)
 
@@ -312,11 +304,7 @@ class TestWCDB(unittest.TestCase):
       
   def test_wcdb_export2(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-<<<<<<< HEAD
       #a = ("localhost", "root", "121314", "cs327e-wcdb")
-=======
- #     a = ("localhost", "root", "121314", "cs327e-wcdb")
->>>>>>> aad53586961d41ee1e248d31d0deaabcc8ad09ca
       login_var = wcdb_login(*a)
       createDB(login_var)
 
@@ -342,11 +330,7 @@ class TestWCDB(unittest.TestCase):
       
   def test_wcdb_export3(self):
       a = ("z","joshen","pb6bKYnCDs","cs327e_joshen")
-<<<<<<< HEAD
       #a = ("localhost", "root", "121314", "cs327e-wcdb")
-=======
-#      a = ("localhost", "root", "121314", "cs327e-wcdb")
->>>>>>> aad53586961d41ee1e248d31d0deaabcc8ad09ca
       login_var = wcdb_login(*a)
       createDB(login_var)
 

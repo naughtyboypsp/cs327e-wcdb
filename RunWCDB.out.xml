@@ -1,21 +1,8 @@
-I am here
-read pass
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-import pass
 <?xml version="1.0" ?>
 <root>
 	<crises>
 		<crisis>
-			<crisisId>1</crisisId>
+			<crisisId>CRI_001</crisisId>
 			<name>Chernobyl Accident</name>
 			<kind>Human Error Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -36,7 +23,7 @@ import pass
 			<regulatoryChanges>Tightening of nuclear power plant safety regulations</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>2</crisisId>
+			<crisisId>CRI_002</crisisId>
 			<name>UT Tower Shooting</name>
 			<kind>Assassination / Shooting</kind>
 			<streetAddress>110 Inner Campus Drive</streetAddress>
@@ -57,7 +44,7 @@ import pass
 			<regulatoryChanges>Tower deck is closed due to safety regulations</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>3</crisisId>
+			<crisisId>CRI_003</crisisId>
 			<name>BP Oil Spill</name>
 			<kind>Human Error Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -78,7 +65,7 @@ import pass
 			<regulatoryChanges>Stricter regulatory control on oil companies to prevent future accidents. It also increased BP's financial responsibility for affected companies</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>4</crisisId>
+			<crisisId>CRI_004</crisisId>
 			<name>Hurricane Ike</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -99,7 +86,7 @@ import pass
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>5</crisisId>
+			<crisisId>CRI_005</crisisId>
 			<name>9-11</name>
 			<kind>Act of Terrorism</kind>
 			<streetAddress>NULL</streetAddress>
@@ -120,7 +107,7 @@ import pass
 			<regulatoryChanges>Increased security measures put into place</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>6</crisisId>
+			<crisisId>CRI_006</crisisId>
 			<name>Haiti Earthquake</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -141,7 +128,7 @@ import pass
 			<regulatoryChanges>Food and water is sent still to Haiti for earthquake victims</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>7</crisisId>
+			<crisisId>CRI_007</crisisId>
 			<name>1900 Galveston Hurricane</name>
 			<kind>Natural Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -162,7 +149,7 @@ import pass
 			<regulatoryChanges>NULL</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>8</crisisId>
+			<crisisId>CRI_008</crisisId>
 			<name>Hindenburg Crash</name>
 			<kind>Human Error Disaster</kind>
 			<streetAddress>NULL</streetAddress>
@@ -183,7 +170,7 @@ import pass
 			<regulatoryChanges>0</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>9</crisisId>
+			<crisisId>CRI_009</crisisId>
 			<name>Cuban Missile Crisis</name>
 			<kind>War / Conflict</kind>
 			<streetAddress>NULL</streetAddress>
@@ -204,7 +191,7 @@ import pass
 			<regulatoryChanges>Embargo against Cuba</regulatoryChanges>
 		</crisis>
 		<crisis>
-			<crisisId>10</crisisId>
+			<crisisId>CRI_010</crisisId>
 			<name>Cold War</name>
 			<kind>War / Conflict</kind>
 			<streetAddress>NULL</streetAddress>
@@ -227,7 +214,7 @@ import pass
 	</crises>
 	<orgs>
 		<org>
-			<orgId>1</orgId>
+			<orgId>ORG_001</orgId>
 			<name>International Nuclear Safety Group (INSAG)</name>
 			<kind>Intergovernmental Agency</kind>
 			<streetAddress>Vienna International Center, PO Box 100, 1400</streetAddress>
@@ -241,7 +228,7 @@ import pass
 			<majorEvents>First investigation was the Chernobyl Accident</majorEvents>
 		</org>
 		<org>
-			<orgId>2</orgId>
+			<orgId>ORG_002</orgId>
 			<name>Austin Police Department</name>
 			<kind>Government Agency</kind>
 			<streetAddress>Austin Police Department, PO Box 689001</streetAddress>
@@ -254,7 +241,7 @@ import pass
 			<majorEvents>In 2000, ADP became the first agency in Texas to become nationally accredited by the Commission on Accreditation for Law Enforcement Agencies</majorEvents>
 		</org>
 		<org>
-			<orgId>3</orgId>
+			<orgId>ORG_003</orgId>
 			<name>BP</name>
 			<kind>Corporation</kind>
 			<streetAddress>International Headquarters 1 St James's Square</streetAddress>
@@ -267,7 +254,7 @@ import pass
 			<majorEvents>It caused the BP oil spill, it was the first company to discover oil in the North Sea, and has become one of the top 6 oil and gas companies in the world.</majorEvents>
 		</org>
 		<org>
-			<orgId>4</orgId>
+			<orgId>ORG_004</orgId>
 			<name>Haitian Government</name>
 			<kind>Government Agency</kind>
 			<streetAddress>Morne A Tuff</streetAddress>
@@ -280,7 +267,7 @@ import pass
 			<majorEvents>The National Palace was destroyed in the Haiti Earthquake.</majorEvents>
 		</org>
 		<org>
-			<orgId>5</orgId>
+			<orgId>ORG_005</orgId>
 			<name>Al-Qaeda</name>
 			<kind>Military Force</kind>
 			<streetAddress>NULL</streetAddress>
@@ -293,7 +280,7 @@ import pass
 			<majorEvents>Behind the 9-11 attacks and many other bombings</majorEvents>
 		</org>
 		<org>
-			<orgId>6</orgId>
+			<orgId>ORG_006</orgId>
 			<name>UNICEF</name>
 			<kind>Intergovernmental Agency</kind>
 			<streetAddress>Austin Police Department, PO Box 689001</streetAddress>
@@ -306,7 +293,7 @@ import pass
 			<majorEvents>UNICEF was created by the United Nations General Assembly on December 11, 1946, to provide emergency food and healthcare to children in countries that had been devastated by World War II. </majorEvents>
 		</org>
 		<org>
-			<orgId>7</orgId>
+			<orgId>ORG_007</orgId>
 			<name>Johnson and Johnson</name>
 			<kind>Corporation</kind>
 			<streetAddress>Johnson and Johnson, One Johnson and Johnson Plaza</streetAddress>
@@ -319,7 +306,7 @@ import pass
 			<majorEvents>First philanthropic gesture was donations to 1900 Galveston Hurricane victims.</majorEvents>
 		</org>
 		<org>
-			<orgId>8</orgId>
+			<orgId>ORG_008</orgId>
 			<name>Luftschiffbau Zeppelin</name>
 			<kind>Corporation</kind>
 			<streetAddress>NULL</streetAddress>
@@ -332,7 +319,7 @@ import pass
 			<majorEvents>In 1937, the Hindenburg disaster meant the end of an era for this company, which after the world wars has come back into the airship business.</majorEvents>
 		</org>
 		<org>
-			<orgId>9</orgId>
+			<orgId>ORG_009</orgId>
 			<name>Defense Intellegence Agency</name>
 			<kind>Government Agency</kind>
 			<streetAddress>200 Mac Dill Blvd</streetAddress>
@@ -345,7 +332,7 @@ import pass
 			<majorEvents>Failed to adequately act against one of the organizers of 9/11</majorEvents>
 		</org>
 		<org>
-			<orgId>10</orgId>
+			<orgId>ORG_010</orgId>
 			<name>United Nations</name>
 			<kind>Intergovernmental Agency</kind>
 			<streetAddress>UN Headquarters First Avenue at 46th Street</streetAddress>
@@ -360,7 +347,7 @@ import pass
 	</orgs>
 	<people>
 		<person>
-			<personId>1</personId>
+			<personId>PER_001</personId>
 			<name>Richard A. Meserve</name>
 			<kind>President</kind>
 			<streetAddress>Carnegie Institution for Science, 1530 P Street Northwest</streetAddress>
@@ -370,7 +357,7 @@ import pass
 			<country>United States</country>
 		</person>
 		<person>
-			<personId>2</personId>
+			<personId>PER_002</personId>
 			<name>Charlie Whitman</name>
 			<kind>Perpetrator</kind>
 			<streetAddress>NULL</streetAddress>
@@ -380,7 +367,7 @@ import pass
 			<country>United States</country>
 		</person>
 		<person>
-			<personId>3</personId>
+			<personId>PER_003</personId>
 			<name>Robert Warren Dudley</name>
 			<kind>CEO</kind>
 			<streetAddress>NULL</streetAddress>
@@ -390,7 +377,7 @@ import pass
 			<country>United States</country>
 		</person>
 		<person>
-			<personId>4</personId>
+			<personId>PER_004</personId>
 			<name>Michele Pierre Louis</name>
 			<kind>President</kind>
 			<streetAddress>NULL</streetAddress>
@@ -400,7 +387,7 @@ import pass
 			<country>Haiti</country>
 		</person>
 		<person>
-			<personId>5</personId>
+			<personId>PER_005</personId>
 			<name>Osama bin Laden</name>
 			<kind>President</kind>
 			<streetAddress>NULL</streetAddress>
@@ -410,7 +397,7 @@ import pass
 			<country>Pakistan</country>
 		</person>
 		<person>
-			<personId>6</personId>
+			<personId>PER_006</personId>
 			<name>Anthony Lake</name>
 			<kind>CEO</kind>
 			<streetAddress>NULL</streetAddress>
@@ -420,7 +407,7 @@ import pass
 			<country>United States</country>
 		</person>
 		<person>
-			<personId>7</personId>
+			<personId>PER_007</personId>
 			<name>Robert Wood Johnson</name>
 			<kind>CEO</kind>
 			<streetAddress>NULL</streetAddress>
@@ -430,7 +417,7 @@ import pass
 			<country>United States</country>
 		</person>
 		<person>
-			<personId>8</personId>
+			<personId>PER_008</personId>
 			<name>Ernst August Lehmann</name>
 			<kind>Regular Worker</kind>
 			<streetAddress>NULL</streetAddress>
@@ -440,7 +427,7 @@ import pass
 			<country>Germany</country>
 		</person>
 		<person>
-			<personId>9</personId>
+			<personId>PER_009</personId>
 			<name>Fidel Castro</name>
 			<kind>President</kind>
 			<streetAddress>NULL</streetAddress>
@@ -450,7 +437,7 @@ import pass
 			<country>Cuba</country>
 		</person>
 		<person>
-			<personId>10</personId>
+			<personId>PER_010</personId>
 			<name>Barack Obama</name>
 			<kind>President</kind>
 			<streetAddress>1600 Pennsylvania Avenue NW</streetAddress>
@@ -460,12 +447,450 @@ import pass
 			<country>United States</country>
 		</person>
 	</people>
-	<resources/>
-	<crisisResources/>
-	<waysToHelp/>
-	<crisisWaysToHelp/>
-	<contactInfos/>
-	<orgContactInfos/>
+	<resources>
+		<resourcePair>
+			<resourceId>RES_000</resourceId>
+			<resource>Food</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_001</resourceId>
+			<resource>LaborUnion</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_002</resourceId>
+			<resource>Police</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_003</resourceId>
+			<resource>Repair</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_004</resourceId>
+			<resource>National Guards</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_005</resourceId>
+			<resource>Machinery</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_006</resourceId>
+			<resource>Servicemen</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_007</resourceId>
+			<resource>Water</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_008</resourceId>
+			<resource>Medical Supplies</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_009</resourceId>
+			<resource>Money</resource>
+		</resourcePair>
+		<resourcePair>
+			<resourceId>RES_010</resourceId>
+			<resource>Building Materials</resource>
+		</resourcePair>
+	</resources>
+	<crisisResources>
+		<crisisResourcePair>
+			<crisisId>CRI_001</crisisId>
+			<resourceId>RES_003</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_001</crisisId>
+			<resourceId>RES_005</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_001</crisisId>
+			<resourceId>RES_008</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_001</crisisId>
+			<resourceId>RES_009</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_001</crisisId>
+			<resourceId>RES_010</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_002</crisisId>
+			<resourceId>RES_002</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_002</crisisId>
+			<resourceId>RES_003</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_002</crisisId>
+			<resourceId>RES_008</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_002</crisisId>
+			<resourceId>RES_010</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_003</crisisId>
+			<resourceId>RES_006</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_003</crisisId>
+			<resourceId>RES_009</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_004</crisisId>
+			<resourceId>RES_000</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_004</crisisId>
+			<resourceId>RES_006</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_004</crisisId>
+			<resourceId>RES_007</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_004</crisisId>
+			<resourceId>RES_008</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_004</crisisId>
+			<resourceId>RES_009</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_004</crisisId>
+			<resourceId>RES_010</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_005</crisisId>
+			<resourceId>RES_008</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_005</crisisId>
+			<resourceId>RES_009</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_005</crisisId>
+			<resourceId>RES_010</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_006</crisisId>
+			<resourceId>RES_000</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_006</crisisId>
+			<resourceId>RES_002</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_006</crisisId>
+			<resourceId>RES_003</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_006</crisisId>
+			<resourceId>RES_004</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_006</crisisId>
+			<resourceId>RES_005</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_006</crisisId>
+			<resourceId>RES_008</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_006</crisisId>
+			<resourceId>RES_010</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_007</crisisId>
+			<resourceId>RES_000</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_007</crisisId>
+			<resourceId>RES_003</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_007</crisisId>
+			<resourceId>RES_007</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_007</crisisId>
+			<resourceId>RES_008</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_007</crisisId>
+			<resourceId>RES_009</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_007</crisisId>
+			<resourceId>RES_010</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_008</crisisId>
+			<resourceId>RES_008</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_008</crisisId>
+			<resourceId>RES_009</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_009</crisisId>
+			<resourceId>RES_004</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_009</crisisId>
+			<resourceId>RES_006</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_010</crisisId>
+			<resourceId>RES_004</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_010</crisisId>
+			<resourceId>RES_006</resourceId>
+		</crisisResourcePair>
+		<crisisResourcePair>
+			<crisisId>CRI_010</crisisId>
+			<resourceId>RES_009</resourceId>
+		</crisisResourcePair>
+	</crisisResources>
+	<waysToHelp>
+		<wayToHelpPair>
+			<helpId>HEL_000</helpId>
+			<wayToHelp>Bring food</wayToHelp>
+		</wayToHelpPair>
+		<wayToHelpPair>
+			<helpId>HEL_001</helpId>
+			<wayToHelp>Bring supplies</wayToHelp>
+		</wayToHelpPair>
+		<wayToHelpPair>
+			<helpId>HEL_002</helpId>
+			<wayToHelp>Call National Guards</wayToHelp>
+		</wayToHelpPair>
+		<wayToHelpPair>
+			<helpId>HEL_003</helpId>
+			<wayToHelp>Give donations</wayToHelp>
+		</wayToHelpPair>
+		<wayToHelpPair>
+			<helpId>HEL_004</helpId>
+			<wayToHelp>Bring police</wayToHelp>
+		</wayToHelpPair>
+		<wayToHelpPair>
+			<helpId>HEL_005</helpId>
+			<wayToHelp>Raise awareness</wayToHelp>
+		</wayToHelpPair>
+	</waysToHelp>
+	<crisisWaysToHelp>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_001</crisisId>
+			<helpId>HEL_001</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_001</crisisId>
+			<helpId>HEL_003</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_002</crisisId>
+			<helpId>HEL_004</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_003</crisisId>
+			<helpId>HEL_003</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_004</crisisId>
+			<helpId>HEL_000</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_004</crisisId>
+			<helpId>HEL_001</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_004</crisisId>
+			<helpId>HEL_003</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_004</crisisId>
+			<helpId>HEL_005</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_005</crisisId>
+			<helpId>HEL_003</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_006</crisisId>
+			<helpId>HEL_000</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_006</crisisId>
+			<helpId>HEL_001</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_007</crisisId>
+			<helpId>HEL_000</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_007</crisisId>
+			<helpId>HEL_001</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_007</crisisId>
+			<helpId>HEL_003</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_008</crisisId>
+			<helpId>HEL_001</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_008</crisisId>
+			<helpId>HEL_003</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_009</crisisId>
+			<helpId>HEL_002</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_009</crisisId>
+			<helpId>HEL_005</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_010</crisisId>
+			<helpId>HEL_001</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_010</crisisId>
+			<helpId>HEL_003</helpId>
+		</crisisWayToHelpPair>
+		<crisisWayToHelpPair>
+			<crisisId>CRI_010</crisisId>
+			<helpId>HEL_005</helpId>
+		</crisisWayToHelpPair>
+	</crisisWaysToHelp>
+	<contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_001</contactInfoId>
+			<phoneNumber>43-1-2600-0</phoneNumber>
+			<emailAddress>official.mail@iaea.org</emailAddress>
+			<facebookUrlId>1</facebookUrlId>
+			<twitterUrlId>1</twitterUrlId>
+			<websiteUrlId>15</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_002</contactInfoId>
+			<phoneNumber>512-974-5750</phoneNumber>
+			<emailAddress>NULL</emailAddress>
+			<facebookUrlId>18</facebookUrlId>
+			<twitterUrlId>1</twitterUrlId>
+			<websiteUrlId>19</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_003</contactInfoId>
+			<phoneNumber>44-0-20-7496-4000</phoneNumber>
+			<emailAddress>careline@bp.com</emailAddress>
+			<facebookUrlId>28</facebookUrlId>
+			<twitterUrlId>29</twitterUrlId>
+			<websiteUrlId>30</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_004</contactInfoId>
+			<phoneNumber>202-332-4090</phoneNumber>
+			<emailAddress>amb.washington@diplomatie.ht</emailAddress>
+			<facebookUrlId>1</facebookUrlId>
+			<twitterUrlId>31</twitterUrlId>
+			<websiteUrlId>32</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_005</contactInfoId>
+			<phoneNumber>NULL</phoneNumber>
+			<emailAddress>NULL</emailAddress>
+			<facebookUrlId>1</facebookUrlId>
+			<twitterUrlId>1</twitterUrlId>
+			<websiteUrlId>1</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_006</contactInfoId>
+			<phoneNumber>212-686-5522</phoneNumber>
+			<emailAddress>NULL</emailAddress>
+			<facebookUrlId>64</facebookUrlId>
+			<twitterUrlId>63</twitterUrlId>
+			<websiteUrlId>1</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_007</contactInfoId>
+			<phoneNumber>732-524-0400</phoneNumber>
+			<emailAddress>NULL</emailAddress>
+			<facebookUrlId>69</facebookUrlId>
+			<twitterUrlId>1</twitterUrlId>
+			<websiteUrlId>70</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_008</contactInfoId>
+			<phoneNumber>49-0-7541-202-06</phoneNumber>
+			<emailAddress>NULL</emailAddress>
+			<facebookUrlId>71</facebookUrlId>
+			<twitterUrlId>1</twitterUrlId>
+			<websiteUrlId>72</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_009</contactInfoId>
+			<phoneNumber>202-231-5554</phoneNumber>
+			<emailAddress>DIA-PAO@dodiis.mil</emailAddress>
+			<facebookUrlId>90</facebookUrlId>
+			<twitterUrlId>1</twitterUrlId>
+			<websiteUrlId>91</websiteUrlId>
+		</contactInfos>
+		<contactInfos>
+			<contactInfoId>CON_010</contactInfoId>
+			<phoneNumber>NULL</phoneNumber>
+			<emailAddress>inquiries2@un.org</emailAddress>
+			<facebookUrlId>94</facebookUrlId>
+			<twitterUrlId>1</twitterUrlId>
+			<websiteUrlId>95</websiteUrlId>
+		</contactInfos>
+	</contactInfos>
+	<orgContactInfos>
+		<orgContactInfoPair>
+			<orgId>ORG_001</orgId>
+			<contactInfoId>CON_001</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_002</orgId>
+			<contactInfoId>CON_002</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_003</orgId>
+			<contactInfoId>CON_003</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_004</orgId>
+			<contactInfoId>CON_004</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_005</orgId>
+			<contactInfoId>CON_005</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_006</orgId>
+			<contactInfoId>CON_006</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_007</orgId>
+			<contactInfoId>CON_007</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_008</orgId>
+			<contactInfoId>CON_008</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_009</orgId>
+			<contactInfoId>CON_009</contactInfoId>
+		</orgContactInfoPair>
+		<orgContactInfoPair>
+			<orgId>ORG_010</orgId>
+			<contactInfoId>CON_010</contactInfoId>
+		</orgContactInfoPair>
+	</orgContactInfos>
 	<citations>
 		<citationPair>
 			<citationId>1</citationId>
@@ -695,134 +1120,1310 @@ import pass
 	<crisisCitations>
 		<crisisCitationPair>
 			<citationId>1</citationId>
-			<crisisId>1</crisisId>
+			<crisisId>CRI_001</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>2</citationId>
-			<crisisId>1</crisisId>
+			<crisisId>CRI_001</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>3</citationId>
-			<crisisId>1</crisisId>
+			<crisisId>CRI_001</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>4</citationId>
-			<crisisId>1</crisisId>
+			<crisisId>CRI_001</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>5</citationId>
-			<crisisId>2</crisisId>
+			<crisisId>CRI_002</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>6</citationId>
-			<crisisId>2</crisisId>
+			<crisisId>CRI_002</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>15</citationId>
-			<crisisId>3</crisisId>
+			<crisisId>CRI_003</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>16</citationId>
-			<crisisId>3</crisisId>
+			<crisisId>CRI_003</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>17</citationId>
-			<crisisId>3</crisisId>
+			<crisisId>CRI_003</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>22</citationId>
-			<crisisId>4</crisisId>
+			<crisisId>CRI_004</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>23</citationId>
-			<crisisId>4</crisisId>
+			<crisisId>CRI_004</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>24</citationId>
-			<crisisId>4</crisisId>
+			<crisisId>CRI_004</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>48</citationId>
-			<crisisId>5</crisisId>
+			<crisisId>CRI_005</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>49</citationId>
-			<crisisId>5</crisisId>
+			<crisisId>CRI_005</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>51</citationId>
-			<crisisId>6</crisisId>
+			<crisisId>CRI_006</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>52</citationId>
-			<crisisId>6</crisisId>
+			<crisisId>CRI_006</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>8</citationId>
-			<crisisId>6</crisisId>
+			<crisisId>CRI_006</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>28</citationId>
-			<crisisId>7</crisisId>
+			<crisisId>CRI_007</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>29</citationId>
-			<crisisId>7</crisisId>
+			<crisisId>CRI_007</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>30</citationId>
-			<crisisId>7</crisisId>
+			<crisisId>CRI_007</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>31</citationId>
-			<crisisId>7</crisisId>
+			<crisisId>CRI_007</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>32</citationId>
-			<crisisId>8</crisisId>
+			<crisisId>CRI_008</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>40</citationId>
-			<crisisId>9</crisisId>
+			<crisisId>CRI_009</crisisId>
 		</crisisCitationPair>
 		<crisisCitationPair>
 			<citationId>41</citationId>
-			<crisisId>10</crisisId>
+			<crisisId>CRI_010</crisisId>
 		</crisisCitationPair>
 	</crisisCitations>
-	<orgCitations/>
-	<personCitations/>
-	<urls/>
-	<crisisUrls/>
-	<orgUrls/>
-	<personUrls/>
-	<crisisOrgs/>
-	<crisisPeople/>
-	<orgPeople/>
+	<orgCitations>
+		<orgCitationPair>
+			<orgId>ORG_001</orgId>
+			<citationId>7</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_001</orgId>
+			<citationId>8</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_002</orgId>
+			<citationId>9</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_002</orgId>
+			<citationId>10</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_004</orgId>
+			<citationId>14</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_003</orgId>
+			<citationId>25</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_003</orgId>
+			<citationId>26</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_003</orgId>
+			<citationId>27</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_005</orgId>
+			<citationId>46</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_005</orgId>
+			<citationId>47</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_006</orgId>
+			<citationId>55</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_006</orgId>
+			<citationId>56</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_007</orgId>
+			<citationId>33</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_008</orgId>
+			<citationId>34</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_008</orgId>
+			<citationId>35</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_008</orgId>
+			<citationId>36</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_008</orgId>
+			<citationId>37</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_009</orgId>
+			<citationId>42</citationId>
+		</orgCitationPair>
+		<orgCitationPair>
+			<orgId>ORG_010</orgId>
+			<citationId>43</citationId>
+		</orgCitationPair>
+	</orgCitations>
+	<personCitations>
+		<personCitationPair>
+			<personId>PER_001</personId>
+			<citationId>11</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_002</personId>
+			<citationId>12</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_002</personId>
+			<citationId>13</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_003</personId>
+			<citationId>18</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_003</personId>
+			<citationId>19</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_004</personId>
+			<citationId>20</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_004</personId>
+			<citationId>21</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_005</personId>
+			<citationId>50</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_006</personId>
+			<citationId>53</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_006</personId>
+			<citationId>54</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_007</personId>
+			<citationId>38</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_008</personId>
+			<citationId>39</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_009</personId>
+			<citationId>44</citationId>
+		</personCitationPair>
+		<personCitationPair>
+			<personId>PER_010</personId>
+			<citationId>45</citationId>
+		</personCitationPair>
+	</personCitations>
+	<urls>
+		<url>
+			<urlId>1</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>NULL</urlAddress>
+		</url>
+		<url>
+			<urlId>2</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.rapik.com/photo/thumbnails.php?album=38</urlAddress>
+		</url>
+		<url>
+			<urlId>3</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=YfulqRdDbsg</urlAddress>
+		</url>
+		<url>
+			<urlId>4</urlId>
+			<type>Map</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/2/23/Chernobyl_radiation_map_1996.svg</urlAddress>
+		</url>
+		<url>
+			<urlId>5</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/pages/Chernobyl-Ukraine/110869988937000</urlAddress>
+		</url>
+		<url>
+			<urlId>6</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://chernobyl.undp.org/english/</urlAddress>
+		</url>
+		<url>
+			<urlId>7</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://englishrussia.com/2009/04/29/at-the-nuclear-power-plant/</urlAddress>
+		</url>
+		<url>
+			<urlId>8</urlId>
+			<type>Image</type>
+			<urlAddress>http://alcalde.texasexes.org/wp-content/uploads/2012/08/7693379456_edf705e865_z.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>9</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=ShlbXlfQlkU</urlAddress>
+		</url>
+		<url>
+			<urlId>10</urlId>
+			<type>Map</type>
+			<urlAddress>http://www.utexas.edu/maps/main/areas/graphics/tower.gif</urlAddress>
+		</url>
+		<url>
+			<urlId>11</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://www.personal.psu.edu/faculty/r/a/rae2/tower/memorial.html/</urlAddress>
+		</url>
+		<url>
+			<urlId>12</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.iaea.org/newscenter/images/bog_300x200.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>13</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=Ejuvh-wEl3A</urlAddress>
+		</url>
+		<url>
+			<urlId>14</urlId>
+			<type>Map</type>
+			<urlAddress>http://www.iaea.org/safeguards/Symposium/2010/The_Venue/VIC.htm</urlAddress>
+		</url>
+		<url>
+			<urlId>15</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://www.iaea.org/</urlAddress>
+		</url>
+		<url>
+			<urlId>16</urlId>
+			<type>Image</type>
+			<urlAddress>http://austintexas.gov/sites/default/files/null/POLICE-apply_now-206x300.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>17</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=V9QEg4VXliE</urlAddress>
+		</url>
+		<url>
+			<urlId>18</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/AustinPolice</urlAddress>
+		</url>
+		<url>
+			<urlId>19</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://www.austintexas.gov/</urlAddress>
+		</url>
+		<url>
+			<urlId>20</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.aaas.org/sites/default/files/migrate/uploads/2008meserve.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>21</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=UjMqZ2CFW68</urlAddress>
+		</url>
+		<url>
+			<urlId>22</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/Carnegie+Institution+for+Science/@38.9095792,-77.0359687,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcc19325db48f5a93</urlAddress>
+		</url>
+		<url>
+			<urlId>23</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://www.nei.org/News-Media/Speeches/Richard-A-Meserve-Chairman-International-Safety-Gr</urlAddress>
+		</url>
+		<url>
+			<urlId>24</urlId>
+			<type>Image</type>
+			<urlAddress>http://murderpedia.org/male.W/images/whitman_charles/Whitman_marriage01.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>25</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=OON81IJ9yos</urlAddress>
+		</url>
+		<url>
+			<urlId>26</urlId>
+			<type>Map</type>
+			<urlAddress>http://www.utexas.edu/maps/main/areas/graphics/tower.gif</urlAddress>
+		</url>
+		<url>
+			<urlId>27</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&amp;GRid=5921</urlAddress>
+		</url>
+		<url>
+			<urlId>28</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/bp</urlAddress>
+		</url>
+		<url>
+			<urlId>29</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://twitter.com/BPGlobalPR</urlAddress>
+		</url>
+		<url>
+			<urlId>30</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>https://www.bp.com/</urlAddress>
+		</url>
+		<url>
+			<urlId>31</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://twitter.com/CFIHT</urlAddress>
+		</url>
+		<url>
+			<urlId>32</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://primature.gouv.ht</urlAddress>
+		</url>
+		<url>
+			<urlId>33</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.fiedlergroup.com/wp-content/uploads/2013/07/CP.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>34</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=bzkHlRsUspk</urlAddress>
+		</url>
+		<url>
+			<urlId>35</urlId>
+			<type>Map</type>
+			<urlAddress>https://maps.google.com/maps/ms?ie=UTF8&amp;t=m&amp;vpsrc=6&amp;oe=UTF8&amp;msa=0&amp;msid=203564522993973896920.0004b12224feae75337cb&amp;dg=feature</urlAddress>
+		</url>
+		<url>
+			<urlId>36</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/8/87/Palacio_presidencial_de_Haiti.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>37</urlId>
+			<type>Video</type>
+			<urlAddress>https://www.youtube.com/watch?v=nIFeLtzBEeQ</urlAddress>
+		</url>
+		<url>
+			<urlId>38</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/National+Palace/@18.5428643,-72.339,18z/data=!3m1!4b1!4m2!3m1!1s0x0:0x61abb72356187e11</urlAddress>
+		</url>
+		<url>
+			<urlId>39</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/5/53/Mich%C3%A8le_Pierre-Louis-2009_%282%29.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>40</urlId>
+			<type>Video</type>
+			<urlAddress>https://www.youtube.com/watch?v=klL3h_Axfe8</urlAddress>
+		</url>
+		<url>
+			<urlId>41</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/0/08/Bob_Dudley%2C_January_2011.jpeg</urlAddress>
+		</url>
+		<url>
+			<urlId>42</urlId>
+			<type>Video</type>
+			<urlAddress>http://video.cnbc.com/gallery/?video=3000183882</urlAddress>
+		</url>
+		<url>
+			<urlId>43</urlId>
+			<type>Image</type>
+			<urlAddress>http://cf.komonews.com/100604_gulf_oil_spill_lg13.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>44</urlId>
+			<type>Video</type>
+			<urlAddress>https://www.youtube.com/watch?v=QiF-X-Ez9Bs</urlAddress>
+		</url>
+		<url>
+			<urlId>45</urlId>
+			<type>Map</type>
+			<urlAddress>https://maps.google.com/maps/ms?ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=101786521158328646175.00048568e0de545981a6c</urlAddress>
+		</url>
+		<url>
+			<urlId>46</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://ocean.si.edu/gulf-oil-spill</urlAddress>
+		</url>
+		<url>
+			<urlId>47</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/0/0c/Hurricane_Ike-38265.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>48</urlId>
+			<type>Video</type>
+			<urlAddress>https://www.youtube.com/watch?v=mJbfGUylkR0</urlAddress>
+		</url>
+		<url>
+			<urlId>49</urlId>
+			<type>Map</type>
+			<urlAddress>https://maps.google.com/maps/ms?ie=UTF8&amp;oe=UTF8&amp;msa=0&amp;msid=117338013494279539826.000456baadd78b956b542&amp;dg=feature</urlAddress>
+		</url>
+		<url>
+			<urlId>50</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://coastal.er.usgs.gov/hurricanes/ike/index.html</urlAddress>
+		</url>
+		<url>
+			<urlId>51</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/e/e5/North_face_south_tower_after_plane_strike_9-11.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>52</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/a/ab/French_Urban_Search_and_Rescue.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>53</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/c/cd/World_Trade_Center_3_After_9-11_Attacks_With_Original_Building_Locations.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>54</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/9%2F11+Ground+Zero+Tour/@40.7098355,-74.0124321,16z/data=!4m6!1m3!3m2!1s0x89c25a1900381b53:0x4d0f11283f2c61ca!2s9%2F11+Memorial!3m1!1s0x0:0xb7344d2be25276f9</urlAddress>
+		</url>
+		<url>
+			<urlId>55</urlId>
+			<type>Video</type>
+			<urlAddress>https://www.youtube.com/watch?v=8IySBl2aq-A</urlAddress>
+		</url>
+		<url>
+			<urlId>56</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/L%C3%A9og%C3%A2ne/@18.5103159,-72.626946,15z/data=!3m1!4b1!4m2!3m1!1s0x8eb9cdcd5558ae65:0xf020c6e583ae7ab9 </urlAddress>
+		</url>
+		<url>
+			<urlId>57</urlId>
+			<type>Image</type>
+			<urlAddress>https://twitter.com/CBSNews/lists/haiti-earthquake</urlAddress>
+		</url>
+		<url>
+			<urlId>58</urlId>
+			<type>Map</type>
+			<urlAddress>&gt;http://guardianlv.com/wp-content/uploads/2014/01/al-qaeda.jpgmap</urlAddress>
+		</url>
+		<url>
+			<urlId>59</urlId>
+			<type>Video</type>
+			<urlAddress>https://www.youtube.com/watch?v=Lagdeg1Bz5E</urlAddress>
+		</url>
+		<url>
+			<urlId>60</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_UNICEF.svg</urlAddress>
+		</url>
+		<url>
+			<urlId>61</urlId>
+			<type>Video</type>
+			<urlAddress>https://www.youtube.com/watch?v=Lagdeg1Bz5E</urlAddress>
+		</url>
+		<url>
+			<urlId>62</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/UNICEF+Headquarters/@40.7500872,-73.9723107,18z/data=!3m1!4b1!4m2!3m1!1s0x0:0x24738d7ac66a710b</urlAddress>
+		</url>
+		<url>
+			<urlId>63</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://twitter.com/unicef</urlAddress>
+		</url>
+		<url>
+			<urlId>64</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/unicef</urlAddress>
+		</url>
+		<url>
+			<urlId>65</urlId>
+			<type>Image</type>
+			<urlAddress>http://en.wikipedia.org/wiki/File:Osama_bin_Laden_portrait.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>66</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=AgAL09DrdwQ</urlAddress>
+		</url>
+		<url>
+			<urlId>67</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.unicef.org/media/images/NYHQ2010-0696.JPG</urlAddress>
+		</url>
+		<url>
+			<urlId>68</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=x2N556fNuLc</urlAddress>
+		</url>
+		<url>
+			<urlId>69</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/jnj</urlAddress>
+		</url>
+		<url>
+			<urlId>70</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>https://www.jnj.com</urlAddress>
+		</url>
+		<url>
+			<urlId>71</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/pages/Zeppelin-NT/143240342357373?rf=1483979888495948</urlAddress>
+		</url>
+		<url>
+			<urlId>72</urlId>
+			<type>ExternalLink</type>
+			<urlAddress>http://www.zeppelin-lz.com</urlAddress>
+		</url>
+		<url>
+			<urlId>73</urlId>
+			<type>Image</type>
+			<urlAddress>http://graphics8.nytimes.com/images/2008/09/12/timestopics/topics_galveston1900_395.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>74</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=ZX88xLJVfpI</urlAddress>
+		</url>
+		<url>
+			<urlId>75</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/@29.2653098,-94.868356,12z</urlAddress>
+		</url>
+		<url>
+			<urlId>76</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/pages/1900-Galveston-hurricane/135675969796060</urlAddress>
+		</url>
+		<url>
+			<urlId>77</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2013/11/Hindenburg-disaster.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>78</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=CgWHbpMVQ1U</urlAddress>
+		</url>
+		<url>
+			<urlId>79</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/Lakehurst,+NJ/@40.0128584,-74.3151804,15z/data=!3m1!4b1!4m2!3m1!1s0x89c170d0e0581fb1:0x8296081bf8d04b09</urlAddress>
+		</url>
+		<url>
+			<urlId>80</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.dividend.com/blog/wp-content/uploads/storypics/johnson-and-johnson.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>81</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=r4-5OrdtXpI</urlAddress>
+		</url>
+		<url>
+			<urlId>82</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/Johnson+And+Johnson+Plaza/@40.498906,-74.4422134,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c65269ad84ab:0xb9f38b5404abf833</urlAddress>
+		</url>
+		<url>
+			<urlId>83</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.zeppelin-lz.com/fileadmin/images/druck/LUFTSCHIFFBAU_ZEPPELIN.png</urlAddress>
+		</url>
+		<url>
+			<urlId>84</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=f2voBK-A-Ho</urlAddress>
+		</url>
+		<url>
+			<urlId>85</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/Friedrichshafen/@47.6878367,9.4711816,12z/data=!3m1!4b1!4m2!3m1!1s0x479b005e3a13cdd3:0x41f6bb7a5df8420</urlAddress>
+		</url>
+		<url>
+			<urlId>86</urlId>
+			<type>Image</type>
+			<urlAddress>http://www.kilmerhouse.com/wp-content/uploads/2007/01/rwjohnsonia.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>87</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/pages/Robert-Wood-Johnson-I/138121969542479 </urlAddress>
+		</url>
+		<url>
+			<urlId>88</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/e/ee/Ernst_August_Lehmann_.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>89</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/pages/Ernst-A-Lehmann/243305002363401?rf=155894694556243</urlAddress>
+		</url>
+		<url>
+			<urlId>90</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/DIA</urlAddress>
+		</url>
+		<url>
+			<urlId>91</urlId>
+			<type>Website</type>
+			<urlAddress>http://www.dia.mil/Home.aspx</urlAddress>
+		</url>
+		<url>
+			<urlId>92</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/Defense+Intelligence+Agency/@38.8970604,-77.0671163,12z/data=!4m5!1m2!2m1!1sdefense+intelligence+agency!3m1!1s0x89b7b786d62308d3:0xc706846b7ab9289c</urlAddress>
+		</url>
+		<url>
+			<urlId>93</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/9/9d</urlAddress>
+		</url>
+		<url>
+			<urlId>94</urlId>
+			<type>SocialNetwork</type>
+			<urlAddress>https://www.facebook.com/unitednations</urlAddress>
+		</url>
+		<url>
+			<urlId>95</urlId>
+			<type>Website</type>
+			<urlAddress>http://www.un.org/en/</urlAddress>
+		</url>
+		<url>
+			<urlId>96</urlId>
+			<type>Map</type>
+			<urlAddress>https://www.google.com/maps/place/United+Nations/@40.7541621,-73.967639,15z/data=!4m5!1m2!2m1!1sunited+nations!3m1!1s0x89c2591ce0874d11:0xc5fae28bdd3df635</urlAddress>
+		</url>
+		<url>
+			<urlId>97</urlId>
+			<type>Image</type>
+			<urlAddress>http://static.spplus.com/pictures/United-Nations-logo.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>98</urlId>
+			<type>Image</type>
+			<urlAddress>http://govbooktalk.files.wordpress.com/2012/10/cuba-blockade-headlines.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>99</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.history.com/topics/cold-war/cuban-missile-crisis/videos/cuban-missile-crisis</urlAddress>
+		</url>
+		<url>
+			<urlId>100</urlId>
+			<type>Map</type>
+			<urlAddress>http://users.humboldt.edu/ogayle/Hist%20111%20Images/CubanMissileCrisis.gif</urlAddress>
+		</url>
+		<url>
+			<urlId>101</urlId>
+			<type>Image</type>
+			<urlAddress>http://theodorosii.files.wordpress.com/2013/11/1368224853201.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>102</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=y9HjvHZfCUI</urlAddress>
+		</url>
+		<url>
+			<urlId>103</urlId>
+			<type>Map</type>
+			<urlAddress>http://ocw.nd.edu/physics/nuclear-warfare/images-1/Cold-War-Map.jpg/image</urlAddress>
+		</url>
+		<url>
+			<urlId>104</urlId>
+			<type>Image</type>
+			<urlAddress>http://jeweell.com/data_images/out/70/1158213-fidel-castro.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>105</urlId>
+			<type>Image</type>
+			<urlAddress>http://a.abcnews.go.com/images/US/gty_fidel_castro_3_dm_130423_wg.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>106</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.youtube.com/watch?v=qQ24jmIHIUk</urlAddress>
+		</url>
+		<url>
+			<urlId>107</urlId>
+			<type>Image</type>
+			<urlAddress>http://upload.wikimedia.org/wikipedia/commons/0/01/Poster-sized_portrait_of_Barack_Obama_OrigRes.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>108</urlId>
+			<type>Image</type>
+			<urlAddress>http://bitbbq.com/wp-content/uploads/2014/03/President_Obama_342.jpg</urlAddress>
+		</url>
+		<url>
+			<urlId>109</urlId>
+			<type>Video</type>
+			<urlAddress>http://www.biography.com/people/barack-obama-12782369</urlAddress>
+		</url>
+	</urls>
+	<crisisUrls>
+		<crisisUrlPair>
+			<crisisId>CRI_001</crisisId>
+			<urlId>2</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_001</crisisId>
+			<urlId>3</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_001</crisisId>
+			<urlId>4</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_001</crisisId>
+			<urlId>5</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_001</crisisId>
+			<urlId>6</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_001</crisisId>
+			<urlId>7</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_002</crisisId>
+			<urlId>8</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_002</crisisId>
+			<urlId>9</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_002</crisisId>
+			<urlId>10</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_002</crisisId>
+			<urlId>11</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_003</crisisId>
+			<urlId>43</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_003</crisisId>
+			<urlId>44</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_003</crisisId>
+			<urlId>45</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_003</crisisId>
+			<urlId>46</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_004</crisisId>
+			<urlId>47</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_004</crisisId>
+			<urlId>48</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_004</crisisId>
+			<urlId>49</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_004</crisisId>
+			<urlId>50</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>51</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>52</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>53</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>54</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>55</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_005</crisisId>
+			<urlId>61</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>62</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>63</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>64</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_006</crisisId>
+			<urlId>65</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_007</crisisId>
+			<urlId>73</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_007</crisisId>
+			<urlId>74</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_007</crisisId>
+			<urlId>75</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_007</crisisId>
+			<urlId>76</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_008</crisisId>
+			<urlId>77</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_008</crisisId>
+			<urlId>78</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_008</crisisId>
+			<urlId>79</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_009</crisisId>
+			<urlId>98</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_009</crisisId>
+			<urlId>99</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_009</crisisId>
+			<urlId>100</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_010</crisisId>
+			<urlId>101</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_010</crisisId>
+			<urlId>102</urlId>
+		</crisisUrlPair>
+		<crisisUrlPair>
+			<crisisId>CRI_010</crisisId>
+			<urlId>103</urlId>
+		</crisisUrlPair>
+	</crisisUrls>
+	<orgUrls>
+		<orgUrlPair>
+			<orgId>ORG_001</orgId>
+			<urlId>12</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_001</orgId>
+			<urlId>13</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_001</orgId>
+			<urlId>14</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_001</orgId>
+			<urlId>15</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_002</orgId>
+			<urlId>16</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_002</orgId>
+			<urlId>17</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_002</orgId>
+			<urlId>18</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_002</orgId>
+			<urlId>19</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_003</orgId>
+			<urlId>33</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_003</orgId>
+			<urlId>34</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_003</orgId>
+			<urlId>35</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_004</orgId>
+			<urlId>36</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_004</orgId>
+			<urlId>37</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_004</orgId>
+			<urlId>38</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_005</orgId>
+			<urlId>59</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_005</orgId>
+			<urlId>60</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_005</orgId>
+			<urlId>61</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>62</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>63</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>64</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>65</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_006</orgId>
+			<urlId>66</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_007</orgId>
+			<urlId>80</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_007</orgId>
+			<urlId>81</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_007</orgId>
+			<urlId>82</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_008</orgId>
+			<urlId>83</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_008</orgId>
+			<urlId>84</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_008</orgId>
+			<urlId>85</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_009</orgId>
+			<urlId>92</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_009</orgId>
+			<urlId>93</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_010</orgId>
+			<urlId>96</urlId>
+		</orgUrlPair>
+		<orgUrlPair>
+			<orgId>ORG_010</orgId>
+			<urlId>97</urlId>
+		</orgUrlPair>
+	</orgUrls>
+	<personUrls>
+		<personUrlPair>
+			<personId>PER_001</personId>
+			<urlId>20</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_001</personId>
+			<urlId>21</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_001</personId>
+			<urlId>22</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_001</personId>
+			<urlId>23</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_002</personId>
+			<urlId>24</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_002</personId>
+			<urlId>25</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_002</personId>
+			<urlId>26</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_002</personId>
+			<urlId>27</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_004</personId>
+			<urlId>39</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_004</personId>
+			<urlId>40</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_003</personId>
+			<urlId>41</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_003</personId>
+			<urlId>42</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_005</personId>
+			<urlId>65</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_005</personId>
+			<urlId>66</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_006</personId>
+			<urlId>64</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_006</personId>
+			<urlId>67</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_007</personId>
+			<urlId>86</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_007</personId>
+			<urlId>87</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_008</personId>
+			<urlId>88</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_008</personId>
+			<urlId>89</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_009</personId>
+			<urlId>104</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_009</personId>
+			<urlId>105</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_009</personId>
+			<urlId>106</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_010</personId>
+			<urlId>107</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_010</personId>
+			<urlId>108</urlId>
+		</personUrlPair>
+		<personUrlPair>
+			<personId>PER_010</personId>
+			<urlId>109</urlId>
+		</personUrlPair>
+	</personUrls>
+	<crisisOrgs>
+		<crisisOrgPair>
+			<crisisId>CRI_001</crisisId>
+			<orgId>ORG_001</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_002</crisisId>
+			<orgId>ORG_002</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_003</crisisId>
+			<orgId>ORG_003</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_004</crisisId>
+			<orgId>ORG_004</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_005</crisisId>
+			<orgId>ORG_005</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_006</crisisId>
+			<orgId>ORG_006</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_007</crisisId>
+			<orgId>ORG_007</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_008</crisisId>
+			<orgId>ORG_008</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_009</crisisId>
+			<orgId>ORG_009</orgId>
+		</crisisOrgPair>
+		<crisisOrgPair>
+			<crisisId>CRI_010</crisisId>
+			<orgId>ORG_010</orgId>
+		</crisisOrgPair>
+	</crisisOrgs>
+	<crisisPeople>
+		<crisisPersonPair>
+			<crisisId>CRI_001</crisisId>
+			<personId>PER_001</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_002</crisisId>
+			<personId>PER_002</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_003</crisisId>
+			<personId>PER_003</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_004</crisisId>
+			<personId>PER_004</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_005</crisisId>
+			<personId>PER_005</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_006</crisisId>
+			<personId>PER_006</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_007</crisisId>
+			<personId>PER_007</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_008</crisisId>
+			<personId>PER_008</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_009</crisisId>
+			<personId>PER_009</personId>
+		</crisisPersonPair>
+		<crisisPersonPair>
+			<crisisId>CRI_010</crisisId>
+			<personId>PER_010</personId>
+		</crisisPersonPair>
+	</crisisPeople>
+	<orgPeople>
+		<orgPersonPair>
+			<orgId>ORG_001</orgId>
+			<personId>PER_001</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_002</orgId>
+			<personId>PER_002</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_003</orgId>
+			<personId>PER_003</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_004</orgId>
+			<personId>PER_004</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_005</orgId>
+			<personId>PER_005</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_006</orgId>
+			<personId>PER_006</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_007</orgId>
+			<personId>PER_007</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_008</orgId>
+			<personId>PER_008</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_009</orgId>
+			<personId>PER_009</personId>
+		</orgPersonPair>
+		<orgPersonPair>
+			<orgId>ORG_010</orgId>
+			<personId>PER_010</personId>
+		</orgPersonPair>
+	</orgPeople>
 </root>
-I am also here
-<Element 'root' at 0x2a5cb10>
-you are here
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-I am also here
-<Element 'root' at 0x22091d0>
-you are here
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa
-aaaaa

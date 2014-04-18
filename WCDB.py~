@@ -38,7 +38,7 @@ def wcdb_login ( host, un, pw, database ) :
 
 def wcdb_query (login, s):
     """Logs into DB and runs provided string as query"""
-    assert str(type(login)) == "<type '_mysql.connection'>"
+    assert (str(type(login)) == "<type '_mysql.connection'>")
     assert (type(s) is str)
     login.query(s)
     r = login.use_result()

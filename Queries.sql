@@ -1,10 +1,8 @@
 use cs327e_joshen;
 
 /* -----------------------------------------------------------------------
-How to login to database
-mysql --host=z --user=joshen --password=pb6bKYnCDs
-
 How to execute this file: mysql -v -H < Queries.sql > Queries.html
+
 GottaGitThat Questions
 
 1) Which crisis had the most combined fatalities and injuries?
@@ -37,15 +35,12 @@ select P.name, count(P.name) as Count  from CrisisPeople as CP inner join People
 /* -----------------------------------------------------------------------
 Brigadeiros
 
-1) What organizations don't exist anymore? NOTICE! I COULD NOT ANSWER THIS QUESTION GIVEN OUR SCHEMA
+1) What organizations don't exist anymore?
 2) What are the 5 most recent crises?
 3) What are the crises with the most amount of resources?
 4) What crises expend more money on reconstruction than in the damage done?
 5) What's the most common kind of person?
 */
-
-select "What organizations do not exist anymore? NOTICE! I COULD NOT ANSWER THIS QUESTION GIVEN OUR SCHEMA";
-# ------------------------------------------------------------------------
 
 select "What are the 5 most recent crises?";
 Select name, dateAndTime from Crises order by dateAndTime desc limit 5;
@@ -114,7 +109,7 @@ select sum(Count) as OrganizationCount, country as Country from (select count(na
 # ------------------------------------------------------------------------
 
 select "What is the least common kind of person?";
-select count(name) as Count, kind from People group by kind order by Count limit 1;
+select count(name) as Count, kind from People where kind <> "" group by kind order by Count limit 1;
 # ------------------------------------------------------------------------
 
 select "What is the least common kind of crisis?";

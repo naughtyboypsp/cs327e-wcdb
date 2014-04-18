@@ -3,7 +3,7 @@
         <crisis>
             <crisisId>CRI_015</crisisId>
             <name>Great Depression</name>
-	    <kind>Human Error Disaster</kind>
+	        <kind>Human Error Disaster</kind>
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince></stateOrProvince>
@@ -47,7 +47,7 @@
         <crisis>
             <crisisId>CRI_017</crisisId>
             <name>Texas Drought</name>
-	    <kind>Natural Disaster</kind>
+	        <kind>Natural Disaster</kind>
             <streetAddress></streetAddress>
             <city></city>
             <stateOrProvince>Texas</stateOrProvince>
@@ -69,7 +69,7 @@
         <crisis>
             <crisisId>CRI_018</crisisId>
             <name>Mexico City Earthquake</name>
-	    <kind>Natural Disaster</kind>
+	        <kind>Natural Disaster</kind>
             <streetAddress></streetAddress>
             <city>Mexico City</city>
             <stateOrProvince>Mexico DF</stateOrProvince>
@@ -91,7 +91,7 @@
         <crisis>
             <crisisId>CRI_019</crisisId>
             <name>Libyan Civil War</name>
-	    <kind>War / Conflict</kind>
+	        <kind>War / Conflict</kind>
             <streetAddress></streetAddress>
             <city>Benghazi</city>
             <stateOrProvince>Cyrenaica</stateOrProvince>
@@ -113,7 +113,7 @@
         <crisis>
             <crisisId>CRI_002</crisisId>
             <name>Hurricane Ike</name>
-	    <kind>Natural Disaster</kind>
+	        <kind>Natural Disaster</kind>
             <streetAddress />
             <city />
             <stateOrProvince />
@@ -135,7 +135,7 @@
         <crisis>
             <crisisId>CRI_006</crisisId>
             <name>UT Tower Shooter</name>
-	    <kind>Assassination / Shooting</kind>
+	        <kind>Assassination / Shooting</kind>
             <streetAddress></streetAddress>
             <city>Austin</city>
             <stateOrProvince>Texas</stateOrProvince>
@@ -706,7 +706,7 @@
                 <emailAddress>http://www.unicefusa.org/about/contact/</emailAddress>
                 <facebookUrlId>URL_503</facebookUrlId>
                 <twitterUrlId>URL_504</twitterUrlId>
-                <websiteUrlId>URL_507</websiteUrlId>
+                <websiteUrlId>URL_0</websiteUrlId>
             </contactInfo>
             <contactInfo>
                 <contactInfoId>CON_076</contactInfoId>
@@ -720,9 +720,9 @@
                 <contactInfoId>CON_077</contactInfoId>
                 <phoneNumber>1-800-268-3710</phoneNumber>
                 <emailAddress />
-                <facebookUrlId>URL_261</facebookUrlId>
-                <twitterUrlId>URL_262</twitterUrlId>
-                <websiteUrlId>URL_264</websiteUrlId>
+                <facebookUrlId>URL_0</facebookUrlId>
+                <twitterUrlId>URL_0</twitterUrlId>
+                <websiteUrlId>URL_0</websiteUrlId>
             </contactInfo>
         </contactInfos>    
 

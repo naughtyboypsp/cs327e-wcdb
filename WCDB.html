@@ -40,9 +40,11 @@ crises_tree:&nbsp;&lt;crises&gt;&lt;/crises&gt;</tt></dd></dl>
  <dl><dt><a name="-wcdb_import"><strong>wcdb_import</strong></a>(login, tree)</dt><dd><tt>Iterating&nbsp;through&nbsp;crisis&nbsp;tags&nbsp;in&nbsp;crises&nbsp;tag&nbsp;and&nbsp;import&nbsp;into&nbsp;DB:&nbsp;table&nbsp;Crises</tt></dd></dl>
  <dl><dt><a name="-wcdb_login"><strong>wcdb_login</strong></a>(host, un, pw, database)</dt><dd><tt>takes&nbsp;credentials&nbsp;and&nbsp;logs&nbsp;into&nbsp;DB</tt></dd></dl>
  <dl><dt><a name="-wcdb_query"><strong>wcdb_query</strong></a>(login, s)</dt><dd><tt>Logs&nbsp;into&nbsp;DB&nbsp;and&nbsp;runs&nbsp;provided&nbsp;string&nbsp;as&nbsp;query</tt></dd></dl>
- <dl><dt><a name="-wcdb_read"><strong>wcdb_read</strong></a>(r)</dt><dd><tt>reads&nbsp;an&nbsp;input<br>
-creates&nbsp;an&nbsp;element&nbsp;tree&nbsp;from&nbsp;string</tt></dd></dl>
- <dl><dt><a name="-wcdb_solve"><strong>wcdb_solve</strong></a>(r, w)</dt><dd><tt>r&nbsp;is&nbsp;a&nbsp;reader<br>
+ <dl><dt><a name="-wcdb_read"><strong>wcdb_read</strong></a>(stdin, flag, filename<font color="#909090">=' '</font>)</dt><dd><tt>reads&nbsp;xml_filename_list<br>
+creates&nbsp;an&nbsp;element&nbsp;tree&nbsp;from&nbsp;string<br>
+flag&nbsp;is&nbsp;for&nbsp;reading&nbsp;choices<br>
+default&nbsp;filename&nbsp;is&nbsp;empty&nbsp;space</tt></dd></dl>
+ <dl><dt><a name="-wcdb_solve"><strong>wcdb_solve</strong></a>(r, w, xml_filename_list)</dt><dd><tt>r&nbsp;is&nbsp;a&nbsp;reader<br>
 w&nbsp;is&nbsp;a&nbsp;writer<br>
 login:&nbsp;Logs&nbsp;into&nbsp;DB,&nbsp;tree:&nbsp;Generates&nbsp;Element&nbsp;Tree,<br>
 <a href="#-createDB">createDB</a>(login):&nbsp;Creates&nbsp;Tables&nbsp;in&nbsp;DB,<br>
@@ -50,5 +52,16 @@ wcdb_import:&nbsp;import&nbsp;data&nbsp;from&nbsp;xml&nbsp;to&nbsp;databases<br>
 wcdb_export:&nbsp;export&nbsp;data&nbsp;from&nbsp;databases&nbsp;to&nbsp;xml</tt></dd></dl>
  <dl><dt><a name="-wcdb_write"><strong>wcdb_write</strong></a>(w, data_tree)</dt><dd><tt>converts&nbsp;an&nbsp;element&nbsp;string&nbsp;to&nbsp;a&nbsp;string&nbsp;data<br>
 exports&nbsp;the&nbsp;string&nbsp;data</tt></dd></dl>
-</td></tr></table>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>crises_id_list</strong> = []<br>
+<strong>orgs_id_list</strong> = []<br>
+<strong>people_id_list</strong> = []<br>
+<strong>resources_id_list</strong> = []<br>
+<strong>waysToHelp_id_list</strong> = []</td></tr></table>
 </body></html>

@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <?xml version="1.0" ?>
 <root>
 	<crises/>
@@ -406,3 +408,4 @@
 	<crisisPeople/>
 	<orgPeople/>
 </root>
+>>>>>>> aad53586961d41ee1e248d31d0deaabcc8ad09ca
